@@ -1,10 +1,45 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyToken } from "./src/lib/auth";
+import { AuthPayload } from "./src/types";
 
 const PUBLIC_PATHS = new Set(["/", "/login", "/signup", "/chatbot", "/complaints"]);
 const PROTECTED_PATHS = ["/dashboard", "/analytics", "/budget", "/risk-predictor", "/emergency", "/profile"];
 
-export function middleware(request: NextRequest) {
+// Edge-compatible JWT verify using Web Crypto API (no jsonwebtoken)
+async function verifyTokenEdge(token: string): Promise<AuthPayload | null> {
+  try {
+    const secret = process.env.JWT_SECRET;
+    if (!secret) return null;
+
+    const [headerB64, payloadB64, sigB64] = token.split(".");
+    if (!headerB64 || !payloadB64 || !sigB64) return null;
+
+    const key = await crypto.subtle.importKey(
+      "raw",
+      new TextEncoder().encode(secret),
+      { name: "HMAC", hash: "SHA-256" },
+      false,
+      ["verify"]
+    );
+
+    const valid = await crypto.subtle.verify(
+      "HMAC",
+      key,
+      Uint8Array.from(atob(sigB64.replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0)),
+      new TextEncoder().encode(`${headerB64}.${payloadB64}`)
+    );
+
+    if (!valid) return null;
+
+    const payload = JSON.parse(atob(payloadB64.replace(/-/g, "+").replace(/_/g, "/")));
+    if (payload.exp && Date.now() / 1000 > payload.exp) return null;
+
+    return payload as AuthPayload;
+  } catch {
+    return null;
+  }
+}
+
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   if (
@@ -15,7 +50,7 @@ export function middleware(request: NextRequest) {
   }
 
   const token = request.cookies.get("rw_token")?.value;
-  const payload = token ? verifyToken(token) : null;
+  const payload = token ? await verifyTokenEdge(token) : null;
 
   if (pathname.startsWith("/admin")) {
     if (!payload) return NextResponse.redirect(new URL("/login?redirect=/admin", request.url));
