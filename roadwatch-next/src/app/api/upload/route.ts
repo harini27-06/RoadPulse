@@ -6,7 +6,7 @@ import * as exifr from "exifr";
 import { createWorker } from "tesseract.js";
 import type { LocationData } from "@/types";
 
-const YOLO_URL = process.env.YOLO_SERVICE_URL ?? "http://localhost:8000";
+const YOLO_URL = process.env.YOLO_SERVICE_URL ?? "https://roadpulse-px08.onrender.com";
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 const ALLOWED_TYPES = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
 
