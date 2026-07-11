@@ -1,0 +1,1537 @@
+Road_ID,Road_Name,Road_Code,Road_Type,District,State,Last Maintenance Date,Start_Km,End_Km,Total_Length_Km,Tender_ID,Estimated Amount (in Crores),Budget Estimate (in Crores),Total Work Value
+R001,Agrathen Kovilanchery Road,MD -566,MDR,CHENNAI,Tamil Nadu,18 September 2025,0,7.1,7.1,2024_HWAY_422916_1,11.2,3.9,8.11
+R002,Manali - Mathur Road,MD 1018,MDR,CHENNAI,Tamil Nadu,22 January 2026,0,5.7,5.7,2020_HWAY_173421_1,9.5,4.5,4.5
+R003,Pallavaram-Thiruneermalai -Thirumudivakkam Road,MD -1163,MDR,CHENNAI,Tamil Nadu,14 August 2025,0,4,4,2020_HWAY_174982_1,4.8,2.8,1.71
+R004,Madipakkam Velachery Road,MD -622,MDR,CHENNAI,Tamil Nadu,05 December 2025,0,3.2,3.2,2020_HWAY_174965_1,5.5,1.9,0.5
+R005,Lakshmipuram - Puzhal Road,MD - 1019,MDR,CHENNAI,Tamil Nadu,17 April 2026,0,3,3,2020_HWAY_173456_1,4.4,1.8,0.8
+R006,Tambaram- Somangalam -Nandambakkam Road,MD-1164,MDR,CHENNAI,Tamil Nadu,29 September 2025,0,2.4,2.4,2020_HWAY_175012_1,14.6,4.8,2.45
+R007,K.S.Road to Manapakkam (via) Kolapakkam,N/A,MDR,CHENNAI,Tamil Nadu,11 February 2026,3.2,5.6,2.4,2020_HWAY_174899_1,4,1.9,0.6
+R008,Taramani Perunkudi Road,MD -452,MDR,CHENNAI,Tamil Nadu,24 October 2025,0,2.01,2.01,2020_HWAY_174971_1,2.5,2.15,0.85
+R009,MPA Road (IDPL Junction) to Manapakkam,N/A,MDR,CHENNAI,Tamil Nadu,07 June 2025,0,1.4,1.4,2024_HWAY_422916_1,8,3.2,8.11
+R010,Vengal-Seethancheri-Kannigaiper road,MD-740,MDR,TIRUVALLUR,Tamil Nadu,15 January 2026,0,26.8,26.8,2020_HWAY_173425_1,23.3,1.36,3.2
+R011,Medur - Gummidipoondi Road,MD-634,MDR,TIRUVALLUR,Tamil Nadu,03 September 2025,0,23.2,23.2,2020_HWAY_173488_1,9,3.6,4.8
+R012,Kanakammachattiram - Thakkolam road,MD-1049,MDR,TIRUVALLUR,Tamil Nadu,28 April 2026,0,18.55,18.55,2020_HWAY_173444_1,6.5,1.8,2.1
+R013,Minjur – Kattur – Thirupalaivanam Road,MD-1041,MDR,TIRUVALLUR,Tamil Nadu,19 November 2025,0,17.2,17.2,2020_HWAY_173471_1,14.8,4.9,4.2
+R014,Gummidipoondi – Madarpakkam Road,MD-599,MDR,TIRUVALLUR,Tamil Nadu,09 March 2026,0,16.85,16.85,2020_HWAY_173499_1,16.5,5.2,3.8
+R015,Tiruvallur - Arakkonam Road,MD-32,MDR,TIRUVALLUR,Tamil Nadu,13 May 2026,0,16.2,16.2,2020_HWAY_173418_1,32.4,9.8,5.4
+R016,Tiruttani - Nagalapuram road,MD-719,MDR,TIRUVALLUR,Tamil Nadu,26 September 2025,0,14.565,14.565,2020_HWAY_173515_1,11,3.5,2.6
+R017,Atthimaanjeri – Pothattur pet Nagari R.S. Road,MD-788,MDR,TIRUVALLUR,Tamil Nadu,08 February 2026,0,14.2,14.2,2020_HWAY_173530_1,8.9,2.7,1.95
+R018,Goonipalayam-Placepalayam road,MD-787,MDR,TIRUVALLUR,Tamil Nadu,17 July 2025,0,12.8,12.8,2020_HWAY_173541_1,7.8,2.4,1.65
+R019,Nochilli Road,MD-645,MDR,TIRUVALLUR,Tamil Nadu,30 November 2025,0,12.8,12.8,2020_HWAY_173522_1,4.5,1.6,1.85
+R020,Thirupachur-kadambathur-Kondancheri road,MD-468,MDR,TIRUVALLUR,Tamil Nadu,21 March 2026,0,12.5,12.5,2020_HWAY_173432_1,18.4,5.9,3.9
+R021,Puduvoyal - Periyapalayam Road,MD-378,MDR,TIRUVALLUR,Tamil Nadu,10 December 2025,0,12,12,2020_HWAY_173481_1,12.6,4.1,5.1
+R022,C.T Road to Magankaligapuram Road (via) Veeramangalam Road,MD-580,MDR,TIRUVALLUR,Tamil Nadu,16 August 2025,0,11.6,11.6,2020_HWAY_173508_1,8.2,2.5,2.4
+R023,Avadi – Vaniyan chathiram Road,MD-575,MDR,TIRUVALLUR,Tamil Nadu,04 February 2026,1.6,12,10.4,2020_HWAY_173463_1,15.3,5.1,3.15
+R024,Thiruverkadu - Ambathur road ,MD-1166,MDR,TIRUVALLUR,Tamil Nadu,27 October 2025,0,9.2,9.2,2020_HWAY_175005_1,11.8,4.6,1.6
+R025,Vellanur Red Hills Road,MD-575A,MDR,TIRUVALLUR,Tamil Nadu,12 June 2025,0,9,9,2020_HWAY_173491_1,9.6,3.8,2.85
+R026,Kodungaiyur – Vazhudhigaimedu Road,MD-610,MDR,TIRUVALLUR,Tamil Nadu,08 January 2026,0,8.8,8.8,2020_HWAY_174977_1,13.4,4.2,2.25
+R027,Pennalur pet road,MD-786,MDR,TIRUVALLUR,Tamil Nadu,19 September 2025,0,8,8,2020_HWAY_173536_1,6.9,2.2,1.4
+R028,Nagarajakandigai - Sirupuzhalpettai (Via) Sipcot,MD-599A,MDR,TIRUVALLUR,Tamil Nadu,25 March 2026,0,8,8,2020_HWAY_173503_1,14.2,4.8,3.45
+R029,K.B.P Road – Thirunilai (Via) Akkarapakkm Road,MD-601,MDR,TIRUVALLUR,Tamil Nadu,14 November 2025,0,7.7,7.7,2020_HWAY_173555_1,11.5,3.6,2.15
+R030,Chettipadu – Nemam road,MD-1165,MDR,TIRUVALLUR,Tamil Nadu,06 April 2026,0,7.6,7.6,2020_HWAY_173549_1,6.8,2.1,1.75
+R031,Melpakkam –Kannampalayam road,MD-1167,MDR,TIRUVALLUR,Tamil Nadu,18 December 2025,0,7.2,7.2,2020_HWAY_173567_1,5.4,1.8,1.35
+R032,Puduvoyal – Pulicut Road,MD-379,MDR,TIRUVALLUR,Tamil Nadu,27 February 2026,0,6.2,6.2,2020_HWAY_173582_1,19.6,6.4,4.9
+R033,Soolaimeni to Thervoy Kandigai road,N/A,MDR,TIRUVALLUR,Tamil Nadu,11 August 2025,0,4.8,4.8,2020_HWAY_173561_1,9.3,2.9,2.8
+R034,Nazarathpet Road,MD-168,MDR,TIRUVALLUR,Tamil Nadu,23 October 2025,0,1.4,1.4,2020_HWAY_173576_1,7.5,3.1,1.9
+R035,Thirumazhisai-Sathyavedu road,MD-490,MDR,TIRUVALLUR,Tamil Nadu,15 May 2026,44,45.2,1.2,2020_HWAY_173590_1,28.4,9.2,6.2
+R036,MA.PO.C. Road,MD-224,MDR,TIRUVALLUR,Tamil Nadu,02 January 2026,0,0.8,0.8,2020_HWAY_173604_1,16.8,5.5,4.4
+R037,Poonamallee- Avadi Road,MD-368,MDR,TIRUVALLUR,Tamil Nadu,09 September 2025,8,8.6,0.6,2020_HWAY_173618_1,22.1,7.8,5.8
+R038,GST Road to Cheyyur (via) Padalam,MD-596,MDR,CHENGALPATTU,Tamil Nadu,08 October 2025,0,32,32,2022_HWAY_214856_1,26.4,8.5,7
+R039,Thirumukkudal-Nelvoy-Thirukalukundram Road,MD-789,MDR,CHENGALPATTU,Tamil Nadu,21 February 2026,27.4,48,20.6,2025_HWAY_539124_1,19.2,6.1,4.08
+R040,Mudukarai-Kadalore Road,MD-636,MDR,CHENGALPATTU,Tamil Nadu,14 July 2025,0,28.8,28.8,2020_HWAY_176412_1,14.5,4.8,3.65
+R041,Chengalpattu-Thiruporur Road,MD-581,MDR,CHENGALPATTU,Tamil Nadu,30 January 2026,0,21.8,21.8,2020_HWAY_176500_1,126.75,35,17
+R042,Guduvancheri-Kottamedu Road,MD-598,MDR,CHENGALPATTU,Tamil Nadu,17 November 2025,0,17.6,17.6,2020_HWAY_176481_1,74.81,21,5.2
+R043,Km.11/8 of SCKAT Road to Pudupattinam Road (v) Vitalapuram,MD-1042,MDR,CHENGALPATTU,Tamil Nadu,05 May 2026,0,17,17,2020_HWAY_176495_1,17.4,5.8,3.9
+R044,Km.11/8 of SCKAT Road to Pudupattinam Road (v) Vitalapuram,MD-1042,MDR,CHENGALPATTU,Tamil Nadu,05 May 2026,18.4,18.8,0.4,2020_HWAY_176495_1,17.4,5.8,3.9
+R045,Acharapakkam-Periyakalakadi Road,MD-565,MDR,CHENGALPATTU,Tamil Nadu,12 March 2026,0,15,15,2020_HWAY_176435_1,8.5,2.9,2.1
+R046,Singaperumalkoil-Reddikuppam Road,MD-686,MDR,CHENGALPATTU,Tamil Nadu,25 September 2025,0,13.2,13.2,2020_HWAY_176395_1,14.2,4.6,6.4
+R047,Vedanthangal Road,MD-540,MDR,CHENGALPATTU,Tamil Nadu,08 December 2025,0,12.6,12.6,2020_HWAY_176419_1,6.8,2.1,1.8
+R048,GST Road to Nallambakkam (v) Kattur - Karanaipuducheri - Arungal Road,MD-597,MDR,CHENGALPATTU,Tamil Nadu,17 April 2026,0,12.4,12.4,2020_HWAY_176415_1,19.5,6.4,3.1
+R049,Vandalore - Kelambakkam Road to Sirucheri H/C Road (via) Pudupakkam & Pudupakkam H/C,MD-1027,MDR,CHENGALPATTU,Tamil Nadu,29 January 2026,0,6.2,6.2,2020_HWAY_176441_1,11.2,3.9,2.4
+R050,Chennai-Mamallapuram Road (via) -Kelambakkam Kovalam,MD-65,MDR,CHENGALPATTU,Tamil Nadu,10 August 2025,35.2,40,4.8,2020_HWAY_176388_1,24.8,8.1,9.2
+R051,Chennai-Mamallapuram Road (via) -Kelambakkam Kovalam,MD-65,MDR,CHENGALPATTU,Tamil Nadu,10 August 2025,57.6,58.4,0.8,2020_HWAY_176388_1,24.8,8.1,9.2
+R052,Thirukalukundram Byepass Road,MD-462,MDR,CHENGALPATTU,Tamil Nadu,06 February 2026,0,5.4,5.4,2020_HWAY_176426_1,29.6,9.5,1.6
+R053,Perungalathur-Kolapakkam Road (Via) Sadananthapuram - Alapakkam,MD-790,MDR,CHENGALPATTU,Tamil Nadu,18 October 2025,0,5.2,5.2,2020_HWAY_176452_1,12.5,4.2,2.85
+R054,South Arcot-Frontier Road,MD-433,MDR,CHENGALPATTU,Tamil Nadu,27 May 2026,0,4.2,4.2,2020_HWAY_176401_1,7.4,1.8,4.1
+R055,Mamallapuram-Kokilamedu Road,MD-239,MDR,CHENGALPATTU,Tamil Nadu,09 December 2025,0,3,3,2020_HWAY_176391_1,3.9,1.5,1.3
+R056,Thiruvanmiyur - Mamallapuram - Marakkanam - Pandicherry Road (East Coast Road) to Muttukadu picture square Beauty Spot Road,MD-477,MDR,CHENGALPATTU,Tamil Nadu,14 March 2026,0,0.84,0.84,2020_HWAY_176433_1,2.2,1.1,0.95
+R057,Thirumukkudal-Nelvoy - Thirukalukundram Road,MD-789,MDR,KANCHEEPURAM,Tamil Nadu,21 August 2025,0,27.4,27.4,2025_HWAY_539124_1,19.2,6.1,4.08
+R058,Pallur - Sogandy Road,MD-651,MDR,KANCHEEPURAM,Tamil Nadu,03 January 2026,0,23.8,23.8,2020_HWAY_175225_1,25,3.1,3.4
+R059,Uthiramerur - Kammalampoondi -Acharapakkam Road,MD-518,MDR,KANCHEEPURAM,Tamil Nadu,16 April 2026,0,18.4,18.4,2020_HWAY_175195_1,11.6,3.8,5.2
+R060,Kanchipuram Rajakulam Road,MD-791,MDR,KANCHEEPURAM,Tamil Nadu,07 November 2025,0,9.18,9.18,2020_HWAY_175251_1,9.4,2.9,2.15
+R061,Ponnerikarai - Parandur Road,MD-1024,MDR,KANCHEEPURAM,Tamil Nadu,19 February 2026,0,8.2,8.2,2020_HWAY_175288_1,13.8,4.2,1.9
+R062,Tambaram-Somangalam - Nandambakkam Road,MD - 1164,MDR,KANCHEEPURAM,Tamil Nadu,28 September 2025,2.4,9.6,7.2,2020_HWAY_175012_1,14.6,4.8,2.45
+R063,Kanchipuram Byepass Road,MD-143,MDR,KANCHEEPURAM,Tamil Nadu,13 May 2026,0,6.4,6.4,2020_HWAY_175112_1,34.2,11.5,4.6
+R064,Kodambakkam-Sriperumbudur Road to Manapakkam (via) Kolapakkam,MD-1026,MDR,KANCHEEPURAM,Tamil Nadu,24 January 2026,0,3.2,3.2,2020_HWAY_174899_1,1.9,0.8,0.6
+R065,Chennai - Ponnerikarai - Kanchipuram Road,MD-66,MDR,KANCHEEPURAM,Tamil Nadu,09 August 2025,70.4,74.9,4.5,2020_HWAY_175118_1,18.5,5.9,6.8
+R066,Pallavaram - Thiruneermalai - Thirumudivakkam Road,MD-1163,MDR,KANCHEEPURAM,Tamil Nadu,16 December 2025,4,8.4,4.4,2020_HWAY_174982_1,4.8,2.8,1.71
+R067,Tiruvallur-Karasangal Road,MD -781,MDR,KANCHEEPURAM,Tamil Nadu,02 April 2026,31.4,35,3.6,2020_HWAY_175240_1,21.4,6.8,3.95
+R068,Railway Road,MD-1025,MDR,KANCHEEPURAM,Tamil Nadu,21 October 2025,0,1.46,1.46,2020_HWAY_175294_1,3.5,1.2,1.15
+R069,Pakkiripalayam-Elangunni road (via) Neepathurai,MD-1201,MDR,TIRUVANNAMALAI,Tamil Nadu,15 June 2025,0,26.1,26.1,2021_HWAY_189422_1,26.1,6.8,3.85
+R070,N.C.Veeralore road,MD 642,MDR,TIRUVANNAMALAI,Tamil Nadu,30 March 2026,0,18.4,18.4,2021_HWAY_189115_1,18.4,4.9,2.4
+R071,Tiruvannamalai Arur road (via) Thanipadi (SH 6A) Km 4/2 to join Km 12/2 of Thandrampet Kottakulam road (SH 6B),MD-1112,MDR,TIRUVANNAMALAI,Tamil Nadu,11 January 2026,0,17.9,17.9,2021_HWAY_189608_1,17.9,4.7,5.6
+R072,Chinnayampettai Elayankunni road (via) Perungalathur,MD-813,MDR,TIRUVANNAMALAI,Tamil Nadu,12 February 2026,0,17.8,17.8,2021_HWAY_189240_1,17.8,4.6,1.95
+R073,Vadamathimangalam Kommanandal road,MD-801,MDR,TIRUVANNAMALAI,Tamil Nadu,25 September 2025,0,17,17,2021_HWAY_189212_1,17,4.4,2.1
+R074,Tiruvannamalai Thiyagadurgam road to Kandiyankuppam road (via) Pavapattu,MD-1202,MDR,TIRUVANNAMALAI,Tamil Nadu,08 June 2025,0,13.8,13.8,2021_HWAY_189456_1,16.2,4.2,3.45
+R075,Ammapalayam Pudupalayam road,MD-800,MDR,TIRUVANNAMALAI,Tamil Nadu,17 January 2026,0,11.2,11.2,2021_HWAY_189198_1,15.5,4,1.65
+R076,Chengam-Kuppanatham road,MD-1204,MDR,TIRUVANNAMALAI,Tamil Nadu,29 October 2025,1.2,11.2,10,2021_HWAY_189512_1,14.8,3.8,4.2
+R077,Verayur Thandarai road,MD-803,MDR,TIRUVANNAMALAI,Tamil Nadu,14 April 2026,0,9.8,9.8,2021_HWAY_189233_1,14.2,3.6,2.3
+R078,Perumanam road,MD-1169,MDR,TIRUVANNAMALAI,Tamil Nadu,03 December 2025,0,8.6,8.6,2021_HWAY_189410_1,13.6,3.5,3.15
+R079,Radhapuram Vanapuram road,MD-805,MDR,TIRUVANNAMALAI,Tamil Nadu,21 August 2025,0,7.8,7.8,2021_HWAY_189255_1,13.1,3.4,1.8
+R080,Kalasapakkam Melarni road,MD-806,MDR,TIRUVANNAMALAI,Tamil Nadu,06 March 2026,0,6.8,6.8,2021_HWAY_189264_1,12.5,3.2,2.45
+R081,Pallikondapattu road to Sambandanoor road,MD-1203,MDR,TIRUVANNAMALAI,Tamil Nadu,18 November 2025,0,3,3,2021_HWAY_189438_1,11.9,3.1,2.1
+R082,Pallikondapattu road to Sambandanoor road MD 1203,MD-1203,MDR,TIRUVANNAMALAI,Tamil Nadu,09 May 2026,1.6,5.2,3.6,2021_HWAY_189438_1,11.9,3.1,2.1
+R083,Anaipiranthan Perumbakkam road,MD-1200,MDR,TIRUVANNAMALAI,Tamil Nadu,22 October 2025,0,5.8,5.8,2021_HWAY_189390_1,11.2,2.9,2.65
+R084,Sathanur Dam road,MD-1107,MDR,TIRUVANNAMALAI,Tamil Nadu,13 February 2026,0,5,5,2021_HWAY_189360_1,10.8,2.8,3.9
+R085,Peigopuram road,MD-345,MDR,TIRUVANNAMALAI,Tamil Nadu,05 September 2025,0,1.6,1.6,2021_HWAY_189150_1,5.4,1.6,1.1
+R086,Pondy Krishnagiri road Km 103/10 to Villupuram Tiruvannamalai road Km 54/2 joins Tiruvannamalai Byepass road,MD-365,MDR,TIRUVANNAMALAI,Tamil Nadu,28 January 2026,0,1.2,1.2,2023_HWAY_314810_1,4.8,1.3,8.4
+R087,Sannathi Ramalinganar Street,MD-411,MDR,TIRUVANNAMALAI,Tamil Nadu,16 June 2025,0,0.8,0.8,2021_HWAY_189162_1,3.8,1.1,0.75
+R088,Arni Kalambur road,MD-42,MDR,TIRUVANNAMALAI,Tamil Nadu,03 December 2025,9.6,10.4,0.8,2021_HWAY_189102_1,16.4,4.9,4.8
+R089,Mathalangulam Street,MD-252,MDR,TIRUVANNAMALAI,Tamil Nadu,19 March 2026,0,0.6,0.6,2021_HWAY_189138_1,4.2,1.3,0.9
+R090,Katpadi - Vallimalai Road,MD-607,MDR,VELLORE,Tamil Nadu,11 November 2025,0,19.6,19.6,2020_HWAY_174112_1,14.5,4.1,3.6
+R091,Central Jail - Amirthi Road,MD-1205,MDR,VELLORE,Tamil Nadu,24 April 2026,0,14.4,14.4,2021_HWAY_185410_1,18.6,5.2,2.85
+R092,Thiruvalam Katpadi Venkatagirikottah Road to Seduvalai (via) Virinjipuram Road,MD-1030,MDR,VELLORE,Tamil Nadu,14 January 2026,0,6,6,2020_HWAY_174195_1,22.4,6.9,4.15
+R093,Jaffrabath Road,MD-1108,MDR,VELLORE,Tamil Nadu,26 September 2025,0,6,6,2020_HWAY_174210_1,5.1,1.6,2.2
+R094,Madhanur to Gudiyattam - Kakkathoppu Road,MD-1110,MDR,VELLORE,Tamil Nadu,07 May 2026,0,5.4,5.4,2020_HWAY_174245_1,12.8,3.5,5.1
+R095,Madhanur - Agaram Road,MD-1208,MDR,VELLORE,Tamil Nadu,18 November 2025,5.4,9.6,4.2,2021_HWAY_185456_1,9.8,2.8,3.4
+R096,Puttuthakku Causeway Road,MD-384,MDR,VELLORE,Tamil Nadu,03 February 2026,0,3.4,3.4,2020_HWAY_174092_1,4.4,1.4,1.75
+R097,Gandhi Nagar Main Road,MD-1029,MDR,VELLORE,Tamil Nadu,21 August 2025,0,1.9,1.9,2020_HWAY_174175_1,5.2,1.6,1.3
+R098,Nayanacheruvu - A.P. Border Road.,MD- 1207,MDR,THIRUPATHUR,Tamil Nadu,09 December 2025,0,10.23,10.23,2021_HWAY_185440_1,11.4,3.4,4.25
+R099,Thumberi - Diguvapalayam (Via) Sankarapuram Road,MD-1109,MDR,THIRUPATHUR,Tamil Nadu,15 April 2026,0,10.2,10.2,2020_HWAY_174228_1,13.6,3.9,2.9
+R100,Jolarpet – Natrampalli Road,MD-1111,MDR,THIRUPATHUR,Tamil Nadu,28 October 2025,0,9.6,9.6,2020_HWAY_174260_1,18.9,5.8,3.8
+R101,Dhamalerimuthur Road,MD-1111 A,MDR,THIRUPATHUR,Tamil Nadu,08 March 2026,0,8.8,8.8,2020_HWAY_174272_1,7.1,2.1,1.15
+R102,Kaveripattinam – Kakankarai Road,MD- 157,MDR,THIRUPATHUR,Tamil Nadu,19 October 2025,27.8,35.2,7.4,2020_HWAY_174045_1,24.5,7.6,5.4
+R103,Madhanur - Agaram Road.,MD- 1208,MDR,THIRUPATHUR,Tamil Nadu,27 January 2026,0,5.4,5.4,2021_HWAY_185456_1,9.8,2.8,3.4
+R104,Ambur - Sathgur Road,MD-18,MDR,THIRUPATHUR,Tamil Nadu,11 September 2025,0,1.8,1.8,2020_HWAY_174022_1,16.4,4.8,5.8
+R105,Gowdampet Road,MD-120,MDR,THIRUPATHUR,Tamil Nadu,24 April 2026,0.437,1,0.563,2020_HWAY_174068_1,3.9,1.2,0.95
+R106,Arni Vandavasi Road,MD-43,MDR,CHEYYAR,Tamil Nadu,06 December 2025,0,39.2,39.2,2021_HWAY_189108_1,22.5,6.9,6.1
+R107,Thiruvathipuram Arni Road,MD-505,MDR,CHEYYAR,Tamil Nadu,15 February 2026,0,30.4,30.4,2021_HWAY_189432_1,14.2,4.1,4.45
+R108,Abdullapuram Moranam Road,MD-564,MDR,CHEYYAR,Tamil Nadu,29 August 2025,0,24.25,24.25,2021_HWAY_189415_1,19.6,5.8,5.2
+R109,Arni Devikapuram Road,MD-40,MDR,CHEYYAR,Tamil Nadu,13 May 2026,0,21.2,21.2,2021_HWAY_189095_1,15.8,4.6,3.9
+R110,Thavasi Vallam Road,MD-709,MDR,CHEYYAR,Tamil Nadu,17 February 2026,0,19.4,19.4,2021_HWAY_189330_1,11.4,3.3,2.15
+R111,Cheyyar Anaicut Road,MD-582,MDR,CHEYYAR,Tamil Nadu,29 September 2025,0,19.2,19.2,2021_HWAY_189426_1,13.5,3.9,1.85
+R112,Thellar Mazhayur Road,MD-710,MDR,CHEYYAR,Tamil Nadu,08 June 2025,0,15.278,15.278,2021_HWAY_189342_1,12.1,3.5,2.6
+R113,Vilangadu Road,MD-743,MDR,CHEYYAR,Tamil Nadu,21 January 2026,0,15.2,15.2,2021_HWAY_189355_1,8.4,2.4,1.75
+R114,KozhapalurAvaniyapuram Road,MD-804,MDR,CHEYYAR,Tamil Nadu,14 October 2025,0,9.9,9.9,2021_HWAY_189248_1,13.2,3.8,3.1
+R115,Kalavai Vazhapandal Road,MD-802,MDR,CHEYYAR,Tamil Nadu,03 April 2026,20,24.8,4.8,2021_HWAY_189224_1,11.9,3.2,2.45
+R116,Cheyyar Bypass Road,MD-75,MDR,CHEYYAR,Tamil Nadu,19 December 2025,0,0.6,0.6,2022_HWAY_254812_1,26.5,7.9,4.8
+R117,Banavaram Sendhamangalam Ganapathipuram Road,MD-577,MDR,RANIPET,Tamil Nadu,11 August 2025,0,27.6,27.6,2020_HWAY_174125_1,14.8,4.4,3.65
+R118,Kilveethi Minnal Ameerpet Road,MD-792,MDR,RANIPET,Tamil Nadu,26 March 2026,0,25,25,2020_HWAY_174258_1,12.3,3.6,2.8
+R119,Panapakkam Ganapathipuram Thakkolam Road,MD-793,MDR,RANIPET,Tamil Nadu,12 May 2026,0,22.2,22.2,2020_HWAY_174265_1,16.4,4.8,4.35
+R120,Timiri Kalavai Road,MD-714,MDR,RANIPET,Tamil Nadu,24 September 2025,0,14.2,14.2,2020_HWAY_174108_1,13.9,4.1,3.15
+R121,Walajah Valluvampakkam Maganipattu Road,MD-1206,MDR,RANIPET,Tamil Nadu,07 February 2026,0,12.4,12.4,2021_HWAY_185418_1,11.1,3.3,1.9
+R122,Ayal Anwarthikhanpet Road,MD-794,MDR,RANIPET,Tamil Nadu,18 August 2025,0,11.8,11.8,2020_HWAY_174279_1,9.5013,1.0013,2.25
+R123,Muppaduvetti Kaniyanur Road,MD-795,MDR,RANIPET,Tamil Nadu,29 January 2026,0,11.6,11.6,2020_HWAY_174288_1,14.1,1.42,2.4
+R124,Timiri Kavanur Road,MD-1168,MDR,RANIPET,Tamil Nadu,13 November 2025,0,6.2,6.2,2020_HWAY_174295_1,14.6,4.3,1.85
+R125,Thiruvallur Arakkonam Road,MD-32,MDR,RANIPET,Tamil Nadu,05 April 2026,16.2,20.8,4.6,2020_HWAY_173418_1,32.4,9.8,5.4
+R126,Walajah - Walajah Railway Station Road,MD-555,MDR,RANIPET,Tamil Nadu,21 December 2025,1,4.2,3.2,2020_HWAY_174082_1,4.2,1.3,0.7
+R127,Delhigate Road,MD-798,MDR,RANIPET,Tamil Nadu,09 June 2025,0,2.8,2.8,2020_HWAY_174312_1,5.8,1.8,1.1
+R128,Arakkonam Melpakkam Railway Over Bridge Road,MD-572,MDR,RANIPET,Tamil Nadu,15 February 2026,0,2.4,2.4,2020_HWAY_174088_1,11.9,3.6,4.65
+R129,Puttuthakku Causeway Road,MD-384,MDR,RANIPET,Tamil Nadu,28 September 2025,3.4,5.4,2,2020_HWAY_174092_1,4.4,1.4,1.75
+R130,Vellimalai - Moolakadu - Puthur road,MD-809,MDR,KALLAKURICHI,Tamil Nadu,09 May 2026,0,62.8,62.8,2021_HWAY_192110_1,18.5,5.2,3.8
+R131,Kachirapalayam - Vellimalai road,MD-810,MDR,KALLAKURICHI,Tamil Nadu,21 November 2025,0,32.2,32.2,2021_HWAY_192125_1,16.2,4.6,4.4
+R132,Rishivanthiam-Nemili Road (via) Eraiyur palayam Road,MD-672,MDR,KALLAKURICHI,Tamil Nadu,04 March 2026,0,27.85,27.85,2021_HWAY_192085_1,15.4,4.4,2.95
+R133,Thiyagadurgam - A.Sathanur Road,MD-1209,MDR,KALLAKURICHI,Tamil Nadu,17 August 2025,0,27.8,27.8,2021_HWAY_192245_1,7.25,0.6442,3.15
+R134,M.Kunnathur - Naripalayam Road,MD-620,MDR,KALLAKURICHI,Tamil Nadu,30 January 2026,0,20.3,20.3,2021_HWAY_192060_1,12.8,3.6,2.6
+R135,Thiyagadurgam - Adari Road,MD - 811,MDR,KALLAKURICHI,Tamil Nadu,12 October 2025,0,20.2,20.2,2021_HWAY_192138_1,16.4,4.8,1.8
+R136,Kadampuliyur - Ulundurpet Road (Via) Perperiyankuppam - Sendanadu - Sendamangalam,MD-602,MDR,KALLAKURICHI,Tamil Nadu,26 April 2026,15.8,30.2,14.4,2021_HWAY_192042_1,28.5,8.2,5.25
+R137,Chinnasalem - Kachirapalayam road,MD-1013,MDR,KALLAKURICHI,Tamil Nadu,08 December 2025,0,12.4,12.4,2021_HWAY_192190_1,14.2,4.1,4.1
+R138,Parikkal-Periyasevalai Road,MD-336,MDR,KALLAKURICHI,Tamil Nadu,19 June 2025,0,12.4,12.4,2021_HWAY_192015_1,11.9,3.3,2.25
+R139,Tirukoilur-Manalurpet road,MD-1014,MDR,KALLAKURICHI,Tamil Nadu,03 February 2026,0,11,11,2021_HWAY_192210_1,15.6,4.4,3.6
+R140,Gedilam - Maranodai -Perumpattu - Kalamarudhur road,MD-1210,MDR,KALLAKURICHI,Tamil Nadu,14 September 2025,0,10.111,10.111,2021_HWAY_192265_1,22.1,6.3,4.95
+R141,Veerappar - Gedilam Road,MD-736,MDR,KALLAKURICHI,Tamil Nadu,11 January 2026,0,7.2,7.2,2021_HWAY_192098_1,14.8,4.2,1.4
+R142,Chinnayampettai-Elayankanni Road,MD-813,MDR,KALLAKURICHI,Tamil Nadu,23 September 2025,17.8,20.4,2.6,2021_HWAY_189240_1,17.8,4.6,1.95
+R143,Tirukoilur Railway feeder road,MD-499,MDR,KALLAKURICHI,Tamil Nadu,06 May 2026,0,1,1,2021_HWAY_192032_1,3.1,0.9,0.85
+R144,Ulundurpet Railway Feeder,MD-513,MDR,KALLAKURICHI,Tamil Nadu,18 November 2025,0,0.4,0.4,2021_HWAY_192038_1,3.6,1.1,0.65
+R145,Soorappattu - Ottampattu (via) Athiyur - Ananthapuram road,MD-807,MDR,VILLUPURAM,Tamil Nadu,02 February 2026,0,25.3,25.3,2021_HWAY_192118_1,22.4,6.4,3.4
+R146,Mailam - Karattai Road,MD - 626,MDR,VILLUPURAM,Tamil Nadu,15 August 2025,0,23.1,23.1,2021_HWAY_192065_1,16.9,4.9,2.75
+R147,Alankuppam - Konerikuppam Road (via) Avanipur Road,MD-748,MDR,VILLUPURAM,Tamil Nadu,27 March 2026,0,21,21,2021_HWAY_192092_1,13.5,3.8,1.9
+R148,Brammadesam-Ranganathapuram (via) Kiliyanur road,MD-578,MDR,VILLUPURAM,Tamil Nadu,09 December 2025,0,20.2,20.2,2021_HWAY_192055_1,18.2,5.3,4.2
+R149,Vallam GST Road,MD- 1113,MDR,VILLUPURAM,Tamil Nadu,21 June 2025,0,19.2,19.2,2021_HWAY_192150_1,5.2,1.6,1.35
+R150,Nattarmangalam-Thondur road (via) Melolakkur road,MD-1211,MDR,VILLUPURAM,Tamil Nadu,04 April 2026,0,16.6,16.6,2021_HWAY_192275_1,11.4,3.3,2.8
+R151,Melpattampakkam Panchmadevi Madukarai Road,MD-1114,MDR,VILLUPURAM,Tamil Nadu,16 October 2025,2.4,15.8,13.4,2021_HWAY_192162_1,14.08,7.58,3.1
+R152,Katrampakkam-Keezhpudupattu road,N/A,MDR,VILLUPURAM,Tamil Nadu,29 January 2026,0,13.1,13.1,2021_HWAY_192305_1,7.2,2.1,1.95
+R153,Gingee-Vadapalai road ,MD-1171,MDR,VILLUPURAM,Tamil Nadu,13 September 2025,0,12.8,12.8,2021_HWAY_192182_1,14.6,4.3,2.45
+R154,Perumpakkam-Thiruvakkarai-Kodukkur road ,MD-808,MDR,VILLUPURAM,Tamil Nadu,25 May 2026,0,9.94,9.94,2021_HWAY_192122_1,18.9,5.6,3.6
+R155,Sathambady-Kablampady road ,MD-1170,MDR,VILLUPURAM,Tamil Nadu,07 February 2026,0,9.68,9.68,2021_HWAY_192178_1,11.5,3.4,1.75
+R156,Melmalayanur-Melsevalampady road ( via) Kodukkankuppam road ,MD-730A,MDR,VILLUPURAM,Tamil Nadu,18 October 2025,0,9.6,9.6,2021_HWAY_192088_1,13.4,3.9,2.9
+R157,Moratandy-Bommiyapalayam road,MD-1115,MDR,VILLUPURAM,Tamil Nadu,29 May 2026,0,9,9,2021_HWAY_192168_1,9.2,2.8,1.45
+R158,Govindasamy Arts College Road,MD-119,MDR,VILLUPURAM,Tamil Nadu,11 December 2025,0,4.847,4.847,2021_HWAY_192025_1,3.8,1.1,0.8
+R159,Chunampet Road,MD-80,MDR,VILLUPURAM,Tamil Nadu,24 January 2026,0,3,3,2021_HWAY_192018_1,16.5,4.9,1.1
+R160,Olakkur Railway Feeder Road,MD - 301,MDR,VILLUPURAM,Tamil Nadu,06 September 2025,0,2.4,2.4,2021_HWAY_192035_1,3.4,1,0.65
+R161,Salavathi Road,MD-406,MDR,VILLUPURAM,Tamil Nadu,19 April 2026,0,1.7,1.7,2021_HWAY_192040_1,8.6,2.5,0.95
+R162,Kandamanadi - Railway feeder road,MD-144,MDR,VILLUPURAM,Tamil Nadu,02 November 2025,0,1.7,1.7,2021_HWAY_192028_1,2.8,0.85,0.7
+R163,Panchalam Railway Feeder Road,MD-322,MDR,VILLUPURAM,Tamil Nadu,15 June 2025,0,0.2,0.2,2021_HWAY_192036_1,3.1,0.9,0.55
+R164,Mundiyampakkam Railway feeder road,MD-273,MDR,VILLUPURAM,Tamil Nadu,27 February 2026,0,0.2,0.2,2021_HWAY_192030_1,2.9,0.8,0.6
+R165,Chidambaram-Veeranam Tank Bund road (via) Keelnatham,MD-583,MDR,CUDDALORE,Tamil Nadu,09 August 2025,0,16.8,16.8,2020_HWAY_171124_1,24.5,7.4,5.8
+R166,Puthur road,MD-383,MDR,CUDDALORE,Tamil Nadu,21 March 2026,0,15.4,15.4,2020_HWAY_171092_1,4.2,1.3,1.65
+R167,Perumal Tank Bund road,MD-355,MDR,CUDDALORE,Tamil Nadu,04 December 2025,16.6,31.2,14.6,2020_HWAY_171068_1,7.9,2.3,3.1
+R168,Veeranam Tank Bund road,MD-542,MDR,CUDDALORE,Tamil Nadu,16 May 2026,0,14.4,14.4,2020_HWAY_171115_1,18.4,5.4,4.45
+R169,Kullanchavady-Kattugudalore road,MD-199,MDR,CUDDALORE,Tamil Nadu,28 September 2025,0,14,14,2020_HWAY_171025_1,14.6,4.3,5.2
+R170,Periyakattusagai-SilambinathanpettaiKadampuliyur road,MD-1220,MDR,CUDDALORE,Tamil Nadu,10 January 2026,0,13.8,13.8,2021_HWAY_194456_1,22.3,6.5,2.85
+R171,Chidambaram-Thandavarayansozhaganpettai road,MD-1116,MDR,CUDDALORE,Tamil Nadu,23 April 2026,0,13.8,13.8,2020_HWAY_171210_1,11.8,3.4,1.9
+R172,Keerapalayam-Sethiyathope road,MD-161,MDR,CUDDALORE,Tamil Nadu,05 November 2025,0,13.6,13.6,2020_HWAY_171040_1,16.2,4.8,3.6
+R173,Mannargudy-Eyyalur road,MD-245,MDR,CUDDALORE,Tamil Nadu,14 February 2026,0,10.2,10.2,2020_HWAY_171052_1,15.5,4.4,2.4
+R174,Kumaragudy-Nachiyarpettai road,MD-817,MDR,CUDDALORE,Tamil Nadu,26 September 2025,0,10,10,2021_HWAY_194215_1,6,2.141,1.75
+R175,Kumaratchi-Puliyangudi road,MD-201,MDR,CUDDALORE,Tamil Nadu,08 May 2026,0,7.4,7.4,2020_HWAY_171032_1,12.8,3.8,3.15
+R176,Karunkuzhi-Mettukuppam road,MD-1172,MDR,CUDDALORE,Tamil Nadu,19 November 2025,0,7.15,7.15,2021_HWAY_194178_1,9.4,2.9,1.4
+R177,Puduchathiram-Portonovo road,MD-662,MDR,CUDDALORE,Tamil Nadu,03 February 2026,26.6,33.15,6.55,2020_HWAY_171138_1,14.2,4.3,2.1
+R178,Chidambaram-Sivapuri-Kavarapattu road,MD-1215,MDR,CUDDALORE,Tamil Nadu,16 August 2025,0,6.4,6.4,2021_HWAY_194380_1,11.6,3.4,2.65
+R179,Kullanchavady cross road,MD-200,MDR,CUDDALORE,Tamil Nadu,28 March 2026,0,6.31,6.31,2020_HWAY_171028_1,3.5,1.1,0.9
+R180,Sitharasur road,MD-585,MDR,CUDDALORE,Tamil Nadu,10 December 2025,0,4.9,4.9,2020_HWAY_171128_1,7.1,2.1,1.85
+R181,Arungunam road,MD-44,MDR,CUDDALORE,Tamil Nadu,22 June 2025,0,4.4,4.4,2020_HWAY_171018_1,8.6,2.5,2.2
+R182,Kallathur-Pappakudi-Kattumannarkoil road,MD-1216,MDR,CUDDALORE,Tamil Nadu,05 April 2026,16.2,20.6,4.4,2021_HWAY_194395_1,22.4,6.8,4.3
+R183,Beach road,MD-1016,MDR,CUDDALORE,Tamil Nadu,12 January 2026,0,4.3,4.3,2020_HWAY_171202_1,4.6,1.4,1.15
+R184,Killai road,MD-162,MDR,CUDDALORE,Tamil Nadu,25 September 2025,7.2,11.4,4.2,2020_HWAY_171045_1,9.2,2.7,0.95
+R185,Kammiyampettai-Gundusalai road (via) Semmandalam,MD-1017,MDR,CUDDALORE,Tamil Nadu,07 May 2026,0,4.18,4.18,2020_HWAY_171208_1,8.5,2.5,1.6
+R186,Melpattampakkam - Panjamadevi road (via) Madukara,MD-1114,MDR,CUDDALORE,Tamil Nadu,18 November 2025,0,2.4,2.4,2021_HWAY_192162_1,14.8,4.4,3.1
+R187,Karaikadu cross road,MD-147,MDR,CUDDALORE,Tamil Nadu,01 February 2026,0,1.4,1.4,2020_HWAY_171038_1,3.1,0.9,0.85
+R188,Puduchathiram Railway feeder road,MD-374,MDR,CUDDALORE,Tamil Nadu,14 August 2025,0,1,1,2020_HWAY_171075_1,2.8,0.85,0.5
+R189,Alapakkam railway feeder road,MD-11,MDR,CUDDALORE,Tamil Nadu,26 March 2026,0,0.39,0.39,2020_HWAY_171012_1,3.2,0.95,0.6
+R190,Alapakkam railway feeder road,MD-11,MDR,CUDDALORE,Tamil Nadu,09 December 2025,0,0.425,0.425,2020_HWAY_171012_1,3.2,0.95,0.6
+R191,Vallampadugai Railway feeder road,MD-533,MDR,CUDDALORE,Tamil Nadu,09 December 2025,0,0.4,0.4,2020_HWAY_171108_1,2.9,0.85,0.45
+R192,Melpattampakkam railway feeder road,MD-263,MDR,CUDDALORE,Tamil Nadu,20 June 2025,0,0.2,0.2,2021_HWAY_194030_1,3.1,0.9,0.7
+R193,Varakkalpattu railway feeder road,MD-536,MDR,CUDDALORE,Tamil Nadu,03 April 2026,0,0.1,0.1,2020_HWAY_171112_1,2.7,0.8,0.55
+R194,Sendurai - Udayarpalayam - Anaikarai road,MD-684,MDR,ARIYALUR,Tamil Nadu,16 October 2025,0,38.8,38.8,2020_HWAY_170114_1,34.6,10.8,5.9
+R195,Vilangudi - Annakaranpettai road [Via] T.Palur,MD-744,MDR,ARIYALUR,Tamil Nadu,11 February 2026,0,25.8,25.8,2020_HWAY_170155_1,18.4,5.6,3.15
+R196,Keelapalur - Pullambadi Road [Via] Thirumalapadi,MD-608,MDR,ARIYALUR,Tamil Nadu,24 September 2025,0,22.6,22.6,2020_HWAY_170098_1,26.8,8.2,4.8
+R197,Thirumanur - Elakkurichi - Thoothur road,MD-1122,MDR,ARIYALUR,Tamil Nadu,06 May 2026,0,21.49,21.49,2021_HWAY_196112_1,21.5,6.4,2.4
+R198,Ariyalur - Ayyanathur - kudisal - thelur road,MD-1223,MDR,ARIYALUR,Tamil Nadu,18 November 2025,0,21.2,21.2,2021_HWAY_196245_1,14.2,4.3,3.65
+R199,Kallathur - Pappakudi - Kattumannarkoil road,MD-1216,MDR,ARIYALUR,Tamil Nadu,02 February 2026,0,16.2,16.2,2021_HWAY_194395_1,22.4,6.8,4.3
+R200,Sendurai - Anganur - Agaramseegur - Thirumandurai Road,MD-1121,MDR,ARIYALUR,Tamil Nadu,15 August 2025,0,15.6,15.6,2021_HWAY_196110_1,28.1,8.9,3.85
+R201,Andimadam - Devanur - Variyankaval road,MD-1221,MDR,ARIYALUR,Tamil Nadu,27 March 2026,0,15.2,15.2,2021_HWAY_196210_1,18,7.4261,2.15
+R202,Andimadam - Srimushnam road,MD-749,MDR,ARIYALUR,Tamil Nadu,09 December 2025,0,4.8,4.8,2020_HWAY_170162_1,16.4,4.9,1.9
+R203,Thirumanur - Palayapadi road,MD-1222,MDR,ARIYALUR,Tamil Nadu,21 June 2025,0,4.8,4.8,2021_HWAY_196233_1,13.8,4.1,1.65
+R204,Ponparappy Bye Pass road,MD-367,MDR,ARIYALUR,Tamil Nadu,04 April 2026,15.7,16.3,0.6,2022_HWAY_234812_1,4.5,1.3,2.4
+R205,Ponparappy Bye Pass road,MD-367,MDR,ARIYALUR,Tamil Nadu,04 April 2026,16.7,18.2,1.5,2022_HWAY_234812_1,4.5,1.3,2.4
+R206,Sendurai-Anganur-Agaram Seegore - Thirumandurai road,MD-1121,MDR,PERAMBALUR,Tamil Nadu,16 October 2025,15.6,36.4,20.8,2021_HWAY_196110_1,28.1,8.9,3.85
+R207,Veppanthattai - Neikuppai - G.S.T. Road,MD-820,MDR,PERAMBALUR,Tamil Nadu,13 February 2026,0,20.8,20.8,2021_HWAY_198118_1,15,6.7213,4.1
+R208,Krishnapuram-Periavadakarai-PillangulamChinnasalem (via) Koogaiyur road,MD-1229,MDR,PERAMBALUR,Tamil Nadu,27 September 2025,0,20.4,20.4,2021_HWAY_198245_1,19.4,6.1,3.6
+R209,Krishnapuram - Poolambadi - Kallapatty road,MD-819,MDR,PERAMBALUR,Tamil Nadu,09 May 2026,0,18.8,18.8,2021_HWAY_198112_1,16.8,5.2,2.35
+R210,Siruvachur-Ayyalur-Sathanur-Illupaikudi road,MD-1228,MDR,PERAMBALUR,Tamil Nadu,20 November 2025,0,15.08,15.08,2021_HWAY_198210_1,15.5,4.8,1.9
+R211,Thuraiyur - Perambalur road to Ladapuram-Melapuliyur-Esanai road,MD-1224,MDR,PERAMBALUR,Tamil Nadu,04 February 2026,0,14.4,14.4,2021_HWAY_198195_1,14.2,4.4,2.15
+R212,Mannachanallur - Edumalai - Elanthalaipatty road,MD-244,MDR,PERAMBALUR,Tamil Nadu,17 August 2025,16,29.8,13.8,2021_HWAY_198150_1,22.6,7.1,5.6
+R213,Palaiyur - Anukkur - Valikandapuram road,MD-1227,MDR,PERAMBALUR,Tamil Nadu,29 March 2026,0,12,12,2021_HWAY_198188_1,13.4,4.1,2.85
+R214,Nannai - Labbaikudikadu road ,MD-1226,MDR,PERAMBALUR,Tamil Nadu,11 December 2025,0,8.82,8.82,2021_HWAY_198165_1,11.8,3.6,2.1
+R215,Chettikulam - Perahambi road ,MD-1225,MDR,PERAMBALUR,Tamil Nadu,23 June 2025,0,5.4,5.4,2021_HWAY_198135_1,12.5,3.9,3.15
+R216,Thuraimangalam Bungalow road. ,MD-491,MDR,PERAMBALUR,Tamil Nadu,06 April 2026,0,1.4,1.4,2021_HWAY_198082_1,4.1,1.2,0.9
+R217,"Thittagudy-Sirupakkam road (via) Avatti, Ma.Pudaiyur", MD-814,MDR,VRIDHACHALAM,Tamil Nadu,18 October 2025,0,31.6,31.6,2021_HWAY_194124_1,7.1,0.89,4.4
+R218,Eraiyur - Kandappankurichi - Nallur road ,MD-1118,MDR,VRIDHACHALAM,Tamil Nadu,31 January 2026,0,24.5,24.5,2021_HWAY_194240_1,14.8,4.6,3.65
+R219,Veppur-Eraiyur road (Via) Tholar ,MD-741,MDR,VRIDHACHALAM,Tamil Nadu,14 September 2025,0,21.6,21.6,2021_HWAY_194095_1,21.4,6.8,2.25
+R220,"Neyveli Limit -Panikankuppam Road (via) Muthandikuppam, Perperiyankuppam.",N/A,MDR,VRIDHACHALAM,Tamil Nadu,12 February 2026,0,21.2,21.2,2021_HWAY_194165_1,19.6,6.2,4.85
+R221,Vridhachalam-Kattugudalore road ,MD-815,MDR,VRIDHACHALAM,Tamil Nadu,25 September 2025,0,19.6,19.6,2021_HWAY_194112_1,16.2,4.9,3.1
+R222,Kattumailur-Adhiyur (via) Maligaimedu road ,MD-1218,MDR,VRIDHACHALAM,Tamil Nadu,08 May 2026,0,17.55,17.55,2021_HWAY_194410_1,11.4,3.3,2.4
+R223,Tholudur - Koogaiyur road (via) Lakshmanapuram ,MD-219,MDR,VRIDHACHALAM,Tamil Nadu,19 November 2025,0,17.2,17.2,2021_HWAY_194042_1,15.5,4.8,5.2
+R224,Kadampuliyur –Ulundurpettai Road (via) Perperiyankuppam - Sendamangalam , MD-602,MDR,VRIDHACHALAM,Tamil Nadu,03 February 2026,0,15.8,15.8,2021_HWAY_192042_1,28.5,8.2,5.25
+R225,Pudupettai – Oraiyur – Karumbur – Paithampadi Road ,MD-119,MDR,VRIDHACHALAM,Tamil Nadu,16 August 2025,0,15.7,15.7,2021_HWAY_192025_1,18.9,5.7,0.8
+R226,Sethiyathope-Kammapuram road (via) Veeramudayanatham ,MD-1217,MDR,VRIDHACHALAM,Tamil Nadu,28 March 2026,0,15.2,15.2,2021_HWAY_194390_1,13.6,4.1,3.95
+R227,Nemam - Devangudy road ,MD-1117,MDR,VRIDHACHALAM,Tamil Nadu,10 December 2025,0,13.6,13.6,2021_HWAY_194210_1,12.5,3.8,1.65
+R228,Kullachavadi - Kattugudalore Road ,MD-199,MDR,VRIDHACHALAM,Tamil Nadu,22 June 2025,14,26.475,12.475,2020_HWAY_171025_1,14.6,4.3,5.2
+R229,Vikkiravandi – Kumbakonam – Thanjavour Road to S.PuthuPalayam (via) Sathipattu Road,N/A,MDR,VRIDHACHALAM,Tamil Nadu,05 April 2026,0,9.5,9.5,2021_HWAY_194198_1,9.8,2.9,2.15
+R230,Periyakattusagai-Silampinathanpettai-Kadampuliyur road,N/A,MDR,VRIDHACHALAM,Tamil Nadu,17 October 2025,13.8,23.2,9.4,2021_HWAY_194456_1,22.3,6.5,2.85
+R231,Neyveli-Valayamadevi road ,MD-295,MDR,VRIDHACHALAM,Tamil Nadu,30 January 2026,0,8.6,8.6,2020_HWAY_171058_1,16.4,4.9,4.6
+R232,Mudhanai road ,MD-272,MDR,VRIDHACHALAM,Tamil Nadu,14 September 2025,0,8,8,2020_HWAY_171048_1,8.5,2.4,3.1
+R233,"Pattampakkam - Rajapalayam (via) Maligaimedu
+",MD-1015,MDR,VRIDHACHALAM,Tamil Nadu,27 May 2026,0,7.63,7.63,2020_HWAY_171201_1,13.2,3.9,1.95
+R234,Memathur channel bund road,MD-267,MDR,VRIDHACHALAM,Tamil Nadu,09 January 2026,0,6.2,6.2,2020_HWAY_171042_1,7.6,2.2,1.4
+R235,Thazhanallur Railway feeder road ,MD-454,MDR,VRIDHACHALAM,Tamil Nadu,10 February 2026,0,4.8,4.8,2021_HWAY_194038_1,3.1,0.9,0.75
+R236,Thiyagadurgam-Asakalathur-Adari road ,MD-811,MDR,VRIDHACHALAM,Tamil Nadu,23 September 2025,20.2,24.2,4,2021_HWAY_192138_1,13.74,6.54,1.8
+R237,Vridhachalam railway feeder road,MD-554,MDR,VRIDHACHALAM,Tamil Nadu,05 May 2026,0,0.5,0.5,2021_HWAY_194032_1,3.4,0.95,0.9
+R238,Vridhachalam Good shed road,MD-553,MDR,VRIDHACHALAM,Tamil Nadu,17 November 2025,0,0.5,0.5,2021_HWAY_194028_1,2.9,0.85,0.65
+R239,Vridhachalam East and North Fort street ,MD-552,MDR,VRIDHACHALAM,Tamil Nadu,31 January 2026,0,0.4,0.4,2021_HWAY_194025_1,4.1,1.2,0.85
+R240,Musiri - Thathaiyangarpettai - Murugur- Eragudy Road,MD-277,MDR,TIRUCHIRAPPALLI,Tamil Nadu,14 August 2025,0,40.805,40.805,2020_HWAY_168425_1,24.8,7.9,4.6
+R241,Vaiyampatty - Konnaiyur Road ,MD 729,MDR,TIRUCHIRAPPALLI,Tamil Nadu,26 March 2026,0,35.2,35.2,2020_HWAY_168512_1,19.5,6.1,5.2
+R242,Poovalur - Siruganur - Thirupattur Road,MD 371,MDR,TIRUCHIRAPPALLI,Tamil Nadu,08 December 2025,0,25.6,25.6,2020_HWAY_168495_1,16.2,4.8,3.85
+R243,Musiri - Pulivalam Road ,MD 276,MDR,TIRUCHIRAPPALLI,Tamil Nadu,20 June 2025,0,24,24,2020_HWAY_168418_1,15.8,4.6,4.15
+R244,Pullambady - Sirugalapur - Padalur Road,MD-380,MDR,TIRUCHIRAPPALLI,Tamil Nadu,03 April 2026,0,23.6,23.6,2020_HWAY_168503_1,18.4,5.4,2.9
+R245,Samayapuram - Keelakannukulam (via) Manachanallur - Thirupanjali Road ,MD-823,MDR,TIRUCHIRAPPALLI,Tamil Nadu,15 October 2025,0,18.6,18.6,2021_HWAY_191112_1,22.6,6.8,3.4
+R246,Tiruchirapalli - Kulumani - Jeeyapuram Road,MD 461,MDR,TIRUCHIRAPPALLI,Tamil Nadu,28 January 2026,0,16.4,16.4,2020_HWAY_168536_1,26.4,8.1,2.1
+R247,Manachanallur - Edumalai - Elanthalaipatty Road,MD 244,MDR,TIRUCHIRAPPALLI,Tamil Nadu,11 September 2025,0,16,16,2021_HWAY_198150_1,22.6,7.1,5.6
+R248,Manapparai - Gujiliyamparai Road ,MD-628,MDR,TIRUCHIRAPPALLI,Tamil Nadu,24 May 2026,0,15.4,15.4,2020_HWAY_168481_1,31.5,9.4,4.75
+R249,Thiruverambur - Suriyur Road,MD-824,MDR,TIRUCHIRAPPALLI,Tamil Nadu,13 February 2026,0,15.4,15.4,2021_HWAY_191125_1,14.8,4.3,2.3
+R250,Eragudy - Alathudaiyanpatty - Puliyancholai Road,MD-1123,MDR,TIRUCHIRAPPALLI,Tamil Nadu,26 September 2025,0,14.46,14.46,2021_HWAY_191190_1,19.2,5.8,1.95
+R251,Cauvery left Bank Road ,MD-822,MDR,TIRUCHIRAPPALLI,Tamil Nadu,08 May 2026,0,14.1,14.1,2021_HWAY_191108_1,11.4,3.4,2.85
+R252,Siruthaiyur - Sengaraiyur Road (Via) Anbil ,MD-1125,MDR,TIRUCHIRAPPALLI,Tamil Nadu,20 November 2025,0,13.6,13.6,2021_HWAY_191245_1,13.6,4.1,3.15
+R253,Thottiyam - Kattuputhur Road ,MD-487,MDR,TIRUCHIRAPPALLI,Tamil Nadu,02 February 2026,0,13.8,13.8,2020_HWAY_168580_1,15.5,4.6,2.4
+R254,Kovilpatty - Manapparai road ,MD-177,MDR,TIRUCHIRAPPALLI,Tamil Nadu,16 August 2025,0,12.2,12.2,2020_HWAY_168432_1,24.2,7.3,4.1
+R255,Keelapalur - Pullambady (Via) Thirumalapady Road ,MD-608,MDR,TIRUCHIRAPPALLI,Tamil Nadu,29 March 2026,22.6,34,11.4,2020_HWAY_170098_1,26.8,8.2,4.8
+R256,"Konar chathiram-Kulumani Road via Pandamangalam , Perur ",MD-461A,MDR,TIRUCHIRAPPALLI,Tamil Nadu,11 December 2025,0,11.3,11.3,2020_HWAY_168541_1,14.6,4.3,1.95
+R257,Mandapam -Pervalappur (via)Kumulur - Kannakudy Road ,MD-1126,MDR,TIRUCHIRAPPALLI,Tamil Nadu,23 June 2025,0,10.6,10.6,2021_HWAY_191260_1,18.9,5.6,2.6
+R258,Seepalaputhur - Kattuputhur - Namakkal Road ,MD-416,MDR,TIRUCHIRAPPALLI,Tamil Nadu,05 April 2026,0,10.8,10.8,2020_HWAY_168518_1,13.4,3.9,3.75
+R259,Thuvarankurichy - Kosikurichy Road ,MD-899,MDR,TIRUCHIRAPPALLI,Tamil Nadu,18 October 2025,0,10,10,2021_HWAY_191312_1,11.2,3.3,1.4
+R260,Kajamalai - Mullipatty Road Km ,MD-1124,MDR,TIRUCHIRAPPALLI,Tamil Nadu,31 January 2026,0,10,10,2021_HWAY_191210_1,16.5,4.9,0.95
+R261,Sannasipatty -Fathima Nagar road (via) Sethurapatty ,MD-1192,MDR,TIRUCHIRAPPALLI,Tamil Nadu,14 September 2025,0,9.6,9.6,2021_HWAY_191280_1,12.8,3.8,3.1
+R262,Allithurai - Thogaimalai Road ,MD-12,MDR,TIRUCHIRAPPALLI,Tamil Nadu,27 May 2026,5.4,14.4,9,2020_HWAY_168012_1,21.4,6.4,6.4
+R263,CauverySouth Bank Road ,MD-821,MDR,TIRUCHIRAPPALLI,Tamil Nadu,11 February 2026,0,8.525,8.525,2021_HWAY_191095_1,9.6,2.8,4.25
+R264,Kulathur - Viralimalai Road ,MD-197,MDR,TIRUCHIRAPPALLI,Tamil Nadu,24 September 2025,0,6,6,2020_HWAY_168430_1,28.6,8.5,3.9
+R265,Road Branching at Km 6/8 of NH 210 to Annanagar Road ,MD-1164,MDR,TIRUCHIRAPPALLI,Tamil Nadu,06 May 2026,0,4.7,4.7,2020_HWAY_175012_1,5.2,1.6,2.45
+R266,Thiruverambur - Grandanaicut Road ,MD-306,MDR,TIRUCHIRAPPALLI,Tamil Nadu,18 November 2025,0,4.6,4.6,2020_HWAY_168456_1,14.4,4.2,1.65
+R267,Musiri- Byepass Road ,MD-1004,MDR,TIRUCHIRAPPALLI,Tamil Nadu,31 January 2026,0,2.85,2.85,2022_HWAY_274812_1,9.8,2.9,3.4
+R268,Tiruchirapalli - Chithambaram Byepass Road ,MD-460,MDR,TIRUCHIRAPPALLI,Tamil Nadu,14 August 2025,0,1.8,1.8,2020_HWAY_168525_1,32.4,9.7,5.1
+R269,Parisalthurai Road ,MD-337,MDR,TIRUCHIRAPPALLI,Tamil Nadu,27 March 2026,0,0.7,0.7,2020_HWAY_168468_1,4.1,1.2,0.8
+R270,Pudukkottai - Manapparai Road,MD-665,MDR,PUDUKOTTAI,Tamil Nadu,09 December 2025,0,48.2,48.2,2020_HWAY_164415_1,36.5,11.2,5.75
+R271,Pudukkottai - Embal Road,MD-663,MDR,PUDUKOTTAI,Tamil Nadu,21 June 2025,0,46,46,2020_HWAY_164410_1,24.8,7.4,4.35
+R272,Pudukkottai - Killukkottai - Manayerippatti Road,MD-664,MDR,PUDUKOTTAI,Tamil Nadu,04 April 2026,0,35,35,2020_HWAY_164412_1,5.11,4.1592,3.8
+R273,Illuppur - Mathur Road,MD-826,MDR,PUDUKOTTAI,Tamil Nadu,16 October 2025,0,29.2,29.2,2021_HWAY_190115_1,22.4,6.8,2.9
+R274,Thanjavur - Karambakkudi - Seethambalpuram Road,MD-705,MDR,PUDUKOTTAI,Tamil Nadu,29 January 2026,14,39.8,25.8,2020_HWAY_164505_1,34.6,10.4,5.15
+R275,Pudukkottai - Pattukkottai Road,MD-372,MDR,PUDUKOTTAI,Tamil Nadu,12 September 2025,19.33,44.8,25.47,2020_HWAY_164392_1,28.9,8.7,6.2
+R276,Viralimalai - Kalamavur Road,MD-745,MDR,PUDUKOTTAI,Tamil Nadu,25 May 2026,0,25.4,25.4,2020_HWAY_174295_1,16.2,4.9,1.85
+R277,Vadavalam - Puduppatti Road,MD-525,MDR,PUDUKOTTAI,Tamil Nadu,08 January 2026,8.8,33.6,24.8,2020_HWAY_164285_1,9.88,2.3526,2.15
+R278,Keeranur - Adhanakkottai Road,MD-825,MDR,PUDUKOTTAI,Tamil Nadu,20 March 2026,0,24.2,24.2,2021_HWAY_190110_1,23.5,7.1,1.6
+R279,Perumanadu - Konnaiyur Road,MD-827,MDR,PUDUKOTTAI,Tamil Nadu,03 November 2025,0,20.7,20.7,2021_HWAY_190122_1,14.8,4.4,2.45
+R280,Pattukkottai - Peravurani - Aranthangi Road,MD-653,MDR,PUDUKOTTAI,Tamil Nadu,15 February 2026,24.2,44.2,20,2020_HWAY_164402_1,38.2,11.6,6.85
+R281,Pudukkottai - Manippallam - Alangudi Road,MD-1262,MDR,PUDUKOTTAI,Tamil Nadu,28 September 2025,0,19.8,19.8,2021_HWAY_190410_1,19.4,5.9,3.15
+R282,Adhanakkottai - Alangudi Road,MD-1264,MDR,PUDUKOTTAI,Tamil Nadu,10 April 2026,0,19.4,19.4,2021_HWAY_190432_1,16.6,4.9,2.4
+R283,Avudayarkoil - Kottaippattinam Road,MD-1267,MDR,PUDUKOTTAI,Tamil Nadu,23 October 2025,0,18.6,18.6,2021_HWAY_190465_1,21.2,6.4,4.65
+R284,Kalagam - Avudayarkoil Road,MD-603,MDR,PUDUKOTTAI,Tamil Nadu,05 June 2025,17.6,36.2,18.6,2020_HWAY_164426_1,27.5,8.3,3.95
+R285,Arimalam - Thirumayam Road,MD-1005,MDR,PUDUKOTTAI,Tamil Nadu,17 January 2026,0,17.8,17.8,2020_HWAY_164585_1,13.9,4.1,2.1
+R286,Arasamalai - Palakkurichi Road,MD-827A,MDR,PUDUKOTTAI,Tamil Nadu,14 February 2026,0,16.4,16.4,2021_HWAY_190135_1,11.6,3.5,1.75
+R287,Alangudi - Arimalam Road,MD-1263,MDR,PUDUKOTTAI,Tamil Nadu,27 September 2025,0,16,16,2021_HWAY_190418_1,18.4,5.4,3.4
+R288,Manamelkudi - Perumaruthur Road,MD-1265,MDR,PUDUKOTTAI,Tamil Nadu,09 May 2026,0,16,16,2021_HWAY_190442_1,14.2,4.3,2.85
+R289,Thirukkattuppalli - Sengipatti - Pattukkottai Road - Ambukkoil Road,MD-1266,MDR,PUDUKOTTAI,Tamil Nadu,21 November 2025,0,15.6,15.6,2021_HWAY_190456_1,26.5,7.9,4.1
+R290,Vaiyampatti - Konnaiyur Road,MD-729,MDR,PUDUKOTTAI,Tamil Nadu,03 February 2026,35.2,48.5,13.3,2020_HWAY_168512_1,19.5,6.1,5.2
+R291,Kunnandarkoil - Sengippatti Road,MD-833,MDR,PUDUKOTTAI,Tamil Nadu,17 August 2025,0,12.8,12.8,2021_HWAY_190145_1,15.8,4.7,3.65
+R292,Ponnamaravathy - Venthanpatty - Thirukkalambur Road,MD-1196,MDR,PUDUKOTTAI,Tamil Nadu,30 March 2026,0,12.7,12.7,2021_HWAY_190280_1,13.4,3.9,2.8
+R293,Thirumayam - Virachilai - Panayappatti Road,MD-1007,MDR,PUDUKOTTAI,Tamil Nadu,12 December 2025,0,12,12,2020_HWAY_164598_1,16.9,5.1,2.15
+R294,Veliyathur - Okkur Road,MD-1193,MDR,PUDUKOTTAI,Tamil Nadu,24 June 2025,0,10.6,10.6,2021_HWAY_190215_1,11.2,3.3,1.9
+R295,Avudayarkoil - Okkur Road,MD-1194,MDR,PUDUKOTTAI,Tamil Nadu,06 April 2026,0,8.11,8.11,2021_HWAY_190230_1,14.8,4.4,3.1
+R296,Avudayarkoil - Perumaruthur Road,MD-1195,MDR,PUDUKOTTAI,Tamil Nadu,19 October 2025,0,8,8,2021_HWAY_190245_1,16.2,4.9,2.45
+R297,Pudukkottai - Southkulathur Road,MD-375,MDR,PUDUKOTTAI,Tamil Nadu,01 February 2026,42.8,50.8,8,2020_HWAY_164398_1,21.4,6.4,4.1
+R298,Vallampudur - Thatchangurichi Road (via Nattani),MD-1197,MDR,PUDUKOTTAI,Tamil Nadu,15 September 2025,0,7.4,7.4,2021_HWAY_190310_1,13.5,3.9,2.25
+R299,Karaiyur - Melathaniyam Road,MD-1198,MDR,PUDUKOTTAI,Tamil Nadu,28 May 2026,0,7.1,7.1,2021_HWAY_190335_1,11.9,3.5,1.65
+R300,Puzhuthippatti - Ponnamaravathy Road,MD-914,MDR,PUDUKOTTAI,Tamil Nadu,10 January 2026,16.7,23.2,6.5,2021_HWAY_190190_1,15.6,4.7,3.4
+R301,Puduppatti - Nedungudi Road,MD-377,MDR,PUDUKOTTAI,Tamil Nadu,22 March 2026,34,38.2,4.2,2020_HWAY_164405_1,9.4,2.8,1.95
+R302,Thoghur - Ayyampettai Road,MD-782,MDR,THANJAVUR,Tamil Nadu,05 November 2025,0,42.2,42.2,2020_HWAY_166418_1,18.8,5.6,3.6
+R303,Thanjavur - Karambakudy - Seethambalpuram Road,MD-705,MDR,THANJAVUR,Tamil Nadu,18 February 2026,0,14,14,2020_HWAY_164505_1,34.6,10.4,5.15
+R304,Thanjavur - Karambakudy - Seethambalpuram Road,MD-705,MDR,THANJAVUR,Tamil Nadu,13 February 2026,39.8,56.6,16.8,2020_HWAY_164505_1,34.6,10.4,5.15
+R305,Mannargudy - Orathanadu - Thiruvonam Road,MD-248,MDR,THANJAVUR,Tamil Nadu,26 September 2025,12.8,43.6,30.8,2020_HWAY_166210_1,28.5,8.3,4.8
+R306,Thanjavur - Periyakangeyanpatti Road,MD-706,MDR,THANJAVUR,Tamil Nadu,08 May 2026,0,26.6,26.6,2020_HWAY_166432_1,14.2,4.1,2.45
+R307,Pappanadu - Madhukkur - Perugavalnthan Road,MD-778,MDR,THANJAVUR,Tamil Nadu,20 November 2025,0,24.8,24.8,2020_HWAY_166512_1,19.4,5.9,3.1
+R308,Pattukkottai - Peravurani - Aranthangi Road,MD-653,MDR,THANJAVUR,Tamil Nadu,02 February 2026,0,24.2,24.2,2020_HWAY_164402_1,38.2,11.6,6.85
+R309,Thittai - Dharasuram Road,MD-720,MDR,THANJAVUR,Tamil Nadu,16 August 2025,0,16.6,16.6,2020_HWAY_166525_1,16.8,4.9,4.15
+R310,Thittai - Dharasuram Road,MD-720,MDR,THANJAVUR,Tamil Nadu,16 August 2025,25.4,31,5.6,2020_HWAY_166525_1,16.8,4.9,4.15
+R311,Vallam - Orathanadu Road,MD-532,MDR,THANJAVUR,Tamil Nadu,29 March 2026,0,21.6,21.6,2020_HWAY_166395_1,18.9,5.6,3.85
+R312,Kalagam - Avudaiyarkovil Road,MD-603,MDR,THANJAVUR,Tamil Nadu,11 December 2025,0,17.6,17.6,2020_HWAY_164426_1,27.5,8.3,3.95
+R313,Pattukkottai - Muthupettai Road,MD-343,MDR,THANJAVUR,Tamil Nadu,23 June 2025,46.2,63.4,17.2,2020_HWAY_166150_1,16.4,4.9,4.2
+R314,Saliamangalam - Papanasam Road,MD-407,MDR,THANJAVUR,Tamil Nadu,05 April 2026,0,16.4,16.4,2020_HWAY_166195_1,14.2,4.1,2.65
+R315,Thiruchitrambalam - Andikkadu Road,MD-828,MDR,THANJAVUR,Tamil Nadu,18 October 2025,0,14.277,14.277,2021_HWAY_193112_1,11.8,3.5,1.9
+R316,Pattukkottai - Adirampattinam Road,MD-342,MDR,THANJAVUR,Tamil Nadu,31 January 2026,47.2,58.8,11.6,2020_HWAY_166142_1,12.6,3.8,3.1
+R317,Madhukkur - Pattukkottai Road,MD-226,MDR,THANJAVUR,Tamil Nadu,14 September 2025,59,70,11,2020_HWAY_166092_1,9.8,2.9,2.15
+R318,Thiruppananthal - Aduthurai Road,MD-472,MDR,THANJAVUR,Tamil Nadu,27 May 2026,0.2,10.4,10.2,2020_HWAY_166245_1,13.5,4,3.4
+R319,Orathanadu - Neivasal Road,MD-834,MDR,THANJAVUR,Tamil Nadu,09 January 2026,0,10,10,2021_HWAY_193135_1,11.2,3.3,1.45
+R320,Sundaraperumal Kovil - Maruthanallur Road,MD-695,MDR,THANJAVUR,Tamil Nadu,21 March 2026,0,9.8,9.8,2020_HWAY_166412_1,8.9,2.6,2.8
+R321,Thiruvidaimarudur - Thirunageswaram - Thirunaraiyur Road,MD-831,MDR,THANJAVUR,Tamil Nadu,04 November 2025,0,9.2,9.2,2021_HWAY_193118_1,15.4,4.6,2.15
+R322,Thiruchitrambalam - Mavadukuruchi Road,MD-829,MDR,THANJAVUR,Tamil Nadu,17 February 2026,0,8.8,8.8,2021_HWAY_193110_1,10.6,3.1,1.65
+R323,Kumbakonam - Kollidakkarai Road,MD-205,MDR,THANJAVUR,Tamil Nadu,12 February 2026,0,8.8,8.8,2020_HWAY_166035_1,7.8,2.3,3.9
+R324,Kathiramangalam - Pandanallur Road,MD-830,MDR,THANJAVUR,Tamil Nadu,25 September 2025,0,8.2,8.2,2021_HWAY_193115_1,11.4,3.4,1.8
+R325,Pattukkottai Town By Pass Road,N/A,MDR,THANJAVUR,Tamil Nadu,08 May 2026,0,7.4,7.4,2023_HWAY_354812_1,24.5,7.2,5.4
+R326,Ammapettai - Vaduvur Road,MD-21,MDR,THANJAVUR,Tamil Nadu,20 November 2025,0,7,7,2020_HWAY_166022_1,16.2,4.8,2.95
+R327,Pudukkottai - Killukkottai - Maneyeripatti Road,MD-664,MDR,THANJAVUR,Tamil Nadu,02 February 2026,35,41.7,6.7,2020_HWAY_164412_1,22.8,6.9,3.8
+R328,Tranqubar - Manganallur - Aduthurai Road,MD-708,MDR,THANJAVUR,Tamil Nadu,16 August 2025,36.6,42.2,5.6,2020_HWAY_166468_1,31.6,9.5,4.35
+R329,Kunnandarkovil - Sengipatti Road,MD-833,MDR,THANJAVUR,Tamil Nadu,29 March 2026,12.8,18.2,5.4,2021_HWAY_190145_1,15.8,4.7,3.65
+R330,Maruthanallur - Annalagraharam Road,MD-832,MDR,THANJAVUR,Tamil Nadu,11 December 2025,0,5.2,5.2,2021_HWAY_193122_1,9.4,2.8,1.2
+R331,Thiruverambur - Grand Anaicut Road,MD-306,MDR,THANJAVUR,Tamil Nadu,23 June 2025,4.6,9.4,4.8,2020_HWAY_168456_1,14.4,4.2,1.65
+R332,Poonthottam - Natchiarkoil Road,MD-370,MDR,THANJAVUR,Tamil Nadu,05 April 2026,20.8,25.4,4.6,2020_HWAY_166162_1,21.4,6.4,3.15
+R333,Swamimalai - Patteeswaram Road,MD-441,MDR,THANJAVUR,Tamil Nadu,18 October 2025,0,4.2,4.2,2020_HWAY_166185_1,8.6,2.5,1.4
+R334,Kuttalam - Panthanallur Road,MD-213,MDR,THANJAVUR,Tamil Nadu,31 January 2026,5.8,9.8,4,2020_HWAY_166038_1,14.8,4.4,2.85
+R335,Kumbakonam Railway Station - Old Cauvery Bridge Road,MD-206,MDR,THANJAVUR,Tamil Nadu,14 September 2025,0.4,3.2,2.8,2020_HWAY_166036_1,5.2,1.6,0.95
+R336,Thanjavur - Pattukkottai Road,MD-449,MDR,THANJAVUR,Tamil Nadu,27 May 2026,21.2,24,2.8,2020_HWAY_166190_1,36.8,11.1,5.9
+R337,Aduthurai - South Thiruneelakudy Road,MD-5,MDR,THANJAVUR,Tamil Nadu,09 January 2026,10.4,13.2,2.8,2020_HWAY_166010_1,4.4,1.3,0.7
+R338,Sakkottai - Annalagharam Road,MD-1010,MDR,THANJAVUR,Tamil Nadu,21 March 2026,0,2.8,2.8,2020_HWAY_166205_1,7.1,2.1,1.15
+R339,Pudhukkottai - Pattukkottai Road,MD-372,MDR,THANJAVUR,Tamil Nadu,04 November 2025,44.8,47.4,2.6,2020_HWAY_164392_1,28.9,8.7,6.2
+R340,Ayyampettai Railway Approach Road,MD-52,MDR,THANJAVUR,Tamil Nadu,17 February 2026,0,1.6,1.6,2020_HWAY_166028_1,2.8,0.85,0.5
+R341,Pasupathikoil Railway Approach Road,MD-340,MDR,THANJAVUR,Tamil Nadu,29 September 2025,0,1.2,1.2,2020_HWAY_166122_1,2.6,0.8,0.6
+R342,Mariyammankoil Railway Approach Road,MD-249,MDR,THANJAVUR,Tamil Nadu,12 June 2025,0,1.2,1.2,2020_HWAY_166095_1,3.1,0.9,0.45
+R343,Tharasuram - Mulayur Road,MD-1093,MDR,THANJAVUR,Tamil Nadu,25 April 2026,0,1.2,1.2,2020_HWAY_166215_1,6.8,2.1,1.35
+R344,Thambikottai Railway Approach Road,MD-446,MDR,THANJAVUR,Tamil Nadu,08 December 2025,0,0.8,0.8,2020_HWAY_166188_1,2.9,0.85,0.55
+R345,Arasalar New Bridge Approach Road,MD-34,MDR,THANJAVUR,Tamil Nadu,14 February 2026,0,0.427,0.427,2020_HWAY_166018_1,4.2,1.3,0.8
+R346,Sengathalai Bridge - Vedaraniam Road,MD-685,MDR,NAGAPATTINAM,Tamil Nadu,27 September 2025,0,21.2,21.2,2020_HWAY_161114_1,28.4,8.5,4.9
+R347,Thirunellikaval - Kolappadu - Karunganni Road,MD-467,MDR,NAGAPATTINAM,Tamil Nadu,09 May 2026,0,12.2,12.2,2020_HWAY_161108_1,19.6,5.9,3.15
+R348,Thirunellikaval - Kolappadu - Karunganni Road,MD-467,MDR,NAGAPATTINAM,Tamil Nadu,09 May 2026,12.38,16,3.62,2020_HWAY_161108_1,19.6,5.9,3.15
+R349,Sembodai - Chettipulam - Kariyappattinam Road,MD-835,MDR,NAGAPATTINAM,Tamil Nadu,21 November 2025,0,13,13,2021_HWAY_188112_1,15.2,4.6,2.4
+R350,Alangudi - Thalainayar - Thalanthiruvasal Road,MD-1199,MDR,NAGAPATTINAM,Tamil Nadu,03 February 2026,0,12,12,2021_HWAY_188410_1,16.4,4.9,3.85
+R351,Sattiyakkudy - Thirukkuvalai - Esanur Road,MD-1303,MDR,NAGAPATTINAM,Tamil Nadu,17 August 2025,0,11,11,2021_HWAY_188465_1,14.2,4.1,2.65
+R352,Poonthottam - Karaikkal Road,MD-1008,MDR,NAGAPATTINAM,Tamil Nadu,30 March 2026,6,14,8,2020_HWAY_161205_1,22.5,6.8,4.1
+R353,Poonthottam - Karaikkal Road,MD-1008,MDR,NAGAPATTINAM,Tamil Nadu,30 March 2026,14.6,15,0.4,2020_HWAY_161205_1,22.5,6.8,4.1
+R354,Poonthottam - Karaikkal Road,MD-1008,MDR,NAGAPATTINAM,Tamil Nadu,30 March 2026,16,17.8,1.8,2020_HWAY_161205_1,22.5,6.8,4.1
+R355,Akkaraipettai - Velankanni (Via) Vadakkupoiyur Road,MD-1234,MDR,NAGAPATTINAM,Tamil Nadu,12 December 2025,0,9.2,9.2,2021_HWAY_188432_1,18.8,5.7,3.4
+R356,Kuravapulam - Karuppampulam - Kadinelvayal Road,MD-837,MDR,NAGAPATTINAM,Tamil Nadu,24 June 2025,0,8.9,8.9,2021_HWAY_188118_1,13.6,4.1,1.95
+R357,Kuravapulam - Thopputhurai Road,MD-1012,MDR,NAGAPATTINAM,Tamil Nadu,06 April 2026,0,7.36,7.36,2020_HWAY_161210_1,9.5,2.9,2.15
+R358,Muthupettai - Voimedu Road,MD-640,MDR,NAGAPATTINAM,Tamil Nadu,19 October 2025,15.9,23.1,7.2,2020_HWAY_161098_1,26.4,8.1,5.2
+R359,Moolakkarai - Pranthiyankarai - Kariyappattinam Road,MD-838,MDR,NAGAPATTINAM,Tamil Nadu,01 February 2026,0,7,7,2021_HWAY_188122_1,14.8,4.4,1.8
+R360,Thittacherry - Thirumalairayanpattinam Road,MD-480,MDR,NAGAPATTINAM,Tamil Nadu,15 September 2025,0,3.4,3.4,2020_HWAY_161112_1,12.5,3.8,1.25
+R361,Velankanni Church Road,MD-1011,MDR,NAGAPATTINAM,Tamil Nadu,28 May 2026,0,2.2,2.2,2020_HWAY_161208_1,8.9,2.6,1.6
+R362,Mavoor - Sattiyakudy Road,MD-255,MDR,NAGAPATTINAM,Tamil Nadu,10 January 2026,5.4,7.2,1.8,2020_HWAY_161062_1,11.2,3.3,2.3
+R363,Koothur Railway Feeder Road,MDR-214,MDR,NAGAPATTINAM,Tamil Nadu,22 March 2026,0,1.6,1.6,2020_HWAY_161038_1,3.1,0.9,0.55
+R364,Nagapattinam - Velankanni Road,MD-283,MDR,NAGAPATTINAM,Tamil Nadu,05 November 2025,1.2,2.4,1.2,2020_HWAY_161060_1,19.4,5.9,1.85
+R365,Abandoned Velankanni - Thiruthuraipoondi Road,MD-1280,MDR,NAGAPATTINAM,Tamil Nadu,17 February 2026,16.23,16.68,0.45,2021_HWAY_188456_1,15.6,4.7,4.1
+R366,Abandoned Velankanni - Thiruthuraipoondi Road,MD-1280,MDR,NAGAPATTINAM,Tamil Nadu,17 February 2026,22.015,22.399,0.384,2021_HWAY_188456_1,15.6,4.7,4.1
+R367,Abandoned Velankanni - Thiruthuraipoondi Road,MD-1280,MDR,NAGAPATTINAM,Tamil Nadu,17 February 2026,22.432,22.655,0.223,2021_HWAY_188456_1,15.6,4.7,4.1
+R368,Tharangambady - Manganallur - Aduthurai Road,MD-708,MDR,MAYILADUTHURAI,Tamil Nadu,13 February 2026,0,36.6,36.6,2020_HWAY_166468_1,31.6,9.5,4.35
+R369,Puthur - Pudupattinam - Palaiyar Road,MD-670,MDR,MAYILADUTHURAI,Tamil Nadu,26 September 2025,0,19.2,19.2,2020_HWAY_161095_1,18.4,5.6,3.6
+R370,Sirkali - Thirumullaivasal - Koolaiyar Road,MD-426,MDR,MAYILADUTHURAI,Tamil Nadu,08 May 2026,0,19,19,2020_HWAY_161078_1,16.2,4.8,2.95
+R371,Mappadugai - Kadalangudi Road,MD-1277,MDR,MAYILADUTHURAI,Tamil Nadu,20 November 2025,0,15.8,15.8,2021_HWAY_188415_1,11.5,3.4,1.9
+R372,Mayiladuthurai - Pattavarthy Road,MD-257,MDR,MAYILADUTHURAI,Tamil Nadu,02 February 2026,0.2,13.2,13,2020_HWAY_161065_1,14.8,4.4,2.25
+R373,Perumalai - Thillaiyadi - Thirukkadaiyur Road,MD-1278,MDR,MAYILADUTHURAI,Tamil Nadu,16 August 2025,0,11.6,11.6,2021_HWAY_188426_1,12.3,3.6,2.45
+R374,Anaickranchatram - Mahendrapalli Road,MD-836,MDR,MAYILADUTHURAI,Tamil Nadu,29 March 2026,0,11.48,11.48,2021_HWAY_188115_1,13.9,4.1,1.65
+R375,Kuthalam - Komal Road,MD-211,MDR,MAYILADUTHURAI,Tamil Nadu,11 December 2025,0,10,10,2020_HWAY_161035_1,12.6,3.8,1.8
+R376,Sirkali - Panankattangudy Road,MD-425,MDR,MAYILADUTHURAI,Tamil Nadu,23 June 2025,0,9.8,9.8,2020_HWAY_161072_1,9.2,2.7,1.4
+R377,Kondathur - Pagasalai Road,MD-1281,MDR,MAYILADUTHURAI,Tamil Nadu,05 April 2026,0,7.22,7.22,2021_HWAY_188490_1,7.4,2.2,1.15
+R378,Kuthalam - Pandanallur Road,MD-213,MDR,MAYILADUTHURAI,Tamil Nadu,18 October 2025,0,5.8,5.8,2020_HWAY_166038_1,14.8,4.4,2.85
+R379,Umayalpathi - Mathanam Road,MD-1279,MDR,MAYILADUTHURAI,Tamil Nadu,31 January 2026,0,5.442,5.442,2021_HWAY_188438_1,9.6,2.8,1.3
+R380,Vaitheeswarankoil - Thennalakkudy Road,MD-1280,MDR,MAYILADUTHURAI,Tamil Nadu,14 September 2025,0,5.09,5.09,2021_HWAY_188456_1,11.4,3.5,4.1
+R381,Annankoil - Nangoor Road,MD-1282,MDR,MAYILADUTHURAI,Tamil Nadu,27 May 2026,0,5.1,5.1,2021_HWAY_188495_1,8.5,2.5,1.85
+R382,Kumbakonam - Sirkali Road (Link Road),MD-258,MDR,MAYILADUTHURAI,Tamil Nadu,09 January 2026,0,1,1,2020_HWAY_161068_1,13.2,3.9,1.4
+R383,Akkur Railway Feeder Road,MD-7,MDR,MAYILADUTHURAI,Tamil Nadu,21 March 2026,0,0.8,0.8,2020_HWAY_161012_1,3.4,0.95,0.6
+R384,Mayiladuthurai - Pattavarthy Road (Town Limit),MD-259,MDR,MAYILADUTHURAI,Tamil Nadu,04 November 2025,0.6,1.2,0.6,2020_HWAY_161066_1,6.8,2.1,0.95
+R385,Kodavasal - Koradachery - Lakshmangudi - Mavoor Road,MD-609,MDR,TIRUVARUR,Tamil Nadu,17 February 2026,0,35.6,35.6,2020_HWAY_162098_1,40.68,20,4.6
+R386,Koothanallur - Adichapuram - Kandamangalam - Vedapuram - Kalappal - Thiruthuraipoondi Road,MD-839,MDR,TIRUVARUR,Tamil Nadu,29 September 2025,0,32.9,32.9,2021_HWAY_187112_1,28.4,8.5,3.85
+R387,Kodavasal - Valangaiman - Papanasam Road,MD-753,MDR,TIRUVARUR,Tamil Nadu,12 June 2025,0,23.2,23.2,2020_HWAY_162165_1,24.6,7.3,3.1
+R388,Poonthottam - Nachiyarkoil Road,MD-370,MDR,TIRUVARUR,Tamil Nadu,11 February 2026,0,20.8,20.8,2020_HWAY_166162_1,21.4,6.4,3.15
+R389,Mannargudi - Thirumakkottai - Chockanavoor Road,MD-840,MDR,TIRUVARUR,Tamil Nadu,24 September 2025,0,20.6,20.6,2021_HWAY_187118_1,19.8,5.9,2.45
+R390,Kodavasal - Nannilam Road,MD-1268,MDR,TIRUVARUR,Tamil Nadu,06 May 2026,0,16.4,16.4,2021_HWAY_187410_1,14.5,4.3,2.9
+R391,Muthupet - Voimedu Road,MD-640,MDR,TIRUVARUR,Tamil Nadu,18 November 2025,0,15.9,15.9,2020_HWAY_161098_1,26.4,8.1,5.2
+R392,Kottur - Meenamanallur - Senganthi Road,MD-773,MDR,TIRUVARUR,Tamil Nadu,31 January 2026,0,14.2,14.2,2020_HWAY_162135_1,13.2,3.9,1.75
+R393,Mannargudi - Moovanallur - Vaduvur Road,MD-1270,MDR,TIRUVARUR,Tamil Nadu,14 August 2025,0,13.4,13.4,2021_HWAY_187442_1,15.6,4.7,2.1
+R394,Avoor - Avalivanallur Road,MD-1269,MDR,TIRUVARUR,Tamil Nadu,27 March 2026,0,11.8,11.8,2021_HWAY_187426_1,11.8,3.5,1.65
+R395,Adhanur Mandapam - Vaduvur Road,MD-1271,MDR,TIRUVARUR,Tamil Nadu,09 December 2025,0,11.69,11.69,2021_HWAY_187456_1,12.2,3.6,1.3
+R396,Thittai - Dharasuram Road,MD-720,MDR,TIRUVARUR,Tamil Nadu,21 June 2025,16.6,25.4,8.8,2020_HWAY_166525_1,16.8,4.9,4.15
+R397,Mannargudy - Orathanadu - Thiruvonam Road,MD-248,MDR,TIRUVARUR,Tamil Nadu,04 April 2026,4.8,12.8,8,2020_HWAY_166210_1,28.5,8.3,4.8
+R398,Kangalanchery - Vadakandam Road,MD-1272,MDR,TIRUVARUR,Tamil Nadu,16 October 2025,0,7.2,7.2,2021_HWAY_187465_1,9.4,2.8,2.35
+R399,Ammapet - Vaduvur Road,MD-21,MDR,TIRUVARUR,Tamil Nadu,29 January 2026,7,13.7,6.7,2020_HWAY_166022_1,16.2,4.8,2.95
+R400,Poonthottam - Karaikkal Road,MD-1008,MDR,TIRUVARUR,Tamil Nadu,12 September 2025,0,6,6,2020_HWAY_161205_1,22.5,6.8,4.1
+R401,Andipandal - Nannilam Road,MD-762,MDR,TIRUVARUR,Tamil Nadu,25 May 2026,0,5.8,5.8,2020_HWAY_162150_1,13.8,4.1,1.9
+R402,Mavoor - Sattiyakkudy Road,MD-255,MDR,TIRUVARUR,Tamil Nadu,08 January 2026,0,5.4,5.4,2020_HWAY_161062_1,11.2,3.3,2.3
+R403,Vellakkudi - Pulivalam Road,MD-1273,MDR,TIRUVARUR,Tamil Nadu,20 March 2026,0,4.8,4.8,2021_HWAY_187478_1,11.4,3.4,3.1
+R404,Muganthanur - Engan Road,MD-1275,MDR,TIRUVARUR,Tamil Nadu,03 November 2025,0,4.2,4.2,2021_HWAY_187495_1,8.9,2.6,1.45
+R405,Thirunellikkaval - Kolappadu - Karunganni Road,MD-467,MDR,TIRUVARUR,Tamil Nadu,15 February 2026,16,19.6,3.6,2020_HWAY_161108_1,19.6,5.9,3.15
+R406,Mayiladuthurai - Muthupet Road,MD-256,MDR,TIRUVARUR,Tamil Nadu,28 September 2025,69,72.6,3.6,2020_HWAY_162035_1,36.5,11.1,6.4
+R407,Thirumathikunnam Railway Feeder Road,MD-466,MDR,TIRUVARUR,Tamil Nadu,10 June 2025,0,2.6,2.6,2020_HWAY_162060_1,3.1,0.9,0.65
+R408,Mayiladuthurai - Muthupet Road,MD-1054,MDR,TIRUVARUR,Tamil Nadu,22 March 2026,91.8,94.2,2.4,2023_HWAY_324812_1,32.4,9.8,8.2
+R409,Thirukkannamangai - Ammaiyappan Road,MD-1274,MDR,TIRUVARUR,Tamil Nadu,05 October 2025,0,2.4,2.4,2021_HWAY_187488_1,9.2,2.7,1.15
+R410,Pappanadu - Madukkur - Perugavalthan Road,MD-778,MDR,TIRUVARUR,Tamil Nadu,17 January 2026,24.8,26.45,1.65,2020_HWAY_166512_1,19.4,5.9,3.1
+R411,Velanganni - Thiruthuraipoondi Road,MD-544,MDR,TIRUVARUR,Tamil Nadu,13 February 2026,38.8,40.2,1.4,2020_HWAY_162065_1,28.2,8.4,4.2
+R412,Mannargudi - Thiruthuraipoondi Road,MD-246,MDR,TIRUVARUR,Tamil Nadu,26 September 2025,0,1.4,1.4,2020_HWAY_162052_1,26.5,7.9,5.6
+R413,Pattukkottai - Muthupet Road,MD-1055,MDR,TIRUVARUR,Tamil Nadu,08 May 2026,65.9,67,1.1,2023_HWAY_324815_1,14.8,4.4,2.95
+R414,Bharami Burning Ghat to Vijayapuram Regulator Road,MD-59,MDR,TIRUVARUR,Tamil Nadu,20 November 2025,0,0.6,0.6,2020_HWAY_162022_1,4.6,1.3,0.9
+R415,Koradachery Railway Feeder Road,MD-183,MDR,TIRUVARUR,Tamil Nadu,02 February 2026,0,0.4,0.4,2020_HWAY_162032_1,2.8,0.85,0.5
+R416,Ayothiyapattinam - Belur - Kilakkadu Road,MD-1044,MDR,SALEM,Tamil Nadu,16 August 2025,0,54.6,54.6,2020_HWAY_160495_1,3.23,0.806,4.8
+R417,Gajalnaickenpatty - Panamarathupatty - Seshanchavadi Road,MD-594,MDR,SALEM,Tamil Nadu,29 March 2026,0,38.09,38.09,2020_HWAY_160114_1,21.4,6.4,3.15
+R418,Yercaud Loop Road,MD-563,MDR,SALEM,Tamil Nadu,11 December 2025,0,33.6,33.6,2020_HWAY_160085_1,14.8,4.4,2.4
+R419,Thedavoor - Thammampatty Road,MD-455,MDR,SALEM,Tamil Nadu,23 June 2025,0,24.6,24.6,2020_HWAY_160042_1,16.5,4.9,5.1
+R420,Kuppanur - Kottachedu - Valavanthi Road,MD-845,MDR,SALEM,Tamil Nadu,05 April 2026,0,18.6,18.6,2021_HWAY_180112_1,18.2,5.4,3.65
+R421,Shevapet - Elampillai Road,MD-421,MDR,SALEM,Tamil Nadu,18 October 2025,0,17.2,17.2,2020_HWAY_160032_1,22.6,6.8,1.75
+R422,Puthiragoundampalayam - Edapatty Road (via Panmadal),MD-669,MDR,SALEM,Tamil Nadu,31 January 2026,0,14.6,14.6,2020_HWAY_160138_1,13.4,4.1,2.3
+R423,Kattukottai - Sadasivapuram - Thidavour Road,MD-841,MDR,SALEM,Tamil Nadu,14 September 2025,0,14,14,2021_HWAY_180110_1,12.8,3.8,1.95
+R424,Thalaivasal - Veeraganur Road,MD-701,MDR,SALEM,Tamil Nadu,27 May 2026,0,13,13,2020_HWAY_160195_1,15.5,4.6,3.4
+R425,Thalaivasal - Govindampalayam Road,MD-848,MDR,SALEM,Tamil Nadu,09 January 2026,0,11.92,11.92,2021_HWAY_180122_1,11.9,3.5,1.8
+R426,Suramangalam - Tharamangalam Road,MD-439,MDR,SALEM,Tamil Nadu,21 March 2026,0,11.1,11.1,2020_HWAY_160038_1,24.2,7.2,4.35
+R427,Valapady - Thimmanaickenpatty Road,MD-530,MDR,SALEM,Tamil Nadu,04 November 2025,0,10.6,10.6,2020_HWAY_160092_1,14.6,4.3,2.15
+R428,Mallur - Veerapandy Road,MD-1173,MDR,SALEM,Tamil Nadu,17 February 2026,0,9.725,9.725,2021_HWAY_180178_1,9.8,2.9,1.9
+R429,Salem - Veeranam Road,MD-675,MDR,SALEM,Tamil Nadu,29 September 2025,0.8,10.4,9.6,2020_HWAY_160140_1,16.4,4.9,3.6
+R430,Pudupalayam - Ponnarampatty Road,MD-844,MDR,SALEM,Tamil Nadu,12 June 2025,0,7.4,7.4,2021_HWAY_180111_1,14.2,4.2,2.45
+R431,Yercaud - Vaniyar Road,MD-561,MDR,SALEM,Tamil Nadu,25 April 2026,0,7.2,7.2,2020_HWAY_160082_1,11.6,3.4,2.1
+R432,Nalikkalpatty - Uthamasolapuram Road,MD-850,MDR,SALEM,Tamil Nadu,14 February 2026,0,5.93,5.93,2021_HWAY_180125_1,9.4,2.8,1.65
+R433,Manjini - Gangavalli Road,MD-846,MDR,SALEM,Tamil Nadu,27 September 2025,0,5.8,5.8,2021_HWAY_180115_1,13.8,4.1,2.3
+R434,Kakkapalayam - Chinnappampatty Road,MD-134,MDR,SALEM,Tamil Nadu,09 May 2026,0,5.6,5.6,2020_HWAY_160028_1,16.5,4.9,3.85
+R435,Malayalapatty - Thammampatty Road (via Ulipuram),MD-852,MDR,SALEM,Tamil Nadu,21 November 2025,4.35,9.9,5.55,2021_HWAY_180132_1,18.4,5.6,4.1
+R436,Hasthampatti - Kannankurichi Road,MD-842,MDR,SALEM,Tamil Nadu,03 February 2026,0,5.4,5.4,2021_HWAY_180110_1,8.5,2.5,1.45
+R437,Nagalur - Puthur Road,MD-282,MDR,SALEM,Tamil Nadu,17 August 2025,0,3.6,3.6,2020_HWAY_160060_1,12.2,3.6,1.7
+R438,Suramangalam - Omalur Road (via Muthanaickenpatty),MD-696,MDR,SALEM,Tamil Nadu,30 March 2026,0,3.2,3.2,2020_HWAY_160155_1,21.4,6.4,3.15
+R439,Attaiyampatti - Masakkalipatti Road,MD-46,MDR,SALEM,Tamil Nadu,12 December 2025,0,3.2,3.2,2020_HWAY_160018_1,11.1,3.3,1.25
+R440,Krishnapuram - Poolampady - Kallapatty - Veeraganur Road,MD-819,MDR,SALEM,Tamil Nadu,24 June 2025,18.8,21.8,3,2021_HWAY_198112_1,16.8,5.2,2.35
+R441,Alagapuram Road,MD-996,MDR,SALEM,Tamil Nadu,06 April 2026,0,2.6,2.6,2023_HWAY_304812_1,4.2,1.3,0.95
+R442,Bauxite Mines Road,MD-55,MDR,SALEM,Tamil Nadu,19 October 2025,0,2,2,2020_HWAY_160022_1,8.5,2.6,1.1
+R443,Town Railway Station Road,MD-725,MDR,SALEM,Tamil Nadu,01 February 2026,0,1.275,1.275,2020_HWAY_160175_1,3.1,0.9,0.75
+R444,Kakapalayam - Attamyapatty Road,MD-133,MDR,SALEM,Tamil Nadu,15 September 2025,4,5.2,1.2,2020_HWAY_160025_1,12.4,3.7,2.2
+R445,Pension Line Road,MD-655,MDR,SALEM,Tamil Nadu,28 May 2026,0,0.93,0.93,2020_HWAY_160124_1,2.9,0.85,0.85
+R446,Road Branching from Km.2/10 of Arisipalayam Cherring Cross,MD-673,MDR,SALEM,Tamil Nadu,10 January 2026,0,0.3,0.3,2020_HWAY_160132_1,5.4,1.6,0.9
+R447,Solakadu - Semmedu - Vilaram - Arapleswarar Koil - Semmedu Road,MD-690,MDR,NAMAKKAL,Tamil Nadu,22 March 2026,0,43.2,43.2,2020_HWAY_162115_1,24.6,7.4,4.9
+R448,Solakadu - Mullukurichi Road (via Kulivalavu),MD-1237,MDR,NAMAKKAL,Tamil Nadu,05 November 2025,0,38.428,38.428,2021_HWAY_182432_1,18.9,5.6,3.15
+R449,Tiruchengode - Komarapalayam Road,MD-726,MDR,NAMAKKAL,Tamil Nadu,12 February 2026,0,23.4,23.4,2020_HWAY_162162_1,26.5,7.9,5.8
+R450,Nallur - Kabilarmalai - Pandamangalam Road,MD-1234,MDR,NAMAKKAL,Tamil Nadu,25 September 2025,0,19,19,2021_HWAY_182410_1,18.8,5.7,2.6
+R451,Velagoundampatty - Elur - Puduchatram Road,MD-1236,MDR,NAMAKKAL,Tamil Nadu,08 May 2026,0,16.66,16.66,2021_HWAY_182426_1,21.4,6.4,3.4
+R452,Suriyagoundampalayam - Elachipalayam Road (via Ramapuram),MD-1238,MDR,NAMAKKAL,Tamil Nadu,20 November 2025,0,16.61,16.61,2021_HWAY_182442_1,14.2,4.3,1.95
+R453,Mettala - Mullukurichi - Periyakombai Road,MD-853,MDR,NAMAKKAL,Tamil Nadu,02 February 2026,0,16.3,16.3,2021_HWAY_182112_1,16.5,4.9,4.1
+R454,Velur - Mohanur Road,MD-547,MDR,NAMAKKAL,Tamil Nadu,16 August 2025,0,16.2,16.2,2020_HWAY_162085_1,22.4,6.8,3.65
+R455,Rasipuram - Pattanam - Pudupatti Road,MD-856,MDR,NAMAKKAL,Tamil Nadu,29 March 2026,1.6,16.4,14.8,2021_HWAY_182122_1,13.6,4.1,2.45
+R456,Vaiyappamalai - Velagoundampatty Road,MD-857,MDR,NAMAKKAL,Tamil Nadu,11 December 2025,0,14.675,14.675,2021_HWAY_182125_1,15.8,4.7,2.1
+R457,Paramathy - Jedarpalayam Road,MD-998,MDR,NAMAKKAL,Tamil Nadu,23 June 2025,0,14.4,14.4,2023_HWAY_304818_1,12.5,3.8,1.8
+R458,Velagoundampatti - Maniyanur Road (via Serukalai),MD-1233,MDR,NAMAKKAL,Tamil Nadu,05 April 2026,0,14,14,2021_HWAY_182395_1,11.9,3.5,1.65
+R459,Mohanur - Valayapatti Road,MD-270,MDR,NAMAKKAL,Tamil Nadu,18 October 2025,0,13.6,13.6,2020_HWAY_162042_1,9.4,2.8,2.25
+R460,Mavureddy - S. Pudupalayam Road,MD-1232,MDR,NAMAKKAL,Tamil Nadu,31 January 2026,0,13.6,13.6,2021_HWAY_182388_1,11.2,3.3,1.3
+R461,Mallasamuthiram - Vaiyappamalai Road,MD-858,MDR,NAMAKKAL,Tamil Nadu,14 September 2025,0,12.275,12.275,2021_HWAY_182132_1,14.6,4.4,2.85
+R462,Muthalaipatty Pudur - Kalnaickanur Road,MD-1176,MDR,NAMAKKAL,Tamil Nadu,27 May 2026,0,11.3,11.3,2021_HWAY_182178_1,8.9,2.6,1.4
+R463,Gandhipuram - Karavalli (via Ramanathapurampudur) Road,MD-1235,MDR,NAMAKKAL,Tamil Nadu,09 January 2026,0,11,11,2021_HWAY_182418_1,13.4,3.9,1.15
+R464,Rasipuram Bypass Road,N/A,MDR,NAMAKKAL,Tamil Nadu,21 March 2026,2.8,13.675,10.875,2022_HWAY_254815_1,28.5,8.4,5.2
+R465,Chittalandur - Jedarpalayam Road,MD-854,MDR,NAMAKKAL,Tamil Nadu,04 November 2025,0,10,10,2021_HWAY_182115_1,15.2,4.6,2.3
+R466,Puthuchathiram - Govinthampalayam - Singalanthapuram Road,MD-1177,MDR,NAMAKKAL,Tamil Nadu,17 February 2026,0,9.82,9.82,2021_HWAY_182182_1,16.4,4.9,1.85
+R467,Attaiyampatti - Masakkalipatti Road,MD-46,MDR,NAMAKKAL,Tamil Nadu,13 February 2026,3.2,12.8,9.6,2020_HWAY_160018_1,11.1,3.3,1.25
+R468,Vadugapatty - Alanganatham Road,MD-1178,MDR,NAMAKKAL,Tamil Nadu,26 September 2025,0,8.4,8.4,2021_HWAY_182188_1,7.51,0.01,1.6
+R469,Pudukottai - Valayapatty Road,MD-1179,MDR,NAMAKKAL,Tamil Nadu,08 May 2026,0,8.3,8.3,2021_HWAY_182195_1,12.3,3.6,2.15
+R470,Mohanur - Oruvandur Road,MD-999,MDR,NAMAKKAL,Tamil Nadu,20 November 2025,0,7.6,7.6,2023_HWAY_304822_1,8.5,2.5,0.9
+R471,Namagiripettai - Ariyagoundampatti - Kalkurichi Privu Road,MD-855,MDR,NAMAKKAL,Tamil Nadu,02 February 2026,0,7.585,7.585,2021_HWAY_182118_1,11.4,3.4,3.1
+R472,Valayapatti - Andapuram Road,MD-531,MDR,NAMAKKAL,Tamil Nadu,16 August 2025,0,7.4,7.4,2020_HWAY_173582_1,13.6,4.1,4.9
+R473,Konganapuram - Vaiguntham - Kalipatty Road,MD-843,MDR,NAMAKKAL,Tamil Nadu,29 March 2026,10,17,7,2021_HWAY_180111_1,14.8,4.4,2.45
+R474,Manickampalayam - Elachipalayam Road,MD-1239,MDR,NAMAKKAL,Tamil Nadu,11 December 2025,0,6.6,6.6,2021_HWAY_182456_1,16.2,4.8,2.2
+R475,Malayalapatty - Thammampatty Road (via Ulipuram),MD-852,MDR,NAMAKKAL,Tamil Nadu,23 June 2025,0,4.35,4.35,2021_HWAY_180132_1,18.4,5.6,4.1
+R476,Rasipuram - Attur Road,MD-402,MDR,NAMAKKAL,Tamil Nadu,05 April 2026,0,3.65,3.65,2020_HWAY_162038_1,26.5,7.9,4.4
+R477,Edward Memorial (Girivalapathai) Road,MD-592,MDR,NAMAKKAL,Tamil Nadu,18 October 2025,0,3.2,3.2,2020_HWAY_160114_1,7.4,2.2,3.15
+R478,Pudupalayam - Ponnarampatti Road,MD-844,MDR,NAMAKKAL,Tamil Nadu,31 January 2026,7.4,9.6,2.2,2021_HWAY_180111_1,14.2,4.2,2.45
+R479,Tiruchengode Bypass Road,MD-506,MDR,NAMAKKAL,Tamil Nadu,14 September 2025,0,1.4,1.4,2022_HWAY_254820_1,38.5,11.4,6.8
+R480,Denkanikottai - Anchetty - Natrampalayam Road,MD-588,MDR,KRISHNAGIRI,Tamil Nadu,27 May 2026,0,43,43,2020_HWAY_161426_1,26.4,8.1,5.75
+R481,Denkanikottai - Bettamugalalam Road,MD-1251,MDR,KRISHNAGIRI,Tamil Nadu,09 January 2026,0,28.6,28.6,2021_HWAY_184245_1,19.8,5.9,3.6
+R482,Kaveripattinam - Kakkangarai Road,MD-157,MDR,KRISHNAGIRI,Tamil Nadu,21 March 2026,0,27.6,27.6,2020_HWAY_174045_1,24.5,7.6,5.4
+R483,Athimugam - Perandapalli - Thorapalli Road,MD-1136,MDR,KRISHNAGIRI,Tamil Nadu,04 November 2025,0,23.2,23.2,2021_HWAY_184112_1,16.2,4.8,4.25
+R484,Krishnagiri - Kandhikuppam Road,MD-1134,MDR,KRISHNAGIRI,Tamil Nadu,17 February 2026,0,18.5,18.5,2021_HWAY_184110_1,11.4,3.4,2.95
+R485,Krishnagiri - Kandhikuppam Road,MD-1134,MDR,KRISHNAGIRI,Tamil Nadu,14 February 2026,18.9,23,4.1,2021_HWAY_184110_1,11.4,3.4,2.95
+R486,Shoolagiri - Berigai Road,MD-422,MDR,KRISHNAGIRI,Tamil Nadu,27 September 2025,0,22,22,2020_HWAY_161412_1,18.9,5.6,4.15
+R487,Denkanikottai - Uddanapalli (via Kelamangalam) Road,MD-91,MDR,KRISHNAGIRI,Tamil Nadu,09 May 2026,0,21.2,21.2,2020_HWAY_161091_1,22.6,6.8,5.2
+R488,Jandamedu - Puliyur Road,MD-863,MDR,KRISHNAGIRI,Tamil Nadu,21 November 2025,0,20.2,20.2,2021_HWAY_184135_1,11.8,3.5,1.4
+R489,Denkanikottai - Panchapalli Road,MD-1250,MDR,KRISHNAGIRI,Tamil Nadu,03 February 2026,0,19.6,19.6,2021_HWAY_184233_1,16.4,4.9,2.85
+R490,Kaveripattinam - Pochampalli Road,MD-862,MDR,KRISHNAGIRI,Tamil Nadu,17 August 2025,0,19.2,19.2,2021_HWAY_184122_1,28.2,8.4,3.1
+R491,Shoolagiri - Rayakottai Road,MD-1248,MDR,KRISHNAGIRI,Tamil Nadu,30 March 2026,0,18,18,2021_HWAY_184195_1,19.5,6.1,3.65
+R492,Denkanikottai - Jawalagiri - Karnataka State Limit Road,MD-1249,MDR,KRISHNAGIRI,Tamil Nadu,12 December 2025,0,17.8,17.8,2021_HWAY_184210_1,21.4,6.4,4.4
+R493,Kurubarapalli - Kothakrishnapalli Road,MD-1001,MDR,KRISHNAGIRI,Tamil Nadu,24 June 2025,0,17.4,17.4,2023_HWAY_304826_1,13.6,4.1,0.95
+R494,VCC Road to Bagalur - Berigai Road (via Muthali and Palavanapalli),MD-1247,MDR,KRISHNAGIRI,Tamil Nadu,06 April 2026,0,17,17,2021_HWAY_184188_1,14.2,4.3,2.15
+R495,Nallur - Kakkanoor Road (via Sevaganapalli),MD-1246,MDR,KRISHNAGIRI,Tamil Nadu,19 October 2025,0,12.8,12.8,2021_HWAY_184165_1,12.5,3.8,1.9
+R496,Shoolagiri - Uddanapalli Road,MD-1245,MDR,KRISHNAGIRI,Tamil Nadu,01 February 2026,0,11.25,11.25,2021_HWAY_184150_1,15.8,4.7,2.4
+R497,Karimangalam - Agaram Road,MD-1244,MDR,KRISHNAGIRI,Tamil Nadu,15 September 2025,0,11,11,2021_HWAY_184142_1,14.8,4.4,1.65
+R498,Kaveripattinam - Palacode Road,MD-861,MDR,KRISHNAGIRI,Tamil Nadu,28 May 2026,0,10,10,2021_HWAY_184118_1,22.4,6.8,3.85
+R499,Bargur - Sinthagampalli Road,MD-1243,MDR,KRISHNAGIRI,Tamil Nadu,10 January 2026,0,9.6,9.6,2021_HWAY_184138_1,11.6,3.5,1.3
+R500,Bargur - Jagadevi Road,MD-1133,MDR,KRISHNAGIRI,Tamil Nadu,22 March 2026,0,8.2,8.2,2021_HWAY_184108_1,13.5,3.9,1.75
+R501,KRP Dam Approach Road,MD-193,MDR,KRISHNAGIRI,Tamil Nadu,05 November 2025,0,2.8,2.8,2020_HWAY_161193_1,7.2,2.1,0.85
+R502,Hosur Town to Hosur Railway Station Road,MD-124,MDR,KRISHNAGIRI,Tamil Nadu,17 February 2026,0,2,2,2020_HWAY_161124_1,5.4,1.6,0.7
+R503,Uthangarai Bypass Road,MD-517,MDR,KRISHNAGIRI,Tamil Nadu,29 September 2025,0,1.2,1.2,2022_HWAY_254825_1,26.5,7.9,4.9
+R504,Pondy - Krishnagiri Road,MD-366,MDR,KRISHNAGIRI,Tamil Nadu,13 February 2026,243.045,244,0.955,2023_HWAY_314810_1,38.2,11.6,8.4
+R505,Kundarapalli - Veppanapalli Road,MD-754,MDR,KRISHNAGIRI,Tamil Nadu,26 September 2025,16,16.4,0.4,2020_HWAY_161432_1,16.9,5.1,4.35
+R506,Morappur - Marandahalli Road,MD-271,MDR,DHARMAPURI,Tamil Nadu,08 May 2026,0,54.4,54.4,2020_HWAY_161042_1,28.4,8.5,5.1
+R507,Pappireddipatti - Morappur Road (via Pallipatti - Thenkaraikottai),MD-328A,MDR,DHARMAPURI,Tamil Nadu,20 November 2025,0,30,30,2021_HWAY_183115_1,24.6,7.3,3.65
+R508,Pennagaram - Nagamarai Road,MD-654,MDR,DHARMAPURI,Tamil Nadu,02 February 2026,0,29.6,29.6,2020_HWAY_161124_1,19.8,5.9,4.8
+R509,Mookanur - Harur Road,MD-777,MDR,DHARMAPURI,Tamil Nadu,16 August 2025,0,25.6,25.6,2020_HWAY_161118_1,16.5,4.9,2.9
+R510,Mallapuram - Gopinathampatti Road,MD-1241,MDR,DHARMAPURI,Tamil Nadu,29 March 2026,0,24.4,24.4,2021_HWAY_183245_1,14.2,4.2,3.15
+R511,Bommidi RS to Thoppaiyar Road,MD-860,MDR,DHARMAPURI,Tamil Nadu,11 December 2025,0,24.2,24.2,2021_HWAY_183112_1,11.5,3.4,1.9
+R512,Pennagaram - Mudugampatti - Malaiyanur Road,MD-859,MDR,DHARMAPURI,Tamil Nadu,23 June 2025,0,24.04,24.04,2021_HWAY_183110_1,18.9,5.6,2.45
+R513,Pappireddipatti - Mallapuram Road,MD-328,MDR,DHARMAPURI,Tamil Nadu,05 April 2026,0,19,19,2020_HWAY_161040_1,15.6,4.7,3.8
+R514,Mallapuram - Mookanur Road,MD-237,MDR,DHARMAPURI,Tamil Nadu,18 October 2025,0,18.8,18.8,2020_HWAY_161035_1,13.8,4.1,2.15
+R515,Palacode - Periyampatti Road,MD-1240,MDR,DHARMAPURI,Tamil Nadu,31 January 2026,0,16.4,16.4,2021_HWAY_183210_1,12.4,3.7,1.65
+R516,Kaveripattinam - Palacode Road,MD-861,MDR,DHARMAPURI,Tamil Nadu,14 September 2025,10,19.4,9.4,2021_HWAY_184118_1,22.4,6.8,3.85
+R517,Pennagaram Bypass Road,MD-349,MDR,DHARMAPURI,Tamil Nadu,27 May 2026,0,2.6,2.6,2022_HWAY_254828_1,22.5,6.8,4.1
+R518,Harur Bypass Road,MD-121,MDR,DHARMAPURI,Tamil Nadu,09 January 2026,0,2.4,2.4,2022_HWAY_254832_1,26.8,8.2,4.45
+R519,Dharmapuri Bus Stand Approach Road,MD-1242,MDR,DHARMAPURI,Tamil Nadu,21 March 2026,0,0.745,0.745,2021_HWAY_183265_1,4.2,1.3,0.95
+R520,Theevattipatty - Danispet - Boomidi Road,MD-851,MDR,EDAPPADY,Tamil Nadu,04 November 2025,0,26.45,26.45,2021_HWAY_180128_1,16.4,4.9,3.4
+R521,Kamalapuram - Chinnathirupathi - Jodukuli Road,MD-1127,MDR,EDAPPADY,Tamil Nadu,17 February 2026,0,18.7,18.7,2021_HWAY_180210_1,14.8,4.4,1.85
+R522,Kolathur - Guruvareddiyur Road,MD-1230,MDR,EDAPPADY,Tamil Nadu,29 September 2025,0,18.6,18.6,2021_HWAY_180235_1,19.6,5.9,2.1
+R523,Moolapathai - Chinnappampatti Road (via Panikanur),MD-1128,MDR,EDAPPADY,Tamil Nadu,12 February 2026,0,16.2,16.2,2021_HWAY_180215_1,13.5,3.9,1.75
+R524,Tholasampatty - Mallappanur Road,MD-1174A,MDR,EDAPPADY,Tamil Nadu,25 September 2025,0,15.8,15.8,2021_HWAY_180182_1,11.9,3.5,1.3
+R525,Kolathur Thanda Road,MD-1231,MDR,EDAPPADY,Tamil Nadu,08 May 2026,0,12.8,12.8,2021_HWAY_180242_1,9.2,2.7,1.95
+R526,Chittur - Adaiyur - Jalagandapuram Road (via Pakkanadu),MD-1130,MDR,EDAPPADY,Tamil Nadu,20 November 2025,0,12.745,12.745,2021_HWAY_180220_1,18.9,5.6,2.4
+R527,Jalagandapuram - Chinnappampatty Road,MD-849,MDR,EDAPPADY,Tamil Nadu,02 February 2026,0,10.8,10.8,2021_HWAY_180125_1,12.6,3.8,1.65
+R528,Suramangalam - Omalur Road (via Muthanaickenpatty),MD-696,MDR,EDAPPADY,Tamil Nadu,16 August 2025,3.2,13.8,10.6,2020_HWAY_160155_1,21.4,6.4,3.15
+R529,Konganapuram - Vaikundam - Kalipatty Road,MD-843,MDR,EDAPPADY,Tamil Nadu,29 March 2026,0,10,10,2021_HWAY_180111_1,14.8,4.4,2.45
+R530,Karuppur - Vellapatty - Thathiyangarpatty Road,MD-1175,MDR,EDAPPADY,Tamil Nadu,11 December 2025,0,9.7,9.7,2021_HWAY_180185_1,12.5,3.8,1.8
+R531,Tholasampatty Road,MD-1174,MDR,EDAPPADY,Tamil Nadu,23 June 2025,0,9.6,9.6,2021_HWAY_180180_1,8.9,2.6,1.1
+R532,Kakkapalayam - Chinnappampatty Road,MD-134,MDR,EDAPPADY,Tamil Nadu,05 April 2026,5.6,12.6,7,2020_HWAY_160028_1,16.5,4.9,3.85
+R533,Nedungulam - Poolampatty Road,MD-1129A,MDR,EDAPPADY,Tamil Nadu,18 October 2025,0,7,7,2021_HWAY_180218_1,11.2,3.3,1.45
+R534,Malligundam - Koonandiyur Road,MD-238,MDR,EDAPPADY,Tamil Nadu,31 January 2026,0,6.634,6.634,2020_HWAY_160035_1,13.6,4.1,2.2
+R535,Moolappathai - Kalvadangam Road,MD-1129B,MDR,EDAPPADY,Tamil Nadu,14 September 2025,0,6.4,6.4,2021_HWAY_180219_1,9.4,2.8,1.25
+R536,Kakapalayam - Attamyapatty Road,MD-133,MDR,EDAPPADY,Tamil Nadu,27 May 2026,0,4,4,2020_HWAY_160025_1,12.4,3.7,2.2
+R537,Erode Privu Road to Sankari R.S Road,MD-997,MDR,EDAPPADY,Tamil Nadu,09 January 2026,0,3.2,3.2,2023_HWAY_304815_1,5.8,1.8,0.9
+R538,Koneripatty - Kalvadangam Road,MD-1129,MDR,EDAPPADY,Tamil Nadu,21 March 2026,0,3,3,2021_HWAY_180217_1,7.6,2.2,1.6
+R539,Edapady - Nedungulam Ferry Road,MD-1131,MDR,EDAPPADY,Tamil Nadu,04 November 2025,0,0.4,0.4,2021_HWAY_180225_1,11.9,3.5,2.15
+R540,Thennampalayam - Annur Road (via Vagarayampalayam),MD-713,MDR,COIMBATORE,Tamil Nadu,17 February 2026,0,20,20,2020_HWAY_162108_1,24.6,7.3,4.6
+R541,Chinniyampalayam - Somanur Road (via Ravathur),MD-879,MDR,COIMBATORE,Tamil Nadu,13 February 2026,0,19.4,19.4,2021_HWAY_184112_1,18.8,5.7,3.1
+R542,Saravanampatty - Thennampalayam Road,MD-678,MDR,COIMBATORE,Tamil Nadu,26 September 2025,0,17.2,17.2,2020_HWAY_162085_1,3.63,0.0001,3.8
+R543,Annur - Sirumugai Road,MD-571,MDR,COIMBATORE,Tamil Nadu,08 May 2026,0,16.75,16.75,2020_HWAY_162015_1,16.4,4.9,2.75
+R544,Karamadai - Tholampalayam Road,MD-605,MDR,COIMBATORE,Tamil Nadu,20 November 2025,0,16.6,16.6,2020_HWAY_162040_1,19.2,5.8,3.35
+R545,Thudiyalur - Kovilpalayam Road,MD-489,MDR,COIMBATORE,Tamil Nadu,02 February 2026,0,15.4,15.4,2020_HWAY_162035_1,21.5,6.4,4.2
+R546,Karuvalur - Kovilpalayam Road,MD-1141,MDR,COIMBATORE,Tamil Nadu,16 August 2025,5.4,20.8,15.4,2021_HWAY_184145_1,14.8,4.4,3.15
+R547,Kurumbapalayam - Karichipalayam Road,MD-1139,MDR,COIMBATORE,Tamil Nadu,29 March 2026,0,12.8,12.8,2021_HWAY_184132_1,11.4,3.4,1.85
+R548,Madukkarai - Chettipalayam Road,MD-623,MDR,COIMBATORE,Tamil Nadu,11 December 2025,0,12.6,12.6,2020_HWAY_162060_1,24.6,7.3,4.75
+R549,Pethikuttai - Pulliyampatti Road,MD-1140,MDR,COIMBATORE,Tamil Nadu,23 June 2025,0,12.2,12.2,2021_HWAY_184138_1,13.6,4.1,2.2
+R550,Kuruchi - Kanamanaickanur Road (via Nachipalayam),MD-1182,MDR,COIMBATORE,Tamil Nadu,05 April 2026,0,12,12,2021_HWAY_184195_1,18.9,5.6,2.6
+R551,Sulur - Selekarchal Road,MD-437,MDR,COIMBATORE,Tamil Nadu,18 October 2025,0,11,11,2020_HWAY_162025_1,15.5,4.6,3.9
+R552,Goundampalayam - Onappalayam Road,MD-982,MDR,COIMBATORE,Tamil Nadu,31 January 2026,0,10.8,10.8,2023_HWAY_304828_1,12.8,3.8,0.95
+R553,Thudiyalur - Maruthamalai Road,MD-984,MDR,COIMBATORE,Tamil Nadu,14 September 2025,0,10.2,10.2,2023_HWAY_304835_1,16.2,4.8,1.4
+R554,Ganapathy - Kanuvai Road (via Maniyakaranpalayam and Kasinanjegoundanpudur),MD-977,MDR,COIMBATORE,Tamil Nadu,27 May 2026,0,9.8,9.8,2023_HWAY_304812_1,18.6,5.4,1.8
+R555,Thudiyalur - Chinnathadagam Road,MD-978,MDR,COIMBATORE,Tamil Nadu,09 January 2026,0,9.6,9.6,2023_HWAY_304815_1,14.2,4.3,2.1
+R556,Karamadai - Sirumugai Road,MD-979,MDR,COIMBATORE,Tamil Nadu,21 March 2026,0,9.6,9.6,2023_HWAY_304818_1,15.8,4.7,2.45
+R557,Ganapathy - Athipalayam Road,MD-872,MDR,COIMBATORE,Tamil Nadu,04 November 2025,0.8,9.8,9,2021_HWAY_184102_1,16.4,4.9,3.1
+R558,Km 18/10 off Palladam - Cochin Frontier Road to Appanaickenpatty (via Kalangal),MD-1100,MDR,COIMBATORE,Tamil Nadu,17 February 2026,0,8.4,8.4,2020_HWAY_162125_1,11.9,3.5,1.15
+R559,Thudiyalur - Saravanampatty Road,MD-877,MDR,COIMBATORE,Tamil Nadu,29 September 2025,0,8.2,8.2,2021_HWAY_184108_1,22.5,6.8,1.6
+R560,Kanthegoundanchavadi - Velanthavalam Road,MD-981,MDR,COIMBATORE,Tamil Nadu,12 June 2025,0,8.2,8.2,2023_HWAY_304825_1,13.6,4.1,1.25
+R561,Irrutupallam - Poondi Road,MD-876,MDR,COIMBATORE,Tamil Nadu,14 February 2026,0,8,8,2021_HWAY_184105_1,12.8,3.8,1.7
+R562,Km 331/6 Nagapattinam - Gudalur - Mysore Road to Pappampatty,MD-985,MDR,COIMBATORE,Tamil Nadu,27 September 2025,0,6.8,6.8,2023_HWAY_304840_1,9.4,2.8,0.75
+R563,Road from Km 6/8 of Coimbatore - Siruvani Road to join Km 165/8 of Salem - Cochin Road,MD-169,MDR,COIMBATORE,Tamil Nadu,09 May 2026,0,6.6,6.6,2020_HWAY_162012_1,26.8,8.2,0.9
+R564,Sulur Railway Feeder Road,MD-438,MDR,COIMBATORE,Tamil Nadu,21 November 2025,0,5.6,5.6,2020_HWAY_162028_1,3.4,0.95,0.45
+R565,Thondamuthur - Madampatty Road,MD-586,MDR,COIMBATORE,Tamil Nadu,03 February 2026,0,3.2,3.2,2020_HWAY_162058_1,11.8,3.5,1.95
+R566,Selekarachal - Sulthanpet - Thaneerpandal Road,MD-417,MDR,COIMBATORE,Tamil Nadu,17 August 2025,0,3,3,2020_HWAY_162022_1,19.6,5.9,4.1
+R567,Singanallur - Peelamedu Road,MD-986,MDR,COIMBATORE,Tamil Nadu,30 March 2026,0,3,3,2023_HWAY_304845_1,14.2,4.3,1.15
+R568,Podanur Junction Road,MD-361,MDR,COIMBATORE,Tamil Nadu,12 December 2025,0,2.6,2.6,2020_HWAY_162018_1,5.2,1.6,0.8
+R569,Sivanandhamills - Vilankuruchi Road,MD-873,MDR,COIMBATORE,Tamil Nadu,24 June 2025,0,2,2,2021_HWAY_184104_1,13.5,4,1.45
+R570,Ganapathy - Avarampalayam Road,MD-987,MDR,COIMBATORE,Tamil Nadu,06 April 2026,0,1.06,1.06,2023_HWAY_304850_1,8.6,2.5,0.9
+R571,Imperial Bank Road,MD-125,MDR,COIMBATORE,Tamil Nadu,19 October 2025,0,0.8,0.8,2020_HWAY_162011_1,4.1,1.2,0.65
+R572,Permanent Diversion Road from Old Valparai to State Border Connecting Pollachi Main Road,MD-354,MDR,POLLACHI,Tamil Nadu,01 February 2026,0,19.2,19.2,2020_HWAY_164095_1,28.4,8.5,3.4
+R573,Km.122/0 of Dindigul - Bangalore Road to Nadupuni,MD-166,MDR,POLLACHI,Tamil Nadu,15 September 2025,0,17.4,17.4,2020_HWAY_164035_1,22.5,6.8,5.6
+R574,Senjerihills - Vadachittor Road (via Mettulakshminaickenpalayam),MD-881,MDR,POLLACHI,Tamil Nadu,28 May 2026,0,17.4,17.4,2021_HWAY_186118_1,16.8,4.9,2.85
+R575,Kinathukadavu - Kattampatti Road,MD-165,MDR,POLLACHI,Tamil Nadu,10 January 2026,0,16,16,2020_HWAY_164032_1,14.8,4.4,4.2
+R576,Anaimalai - Poolankinar Road,MD-22,MDR,POLLACHI,Tamil Nadu,22 March 2026,0,16,16,2020_HWAY_164010_1,21.4,6.4,5.8
+R577,Ambarampalayam - Sethumadai Road,MD-13,MDR,POLLACHI,Tamil Nadu,05 November 2025,0,16,16,2020_HWAY_164005_1,19.6,5.9,6.15
+R578,Kinathukadavu - Cochin Frontier Road,MD-988,MDR,POLLACHI,Tamil Nadu,17 February 2026,0,14.1,14.1,2023_HWAY_306812_1,26.5,7.9,2.3
+R579,Kattampatti - Koduvai Road,MD-155,MDR,POLLACHI,Tamil Nadu,29 September 2025,0,13.8,13.8,2020_HWAY_164028_1,18.2,5.4,3.95
+R580,Vadachittur - Chettipalayam Road,MD-522,MDR,POLLACHI,Tamil Nadu,12 June 2025,0,11.8,11.8,2020_HWAY_164065_1,11.9,3.5,2.1
+R581,Vettaikaranpudur - Semanampathi Road,MD-1260,MDR,POLLACHI,Tamil Nadu,13 February 2026,0,11.2,11.2,2021_HWAY_186410_1,13.4,3.9,1.65
+R582,Vadachittur - Negamam Road,MD-523,MDR,POLLACHI,Tamil Nadu,26 September 2025,0,10.8,10.8,2020_HWAY_164068_1,15.5,4.6,2.45
+R583,Samathur - Devanurpudur Road,MD-1183,MDR,POLLACHI,Tamil Nadu,08 May 2026,0,10.6,10.6,2021_HWAY_186195_1,16.8,4.9,3.2
+R584,Valparai - Manicka Kurangumudi Road,MD-534,MDR,POLLACHI,Tamil Nadu,20 November 2025,0,10.2,10.2,2020_HWAY_164082_1,22.4,6.8,1.75
+R585,Avalchinnampalayam - Srinivasapuram (via Z. Kottampatti - Naickenpalayam) Road,MD-1259,MDR,POLLACHI,Tamil Nadu,02 February 2026,0,9.13,9.13,2021_HWAY_186415_1,14.2,4.3,2.45
+R586,Selakkarachal - Sulthanpet - Thannerpanthal Road,MD-417,MDR,POLLACHI,Tamil Nadu,16 August 2025,3,11.6,8.6,2020_HWAY_162022_1,19.6,5.9,4.1
+R587,Anaimalai - Loop Road,MD-23,MDR,POLLACHI,Tamil Nadu,29 March 2026,0,7.8,7.8,2020_HWAY_164012_1,12.8,3.8,1.1
+R588,Kurichi - Kannamanaickenur Road (via Nachipalayam),MD-1182,MDR,POLLACHI,Tamil Nadu,11 December 2025,12,18.4,6.4,2021_HWAY_184195_1,18.9,5.6,2.6
+R589,Udumalpet - Senjerihills Road,MD-511,MDR,POLLACHI,Tamil Nadu,23 June 2025,25,28.2,3.2,2020_HWAY_164080_1,24.5,7.6,3.85
+R590,Pollachi Bypass Road,MD-362,MDR,POLLACHI,Tamil Nadu,05 April 2026,0,2.6,2.6,2022_HWAY_254840_1,38.2,11.6,5.9
+R591,Iyerpadi Branch Road,MD-126,MDR,POLLACHI,Tamil Nadu,18 October 2025,0,1,1,2020_HWAY_164015_1,8.5,2.6,0.75
+R592,Dhimbam - Thalamalai - Thalavady Road,MD-1261,MDR,GOBICHETTIPALAYAM,Tamil Nadu,31 January 2026,0,42.8,42.8,2021_HWAY_188410_1,31.4,9.2,4.15
+R593,Sathy - Periyakodivery - Kadambur Road,MD-679,MDR,GOBICHETTIPALAYAM,Tamil Nadu,14 September 2025,0,29.1,29.1,2020_HWAY_163140_1,26.8,8.2,3.6
+R594,Arasur - Nambiyur - Palangarai Road,MD-1184,MDR,GOBICHETTIPALAYAM,Tamil Nadu,27 May 2026,0,26.8,26.8,2021_HWAY_185115_1,21.5,6.4,2.8
+R595,Kollegal - Hassanur Road,MD-180,MDR,GOBICHETTIPALAYAM,Tamil Nadu,09 January 2026,52.4,78.2,25.8,2020_HWAY_163060_1,34.6,10.4,6.2
+R596,Perundalaiyur - Kavandapady - Getticheiyur Road,MD-657,MDR,GOBICHETTIPALAYAM,Tamil Nadu,21 March 2026,0,21.6,21.6,2020_HWAY_163124_1,16.4,4.9,2.25
+R597,Sathy - Ukkaram - Puliyampatty Road,MD-888,MDR,GOBICHETTIPALAYAM,Tamil Nadu,04 November 2025,0,20,20,2021_HWAY_185122_1,22.4,6.8,1.9
+R598,Puliyampatty - Nambiyur Road,MD-888A,MDR,GOBICHETTIPALAYAM,Tamil Nadu,17 February 2026,0,18.2,18.2,2021_HWAY_185125_1,14.8,4.4,1.45
+R599,Bhavani - Kavandapady Road,MD-57,MDR,GOBICHETTIPALAYAM,Tamil Nadu,29 September 2025,0,13.6,13.6,2020_HWAY_163018_1,19.6,5.9,5.4
+R600,Gobi - Savandapur Road,MD-116,MDR,GOBICHETTIPALAYAM,Tamil Nadu,12 June 2025,0,12.6,12.6,2020_HWAY_163032_1,15.5,4.6,2.15
+R601,Sathy - Kothamangalam Road,MD-890,MDR,GOBICHETTIPALAYAM,Tamil Nadu,25 April 2026,0,11.2,11.2,2021_HWAY_185135_1,11.9,3.5,1.3
+R602,Karattadipalayam - Bungalowpudur Road,MD-150,MDR,GOBICHETTIPALAYAM,Tamil Nadu,14 February 2026,0,6.6,6.6,2020_HWAY_163045_1,13.4,3.9,1.65
+R603,Kodivery Dam Road,MD-175,MDR,GOBICHETTIPALAYAM,Tamil Nadu,27 September 2025,0,2.8,2.8,2020_HWAY_163055_1,6.8,2.1,0.85
+R604,Udhagai - Avalanchi - Kundha - Thaishola Road,MD-1071,MDR,UDHAGAMANDALAM,Tamil Nadu,09 May 2026,0,42.17,42.17,2020_HWAY_165495_1,10.7234,1.6841,4.9
+R605,Thalaikundha - Kallatty - Theppakadu Road,MD-700,MDR,UDHAGAMANDALAM,Tamil Nadu,21 November 2025,0,29.2,29.2,2020_HWAY_165195_1,28.5,8.4,6.8
+R606,Coonoor - Kundha Road,MD-86,MDR,UDHAGAMANDALAM,Tamil Nadu,03 February 2026,3.2,30,26.8,2020_HWAY_165086_1,22.4,6.8,4.3
+R607,Doddabetta - Iduhatty - Kattabettu Road,MD-994,MDR,UDHAGAMANDALAM,Tamil Nadu,17 August 2025,0,21.8,21.8,2023_HWAY_308812_1,19.6,5.9,2.15
+R608,Kotagiri - Kodanadu View Point Road (via Kodanadu),MD-995,MDR,UDHAGAMANDALAM,Tamil Nadu,30 March 2026,0,16.6,16.6,2023_HWAY_308818_1,14.8,4.4,1.9
+R609,Udhagai - Kaikatty Road,MD-1077,MDR,UDHAGAMANDALAM,Tamil Nadu,12 December 2025,0,15.4,15.4,2020_HWAY_165510_1,16.2,4.8,3.65
+R610,Coonoor - Kattabettu Road,MD-1073,MDR,UDHAGAMANDALAM,Tamil Nadu,24 June 2025,0,13.8,13.8,2020_HWAY_165500_1,15.5,4.6,2.85
+R611,Sholurmattam Road,MD-1143,MDR,UDHAGAMANDALAM,Tamil Nadu,06 April 2026,0,12,12,2021_HWAY_186145_1,11.9,3.5,1.75
+R612,Ketty - Palada - Selas Road,MD-1142,MDR,UDHAGAMANDALAM,Tamil Nadu,19 October 2025,0,10.4,10.4,2021_HWAY_186142_1,13.4,3.9,2.2
+R613,Sulthanbathery - Cherambadi Road,MD-694,MDR,UDHAGAMANDALAM,Tamil Nadu,01 February 2026,11,20.4,9.4,2020_HWAY_165412_1,24.6,7.3,5.4
+R614,Wellington - Kotagiri Road,MD-1081,MDR,UDHAGAMANDALAM,Tamil Nadu,15 September 2025,3,8.2,5.2,2020_HWAY_165525_1,18.8,5.7,1.45
+R615,Sivagiri - Nathakadaiyur - Muthur Road,MD-688,MDR,TIRUPPUR,Tamil Nadu,28 May 2026,0,31.4,31.4,2020_HWAY_163114_1,24.6,7.4,4.1
+R616,Kattampatty - Koduvai Road,MD-155,MDR,TIRUPPUR,Tamil Nadu,10 January 2026,13.8,36.6,22.8,2020_HWAY_164028_1,18.2,5.4,3.95
+R617,Koduvai - Nachipalayam Road,MD-611,MDR,TIRUPPUR,Tamil Nadu,22 March 2026,0,17.2,17.2,2020_HWAY_163098_1,14.5,4.3,2.6
+R618,Palladam - Boomalur Road,MD-882,MDR,TIRUPPUR,Tamil Nadu,05 November 2025,0,12.6,12.6,2021_HWAY_186122_1,12.8,3.8,3.15
+R619,Thanneerpandal - Kambaliyampatti - Lakkamanaickenpalayam Road,N/A,MDR,TIRUPPUR,Tamil Nadu,17 February 2026,0,12.6,12.6,2021_HWAY_186198_1,16.4,4.9,2.1
+R620,Tiruppur - Thekkalur Road (via Vanjipalayam),MD-869,MDR,TIRUPPUR,Tamil Nadu,29 September 2025,0,4.93,4.93,2021_HWAY_184112_1,21.5,6.4,3.1
+R621,Tiruppur - Thekkalur Road (via Vanjipalayam),MD-869,MDR,TIRUPPUR,Tamil Nadu,29 September 2025,5.8,13.3,7.5,2021_HWAY_184112_1,21.5,6.4,3.1
+R622,Kuppadampalayam - Singanur Road (via Ganapathypalayam),MD-983,MDR,TIRUPPUR,Tamil Nadu,13 February 2026,0,10.6,10.6,2023_HWAY_304832_1,13.9,4.1,1.25
+R623,Pongalur - Mettukadai Road (via Genganaickenpalayam),MD-883,MDR,TIRUPPUR,Tamil Nadu,26 September 2025,0,9.1,9.1,2021_HWAY_186125_1,15.8,4.7,1.65
+R624,Veerapandi - Ugayanur Road,MD-875,MDR,TIRUPPUR,Tamil Nadu,08 May 2026,0,8,8,2021_HWAY_184105_1,11.2,3.3,1.7
+R625,Uthiyur - Kundadam Road,MD-520,MDR,TIRUPPUR,Tamil Nadu,20 November 2025,0,8,8,2020_HWAY_163080_1,19.6,5.9,3.1
+R626,Uthiyur - Dasanaickenpatti Road,MD-993,MDR,TIRUPPUR,Tamil Nadu,02 February 2026,0,8,8,2023_HWAY_306815_1,12.5,3.8,1.45
+R627,Anupparpalayam - Vanjipalayam Road (via Kaniyampoondi),MD-878,MDR,TIRUPPUR,Tamil Nadu,16 August 2025,0,0.85,0.85,2021_HWAY_184110_1,14.8,4.4,2.2
+R628,Anupparpalayam - Vanjipalayam Road (via Kaniyampoondi),MD-878,MDR,TIRUPPUR,Tamil Nadu,16 August 2025,1.1,7.7,6.6,2021_HWAY_184110_1,14.8,4.4,2.2
+R629,Vavipalayam - Uthukuli Road,MD-1102,MDR,TIRUPPUR,Tamil Nadu,29 March 2026,0,7.4,7.4,2020_HWAY_163125_1,16.5,4.9,1.65
+R630,Nathakkadaiyur - Uthamapalayam Road,MD-886,MDR,TIRUPPUR,Tamil Nadu,11 December 2025,0,7.4,7.4,2021_HWAY_185112_1,12.2,3.6,2.15
+R631,Karaipudur Pirivu - Valaithotathu Ayyan Koil Road,MD-871,MDR,TIRUPPUR,Tamil Nadu,23 June 2025,0,6.4,6.4,2021_HWAY_184101_1,11.4,3.4,1.3
+R632,Perumanallur - Koolipalayam Road,N/A,MDR,TIRUPPUR,Tamil Nadu,05 April 2026,0,6.3,6.3,2021_HWAY_185198_1,13.6,4.1,1.9
+R633,Andipalayam - Attayampalayam Road,MD-1103,MDR,TIRUPPUR,Tamil Nadu,18 October 2025,0,5.49,5.49,2020_HWAY_163128_1,9.5,2.9,0.95
+R634,Karuvalur - Kovilpalayam Road,MD-1141,MDR,TIRUPPUR,Tamil Nadu,31 January 2026,0,5.4,5.4,2021_HWAY_184145_1,14.8,4.4,3.15
+R635,Chennimalai - Uthukuli Road,MD-71,MDR,TIRUPPUR,Tamil Nadu,14 September 2025,15.4,18.2,2.8,2020_HWAY_163025_1,22.4,6.8,4.4
+R636,Uthukuli R.S. - Uthukuli Town Road,MD-521,MDR,TIRUPPUR,Tamil Nadu,27 May 2026,0,2.4,2.4,2020_HWAY_163082_1,5.2,1.6,0.75
+R637,Kangayam Bypass Road (via Ayyasamy Nagar Colony),MD-992,MDR,TIRUPPUR,Tamil Nadu,09 January 2026,0,1.31,1.31,2023_HWAY_306812_1,26.5,7.9,2.35
+R638,Road from Palladam to join Pollachi - Palladam Road,MD-404,MDR,TIRUPPUR,Tamil Nadu,21 March 2026,0,0.6,0.6,2020_HWAY_164082_1,18.9,5.6,1.6
+R639,Dharapuram to Km 16/4 of Udumalpet - Palladam Road (via Poolavadi),N/A,MDR,DHARAPURAM,Tamil Nadu,04 November 2025,0,31.86,31.86,2021_HWAY_186195_1,34.6,10.4,3.4
+R640,Udumalpet - Chinnar Road,MD-509,MDR,DHARAPURAM,Tamil Nadu,17 February 2026,0,28.8,28.8,2020_HWAY_164078_1,28.4,8.5,5.2
+R641,Udumalpet - Senjerihills Road,MD-511,MDR,DHARAPURAM,Tamil Nadu,14 February 2026,0,25,25,2020_HWAY_164080_1,24.5,7.6,3.85
+R642,"Mulanur - Chinniyagoundanvalasu Road (via Kilangundal, Moolakadai)",MD-896,MDR,DHARAPURAM,Tamil Nadu,27 September 2025,0,20.3,20.3,2021_HWAY_186128_1,18.9,5.6,2.1
+R643,Udumalpet - Komaralingam Road,MD-510,MDR,DHARAPURAM,Tamil Nadu,09 May 2026,0,18.8,18.8,2020_HWAY_164079_1,16.4,4.9,4.65
+R644,Nathakadaiyur - Uthamapalayam Road,MD-886,MDR,DHARAPURAM,Tamil Nadu,21 November 2025,7.8,25.2,17.4,2021_HWAY_185112_1,12.2,3.6,2.15
+R645,Dhali - Komaralingam Road,MD-94,MDR,DHARAPURAM,Tamil Nadu,03 February 2026,0,16.8,16.8,2020_HWAY_164092_1,15.8,4.7,3.8
+R646,Anaimalai - Poolankinar Road,MD-22,MDR,DHARAPURAM,Tamil Nadu,17 August 2025,16,32.4,16.4,2020_HWAY_164010_1,11.25,3.697,5.8
+R647,Karatholuvu - Komaralingam Road,MD-149,MDR,DHARAPURAM,Tamil Nadu,30 March 2026,0,15.6,15.6,2020_HWAY_164045_1,13.5,3.9,2.45
+R648,Udumalpet - Thirumoorthi Hills Road,MD-512,MDR,DHARAPURAM,Tamil Nadu,12 December 2025,7,20.8,13.8,2020_HWAY_164085_1,14.8,4.4,4.15
+R649,Akkaraipalayam - Kariyur Road,MD-989,MDR,DHARAPURAM,Tamil Nadu,24 June 2025,0,13.6,13.6,2023_HWAY_306810_1,11.2,3.3,1.3
+R650,Uthiyur - Dhasanaickenpatti Road,MD-993,MDR,DHARAPURAM,Tamil Nadu,06 April 2026,8,17.8,9.8,2023_HWAY_306815_1,12.5,3.8,1.45
+R651,Chinnadharapuram - Pallapatti Road,MD-766,MDR,DHARAPURAM,Tamil Nadu,19 October 2025,0,9.6,9.6,2020_HWAY_163155_1,18.4,5.6,3.6
+R652,Uthur - Anankur Road,MD-887,MDR,DHARAPURAM,Tamil Nadu,01 February 2026,0,7.2,7.2,2021_HWAY_185115_1,14.6,4.3,1.75
+R653,Kallimandayam - Mulanur Road (via Koothampoondi),MD-991,MDR,DHARAPURAM,Tamil Nadu,15 September 2025,15.2,22.2,7,2023_HWAY_306811_1,22.5,6.8,2.1
+R654,Road branching at Km 15/6 of Udumalpet - Chinnar Road to Amaravathi Nagar,MD-167,MDR,DHARAPURAM,Tamil Nadu,28 May 2026,0,5.4,5.4,2020_HWAY_164036_1,9.8,2.9,0.95
+R655,Pongalur - Mettukadai Road (via Kengamanaickenpalayam),MD-883,MDR,DHARAPURAM,Tamil Nadu,10 January 2026,9.1,13.1,4,2021_HWAY_186125_1,15.8,4.7,1.65
+R656,Soundirapuram - Anankur - Kannivadi Road,MD-691,MDR,DHARAPURAM,Tamil Nadu,22 March 2026,16,20,4,2020_HWAY_163118_1,16.2,4.8,2.9
+R657,Sivagiri - Nathakadaiyur - Muthur Road,MD-688,MDR,DHARAPURAM,Tamil Nadu,05 November 2025,31.4,34.6,3.2,2020_HWAY_163114_1,24.6,7.4,4.1
+R658,Uthiyur - Kundadam Road,MD-520,MDR,DHARAPURAM,Tamil Nadu,17 February 2026,8,10.6,2.6,2020_HWAY_163080_1,19.6,5.9,3.1
+R659,Dharapuram - Pollachi Road,MD-96,MDR,DHARAPURAM,Tamil Nadu,29 September 2025,0.6,1.6,1,2020_HWAY_164095_1,38.2,11.6,6.4
+R660,Loop Road connecting Udumalpet - Chinnadharapuram Road & Palani - Dharapuram Road,MD-222,MDR,DHARAPURAM,Tamil Nadu,12 June 2025,0,0.6,0.6,2020_HWAY_164060_1,14.8,4.4,1.2
+R661,"Muthur - Mulanur Road (via Vellakovil, Puduppai)",MD-1104,MDR,DHARAPURAM,Tamil Nadu,25 April 2026,14.6,15.2,0.6,2020_HWAY_163130_1,26.5,7.9,5.25
+R662,Dharapuram Bypass Road,MD-95,MDR,DHARAPURAM,Tamil Nadu,08 December 2025,3.8,4.2,0.4,2022_HWAY_254845_1,32.4,9.8,4.8
+R663,Chellampalayam - Burgur - Kollegal Road,MD-1045,MDR,ERODE,Tamil Nadu,20 August 2025,0,51.2,51.2,2020_HWAY_163095_1,36.8,11.1,7.15
+R664,Pasur R.S - Vellodu Road,MD-885,MDR,ERODE,Tamil Nadu,03 March 2026,0,27.1,27.1,2021_HWAY_185110_1,16.2,4.8,2.65
+R665,Erode - Chennimalai Road,MD-108,MDR,ERODE,Tamil Nadu,16 October 2025,0,24,24,2025_HWAY_594741_1,28.4,8.5,2.25
+R666,Sivagiri - Vadapalani Road,MD-1138,MDR,ERODE,Tamil Nadu,29 January 2026,0,22,22,2024_HWAY_489211_1,13.5,3.9,3.44
+R667,Arachalur - Thamaraipalayam Road,MD-30,MDR,ERODE,Tamil Nadu,11 September 2025,0,20.6,20.6,2024_HWAY_510344_1,15.8,4.7,4.13
+R668,Thoppur - Mettur - Bhavani Road to Vellithiruppur,MD-486,MDR,ERODE,Tamil Nadu,24 May 2026,0,18.2,18.2,2025_HWAY_598712_1,21.4,6.4,2.85
+R669,Anthiyur - Ammapettai Road,MD-28,MDR,ERODE,Tamil Nadu,07 February 2026,0,17.4,17.4,2024_HWAY_466103_2,10.745,0.4021,5.65
+R670,Chennimalai - Uthukuli Road,MD-71,MDR,ERODE,Tamil Nadu,19 November 2025,0,15.4,15.4,2025_HWAY_601248_1,22.4,6.8,3.92
+R671,Chennimalai - Arachalur - Kodumudi Road,MD-70,MDR,ERODE,Tamil Nadu,02 April 2026,0,13.6,13.6,2024_HWAY_521034_1,34.8,10.4,4.22
+R672,Perundurai - Perundurai R.S - Chennimalai Road,MD-1137,MDR,ERODE,Tamil Nadu,14 October 2025,0,13.4,13.4,2024_HWAY_498114_2,26.5,7.9,3.85
+R673,Thavittupalayam - Appakoodal Road,MD-1181,MDR,ERODE,Tamil Nadu,27 June 2025,0,11.8,11.8,2025_HWAY_602119_1,14.2,4.3,2.15
+R674,Anthiyur - Athani Road,MD-29,MDR,ERODE,Tamil Nadu,09 January 2026,0,9.2,9.2,2024_HWAY_477123_1,11.8,3.5,5.4
+R675,Poonachi - Chithar Road,MD-1253,MDR,ERODE,Tamil Nadu,21 May 2026,0,9.05,9.05,2025_HWAY_591410_2,9.6,2.8,3.1
+R676,Bypass Road connecting Km 5/4 of Erode - Perundurai Road and Km 6/2 of Erode - Sathy Road,MD-62,MDR,ERODE,Tamil Nadu,04 September 2025,0,8.4,8.4,2024_HWAY_511044_1,28.4,8.5,6.85
+R677,Perunthalaiyur - Kavundapadi - Gettiseviyur Road,MD-657,MDR,ERODE,Tamil Nadu,13 February 2026,21.6,29.8,8.2,2025_HWAY_608129_1,16.4,4.9,4.6
+R678,Perundurai - Kanjikoil Road (via Kulathanvalasu),MD-1255,MDR,ERODE,Tamil Nadu,26 September 2025,0,8,8,2024_HWAY_463102_1,13.5,3.9,2.9
+R679,Sanarpalayam - Modakkurichi Road,MD-1254,MDR,ERODE,Tamil Nadu,08 May 2026,0,4.6,4.6,2024_HWAY_482119_1,12.8,3.8,3.45
+R680,Erode - Muthur Road,MD-110,MDR,ERODE,Tamil Nadu,20 November 2025,0,3.3,3.3,2025_HWAY_611043_1,31.5,9.4,8.12
+R681,Link Road connecting Km 10/4 of Erode - Sathy Road and Km 61/8 of Salem - Cochin Road,MD-221,MDR,ERODE,Tamil Nadu,02 February 2026,0,1.4,1.4,2024_HWAY_539112_1,14.8,4.4,3.6
+R682,Old Erode - Karur Road,MD-109,MDR,ERODE,Tamil Nadu,16 August 2025,36.6,38,1.4,2024_HWAY_495200_2,21.4,6.4,5.25
+R683,Bhavani - Chellampalayam Road,MD-765,MDR,ERODE,Tamil Nadu,29 March 2026,0,0.2,0.2,2025_HWAY_600214_1,9.2,2.7,2.4
+R684,"Mahadhanapuram – Mylampatty road (via) Palayajayamkondam, Panchapatty Road",MD-625,MDR,KARUR,Tamil Nadu,11 December 2025,0,33.671,33.671,2024_HWAY_544101_1,28.5,8.3,4.95
+R685,Karur - Esanatham - Koobur - Viriyampatti Road,MD-606,MDR,KARUR,Tamil Nadu,23 June 2025,0,22.4,22.4,2024_HWAY_488319_1,19.6,5.9,3.8
+R686,Karur - Esanatham - Koobur - Viriyampatti Road,MD-606,MDR,KARUR,Tamil Nadu,23 June 2025,29.4,35.8,6.4,2025_HWAY_593214_1,19.6,5.9,4.15
+R687,Pettavaithalai - Nangavaram - Kavalkaranpatty Road,MD-658,MDR,KARUR,Tamil Nadu,05 April 2026,0,26.4,26.4,2024_HWAY_512014_2,16.2,4.8,3.65
+R688,Vairamadai - Thoppampatty - Kuppam Road,MD-728,MDR,KARUR,Tamil Nadu,18 October 2025,0,24.33,24.33,2025_HWAY_609441_1,12.8,3.8,2.75
+R689,Chinnadharapuram - Kodumudi Road,MD-584,MDR,KARUR,Tamil Nadu,31 January 2026,0,21,21,2024_HWAY_475109_1,24.2,7.3,5.1
+R690,Allithurai - Thogamalai Road,MD-12,MDR,KARUR,Tamil Nadu,14 September 2025,14.4,33.6,19.2,2024_HWAY_502113_2,21.4,6.4,4.35
+R691,Mayanur - Sengal - Panchapatty Road,MD-632,MDR,KARUR,Tamil Nadu,27 May 2026,0,16.555,16.555,2024_HWAY_531109_1,18.4,5.4,3.65
+R692,Aruroad - Pungampadi Road (via Venjamangudalur),MD-574,MDR,KARUR,Tamil Nadu,09 January 2026,0,16.19,16.19,2024_HWAY_482034_1,13.5,3.9,2.9
+R693,Palaviduthy - Kadavur - Ayyalur Road,MD-648,MDR,KARUR,Tamil Nadu,21 March 2026,0,16.054,16.054,2025_HWAY_601442_1,22.4,6.8,4.45
+R694,Soundarapuram - Anangur - Kannivadi Road,MD-691,MDR,KARUR,Tamil Nadu,04 November 2025,0,16,16,2024_HWAY_516202_1,16.2,4.8,2.2
+R695,Pallapatti - Aravakurichy - Esanatham - Gujiliamparai Road,MD-650,MDR,KARUR,Tamil Nadu,17 February 2026,0,15,15,2025_HWAY_598311_1,28.5,8.3,5.8
+R696,Manapparai - Gujiliamparai Road,MD-628,MDR,KARUR,Tamil Nadu,29 September 2025,15.4,30,14.6,2024_HWAY_472109_2,31.5,9.4,4.15
+R697,Paramathi - Rajapuram Road,MD-333,MDR,KARUR,Tamil Nadu,12 June 2025,0,13.682,13.682,2024_HWAY_495116_1,14.8,4.4,3.1
+R698,Ayyarmalai - Kumaramangalam Road (via Valayapatty),MD-1002,MDR,KARUR,Tamil Nadu,25 April 2026,0,13.4,13.4,2025_HWAY_608314_1,12.6,3.8,2.6
+R699,Km 58/6 of Erode - Karur Road to Branching from Old NH Road to Km 282/6 Link Road (via Athur - Moorthipalayam - Nanaparappur),N/A,MDR,KARUR,Tamil Nadu,08 December 2025,0,12,12,2024_HWAY_522041_1,18.9,5.6,6.12
+R700,Irumboothipatty - Panchapatty Road,MD-868,MDR,KARUR,Tamil Nadu,20 August 2025,0,11.8,11.8,2024_HWAY_505118_1,13.4,3.9,3.4
+R701,Karur - Vangal Road,MD-772,MDR,KARUR,Tamil Nadu,03 March 2026,0,11.4,11.4,2025_HWAY_611029_1,24.6,7.4,5.25
+R702,Aravakurichy - Chinnadharapuram Road,MD-35,MDR,KARUR,Tamil Nadu,16 October 2025,0,10.03,10.03,2024_HWAY_463155_2,19.2,5.8,4.8
+R703,Uppidamangalam - Munaiyanur Road,MD-865,MDR,KARUR,Tamil Nadu,29 January 2026,0,9.417,9.417,2024_HWAY_488210_1,11.5,3.4,2.35
+R704,Punnam - Pugalur Road,MD-668,MDR,KARUR,Tamil Nadu,11 September 2025,0,8.6,8.6,2025_HWAY_591404_1,9.8,2.9,3.15
+R705,Arasu Colony - Panjamadevi - Nerur Road,MD-864,MDR,KARUR,Tamil Nadu,24 May 2026,0,8.05,8.05,2024_HWAY_519302_1,11.4,3.4,3.9
+R706,Aravakurichy - Pungampadi Road,MD-37,MDR,KARUR,Tamil Nadu,07 February 2026,0,6.6,6.6,2024_HWAY_474113_1,13.8,4.1,2.7
+R707,Manmangalam - Vangal Road,MD-867,MDR,KARUR,Tamil Nadu,19 November 2025,0,5.8,5.8,2025_HWAY_604218_2,16.5,4.9,3.55
+R708,Pugalur High School Medu to Pugalur Railway Junction (via Moolimangalam Road),MD-1003,MDR,KARUR,Tamil Nadu,02 April 2026,0,5.8,5.8,2024_HWAY_535110_1,12.2,3.6,1.95
+R709,Vadaseri Road,N/A,MDR,KARUR,Tamil Nadu,14 October 2025,0,5.8,5.8,2024_HWAY_499214_1,14.6,4.3,4.6
+R710,Kavundampatty - Koppu Road,N/A,MDR,KARUR,Tamil Nadu,27 June 2025,0,3.8,3.8,2025_HWAY_607119_1,18.9,5.6,3.25
+R711,Nangavaram - Perugamani Road,MD-866,MDR,KARUR,Tamil Nadu,09 January 2026,0,2.6,2.6,2024_HWAY_521409_1,9.5,2.9,2.85
+R712,Sholavandan - Valayapatti Road (via Andipatti),MD-568,MDR,MADURAI,Tamil Nadu,14 February 2026,0,30,30,2024_HWAY_463212_1,26.4,8.1,4.6
+R713,Kokkulam - Uthappanaickanur Road,MD-613,MDR,MADURAI,Tamil Nadu,27 September 2025,0,29.2,29.2,2025_HWAY_598114_1,19.2,5.8,3.15
+R714,Thummakkundu - Ulaipatti Road,MD-721,MDR,MADURAI,Tamil Nadu,09 May 2026,0,22.87,22.87,2024_HWAY_502441_2,15.5,4.6,1.9
+R715,Mangalrewu - Elumalai Road,MD-243,MDR,MADURAI,Tamil Nadu,20 November 2025,0,22.4,22.4,2024_HWAY_485119_1,13.6,4.1,5.2
+R716,Kottanathampatti - Kodukkampatti Road,MD-950,MDR,MADURAI,Tamil Nadu,03 February 2026,0,14.18,14.18,2025_HWAY_604312_1,11.8,3.5,2.45
+R717,Kottanathampatti - Kodukkampatti Road,MD-950,MDR,MADURAI,Tamil Nadu,03 February 2026,4.38,20.98,16.6,2025_HWAY_604312_2,11.8,3.5,2.1
+R718,Thanichiyam - Seevagapatti Road (via Alanganallur - Vavidamaruthur),MD-944,MDR,MADURAI,Tamil Nadu,17 August 2025,0,19.4,19.4,2024_HWAY_512034_1,19.22,8,6.4
+R719,Melur - Thiruppuvanam Road (via Poovanthi),MD-266,MDR,MADURAI,Tamil Nadu,30 March 2026,0,19.4,19.4,2024_HWAY_477190_1,28.5,8.3,4.85
+R720,"Chithalai - Thidiyan Road (via Vagaikulam, Munduvelampatti, Valangankulam)",MD-954,MDR,MADURAI,Tamil Nadu,12 December 2025,0,19.2,19.2,2025_HWAY_611208_1,16.4,4.9,3.7
+R721,Melur - Samuthirapatti - Kottaiyur - Aravakurichi Road,MD-892,MDR,MADURAI,Tamil Nadu,24 June 2025,0,19,19,2024_HWAY_495311_1,22.4,6.8,5.15
+R722,Alampatti - Sedapatti Road,MD-10,MDR,MADURAI,Tamil Nadu,06 April 2026,0,18.4,18.4,2024_HWAY_539014_2,8.67,0.2614,2.3
+R723,Kadachanendal - Thiruvathavour Road,MD-893,MDR,MADURAI,Tamil Nadu,19 October 2025,0,17.8,17.8,2025_HWAY_601147_1,18.9,5.6,4.1
+R724,Melakkal - Peranai Road,MD-262,MDR,MADURAI,Tamil Nadu,01 February 2026,17.4,34.6,17.2,2024_HWAY_468205_1,14.6,4.3,3.95
+R725,Alanganallur - Chathiravellalapatti Road (via Muduvarpatti),MD-1094,MDR,MADURAI,Tamil Nadu,15 September 2025,0,17.2,17.2,2024_HWAY_516410_1,22.4,6.8,5.8
+R726,T. Kallupatti - Virudhunagar Road,MD-956,MDR,MADURAI,Tamil Nadu,28 May 2026,0,14.49,14.49,2025_HWAY_593219_1,26.5,7.9,4.25
+R727,Kumaram - Sholavandan Road,MD-955,MDR,MADURAI,Tamil Nadu,10 January 2026,0,15.32,15.32,2024_HWAY_482110_1,12.96,0.4157,2.65
+R728,Pudupatti - Mangalrewu Road,MD-376,MDR,MADURAI,Tamil Nadu,22 March 2026,0,13.8,13.8,2024_HWAY_505314_1,10.82,0.1902,3.4
+R729,Kallandiri - Panaikulam Road,MD-957,MDR,MADURAI,Tamil Nadu,05 November 2025,0,13.4,13.4,2025_HWAY_608122_1,14.8,4.4,2.95
+R730,Koodakoil Road,MD-895,MDR,MADURAI,Tamil Nadu,17 February 2026,0,13.4,13.4,2024_HWAY_532104_1,12.5,3.8,3.15
+R731,Elumalai Road,MD-104,MDR,MADURAI,Tamil Nadu,29 September 2025,0,12.8,12.8,2024_HWAY_485116_1,13.6,4.1,4.2
+R732,Thirumangalam - Madurai Airport Road,MD-953,MDR,MADURAI,Tamil Nadu,12 June 2025,0,12.1,12.1,2025_HWAY_602331_1,26.5,7.9,5.65
+R733,B.C.C. Road to Thirumal Road,MD-958,MDR,MADURAI,Tamil Nadu,25 April 2026,0,12,12,2024_HWAY_519402_1,9.2,2.7,2.4
+R734,Thumbaipatti - Jeyankondan Nilai Road,MD-959,MDR,MADURAI,Tamil Nadu,08 December 2025,0,8.8,8.8,2025_HWAY_595118_1,11.4,3.4,3.85
+R735,Thumbaipatti - Jeyankondan Nilai Road,MD-959,MDR,MADURAI,Tamil Nadu,8 December 2025,9.26,12.06,2.8,2025_HWAY_595118_2,11.4,3.4,2.1
+R736,Thirunagar - Palkalainagar Road,MD-945,MDR,MADURAI,Tamil Nadu,3 March 2026,0,11.6,11.6,2024_HWAY_473110_2,18.9,5.6,6.25
+R737,Othakadai - B. Mettupatti Road,MD-946,MDR,MADURAI,Tamil Nadu,16 October 2025,0,10.8,10.8,2024_HWAY_496225_1,15.5,4.6,3.1
+R738,Avalsooranpatti - Sennampatti Road,MD-960,MDR,MADURAI,Tamil Nadu,29 January 2026,0,9.603,9.603,2025_HWAY_609114_1,14.2,4.3,2.85
+R739,Padeeswaran - Pannikundu Road,MD-961,MDR,MADURAI,Tamil Nadu,11 September 2025,0,10,10,2024_HWAY_521044_1,11.8,3.5,4.4
+R740,T. Kallupatti - Saptur Road,MD-769,MDR,MADURAI,Tamil Nadu,24 May 2026,7.4,16.6,9.2,2024_HWAY_504219_1,16.4,4.9,3.95
+R741,Peraiyur - Watrap Road,MD-962,MDR,MADURAI,Tamil Nadu,7 February 2026,0,9.19,9.19,2025_HWAY_612033_1,22.4,6.8,5.1
+R742,Sengapadai - Sivarakkottai Road,MD-963,MDR,MADURAI,Tamil Nadu,19 November 2025,0,8.31,8.31,2024_HWAY_464112_2,12.8,3.8,2.75
+R743,Sellur - Kulamangalam Road,MD-947,MDR,MADURAI,Tamil Nadu,2 April 2026,4.8,12.8,8,2024_HWAY_489110_1,8.6,2.5,3.5
+R744,Varichiyur - Sakkudi Road,MD-948,MDR,MADURAI,Tamil Nadu,14 October 2025,0,7,7,2025_HWAY_592405_1,9.4,2.8,4.15
+R745,Peraiyur - Melapatti Road,MD-951,MDR,MADURAI,Tamil Nadu,27 June 2025,0,6.8,6.8,2024_HWAY_515309_1,11.2,3.3,1.8
+R746,Palamedu - Vembarali Road,MD-1095,MDR,MADURAI,Tamil Nadu,13 February 2026,0,6.6,6.6,2024_HWAY_475221_1,16.2,4.8,4.9
+R747,Vellaloor - Uranganapatti District Border Road,MD-952,MDR,MADURAI,Tamil Nadu,26 September 2025,0,6.2,6.2,2025_HWAY_605314_2,14.8,4.4,3.6
+R748,Madurai - Thondi Road,MD-232,MDR,MADURAI,Tamil Nadu,08 May 2026,12.8,17.8,5,2024_HWAY_536102_1,38.5,11.4,6.8
+R749,Avaniapuram - Thirupparankundram Road,MD-48,MDR,MADURAI,Tamil Nadu,20 November 2025,0,4.8,4.8,2024_HWAY_498319_1,12.6,3.8,5.25
+R750,Alagarkoil - Natham Road,MD-949,MDR,MADURAI,Tamil Nadu,02 February 2026,0,4.4,4.4,2024_HWAY_539411_1,28.4,8.5,4.65
+R751,New Austinpatti Road,MD-294,MDR,MADURAI,Tamil Nadu,16 August 2025,0,2,2,2024_HWAY_482110_1,9.5,2.9,3.1
+R752,Old Austinpatti Road,MD-302,MDR,MADURAI,Tamil Nadu,29 March 2026,0,2,2,2025_HWAY_601443_1,21.2,8,2.45
+R753,Parali - Lingavadi - Ponthuugampatti Road,MD-1148,MDR,MADURAI,Tamil Nadu,11 December 2025,5.6,7.4,1.8,2024_HWAY_516209_1,16.4,4.9,5.2
+R754,Thirupparankundram Town Road,MD-469,MDR,MADURAI,Tamil Nadu,23 June 2025,0,1.4,1.4,2025_HWAY_594118_1,5.2,1.6,1.95
+R755,Irumbadi Road branching at Km 27/10 of Melakkal - Peranai Road,N/A,MDR,MADURAI,Tamil Nadu,05 April 2026,0,0.9,0.9,2024_HWAY_463102_1,8.9,2.6,3.8
+R756,East Velli Street Road,MD-101,MDR,MADURAI,Tamil Nadu,18 October 2025,0,0.8,0.8,2025_HWAY_609440_1,4.1,1.2,2.6
+R757,Vaigai Causeway Approach Road,MD-526,MDR,MADURAI,Tamil Nadu,31 January 2026,0,0.8,0.8,2024_HWAY_505112_2,6.8,2.1,3.4
+R758,"Periyakulam - Palaya Vathalagundu Road (via Jeyamangalam, Bomminaickanpatty, Eluvanampatty)",MD-903,MDR,THENI,Tamil Nadu,14 September 2025,0,18.23,18.23,2024_HWAY_522304_1,34.6,10.4,5.85
+R759,Andipatty - Velapparkovil Road,MD-570,MDR,THENI,Tamil Nadu,27 May 2026,0,18,18,2025_HWAY_611029_1,22.4,6.8,4.15
+R760,Pulliman Combai Road,MD-667,MDR,THENI,Tamil Nadu,09 January 2026,0,15,15,2024_HWAY_474116_1,14.8,4.4,2.3
+R761,"Myladumparai - Thangammalpuram Road (via Moolakadai, Vaickalparai)",MD-1147,MDR,THENI,Tamil Nadu,21 March 2026,0,14.4,14.4,2024_HWAY_499218_1,18.9,5.6,3.9
+R762,Varatharajanagar - Renganathapuram Road,MD-732,MDR,THENI,Tamil Nadu,04 November 2025,0,13.8,13.8,2025_HWAY_604312_1,11.5,3.4,2.75
+R763,Kanniyappa Pillai Patty - Gandamanur Road (via G. Usilampatty),MD-1145,MDR,THENI,Tamil Nadu,17 February 2026,0,13.6,13.6,2024_HWAY_531105_1,26.5,7.9,4.4
+R764,Sitharpatty Vilakku - Ambasamuthiram Road (via Ganeshapuram),MD-1144,MDR,THENI,Tamil Nadu,29 September 2025,0,11.6,11.6,2024_HWAY_488214_2,14.2,4.3,3.25
+R765,Sangarapuram - Chinnamanur Road,MD-676,MDR,THENI,Tamil Nadu,12 June 2025,0,11.2,11.2,2025_HWAY_591404_1,19.6,5.9,6.12
+R766,Periyakulam - Kodaikanal Road (via Adukkam),MD-1168,MDR,THENI,Tamil Nadu,25 April 2026,0,10.8,10.8,2024_HWAY_519302_1,38.2,11.6,8.4
+R767,Veerapandi - Nagalapuram Road,MD-734,MDR,THENI,Tamil Nadu,08 December 2025,4.83,15.2,10.37,2024_HWAY_472109_1,11.8,3.5,2.95
+R768,Bodi - Kurangani Road,MD-58,MDR,THENI,Tamil Nadu,20 August 2025,6,16,10,2025_HWAY_607119_2,24.6,7.4,3.6
+R769,Periyakulam - Sothuparai Road,MD-1146,MDR,THENI,Tamil Nadu,03 March 2026,0,9.68,9.68,2024_HWAY_535110_1,13.4,3.9,5.1
+R770,Kottur - Kamatchipuram Road,MD-1185,MDR,THENI,Tamil Nadu,16 October 2025,0,8.4,8.4,2024_HWAY_538210_1,15.5,4.6,3.85
+R771,Veerapandi - Seeppalakottai Road,MD-735,MDR,THENI,Tamil Nadu,29 January 2026,0,7.2,7.2,2024_HWAY_481229_1,12.8,3.8,2.6
+R772,Pannaipuram - Pulikuthi Road,MD-965,MDR,THENI,Tamil Nadu,11 September 2025,0,6.6,6.6,2025_HWAY_603411_1,9.4,2.8,4.15
+R773,Andipatty - Jeyamangalam Road,MD-763,MDR,THENI,Tamil Nadu,24 May 2026,0,6.6,6.6,2024_HWAY_517304_1,16.4,4.9,5.4
+R774,Veerapandi - Koduvilarpatty Road,MD-1186,MDR,THENI,Tamil Nadu,07 February 2026,0,6.6,6.6,2025_HWAY_595208_1,14.8,4.4,2.9
+R775,Theni Bypass Road,MD-712,MDR,THENI,Tamil Nadu,19 November 2025,0,4.4,4.4,2024_HWAY_464115_1,32.4,9.8,7.12
+R776,Cumbam - Kamayagowndanpatty Road,MD-587,MDR,THENI,Tamil Nadu,02 April 2026,0,3.6,3.6,2025_HWAY_608140_2,11.9,3.5,3.65
+R777,Kodai - Kochin Road,MD-170,MDR,THENI,Tamil Nadu,14 October 2025,58.4,61.4,3,2024_HWAY_506214_1,36.5,11.1,8.5
+R778,Old Batlakundu - Eluvanampatty Road,MD-1163,MDR,THENI,Tamil Nadu,27 June 2025,13,15.2,2.2,2024_HWAY_521094_1,12.5,3.8,2.25
+R779,Uthamapalayam Town Road,MD-516,MDR,THENI,Tamil Nadu,09 January 2026,0,1.2,1.2,2025_HWAY_612014_1,5.4,1.6,4.1
+R780,Bodi - Shanmugasundarapuram Road,MD-964,MDR,THENI,Tamil Nadu,21 May 2026,0,1.15,1.15,2024_HWAY_473219_1,9.2,2.7,3.15
+R781,Palayam - Uppukottai Road,MD-649,MDR,THENI,Tamil Nadu,04 September 2025,0,0.8,0.8,2024_HWAY_498302_1,15.8,4.7,4.95
+R782,Krishnamanayakkan Thoppu Road,MD-616,MDR,THENI,Tamil Nadu,17 March 2026,7.9,8.6,0.7,2025_HWAY_605410_1,7.1,2.1,2.4
+R783,Kodai -Cochin Road,MD-170,MDR,DINDIGUL,Tamil Nadu,14 October 2025,0,50,50,2024_HWAY_532144_1,36.5,11.1,9.2
+R784,Dharumathu patty - Adalur - Thandigudi Road,MD-589,MDR,DINDIGUL,Tamil Nadu,26 February 2026,0,45,45,2024_HWAY_489311_2,28.5,8.3,5.65
+R785,Vathalagundu - Thandigudi road,MD-733,MDR,DINDIGUL,Tamil Nadu,08 November 2025,0,40.9,40.9,2025_HWAY_592109_1,7.05,6.5679,6.1
+R786,Goshen Road,MD-117,MDR,DINDIGUL,Tamil Nadu,22 April 2026,23.4,62.6,39.2,2024_HWAY_514202_1,14.6,4.2,4.35
+R787,Kodai- Palani Ghat Road,MD-171,MDR,DINDIGUL,Tamil Nadu,05 January 2026,0,25,25,2024_HWAY_476108_1,34.8,10.4,12.8
+R788,Natham - Pillaiyarnatham road,MD-644,MDR,DINDIGUL,Tamil Nadu,18 June 2025,8.4,32.8,24.4,2025_HWAY_606211_2,9.187,0.6277,3.7
+R789,Melur-Samuthirapatti - Kottaiyur - Aravankurichi road,MD-892,MDR,DINDIGUL,Tamil Nadu,30 March 2026,19,42.6,23.6,2024_HWAY_534105_1,22.4,6.8,5.25
+R790,Dindigul - Sirumalai Ghat road,MD-1149,MDR,DINDIGUL,Tamil Nadu,12 September 2025,0,22,22,2025_HWAY_589431_1,31.5,9.4,3.98
+R791,Sitharevu - Chinnalapatty Road,MD-687,MDR,DINDIGUL,Tamil Nadu,25 May 2026,0,20.2,20.2,2024_HWAY_463122_1,14.2,4.3,2.45
+R792,"Periyakulam -Palaya Vathalagundu (Via) Jeyamangalam, Bomminaickan patty - Eluvanampatti Road",MD-903,MDR,DINDIGUL,Tamil Nadu,08 February 2026,18.23,31.23,13,2024_HWAY_522304_1,34.6,10.4,5.85
+R793,Pithalaipatti -Palayakannivadi Road,MD-904,MDR,DINDIGUL,Tamil Nadu,20 November 2025,0,10.2,10.2,2025_HWAY_615524_1,12.8,3.8,3.1
+R794,Vathalagundu -Genguvarpatty Road,MD-902,MDR,DINDIGUL,Tamil Nadu,03 April 2026,0,10,10,2024_HWAY_502441_2,16.5,4.9,1.9
+R795,Kodai - Pallangi Road,MD-897,MDR,DINDIGUL,Tamil Nadu,15 October 2025,0,9.4,9.4,2024_HWAY_485119_1,19.6,5.9,5.2
+R796,Veiladichampatty - Palayakannivady Road,MD-967,MDR,DINDIGUL,Tamil Nadu,28 June 2025,0,9,9,2025_HWAY_604312_1,11.4,3.4,2.65
+R797,Reddiarchatram- Kalvarpatty (via) Devinaickenpatti Road,MD-966,MDR,DINDIGUL,Tamil Nadu,10 January 2026,0,8.8,8.8,2024_HWAY_512034_1,18.9,5.6,6.4
+R798,Nilakottai-Salaipudur Road,MD-1283,MDR,DINDIGUL,Tamil Nadu,22 May 2026,0,8.6,8.6,2024_HWAY_477190_1,13.5,3.9,4.85
+R799,Pannaikadu -Mangalamcombu Road,MD-325,MDR,DINDIGUL,Tamil Nadu,05 September 2025,3.6,12,8.4,2025_HWAY_611208_1,15.8,4.7,3.7
+R800,Reddiarchatram -Kannivadi Road,MD-905,MDR,DINDIGUL,Tamil Nadu,18 March 2026,0,7.6,7.6,2024_HWAY_495311_1,12.2,3.6,5.15
+R801,Kuttupatti -Seithur -Sendurai Road,MD-898,MDR,DINDIGUL,Tamil Nadu,30 October 2025,8,14.8,6.8,2024_HWAY_539014_2,16.4,4.9,2.3
+R802,Parali - Lingavadi - Ponthugampatty road,MD-1148,MDR,DINDIGUL,Tamil Nadu,13 February 2026,0,5.6,5.6,2025_HWAY_601147_1,16.4,4.9,4.1
+R803,Ambathurai - Sempatty Road,MD-969,MDR,DINDIGUL,Tamil Nadu,26 June 2025,0,5.2,5.2,2024_HWAY_468205_1,13.8,4.1,3.95
+R804,Veerakkal Village Road,MD-968,MDR,DINDIGUL,Tamil Nadu,09 January 2026,0,5.2,5.2,2024_HWAY_516410_1,11.2,3.3,5.8
+R805,Lake Bridge -Observatory Road,MD-217,MDR,DINDIGUL,Tamil Nadu,21 April 2026,0,4,4,2025_HWAY_593219_1,7.5,2.1,4.25
+R806,Melakkal- Peranai Road,MD-262,MDR,DINDIGUL,Tamil Nadu,04 November 2025,34.6,38.4,3.8,2024_HWAY_482110_1,14.6,4.3,3.1
+R807,Pannaikadu Village Road,MD-326,MDR,DINDIGUL,Tamil Nadu,17 February 2026,0,3.6,3.6,2024_HWAY_505314_1,9.4,2.8,3.4
+R808,Pettai Mettupatti -Nagal Nagar Road,MD-906,MDR,DINDIGUL,Tamil Nadu,13 September 2025,0,2.23,2.23,2025_HWAY_608122_1,5.2,1.6,2.95
+R809,Observatory- Pillar Rock Road,MD-298,MDR,DINDIGUL,Tamil Nadu,26 May 2026,0,1.2,1.2,2024_HWAY_531109_1,8.6,2.5,3.65
+R810,The Road from Km 377/6 of BCC road to KM 1/6 of SH - 35,MD-1096,MDR,DINDIGUL,Tamil Nadu,09 February 2026,0,1.16,1.16,2024_HWAY_539014_1,12.5,3.8,2.3
+R811,Patchalur- Vadakadu Road and on to Oddanchatram Road,MD-341,MDR,PALANI,Tamil Nadu,21 November 2025,0,31.6,31.6,2024_HWAY_468205_2,26.4,8.1,4.1
+R812,Veriyappur - Markkampatty Road,MD-742,MDR,PALANI,Tamil Nadu,04 April 2026,0,23.1,23.1,2025_HWAY_601147_2,15.8,4.7,3.95
+R813,Karur - Esanatham -Koombur - Vedasandur Road,MD-606,MDR,PALANI,Tamil Nadu,16 October 2025,22.4,29.4,7,2024_HWAY_516410_2,19.6,5.9,3.8
+R814,Karur - Esanatham -Koombur - Vedasandur Road,MD-606,MDR,PALANI,Tamil Nadu,16 October 2025,35.625,51.225,15.6,2024_HWAY_516410_3,19.6,5.9,4.15
+R815,Puliyampatty -Salakkadai Road,MD-911,MDR,PALANI,Tamil Nadu,29 June 2025,0,19.4,19.4,2025_HWAY_593219_2,13.5,3.9,5.8
+R816,Reddiarchatram- Kalvarpatty (via) Devinaickenpatti Road,MD-966,MDR,PALANI,Tamil Nadu,11 January 2026,8.8,28.1,19.3,2024_HWAY_512034_2,18.9,5.6,6.4
+R817,Velampatti -Koothampoondi Road,MD-910,MDR,PALANI,Tamil Nadu,23 May 2026,0,19.2,19.2,2024_HWAY_482110_2,11.8,3.5,4.25
+R818,Palaya Ayakudi -Porulur Road,MD-900,MDR,PALANI,Tamil Nadu,06 September 2025,0,19.1,19.1,2025_HWAY_608122_2,14.2,4.3,2.95
+R819,Servaikaranpatti -Aravakurichi Road,MD-418,MDR,PALANI,Tamil Nadu,19 March 2026,6.4,24.6,18.2,2024_HWAY_531109_2,16.5,4.9,3.65
+R820,Manjanaicken patty - Kallimandayam Road,MD-629,MDR,PALANI,Tamil Nadu,31 October 2025,0,18,18,2024_HWAY_495311_2,14.8,4.4,5.15
+R821,Vedasendur- Kovilur Road,MD-1284,MDR,PALANI,Tamil Nadu,14 February 2026,0,17.935,17.935,2025_HWAY_611208_2,5.38,2.2085,5.25
+R822,Kallimandayam- Moolanur Road,MD-908,MDR,PALANI,Tamil Nadu,27 June 2025,0,15.2,15.2,2024_HWAY_477190_2,22.5,6.8,4.85
+R823,Kodai- Palani Ghat Road,MD-171,MDR,PALANI,Tamil Nadu,10 January 2026,25,39.6,14.6,2024_HWAY_489311_3,34.8,10.4,5.65
+R824,Pallapatti - Aravakurichi - Esanatham - Guziliamparai Road,MD-650,MDR,PALANI,Tamil Nadu,22 April 2026,15,29.128,14.128,2025_HWAY_598311_2,28.5,8.3,5.8
+R825,Palani - Kolumam Road,MD-901,MDR,PALANI,Tamil Nadu,05 November 2025,0,13.2,13.2,2024_HWAY_505314_2,19.6,5.9,3.4
+R826,Palani Adivaram -Thekkanthottam Road,MD-310,MDR,PALANI,Tamil Nadu,18 February 2026,0,0.972,0.972,2024_HWAY_521044_2,11.4,3.4,2.1
+R827,Palani Adivaram -Thekkanthottam Road,MD-310,MDR,PALANI,Tamil Nadu,19 February 2026,1.987,13.2,11.213,2024_HWAY_521044_3,11.4,3.4,2.45
+R828,Ambilikkai-Kuthilippai Road,MD-970,MDR,PALANI,Tamil Nadu,02 October 2025,0,11.4,11.4,2025_HWAY_604312_2,5.93,0.081,2.65
+R829,Ayyalore- Eriodu Road,MD-1285,MDR,PALANI,Tamil Nadu,15 May 2026,0,11.2,11.2,2024_HWAY_475109_2,16.2,4.8,5.1
+R830,Chatirapatty - Devathur (via) 19Pudur Road,MD-971,MDR,PALANI,Tamil Nadu,27 November 2025,0,9.57,9.57,2025_HWAY_609441_2,14.8,4.4,5.8
+R831,Kedaiyerambu -Edaiyakottai Road,MD-909,MDR,PALANI,Tamil Nadu,10 April 2026,0,9.4,9.4,2024_HWAY_505118_2,12.5,3.8,3.4
+R832,Palaviduthi - Kadavoor - Ayyalur Road,MD-648,MDR,PALANI,Tamil Nadu,22 October 2025,16.054,24.854,8.8,2025_HWAY_601442_2,22.4,6.8,4.45
+R833,Palani - Palaru - Porunthalaru Dam road (Via) Balasamuthiram,MD-1150,MDR,PALANI,Tamil Nadu,05 July 2025,0,7.2,7.2,2024_HWAY_522041_2,13.6,4.1,6.12
+R834,"Moolanur-Chinnaihgoundanvalasu Road (via) Kilankundal, Moolakadai",MD-896,MDR,PALANI,Tamil Nadu,17 January 2026,20.39,27.39,7,2025_HWAY_608122_3,18.9,5.6,2.95
+R835,Reddiarchatram -Karuppimadam Road,MD-907,MDR,PALANI,Tamil Nadu,30 May 2026,0,6,6,2024_HWAY_495311_3,11.4,3.4,5.15
+R836,Manapparai - Guziliamparai Road,MD-628,MDR,PALANI,Tamil Nadu,12 September 2025,30,34,4,2024_HWAY_472109_3,31.5,9.4,4.15
+R837,Palayam -Servaikaranpatti Road,MD-313,MDR,PALANI,Tamil Nadu,25 March 2026,0,3.2,3.2,2025_HWAY_591404_2,15.5,4.6,3.15
+R838,Palayam -Madukkarai Road,MD-312,MDR,PALANI,Tamil Nadu,07 November 2025,0,2.2,2.2,2024_HWAY_535110_2,11.2,3.3,1.95
+R839,Elayankudi - Vandal - Sukkirapatti road ,MD-593,MDR,SIVAGANGAI,Tamil Nadu,20 February 2026,0,27.6,27.6,2024_HWAY_463212_2,18.4,5.6,4.6
+R840,Elayankudi - Vandal - Sukkirapatti road ,MD-593,MDR,SIVAGANGAI,Tamil Nadu,20 February 2026,33.4,42.4,9,2024_HWAY_463212_3,18.4,5.6,2.1
+R841,Manamadurai - Paramakudi road (Via) T. Pudukottai,MD-627,MDR,SIVAGANGAI,Tamil Nadu,03 July 2025,0,24.8,24.8,2025_HWAY_598114_2,24.6,7.4,3.15
+R842,Devakottai - Pudukottai District Border road (via) Kannankudi road,MD-973,MDR,SIVAGANGAI,Tamil Nadu,16 January 2026,0,24.2,24.2,2024_HWAY_502441_3,21.4,6.4,1.9
+R843,Nattarasankottai – Chockanathapuram Road,MD-912,MDR,SIVAGANGAI,Tamil Nadu,28 May 2026,0,23.3,23.3,2024_HWAY_485119_2,14.2,4.2,5.2
+R844,Kallal - Devakottai road,MD-1287,MDR,SIVAGANGAI,Tamil Nadu,11 October 2025,0,19.71,19.71,2025_HWAY_604312_3,19.6,5.9,2.45
+R845,Singampunari - V. Pudur road,MD-913,MDR,SIVAGANGAI,Tamil Nadu,21 February 2026,0,19.2,19.2,2024_HWAY_512034_3,12.8,3.8,6.4
+R846,Thiruppathur - Alangudi road,MD-715,MDR,SIVAGANGAI,Tamil Nadu,04 October 2025,0,8.4,8.4,2024_HWAY_477190_3,16.5,4.9,4.85
+R847,Thiruppathur - Alangudi road,MD-715,MDR,SIVAGANGAI,Tamil Nadu,04 October 2025,8.4,17,8.6,2024_HWAY_477190_4,16.5,4.9,4.15
+R848,Pulithipatti - Ponnamaravathi road,MD-914,MDR,SIVAGANGAI,Tamil Nadu,17 May 2026,0,16.7,16.7,2025_HWAY_611208_3,15.6,4.7,3.7
+R849,Sarugani - Devakottai road,MD-413,MDR,SIVAGANGAI,Tamil Nadu,29 November 2025,0,15.48,15.48,2024_HWAY_495311_4,21.4,6.4,5.15
+R850,Managiri - Kallal - Madagupatti road,MD-240,MDR,SIVAGANGAI,Tamil Nadu,12 April 2026,11.6,17.6,6,2024_HWAY_539014_3,28.5,8.3,2.3
+R851,Managiri - Kallal - Madagupatti road,MD-240,MDR,SIVAGANGAI,Tamil Nadu,12 April 2026,17.6,26.684,9.084,2024_HWAY_539014_4,28.5,8.3,2.3
+R852,Sarugani - Devakottai road to Muppaiyur road,MD-1151,MDR,SIVAGANGAI,Tamil Nadu,24 October 2025,0,14.8,14.8,2025_HWAY_601147_3,13.6,4.1,4.1
+R853,Aralikottai - Keelavalavu road,MD-972,MDR,SIVAGANGAI,Tamil Nadu,07 July 2025,0,13.4,13.4,2024_HWAY_468205_3,14.2,4.3,3.95
+R854,NH 49 to Kattanoor road,MD-579,MDR,SIVAGANGAI,Tamil Nadu,19 January 2026,0,12.683,12.683,2024_HWAY_516410_4,11.8,3.5,3.8
+R855,Devakottai - A.Pudur road,MD-1152,MDR,SIVAGANGAI,Tamil Nadu,01 June 2026,0,10.9,10.9,2025_HWAY_593219_3,16.4,4.9,4.15
+R856,Devakottai - A.Pudur road,MD-1152,MDR,SIVAGANGAI,Tamil Nadu,01 June 2026,10.9,12.1,1.2,2025_HWAY_593219_4,16.4,4.9,5.8
+R857,Okkur – Keelapoongudi Road,MD-299,MDR,SIVAGANGAI,Tamil Nadu,14 September 2025,13.19,24.683,11.493,2024_HWAY_512034_4,12.5,3.8,6.4
+R858,Koilapatti Junction to Pudukottai District Border road,MD-176,MDR,SIVAGANGAI,Tamil Nadu,27 March 2026,0,11.21,11.21,2024_HWAY_482110_3,9.4,2.8,4.25
+R859,Manamadurai -Puliyangulam road,MD-1153,MDR,SIVAGANGAI,Tamil Nadu,09 November 2025,0,11.2,11.2,2025_HWAY_608122_4,15.5,4.6,2.95
+R860,Kottaiyur - Aranthangi road,MD-185,MDR,SIVAGANGAI,Tamil Nadu,22 February 2026,5.6,16.404,10.804,2024_HWAY_531109_3,32.4,9.8,3.65
+R861,Padamathur - Thiruppachethy road,MD-647,MDR,SIVAGANGAI,Tamil Nadu,05 July 2025,0,10,10,2024_HWAY_495311_3,14.8,4.4,5.15
+R862,Kunnakudi - Kanadukathan road,MD-209,MDR,SIVAGANGAI,Tamil Nadu,18 January 2026,11.6,20.6,9,2025_HWAY_611208_3,19.6,5.9,5.25
+R863,Kunnakudi - Kanadukathan road,MD-209,MDR,SIVAGANGAI,Tamil Nadu,20 February 2026,23.2,23.6,0.4,2025_HWAY_611208_4,19.6,5.9,4.85
+R864,Okkur – Nattarasankottai Road,MD-300,MDR,SIVAGANGAI,Tamil Nadu,03 October 2025,0,8.531,8.531,2024_HWAY_477190_3,11.4,3.4,5.65
+R865,NH 210 to Vattanam road,MD-917,MDR,SIVAGANGAI,Tamil Nadu,16 May 2026,0,8.29,8.29,2024_HWAY_489311_4,26.5,7.9,5.8
+R866,Thirukostiyur to meet Madurai - Devakottai road,MD-1286,MDR,SIVAGANGAI,Tamil Nadu,28 November 2025,0,8.2,8.2,2025_HWAY_598311_3,18.9,5.6,3.4
+R867,Thiruppuvanam - Pulvaikarai - Narikudi road,MD-718,MDR,SIVAGANGAI,Tamil Nadu,11 April 2026,0,7.512,7.512,2024_HWAY_505314_3,22.4,6.8,2.1
+R868,Thayamangalam Road,MD-975,MDR,SIVAGANGAI,Tamil Nadu,23 October 2025,0,7.2,7.2,2024_HWAY_521044_3,13.5,3.9,2.45
+R869,Karaikudi - Soorakudi road,MD-974,MDR,SIVAGANGAI,Tamil Nadu,06 July 2025,0,4.4,4.4,2024_HWAY_521044_4,9.2,2.7,2.65
+R870,Karaikudi - College Campus road,MD-148,MDR,SIVAGANGAI,Tamil Nadu,18 January 2026,2.4,6.435,4.035,2025_HWAY_604312_3,7.8,2.3,5.1
+R871,Chetinadu Railway Feeder road,MD-73,MDR,SIVAGANGAI,Tamil Nadu,31 May 2026,0,2.781,2.781,2024_HWAY_475109_3,4.1,1.2,5.1
+R872,Elayangudi Bye pass road,MD-1167,MDR,SIVAGANGAI,Tamil Nadu,13 September 2025,0,2.43,2.43,2025_HWAY_609441_3,16.2,4.8,5.8
+R873,Madurai - Thondi Byepass road,MD-231,MDR,SIVAGANGAI,Tamil Nadu,26 March 2026,72.4,74,1.6,2024_HWAY_539014_5,24.5,7.3,2.3
+R874,Melur - Thiruppuvanam (via) Poovanthi road,MD-266,MDR,SIVAGANGAI,Tamil Nadu,08 November 2025,19.564,21.003,1.439,2024_HWAY_468205_4,28.5,8.3,4.1
+R875,Old Madurai - Thondi road,MD-305,MDR,SIVAGANGAI,Tamil Nadu,21 February 2026,17.8,19.2,1.4,2025_HWAY_601147_4,14.2,4.3,3.95
+R876,College Campus road to Karaikudi Railway Station road,MD-83,MDR,SIVAGANGAI,Tamil Nadu,04 July 2025,0,1.2,1.2,2024_HWAY_516410_5,5.4,1.6,3.8
+R877,Thiruppuvanam West car Street road,MD-559,MDR,SIVAGANGAI,Tamil Nadu,17 January 2026,0,0.1,0.1,2025_HWAY_593219_5,4.1,1.2,4.15
+R878,Muthanendal Railway Feeder road,MD-278,MDR,SIVAGANGAI,Tamil Nadu,29 May 2026,0,0.053,0.053,2024_HWAY_512034_5,3.2,0.95,5.8
+R879,Paramakudi - Keerandai Road,MD-652,MDR,RAMANATHAPURAM,Tamil Nadu,12 October 2025,0,34.46,34.46,2024_HWAY_482110_4,19.6,5.9,6.4
+R880,Devipattinam - Nainarkoil Road (Via) Pottagavayal,MD-93,MDR,RAMANATHAPURAM,Tamil Nadu,22 February 2026,0,12.8,12.8,2025_HWAY_608122_5,26.4,8.1,4.25
+R881,Devipattinam - Nainarkoil Road (Via) Pottagavayal,MD-93,MDR,RAMANATHAPURAM,Tamil Nadu,22 February 2026,15.8,30.2,14.4,2025_HWAY_608122_6,26.4,8.1,2.1
+R882,Mudukulathur - Uthiragosamangai Road,MD-637,MDR,RAMANATHAPURAM,Tamil Nadu,05 October 2025,0,26.6,26.6,2024_HWAY_531109_4,21.4,6.4,2.95
+R883,Mudukulathur - Veerasolam Road Joining at km.99/4 of SH 42,MD-638,MDR,RAMANATHAPURAM,Tamil Nadu,18 May 2026,0,25.925,25.925,2024_HWAY_495311_4,18.9,5.6,3.65
+R884,Thiruppullani - Pirappanvalasai Road,MD-717,MDR,RAMANATHAPURAM,Tamil Nadu,30 November 2025,0,25.683,25.683,2025_HWAY_611208_5,16.2,4.8,5.15
+R885,Thiruvadanai - S.P. Pattinam Road,MD-916,MDR,RAMANATHAPURAM,Tamil Nadu,13 April 2026,0,23.98,23.98,2024_HWAY_477190_4,28.4,8.5,5.25
+R886,NH 210 - Vattanam Road,MD-917,MDR,RAMANATHAPURAM,Tamil Nadu,25 October 2025,8.29,30.89,22.6,2024_HWAY_489311_5,26.5,7.9,4.85
+R887,Veneervaikkal - Manjoor Road,MD-1154,MDR,RAMANATHAPURAM,Tamil Nadu,08 July 2025,0,20.8,20.8,2025_HWAY_598311_4,14.8,4.4,5.65
+R888,Mudukulathur - Sikkal Road,MD-976,MDR,RAMANATHAPURAM,Tamil Nadu,20 January 2026,0,20.073,20.073,2024_HWAY_505314_4,21.5,6.4,5.8
+R889,Mudukulathur - Kamuthi Road,MD-273,MDR,RAMANATHAPURAM,Tamil Nadu,02 June 2026,0,18.4,18.4,2024_HWAY_521044_5,22.4,6.8,3.4
+R890,Ettivayal - Edambadal (Via) Uthiragosamangai Road,MD-915,MDR,RAMANATHAPURAM,Tamil Nadu,14 September 2025,0,17.2,17.2,2024_HWAY_521044_6,13.6,4.1,2.45
+R891,SH No.33 Branching at km.83/4 to Joint at km.90/4 (via) Thiruvettriyur Road,MD-1288,MDR,RAMANATHAPURAM,Tamil Nadu,27 March 2026,0,15.78,15.78,2025_HWAY_604312_4,12.5,3.8,2.65
+R892,SH 29 Km.207/8 to Muthaneri Road (Via) Vilathur,MD-548,MDR,RAMANATHAPURAM,Tamil Nadu,09 November 2025,0,15.45,15.45,2024_HWAY_539014_6,11.9,3.5,2.3
+R893,Parthibanur - Vilathur Road,MD-339,MDR,RAMANATHAPURAM,Tamil Nadu,22 February 2026,0,12.8,12.8,2024_HWAY_468205_5,15.8,4.7,4.1
+R894,NH 210 to Ananthur Road,MD-1289,MDR,RAMANATHAPURAM,Tamil Nadu,22 February 2026,0,12.763,12.763,2025_HWAY_601147_5,9.4,2.8,3.95
+R895,Uthiragosamangai - Thiruppullani Road,MD-915A,MDR,RAMANATHAPURAM,Tamil Nadu,05 July 2025,0,10.88,10.88,2024_HWAY_516410_6,18.9,5.6,3.8
+R896,Uthiragosamangai - Thiruppullani Road,MD-915A,MDR,RAMANATHAPURAM,Tamil Nadu,23 February 2026,11.21,11.41,0.2,2024_HWAY_516410_7,18.9,5.6,4.15
+R897,Valudur - Periyapattinam Road,MD-1155,MDR,RAMANATHAPURAM,Tamil Nadu,06 July 2025,0,10.2,10.2,2025_HWAY_593219_6,14.2,4.3,5.8
+R898,Ramanathapuram - Emaneswaram (Via) Nainarkoil Road,MD-390,MDR,RAMANATHAPURAM,Tamil Nadu,19 January 2026,30.2,39.8,9.6,2024_HWAY_512034_6,34.6,10.4,6.4
+R899,Keelakidaram - Valinockam Road,MD-1156,MDR,RAMANATHAPURAM,Tamil Nadu,01 June 2026,0,7.8,7.8,2024_HWAY_482110_5,16.5,4.9,4.25
+R900,Elayankudi - Vandal - Anandur - Sukkirapatti Road,MD-593,MDR,RAMANATHAPURAM,Tamil Nadu,14 September 2025,27.56,33.36,5.8,2025_HWAY_608122_6,18.4,5.6,2.95
+R901,Thiruppullani - Sethukarai Road,MD-915B,MDR,RAMANATHAPURAM,Tamil Nadu,27 March 2026,0,5.2,5.2,2024_HWAY_531109_5,11.5,3.4,3.65
+R902,Ramanathapuram - Keelakkarai Road,MD-391,MDR,RAMANATHAPURAM,Tamil Nadu,09 November 2025,0.4,4,3.6,2024_HWAY_495311_5,8.85,0.9821,5.15
+R903,Ramanathapuram - Keelakkarai Road,MD-391,MDR,RAMANATHAPURAM,Tamil Nadu,09 November 2025,15.8,17.2,1.4,2024_HWAY_495311_6,8.85,0.9821,4.85
+R904,NH 49 Km.87/8 - Manjoor - Keelakottai Road,MD-1097,MDR,RAMANATHAPURAM,Tamil Nadu,22 February 2026,0,3.4,3.4,2025_HWAY_611208_6,14.8,4.4,5.25
+R905,Parthibanur Railway Feeder Road,MD-338,MDR,RAMANATHAPURAM,Tamil Nadu,05 July 2025,0,2.6,2.6,2024_HWAY_477190_5,2.9,0.85,5.65
+R906,NH km.171/2 to Kothandaramasamy Koil Road,MD-296,MDR,RAMANATHAPURAM,Tamil Nadu,18 January 2026,0,0.9,0.9,2024_HWAY_489311_6,7.2,2.1,5.8
+R907,Ramanathapuram Railway Feeder Road,MD-393,MDR,RAMANATHAPURAM,Tamil Nadu,31 May 2026,0.8,1.6,0.8,2025_HWAY_598311_5,4.6,1.4,3.4
+R908,Ramanathapuram - Devipattinam Road,MD-389,MDR,RAMANATHAPURAM,Tamil Nadu,13 October 2025,15.2,15.6,0.4,2024_HWAY_505314_5,22.4,6.8,2.1
+R909,Rameswaram Chinnakadai Road,MD-396,MDR,RAMANATHAPURAM,Tamil Nadu,26 February 2026,0,0.4,0.4,2024_HWAY_521044_7,5.4,1.6,2.45
+R910,Rameswaram Middle Car Street,MD-398,MDR,RAMANATHAPURAM,Tamil Nadu,08 August 2025,0,0.4,0.4,2024_HWAY_521044_8,4.2,1.3,2.65
+R911,Rameswaram North Car Street,MD-399,MDR,RAMANATHAPURAM,Tamil Nadu,20 April 2026,0,0.4,0.4,2024_HWAY_521044_9,4.2,1.3,2.45
+R912,Pandikanmai Railway Feeder Road,MD-324,MDR,RAMANATHAPURAM,Tamil Nadu,24 February 2026,0,0.4,0.4,2024_HWAY_463122_2,3.1,0.9,3.1
+R913,Sathirakudi Railway Feeder Road,MD-414,MDR,RAMANATHAPURAM,Tamil Nadu,07 July 2025,0,0.4,0.4,2025_HWAY_615524_2,2.8,0.85,1.9
+R914,Rameswaram South Car Street,MD-395,MDR,RAMANATHAPURAM,Tamil Nadu,20 January 2026,0,0.4,0.4,2024_HWAY_502441_4,4.2,1.3,5.2
+R915,NH 49 Km.60/4-10 Edaiyar Kudiyiruppu Road,MD-1098,MDR,RAMANATHAPURAM,Tamil Nadu,02 June 2026,0,0.4,0.4,2024_HWAY_485119_3,6.8,2.1,2.65
+R916,Rameswaram Railway Feeder Road,MD-394,MDR,RAMANATHAPURAM,Tamil Nadu,15 September 2025,0,0.3,0.3,2025_HWAY_604312_4,3.5,1.1,6.4
+R917,Rameswaram East Car Street,MD-397,MDR,RAMANATHAPURAM,Tamil Nadu,28 March 2026,0,0.2,0.2,2024_HWAY_512034_4,4.2,1.3,4.85
+R918,Rameswaram West Car Street,MD-400,MDR,RAMANATHAPURAM,Tamil Nadu,10 November 2025,0,0.2,0.2,2024_HWAY_477190_4,4.2,1.3,3.7
+R919,Paramakudi (Urban Limit) branching at Km.76/2 of NH 49 Road,MD-1099,MDR,RAMANATHAPURAM,Tamil Nadu,23 February 2026,0,0.153,0.153,2025_HWAY_611208_4,11.4,3.4,5.15
+R920,Reddiyarpatti - Vijayanarayanam Road,MD-403,MDR,TIRUNELVELI,Tamil Nadu,06 July 2025,0,40.8,40.8,2024_HWAY_495311_4,18.9,5.6,2.3
+R921,Radhapuram - Idayangudy Road,MD-1291,MDR,TIRUNELVELI,Tamil Nadu,19 January 2026,0,27.4,27.4,2024_HWAY_539014_4,16.4,4.9,4.1
+R922,Udaiyarpatti - Seevalaperi Road,MD-508,MDR,TIRUNELVELI,Tamil Nadu,01 June 2026,0,16.6,16.6,2025_HWAY_601147_4,14.8,4.4,3.95
+R923,Ambasamudram - Karumpuliyuthu Road,MD-1290,MDR,TIRUNELVELI,Tamil Nadu,14 September 2025,0,16,16,2024_HWAY_468205_4,12.5,3.8,5.8
+R924,Nanguneri - Moolaikaraipatti Road,MD-292,MDR,TIRUNELVELI,Tamil Nadu,27 March 2026,0,14.2,14.2,2024_HWAY_516410_4,22.4,6.8,4.25
+R925,Radhapuram - Irukkanthurai Road,MD-1189,MDR,TIRUNELVELI,Tamil Nadu,09 November 2025,0,12.3,12.3,2025_HWAY_593219_4,13.6,4.1,3.1
+R926,Palayamkottai - Thiruthu Road,MD-314,MDR,TIRUNELVELI,Tamil Nadu,22 February 2026,0,11.4,11.4,2024_HWAY_482110_4,9.2,2.7,3.4
+R927,Nanguneri - Kalakad Road,MD-291,MDR,TIRUNELVELI,Tamil Nadu,05 July 2025,0,11,11,2024_HWAY_505314_4,21.5,6.4,2.95
+R928,Gangaikondan - Kuppakurichi Road,MD-114,MDR,TIRUNELVELI,Tamil Nadu,18 January 2026,0,6,6,2025_HWAY_608122_4,11.8,3.5,3.65
+R929,Kokkirakulam - Nanguneri Road,MD-178,MDR,TIRUNELVELI,Tamil Nadu,25 February 2026,4,9.8,5.8,2024_HWAY_531109_4,26.5,7.9,4.45
+R930,Eruvadi - Thirukkurankudi Road,MD-112,MDR,TIRUNELVELI,Tamil Nadu,08 July 2025,0,5.6,5.6,2024_HWAY_495116_2,14.2,4.3,2.2
+R931,Veeragavapuram - Melanatham Main Road,MD-920,MDR,TIRUNELVELI,Tamil Nadu,21 January 2026,0,4.73,4.73,2024_HWAY_539112_2,9.4,2.8,3.6
+R932,Ambur - Papanasam Road,MD-1158,MDR,TIRUNELVELI,Tamil Nadu,03 June 2026,2.6,6.6,4,2024_HWAY_495200_3,28.4,8.5,5.25
+R933,Road Branching from Km 6/2 of Tirunelveli - Pottalpudur Road to Gopalasamudram Road,MD-921,MDR,TIRUNELVELI,Tamil Nadu,16 September 2025,0,3.8,3.8,2025_HWAY_600214_2,11.8,3.5,2.4
+R934,Karungulam - Moolaikaraipatti Road,MD-152,MDR,TIRUNELVELI,Tamil Nadu,29 March 2026,12.8,15.8,3,2024_HWAY_544101_2,16.4,4.9,4.95
+R935,Karungadal - Munanjipatti Road,MD-151,MDR,TIRUNELVELI,Tamil Nadu,11 November 2025,22,24.8,2.8,2024_HWAY_488319_2,13.6,4.1,3.8
+R936,North High Ground Road,MD-297,MDR,TIRUNELVELI,Tamil Nadu,24 February 2026,0.1,2.8,2.7,2025_HWAY_593214_2,7.8,2.3,4.15
+R937,Thisayanvilai - Udangudy Road,MD-479,MDR,TIRUNELVELI,Tamil Nadu,07 July 2025,0,2.4,2.4,2024_HWAY_512014_3,21.4,6.4,3.65
+R938,Kulavanigarpuram - Kurichi Road,MD-198,MDR,TIRUNELVELI,Tamil Nadu,20 January 2026,0,2.03,2.03,2025_HWAY_609441_2,11.2,3.3,2.75
+R939,Tiruchendur - Kanyakumari Road,MD-783,MDR,TIRUNELVELI,Tamil Nadu,02 June 2026,102.65,104.45,1.8,2024_HWAY_475109_2,38.2,11.6,5.1
+R940,Abulkalam Azad Road,MD-1,MDR,TIRUNELVELI,Tamil Nadu,15 September 2025,0,1.8,1.8,2024_HWAY_502113_3,5.2,1.6,4.35
+R941,Ramayanpatti Road,MD-918,MDR,TIRUNELVELI,Tamil Nadu,28 March 2026,0,1.8,1.8,2025_HWAY_589431_2,8.6,2.5,3.98
+R942,Pettai - Thiruvengadanathapuram Road,MD-359,MDR,TIRUNELVELI,Tamil Nadu,10 November 2025,0,1.6,1.6,2024_HWAY_463122_3,11.4,3.4,2.45
+R943,Thaneerkulam Branch Road,MD-919,MDR,TIRUNELVELI,Tamil Nadu,23 February 2026,0,1.4,1.4,2024_HWAY_522304_2,5.2,1.6,5.85
+R944,Ambasamudram Travellers Bungalow Road,MD-16,MDR,TIRUNELVELI,Tamil Nadu,06 July 2025,0,1,1,2025_HWAY_615524_2,3.8,1.1,3.1
+R945,Service Road,MD-419,MDR,TIRUNELVELI,Tamil Nadu,26 February 2026,0,0.9,0.9,2024_HWAY_502441_3,4.6,1.3,1.9
+R946,Madurai - Kanyakumari Road,MD-233,MDR,TIRUNELVELI,Tamil Nadu,09 July 2025,149.5,149.88,0.38,2024_HWAY_485119_2,38.5,11.4,5.2
+R947,Palayamkottai - Tiruchendur Town Road,MD-315,MDR,TIRUNELVELI,Tamil Nadu,22 January 2026,4.2,4.4,0.2,2025_HWAY_604312_2,14.2,4.3,2.65
+R948,Palayamkottai Bus Stand - Tiruchendur Road,MD-311,MDR,TIRUNELVELI,Tamil Nadu,04 June 2026,3.67,3.8,0.13,2024_HWAY_512034_2,9.5,2.9,6.4
+R949,Sankarankovil - Vasudevanallur Road,MD-1292,MDR,TENKASI,Tamil Nadu,17 September 2025,0,18.121,18.121,2024_HWAY_477190_2,17.11,0.0962,4.85
+R950,Sankarankovil - Thiruvenkadam Road,MD-408,MDR,TENKASI,Tamil Nadu,30 March 2026,0,17.76,17.76,2025_HWAY_611208_2,16.4,4.9,3.7
+R951,Paruvakudi - Sivagiri Road,MD-1293,MDR,TENKASI,Tamil Nadu,12 November 2025,0,15.88,15.88,2024_HWAY_495311_2,14.8,4.4,5.15
+R952,Sankarankovil - Veerasigamani Road,MD-409,MDR,TENKASI,Tamil Nadu,25 February 2026,0,15.4,15.4,2024_HWAY_539014_5,12.5,3.8,2.3
+R953,Sivaramapettai - Panpozhi - Shencottai Road,MD-431,MDR,TENKASI,Tamil Nadu,08 July 2025,0,15.4,15.4,2025_HWAY_601147_5,24.6,7.4,4.1
+R954,Kadayam - Pavoorchatram Road,MD-934,MDR,TENKASI,Tamil Nadu,21 January 2026,0,13.4,13.4,2024_HWAY_468205_5,18.9,5.6,3.95
+R955,Alangulam - Kuruvikulam - Thiruvenkadam Road,MD-925,MDR,TENKASI,Tamil Nadu,03 June 2026,0,13,13,2024_HWAY_516410_5,26.5,7.9,3.8
+R956,Idaikal - Sendamaram Road,MD-440A,MDR,TENKASI,Tamil Nadu,16 September 2025,0,12.8,12.8,2025_HWAY_593219_5,10,0.103,4.15
+R957,Kulasekaramangalam - Valasai Road,MD-195,MDR,TENKASI,Tamil Nadu,29 March 2026,0,10.4,10.4,2025_HWAY_593219_6,16.32,8,5.8
+R958,Alwarkurichi - Karuthapillaiyur Road,MD-1157,MDR,TENKASI,Tamil Nadu,11 November 2025,0,9.4,9.4,2024_HWAY_512034_5,11.4,3.4,6.4
+R959,Tenkasi - Sundarapandiyapuram Road,MD-1188,MDR,TENKASI,Tamil Nadu,24 February 2026,0,9.2,9.2,2024_HWAY_482110_5,14.2,4.3,4.25
+R960,Kadayanallur - Sambavarvadakarai Road,MD-1294,MDR,TENKASI,Tamil Nadu,07 July 2025,0,8.6,8.6,2025_HWAY_608122_5,13.6,4.1,2.95
+R961,Kulathupuzha - Chowkey Road,MD-196,MDR,TENKASI,Tamil Nadu,20 January 2026,0,8.2,8.2,2024_HWAY_531109_5,19.5,5.9,3.65
+R962,Pavoorchatram - Sundarapandiyapuram Road,MD-1295,MDR,TENKASI,Tamil Nadu,02 June 2026,0,7.4,7.4,2024_HWAY_495311_5,12.8,3.8,5.15
+R963,Vadakarai - Adavinainar Dam Road,MD-924,MDR,TENKASI,Tamil Nadu,15 September 2025,0,6.8,6.8,2025_HWAY_611208_5,15.5,4.6,5.25
+R964,Kadayanallur - Achanpudur Road,MD-431A,MDR,TENKASI,Tamil Nadu,28 March 2026,0,6.4,6.4,2025_HWAY_611208_6,11.9,3.5,4.85
+R965,Kadayanallur - Valasai Road,MD-132,MDR,TENKASI,Tamil Nadu,27 February 2026,0,6.2,6.2,2024_HWAY_477190_4,9.4,2.8,5.65
+R966,Ayikudi - Tenkasi Road,MD-923,MDR,TENKASI,Tamil Nadu,10 July 2025,0,5.4,5.4,2024_HWAY_489311_5,11.2,3.3,5.8
+R967,Courtallam - Five Falls Road,MD-87,MDR,TENKASI,Tamil Nadu,23 January 2026,0,4,4,2025_HWAY_598311_4,8.6,2.5,3.4
+R968,Ayikudi - Nainagaram Road,MD-6,MDR,TENKASI,Tamil Nadu,05 June 2026,0,3.2,3.2,2024_HWAY_505314_4,12.5,3.8,2.1
+R969,Sivakasi - Kalugumalai Road,MD-430,MDR,TENKASI,Tamil Nadu,18 September 2025,21,23.6,2.6,2024_HWAY_521044_5,26.4,8.1,2.45
+R970,Ambur - Papanasam Road,MD-1158,MDR,TENKASI,Tamil Nadu,31 March 2026,0,2.6,2.6,2024_HWAY_521044_6,28.4,8.5,2.65
+R971,Old Courtallam - Falls Road,MD-303,MDR,TENKASI,Tamil Nadu,13 November 2025,0,2.4,2.4,2025_HWAY_604312_5,7.8,2.3,5.1
+R972,Kasimajorpuram - Kuthukkalvalasai Road,MD-154,MDR,TENKASI,Tamil Nadu,26 February 2026,0,1.8,1.8,2024_HWAY_475109_3,11.8,3.5,5.1
+R973,Kadambur-Puliampatti-Deivachyalapuram Road,MD-1296,MDR,TUTICORIN,Tamil Nadu,09 July 2025,0,34.665,34.665,2025_HWAY_609441_3,10.94,0.1081,5.8
+R974,Thailapuram - Meignanapuram - Kayamozhi - Gandhipuram Road,MD-1159,MDR,TUTICORIN,Tamil Nadu,22 January 2026,0,23.4,23.4,2024_HWAY_539014_6,26.4,7.8,2.3
+R975,Kayathar - Kalugumalai Road,MD-160,MDR,TUTICORIN,Tamil Nadu,04 June 2026,0,23,23,2024_HWAY_468205_6,12,0.5,4.1
+R976,Meignanapuram - Munanjipatti Road,MD-261,MDR,TUTICORIN,Tamil Nadu,17 September 2025,0,22.8,22.8,2025_HWAY_601147_6,21.4,6.4,3.95
+R977,Kadambur - Eppodumvendran Road,MD-131,MDR,TUTICORIN,Tamil Nadu,30 March 2026,0,11,11,2024_HWAY_516410_6,18.9,5.6,3.8
+R978,Kadambur - Eppodumvendran Road,MD-131,MDR,TUTICORIN,Tamil Nadu,30 March 2026,11.7,21.2,9.5,2024_HWAY_516410_7,18.9,5.6,4.15
+R979,Thisayanvilai - Udangudi Road,MD-479,MDR,TUTICORIN,Tamil Nadu,12 November 2025,2.4,22.8,20.4,2025_HWAY_593219_6,21.4,6.4,5.8
+R980,Srivaikundam - Pudukottai Road,MD-435,MDR,TUTICORIN,Tamil Nadu,25 February 2026,0,17.22,17.22,2024_HWAY_512034_6,24.6,7.4,6.4
+R981,Nazareth - Eral Road,MD-1160,MDR,TUTICORIN,Tamil Nadu,08 July 2025,0,16.8,16.8,2024_HWAY_482110_6,14.2,4.3,4.25
+R982,Sathankulam - Periathalai Road,MD-1297,MDR,TUTICORIN,Tamil Nadu,21 January 2026,0,16.496,16.496,2025_HWAY_608122_6,16.5,4.9,2.1
+R983,Srivaikundam - Vallanadu Road,MD-1298,MDR,TUTICORIN,Tamil Nadu,03 June 2026,0,13.8,13.8,2024_HWAY_531109_6,15.8,4.7,2.95
+R984,Karungulam - Moolaikaraipatti Road,MD-152,MDR,TUTICORIN,Tamil Nadu,28 February 2026,0,12.8,12.8,2024_HWAY_495311_6,16.4,4.9,3.65
+R985,Kayathar - Kadambur Road,MD-159,MDR,TUTICORIN,Tamil Nadu,11 July 2025,0,12.2,12.2,2025_HWAY_611208_6,13.6,4.1,5.15
+R986,Petmanagaram - Vagaikulam Road,MD-358,MDR,TUTICORIN,Tamil Nadu,24 January 2026,0,12,12,2025_HWAY_611208_7,11.9,3.5,5.25
+R987,Sillanatham - Puthiyamputhur Road,MD-935,MDR,TUTICORIN,Tamil Nadu,06 June 2026,0,11,11,2024_HWAY_477190_5,12.5,3.8,4.85
+R988,Peikulam - Perungulam Road,MD-346,MDR,TUTICORIN,Tamil Nadu,19 September 2025,0,9.6,9.6,2024_HWAY_489311_6,14.8,4.4,5.65
+R989,Paramankurichi - Tiruchendur Road,MD-330,MDR,TUTICORIN,Tamil Nadu,01 April 2026,0,8.4,8.4,2025_HWAY_598311_5,11.2,3.3,5.8
+R990,Thoothukudi - Tharuvaikulam Road,MD-484,MDR,TUTICORIN,Tamil Nadu,14 November 2025,0,6.8,6.8,2024_HWAY_505314_5,16.2,4.8,3.4
+R991,Paramankurichi - Udangudi Road,MD-331,MDR,TUTICORIN,Tamil Nadu,27 February 2026,0,6.8,6.8,2024_HWAY_521044_7,6.64,0.1089,2.45
+R992,Arumuganeri - Veerapandiapattinam Road,MD-936,MDR,TUTICORIN,Tamil Nadu,10 July 2025,0,6.2,6.2,2025_HWAY_604312_6,13.4,3.9,2.65
+R993,Thenthiruperai - Eral Road,MD-1299,MDR,TUTICORIN,Tamil Nadu,23 January 2026,0,5.53,5.53,2024_HWAY_539014_7,11.8,3.5,2.3
+R994,Tiruchendur - Kulasekarapattinam - Udangudi Road,MD-496,MDR,TUTICORIN,Tamil Nadu,05 June 2026,13.4,18.166,4.766,2024_HWAY_468205_7,26.5,7.9,4.1
+R995,Kayalpattinam Bypass Road,MD-158,MDR,TUTICORIN,Tamil Nadu,18 September 2025,0,4.472,4.472,2025_HWAY_601147_7,14.6,4.3,3.95
+R996,Nallur - Kayalpattinam Road,MD-286,MDR,TUTICORIN,Tamil Nadu,31 March 2026,0,3.8,3.8,2024_HWAY_516410_7,9.2,2.7,3.8
+R997,Tiruchendur - Kanyakumari Road,MD-783,MDR,TUTICORIN,Tamil Nadu,13 November 2025,11.4,15,3.6,2024_HWAY_516410_8,38.2,11.6,4.15
+R998,Construction Road,MD-84,MDR,TUTICORIN,Tamil Nadu,26 February 2026,0,2.8,2.8,2025_HWAY_593219_7,4.1,1.2,5.8
+R999,George Road,MD-115,MDR,TUTICORIN,Tamil Nadu,09 July 2025,0,2.4,2.4,2024_HWAY_512034_7,5.2,1.6,6.4
+R1000,Link Road,MD-220,MDR,TUTICORIN,Tamil Nadu,22 January 2026,0,2.08,2.08,2024_HWAY_482110_7,3.8,1.1,4.25
+R1001,Alagesapuram Road,MD-9,MDR,TUTICORIN,Tamil Nadu,04 June 2026,0,1.32,1.32,2025_HWAY_608122_7,2.9,0.85,2.95
+R1002,Kovilpatti Bypass Road,MD-191,MDR,TUTICORIN,Tamil Nadu,17 September 2025,0,1,1,2024_HWAY_531109_7,24.5,7.3,3.65
+R1003,South Beach Road,MD-434,MDR,TUTICORIN,Tamil Nadu,01 March 2026,0,0.53,0.53,2024_HWAY_495311_7,7.6,2.2,5.15
+R1004,Srivaikundam Girder Bridge Road,MD-436,MDR,TUTICORIN,Tamil Nadu,12 July 2025,0,0.4,0.4,2024_HWAY_495311_8,5.4,1.6,4.85
+R1005,Sattur - Thiruvenkatapuram Road,MD-683,MDR,VIRDHUNAGAR,Tamil Nadu,25 January 2026,0,31.55,31.55,2025_HWAY_611208_7,18.9,5.6,5.25
+R1006,Thiruppuvanam - Pulvaikarai - Narikudi Road,MD-718,MDR,VIRDHUNAGAR,Tamil Nadu,07 June 2026,7.512,33.8,26.288,2024_HWAY_477190_6,22.4,6.8,5.65
+R1007,Kariapatti - Narikudi Road,MD-926,MDR,VIRDHUNAGAR,Tamil Nadu,20 September 2025,0,24.2,24.2,2024_HWAY_489311_7,19.6,5.9,5.8
+R1008,Melamadai - Palavanatham Road,MD-937,MDR,VIRDHUNAGAR,Tamil Nadu,02 April 2026,0,23.6,23.6,2025_HWAY_598311_6,24.5,7.3,3.4
+R1009,Sattur - Elayirampannai - Guhanparai Road,MD-681,MDR,VIRDHUNAGAR,Tamil Nadu,15 November 2025,0,22.211,22.211,2024_HWAY_505314_6,18.8,5.7,2.1
+R1010,Sivakasi - Erichanatham Road,MD-689,MDR,VIRDHUNAGAR,Tamil Nadu,28 February 2026,0,19.8,19.8,2024_HWAY_521044_8,16.2,4.8,2.45
+R1011,M. Reddiapatti - Salukkuvarpatti - Thoppalakarai Road,MD-621,MDR,VIRDHUNAGAR,Tamil Nadu,11 July 2025,0,17.4,17.4,2024_HWAY_521044_9,14.8,4.4,2.65
+R1012,Viswanatham - Venkatachalapuram Road,MD-1048,MDR,VIRDHUNAGAR,Tamil Nadu,24 January 2026,0,16.125,16.125,2024_HWAY_521044_10,12.5,3.8,2.45
+R1013,Kanniseri - Mathiyasenai Road,MD-604,MDR,VIRDHUNAGAR,Tamil Nadu,06 June 2026,0,15.6,15.6,2024_HWAY_463122_3,9.4,2.8,3.1
+R1014,Krishnankovil - Koomapatti Road,MD-194,MDR,VIRDHUNAGAR,Tamil Nadu,19 September 2025,0,14.8,14.8,2025_HWAY_615524_3,11.9,3.5,1.9
+R1015,Sattur - Nenmeni (via) Nagalapuram Road,MD-682,MDR,VIRDHUNAGAR,Tamil Nadu,01 April 2026,0,13.25,13.25,2024_HWAY_502441_5,14.2,4.3,5.2
+R1016,Rajapalayam - Ayyanarkovil Road,MD-387,MDR,VIRDHUNAGAR,Tamil Nadu,14 November 2025,0,13,13,2024_HWAY_485119_4,15.5,4.6,2.65
+R1017,Tenkasi - Tirumangalam Road to Sholapuram Road,MD-698,MDR,VIRDHUNAGAR,Tamil Nadu,27 February 2026,0,10.4,10.4,2025_HWAY_604312_5,11.8,3.5,6.4
+R1018,Branching Road from Km 43/2 of NH 49 to Kattanoor Road,MD-579,MDR,VIRDHUNAGAR,Tamil Nadu,02 March 2026,12.683,22.883,10.2,2024_HWAY_512034_5,11.8,3.5,4.85
+R1019,Mudukulathur - Veeracholan Road to meet at Km 99/4 of SH 42,MD-638,MDR,VIRDHUNAGAR,Tamil Nadu,13 July 2025,25.925,35.725,9.8,2024_HWAY_477190_5,18.9,5.6,3.7
+R1020,Tenkasi - Tirumangalam Road to Keelarajakularaman Road,MD-697,MDR,VIRDHUNAGAR,Tamil Nadu,26 January 2026,0,9.2,9.2,2025_HWAY_611208_5,13.6,4.1,5.15
+R1021,Ramanaickenpatti - Vadhuvarpatti Road,MD-1187,MDR,VIRDHUNAGAR,Tamil Nadu,08 June 2026,0,7.2,7.2,2024_HWAY_495311_5,9.2,2.7,2.3
+R1022,Kallupatti - Virudhunagar Road,MD-956,MDR,VIRDHUNAGAR,Tamil Nadu,21 September 2025,14.49,21.29,6.8,2024_HWAY_539014_5,26.5,7.9,4.1
+R1023,Thiruthangal - Sengamalanachiyarpuram Road,MD-938,MDR,VIRDHUNAGAR,Tamil Nadu,03 April 2026,0,5.4,5.4,2025_HWAY_601147_5,12.8,3.8,3.95
+R1024,Srivilliputhur - Thiruvannamalai Road,MD-1031,MDR,VIRDHUNAGAR,Tamil Nadu,16 November 2025,0,3,3,2024_HWAY_468205_5,11.4,3.4,5.8
+R1025,Nalli Railway Station Road,MD-287,MDR,VIRDHUNAGAR,Tamil Nadu,01 March 2026,0,1.8,1.8,2024_HWAY_516410_5,3.1,0.9,4.25
+R1026,Mariamman Kovil - Fathimanagar Road,MD-631,MDR,VIRDHUNAGAR,Tamil Nadu,12 July 2025,0,1.5,1.5,2025_HWAY_593219_5,4.6,1.3,3.1
+R1027,South Car Street - Bus Stand Road,MD-692,MDR,VIRDHUNAGAR,Tamil Nadu,25 January 2026,0,1,1,2024_HWAY_482110_5,3.8,1.1,3.4
+R1028,Srivilliputhur - South Car Street Road,MD-693,MDR,VIRDHUNAGAR,Tamil Nadu,07 June 2026,0,0.42,0.42,2024_HWAY_505314_5,4.2,1.3,2.95
+R1029,Kuzhithurai - Alancholai - Arukani Road,MD-941,MDR,NAGERCOIL,Tamil Nadu,20 September 2025,0,29.1,29.1,2025_HWAY_608122_5,0.913,0.0176,3.65
+R1030,Balamore Road,MD-54,MDR,NAGERCOIL,Tamil Nadu,02 April 2026,17.2,37.6,20.4,2024_HWAY_531109_5,21.4,6.4,4.45
+R1031,Santhapuram Road,MD-412,MDR,NAGERCOIL,Tamil Nadu,15 November 2025,0,12.4,12.4,2024_HWAY_495116_3,14.8,4.4,2.2
+R1032,Eathenkattumadam Road,MD-113,MDR,NAGERCOIL,Tamil Nadu,28 February 2026,0,12.2,12.2,2024_HWAY_539112_3,12.5,3.8,3.6
+R1033,Mulagumoodu - Colachel Road,MD-932,MDR,NAGERCOIL,Tamil Nadu,11 July 2025,0,11.2,11.2,2024_HWAY_495200_4,0.677,0.0165,5.25
+R1034,Derisanamcope - Surulacode Road,MD-1161,MDR,NAGERCOIL,Tamil Nadu,24 January 2026,0,10.9,10.9,2025_HWAY_600214_3,16.4,4.9,2.4
+R1035,Anjugramam Road,MD-27,MDR,NAGERCOIL,Tamil Nadu,06 June 2026,0,10.3,10.3,2024_HWAY_544101_3,13.8,4.1,4.95
+R1036,Eraniel - Rajakkamangalam Road,MD-106,MDR,NAGERCOIL,Tamil Nadu,03 March 2026,0,9.4,9.4,2024_HWAY_488319_3,15.2,4.6,3.8
+R1037,Eraniel - Rajakkamangalam Road,MD-106,MDR,NAGERCOIL,Tamil Nadu,03 March 2026,11.8,12.1,0.3,2024_HWAY_488319_4,15.2,4.6,4.15
+R1038,Eraniel - Muttom Road,MD-105,MDR,NAGERCOIL,Tamil Nadu,14 July 2025,0,9.6,9.6,2025_HWAY_593214_3,11.9,3.5,3.65
+R1039,Thuckalay - Thadikarankonam Road,MD-488,MDR,NAGERCOIL,Tamil Nadu,27 January 2026,0,8.6,8.6,2024_HWAY_512014_4,7,5,2.75
+R1040,Nagercoil Beach Road,MD-930,MDR,NAGERCOIL,Tamil Nadu,09 June 2026,0,8.5,8.5,2025_HWAY_609441_3,14.6,4.3,5.1
+R1041,Vattakottai - Kottaram - Agasteeswaram Road,MD-931,MDR,NAGERCOIL,Tamil Nadu,22 September 2025,0,8.5,8.5,2024_HWAY_475109_3,16.2,4.8,4.35
+R1042,Kottar - Manakudy Road,MD-188,MDR,NAGERCOIL,Tamil Nadu,04 April 2026,0,7.6,7.6,2024_HWAY_502113_4,15.5,4.6,3.98
+R1043,Kottar - Manakudy Road,MD-188,MDR,NAGERCOIL,Tamil Nadu,04 April 2026,10.2,10.9,0.7,2024_HWAY_502113_5,15.5,4.6,2.45
+R1044,Kottar - Dharmapuram Road,MD-187,MDR,NAGERCOIL,Tamil Nadu,17 November 2025,0,8.1,8.1,2025_HWAY_589431_3,11.4,3.4,5.85
+R1045,Thiruvattar - Thirparappu Road,MD-933,MDR,NAGERCOIL,Tamil Nadu,02 March 2026,0,7.9,7.9,2024_HWAY_463122_4,13.8,4.1,3.1
+R1046,Parasalai - Kollencode Road,MD-928,MDR,NAGERCOIL,Tamil Nadu,13 July 2025,0,7.6,7.6,2024_HWAY_522304_3,2.96,0.6476,1.9
+R1047,Eraviputhoorkadai - Karungal Road,MD-943,MDR,NAGERCOIL,Tamil Nadu,26 January 2026,0,7.6,7.6,2025_HWAY_615524_4,12.8,3.8,5.2
+R1048,Kuzhithurai - Thengapattinam Road,MD-216,MDR,NAGERCOIL,Tamil Nadu,08 June 2026,0,7,7,2024_HWAY_502441_4,22.4,6.8,2.65
+R1049,Kuzhithurai - Thengapattinam Road,MD-216,MDR,NAGERCOIL,Tamil Nadu,08 June 2026,11,11.5,0.5,2024_HWAY_502441_5,22.4,6.8,6.4
+R1050,Kadayal - Pechipparai Road,MD-1162,MDR,NAGERCOIL,Tamil Nadu,21 September 2025,0,7.4,7.4,2024_HWAY_485119_3,14.2,4.3,4.85
+R1051,Vellamadam - Suchindaram Road,MD-927,MDR,NAGERCOIL,Tamil Nadu,03 April 2026,0,7.3,7.3,2025_HWAY_604312_3,11.6,3.4,3.7
+R1052,Meycode - Kulasekaram Road,MD-269,MDR,NAGERCOIL,Tamil Nadu,16 November 2025,0,7.2,7.2,2024_HWAY_512034_3,13.4,3.9,5.15
+R1053,Swamiyarmadam - Meycode Road,MD-929,MDR,NAGERCOIL,Tamil Nadu,01 March 2026,0,6.9,6.9,2024_HWAY_477190_3,15.5,4.6,5.25
+R1054,Marthandam - Karungal Road,MD-250,MDR,NAGERCOIL,Tamil Nadu,04 March 2026,0,6.8,6.8,2025_HWAY_611208_3,1.88,0.1647,4.85
+R1055,Karungal - Colachel Road,MD-1191,MDR,NAGERCOIL,Tamil Nadu,15 July 2025,0,6.1,6.1,2024_HWAY_495311_3,5.614,0.105,5.65
+R1056,Thamaraikulam Road,MD-779,MDR,NAGERCOIL,Tamil Nadu,28 January 2026,0,6,6,2024_HWAY_539014_6,7.4,2.2,5.8
+R1057,Mondaymarket - Manavalakurichi Road (via) Mankuzhy,MD-1190,MDR,NAGERCOIL,Tamil Nadu,10 June 2026,0,5.7,5.7,2024_HWAY_491024_1,14.8,4.4,1.25
+R1058,Vellamadam - Shenbagaramanputhoor Road,MD-940,MDR,NAGERCOIL,Tamil Nadu,23 September 2025,0,5.1,5.1,2025_HWAY_590887_1,11.9,3.5,0.85
+R1059,Eraniel - Thuckalay Road,MD-107,MDR,NAGERCOIL,Tamil Nadu,05 April 2026,0,4,4,2024_HWAY_482201_2,12.5,3.8,2.2
+R1060,Lekshmipuram - Mondaikadu Road,MD-942,MDR,NAGERCOIL,Tamil Nadu,18 November 2025,0,2.8,2.8,2024_HWAY_499310_4,13.6,4.1,0.95
+R1061,Parasalai - Panachamoodu Road,MD-334,MDR,NAGERCOIL,Tamil Nadu,03 March 2026,2.4,5,2.6,2025_HWAY_590887_4,16.4,4.9,1.45
+R1062,Delhi – Attari Road,NH-1,NH,,,14 July 2025,,,534,,48.5,14.6,48.5
+R1063,Jammu – Doda – Kishtwar Road,NH-244,NH,,,27 January 2026,,,246,,42.6,12.8,42.6
+R1064,Ghazipur – Patna Road,NH-19,NH,,,09 June 2026,,,240,,38.5,11.4,38.5
+R1065,Mallarpur – Bardhaman Road,NH-114,NH,,,22 September 2025,,,109,,26.4,7.8,26.4
+R1066,Sikandra – Bhognipur Road,NH-519,NH,,,04 April 2026,,,28,,34.6,10.4,34.6
+R1067,Pune – Dhule Road,NH-60,NH,,,17 November 2025,,,360.6,,42.8,12.9,42.8
+R1068,Port Blair – Diglipur Road,NH-4,NH,,,02 March 2026,,,333,,28.4,8.5,28.4
+R1069,Belgaum – Panaji Road,NH-748,NH,,,13 July 2025,,,160,,24.6,7.4,24.6
+R1070,Maharashtra State Highway Connector,NH-348,NH,,,26 January 2026,,,28,,18.9,5.6,18.9
+R1071,Kolkata – Chennai Road,NH-16,NH,,,08 June 2026,,,1711,,52.4,15.8,52.4
+R1072,Mirzapur – Mangawan Road,NH-135,NH,,,05 March 2026,,,130,,28.5,8.5,28.5
+R1073,Palayamkottai – V.O. Chidambaranar Port Road,NH-138,NH,,,16 July 2025,,,54,,14.2,4.3,14.2
+R1074,Delhi – Chennai Road,NH-48,NH,,,29 January 2026,,,2807,,54.6,16.4,54.6
+R1075,Samakhiali – Narayan Sarovar Road,NH-41,NH,,,11 June 2026,,,290,,26.4,7.8,26.4
+R1076,Pune – Machilipatnam Road,NH-65,NH,,,24 September 2025,,,926,,45.8,13.8,45.8
+R1077,Pathankot – Mandi Road,NH-20,NH,,,06 April 2026,,,220,,24.6,7.4,24.6
+R1078,Chandigarh – Manali Road,NH-21,NH,,,19 November 2025,,,323,,31.4,9.2,31.4
+R1079,Barauni – Lucknow Road,NH-28,NH,,,04 March 2026,,,570,,38.2,11.6,38.2
+R1080,Barabanki – Nepalganj Road,NH-28C,NH,,,15 July 2025,,,184,,22.4,6.8,22.4
+R1081,Mohania – Patna Road,NH-30,NH,,,28 January 2026,,,230,,19.6,5.9,19.6
+R1082,Tezpur Connector Road,NH-37A,NH,,,10 June 2026,,,23,,12.8,3.8,12.8
+R1083,Chennai – Theni Road,NH-45,NH,,,23 September 2025,,,387,,32.4,9.8,32.4
+R1084,Aizawl – Manu Road,NH-44,NH,,,05 April 2026,,,230,,33.005,12.992,33.005
+R1085,Salem – Kanyakumari Road,NH-47,NH,,,18 November 2025,,,640,,45,30.6021,45
+R1086,Nagapattinam – Gudalur – Mysore Road (GN Mills Junction Flyover),NH-67,NH,,,03 March 2026,,,857,,0.05,0.02,0.05
+R1087,Punjab – Karnataka Road,NH-52,NH,,,14 July 2025,,,2317,,46.5,13.9,46.5
+R1088,Chennai - Ennore Express Way Road,SH-1,SH,,,27 January 2026,8,18.4,10.4,,18.4,5.6,18.4
+R1089,Manali Oil Refinery Road (SH-1A),SH-1A,SH,,,09 June 2026,0,5.7,5.7,,14.2,4.3,14.2
+R1090,Inner Ring Road,SH-2,SH,,,06 March 2026,0,25.2,25.2,,28.5,8.5,28.5
+R1091,Arcot - Villupuram Road(Vellore div),SH-4,SH,,,17 July 2025,0,18,18,,22.4,6.8,22.4
+R1092,Arcot - Villupuram Road(Thiruvannamalai div),SH-4,SH,,,30 January 2026,18,53.9,35.9,,24.6,7.4,24.6
+R1093,Arcot - Villupuram Road(Villupuram div),SH-4,SH,,,12 June 2026,53.9,114.6,60.7,,21.4,6.4,21.4
+R1094,Sanippoondi - Kilpennathur - Avalurpet Road (Thiruvannamalai div),SH-4A,SH,,,25 September 2025,0,42.4,42.4,,16.5,4.9,16.5
+R1095,Sanippoondi - Kilpennathur - Avalurpet Road(Villupuram div),SH-4A,SH,,,07 April 2026,21,40.3,19.3,,13.8,4.1,13.8
+R1096,Arcot - Tindivanam Roa(Vellore div),SH-5,SH,,,20 November 2025,0,21.6,21.6,,2.31,0.0001,2.31
+R1097,Arcot - Tindivanam Road(Thiruvannamalai div),SH-5,SH,,,05 March 2026,21.6,82,60.4,,3.7,0.0001,3.7
+R1098,Arcot - Tindivanam Road(Villupuram div),SH-5,SH,,,16 July 2025,82,94.6,12.6,,5.64,0.3564,5.64
+R1099,Kallakurichi - Thiruvannamalai Road(Kallakuruchi div),SH-6,SH,,,29 January 2026,0,41.3,41.3,,24.6,7.4,24.6
+R1100,Kallakurichi - Thiruvannamalai Road(Thiruvannamalai div),SH-6,SH,,,11 June 2026,41.3,63.6,22.3,,22.4,6.8,22.4
+R1101,Thiruvannamalai - Arur (Via) Thanipadi Road (Thiruvannamalai div),SH-6A,SH,,,24 September 2025,0,40,40,,28.5,8.5,28.5
+R1102,Thiruvannamalai - Arur (Via) Thanipadi Road (Dharmapuri div),SH-6A,SH,,,06 April 2026,40,75.4,35.4,,26.4,7.8,26.4
+R1103,Thandrampet - Kottakulam Road,SH-6B,SH,,,19 November 2025,0,18.2,18.2,,14.2,4.3,14.2
+R1104,Villupuram - Mambazhapattu - Tirukoilur Road (Villupuram div),SH-7,SH,,,04 March 2026,40.7,56.6,15.9,,19.6,5.9,19.6
+R1105,Villupuram - Mambazhapattu - Tirukoilur Road (Kallakuruchi div),SH-7,SH,,,15 July 2025,56.6,75.8,19.2,,18.4,5.6,18.4
+R1106,Vickravandi - Kumbakonam - Thanjavur Road,SH-8,SH,,,28 January 2026,121.8,159.2,37.4,,38.2,11.6,38.2
+R1107,Cuddalore - Chittoor Road,SH-9,SH,,,07 March 2026,0,38.2,38.2,,34.6,10.4,34.6
+R1108,Cuddalore - Chittoor Road (Kallakuruchi Division),SH-9,SH,,,18 July 2025,38.2,84.7,46.5,,31.5,9.4,31.5
+R1109,Cuddalore - Chittoor Road (Thiruvannamalai Div),SH-9,SH,,,31 January 2026,84.7,114,29.3,,28.4,8.5,28.4
+R1110,Cuddalore - Chittoor Road (vellore div),SH-9,SH,,,13 June 2026,196,203,7,,26.5,7.9,26.5
+R1111,Thiruvannamalai - Thiyagadurgam Road,SH-9A,SH,,,26 September 2025,0,19.2,19.2,,28.5,8.5,28.5
+R1112,Thiruvannamalai - Thiyagadurgam Road (Kallakuruchi Division),SH-9A,SH,,,08 April 2026,19.2,51.04,31.84,,24.6,7.4,24.6
+R1113,Cuddalore - Virudhachalam - Salem Road,SH-10,SH,,,21 November 2025,0,93.2,93.2,,36.8,11.1,36.8
+R1114,Cuddalore - Virudhachalam - Salem Road,SH-10,SH,,,06 March 2026,93.2,111.152,17.952,,36.8,11.1,36.8
+R1115,Calicut - Nilambur - Gudalur Road,SH-11,SH,,,17 July 2025,103.6,109.8,6.2,,31.4,9.2,31.4
+R1116,Calicut Vythiri Gudalur Road,SH-12,SH,,,30 January 2026,96.4,134.4,38,,28.4,8.5,28.4
+R1117,Ooty-Kotagiri Mettupalayam - Sathi - Gobi -Erode Road,SH-15,SH,,,12 June 2026,0,43,43,,10.89,0.0001,10.89
+R1118,Ooty-Kotagiri Mettupalayam - Sathi - Gobi -Erode Road (Mettupalayam Div),SH-15,SH,,,25 September 2025,43,57.6,14.6,,10.89,0.0001,10.89
+R1119,Ooty-Kotagiri Mettupalayam - Sathi - Gobi -Erode Road(Gobi div),SH-15,SH,,,07 April 2026,82,100.8,18.8,,10.89,0.0001,10.89
+R1120,Ooty-Kotagiri Mettupalayam - Sathi - Gobi -Erode Road (Erode div),SH-15,SH,,,20 November 2025,153.4,161.626,8.226,,10.89,0.0001,10.89
+R1121,Cheyur to Erode-Sathy road (Tiruppur div),SH-15A,SH,,,05 March 2026,0,12.8,12.8,,21.4,6.4,21.4
+R1122,Cheyur to Erode-Sathy road (Gobi div),SH-15A,SH,,,16 July 2025,12.8,25.2,12.4,,18.9,5.6,18.9
+R1123,Malur - Hosur - Adhiyamankottai Road 9(Dharmapuri div),SH-17,SH,,,29 January 2026,0,4.5,4.5,,34.6,10.4,34.6
+R1124,Malur - Hosur - Adhiyamankottai Road 9(Dharmapuri div),SH-17,SH,,,29 January 2026,56,103.2,47.2,,34.6,10.4,34.6
+R1125,Hosur - Denkanikottai Road (Dharmapuri div),SH-17A,SH,,,08 March 2026,0,25.6,25.6,,19.8,5.9,19.8
+R1126,Hosur - Denkanikottai (via) Thally Road(Krishnagiri div),SH-17B,SH,,,19 July 2025,0,42.2,42.2,,24.5,7.6,24.5
+R1127,Salem - Thirupathur - Vaniyampady Road (Salem div),SH-18,SH,,,01 February 2026,0,16.16,16.16,,1.024,0.0001,1.024
+R1128,Salem - Thirupathur - Vaniyampady Road (Dharmapuri div),SH-18,SH,,,14 June 2026,16.16,69,52.84,,36.5,11.2,36.5
+R1129,Salem - Thirupathur - Vaniyampady Road (Krishnagiri div),SH-18,SH,,,27 September 2025,69,93.6,24.6,,32.4,9.8,32.4
+R1130,Salem - Thirupathur - Vaniyampady Road (Vaniyambadi div),SH-18,SH,,,09 April 2026,93.6,125,31.4,,28.5,8.3,28.5
+R1131,Thirupathur - Singarapet Road (Vaniyambadi div),SH-18A,SH,,,22 November 2025,0,16.4,16.4,,14.12,7,14.12
+R1132,Avinashi - Tiruppur - Palladam - Pollachi - Cochin (Via) Meenkarai Road (Tiruppur div),SH-19,SH,,,07 March 2026,0,40,40,,11,2,11
+R1133,Avinashi - Tiruppur - Palladam - Pollachi - Cochin (Via) Meenkarai Road (Pollachi div),SH-19,SH,,,18 July 2025,40,99.6,59.6,,11,2,11
+R1134,Tiruppur - Vijayamangalam Road (Tiruppur div),SH-19A,SH,,,31 January 2026,0,22.8,22.8,,16.4,4.9,16.4
+R1135,Tiruppur - Vijayamangalam Road (Erode div),SH-19A,SH,,,13 June 2026,22.8,25.2,2.4,,14.8,4.4,14.8
+R1136,Thoppur - Mettur - Bhavani - Erode Road (Salem div),SH-20,SH,,,26 September 2025,0,49.8,49.8,,38.5,11.4,38.5
+R1137,Thoppur - Mettur - Bhavani - Erode Road (Erode div),SH-20,SH,,,08 April 2026,49.8,93.984,44.184,,32.4,9.8,32.4
+R1138,Pollachi - Dharapuram - Karur Road (Pollachi div),SH-21,SH,,,21 November 2025,0,10.4,10.4,,28.5,8.3,28.5
+R1139,Pollachi - Dharapuram - Karur Road (Dharapuram div),SH-21,SH,,,06 March 2026,10.4,91.75,81.35,,34.6,10.4,34.6
+R1140,Pollachi - Dharapuram - Karur Road (Karur div),SH-21,SH,,,17 July 2025,91.75,118.07,26.32,,26.5,7.9,26.5
+R1141,Grandanaicut - Cauveripattinam Road (Thanjavur div),SH-22,SH,,,30 January 2026,0,89.6,89.6,,0.75,0.0652,0.75
+R1142,Grandanaicut - Cauveripattinam Road (Nagapattinam div),SH-22,SH,,,12 June 2026,89.6,125.2,35.6,,7.94,0.0444,7.94
+R1143,Mayiladuthurai - Thiruthuraipoondi Road (Nagapattinam div),SH-23,SH,,,25 September 2025,0,10.4,10.4,,28.4,8.5,28.4
+R1144,Mayiladuthurai - Thiruthuraipoondi Road (Tiruvarur div),SH-23,SH,,,09 March 2026,10.4,68.4,58,,32.6,9.7,32.6
+R1145,Trichy - Namakkal road (Trichy div),SH-25,SH,,,20 July 2025,0,60.65,60.65,,26.5,7.9,26.5
+R1146,Trichy - Namakkal road (Namakkal div),SH-25,SH,,,02 February 2026,60.65,77.4,16.75,,24.2,7.3,24.2
+R1147,Trichy - Pudukottai - Aranthangi - Mimisal Bypass Road (Trichy div),SH-26,SH,,,15 June 2026,0,1.6,1.6,,11.69,2.6626,11.69
+R1148,Trichy - Pudukottai - Aranthangi - Mimisal Bypass Road (Pudukottai div),SH-26,SH,,,28 September 2025,50.735,119.92,69.185,,11.02,5.52,11.02
+R1149,Perambalur - Manamadurai Road (Thanjavur div),SH-27,SH,,,10 April 2026,64.85,77.2,12.35,,34.6,10.4,34.6
+R1150,Thanjavur - Pattukottai - Aranthangi - Karaikudi - Kallal - Kalaiyarkoil - Maravamangalam - Elayankudi - Paramakudi - Mudukulathur - Sayalkudi Road (Thanjavur div),SH-29,SH,,,23 November 2025,0,69.2,69.2,,36.8,11.1,36.8
+R1151,Thanjavur - Pattukottai - Aranthangi - Karaikudi - Kallal - Kalaiyarkoil - Maravamangalam - Elayankudi - Paramakudi - Mudukulathur - Sayalkudi Road (Pudukottai div),SH-29,SH,,,08 March 2026,69.2,115.11,45.91,,32.4,9.8,32.4
+R1152,Thanjavur - Pattukottai - Aranthangi - Karaikudi - Kallal - Kalaiyarkoil - Maravamangalam - Elayankudi - Paramakudi - Mudukulathur - Sayalkudi Road (Sivagangai div),SH-29,SH,,,19 July 2025,115.11,198.55,83.44,,38.5,11.4,38.5
+R1153,Thanjavur - Pattukottai - Aranthangi - Karaikudi - Kallal - Kalaiyarkoil - Maravamangalam - Elayankudi - Paramakudi - Mudukulathur - Sayalkudi Road (Ramanathapuram div),SH-29,SH,,,01 February 2026,198.55,248.224,49.674,,28.4,8.5,28.4
+R1154,Musiri - Thuraiyur - Athur Road (Trichy div),SH-30,SH,,,14 June 2026,0,61,61,,24.6,7.4,24.6
+R1155,Musiri - Thuraiyur - Athur Road (Salem div),SH-30,SH,,,27 September 2025,61,91.2,30.2,,22.4,6.8,22.4
+R1156,Madurai - Tuticorin Road (Madurai div),SH-32,SH,,,09 April 2026,0,11,11,,42.8,12.9,42.8
+R1157,Madurai - Tuticorin Road (Tuticorin div),SH-32,SH,,,22 November 2025,90.8,92.6,1.8,,38.2,11.6,38.2
+R1158,Madurai - Thondi Road (Madurai div),SH-33,SH,,,07 March 2026,0,19.2,19.2,,38.5,11.4,38.5
+R1159,Ramanathapuram - Nainarkoil - Andakudi - Elayankudi - Sivagangai - Melur Road (Ramanathapuram div),SH-34,SH,,,18 July 2025,0,30.2,30.2,,26.4,7.8,26.4
+R1160,Ramanathapuram - Nainarkoil - Andakudi - Elayankudi - Sivagangai - Melur Road (Sivagangai div),SH-34,SH,,,31 January 2026,30.2,41.8,11.6,,4.35,0.1238,4.35
+R1161,Ramanathapuram - Nainarkoil - Andakudi - Elayankudi - Sivagangai - Melur Road (Madurai div),SH-34,SH,,,13 June 2026,90.8,103,12.2,,28.5,8.3,28.5
+R1162,Upoor - Kottaiyur Road (Ramanathapuram div),SH-34A,SH,,,10 March 2026,0,21.6,21.6,,16.2,4.8,16.2
+R1163,Upoor - Kottaiyur Road (Sivagangai div),SH-34A,SH,,,21 July 2025,21.6,36.8,15.2,,6.65,0.166,6.65
+R1164,Dindigul - Natham - Singampunari - Thiruppathur - Devakottai Rastha Road (Dindigul div),SH-35,SH,,,03 February 2026,0,45.6,45.6,,31.5,9.4,31.5
+R1165,Dindigul - Natham - Singampunari - Thiruppathur - Devakottai Rastha Road (Madurai div),SH-35,SH,,,16 June 2026,45.6,51.6,6,,28.4,8.5,28.4
+R1166,Dindigul - Natham - Singampunari - Thiruppathur - Devakottai Rastha Road (Sivagangai div),SH-35,SH,,,29 September 2025,57.4,81.8,24.4,,34.6,10.4,34.6
+R1167,Mettur - Palakanuthu - Oddanchatram - Dharapuram - Tiruppur Road (Dindigul div),SH-37,SH,,,11 April 2026,0,32,32,,18.9,5.6,18.9
+R1168,Mettur - Palakanuthu - Oddanchatram - Dharapuram - Tiruppur Road (Dharapuram div),SH-37,SH,,,24 November 2025,64.2,95.2,31,,24.5,7.6,24.5
+R1169,Mettur - Palakanuthu - Oddanchatram - Dharapuram - Tiruppur Road (Tiruppur div),SH-37,SH,,,09 March 2026,95.2,126.2,31,,21.4,6.4,21.4
+R1170,Aruppukottai - Perunali - Sayalkudi - Kadugusandai - Mariyur - Valinokkam Road (Virudhunagar div),SH-38,SH,,,20 July 2025,0,32,32,,26.5,7.9,26.5
+R1171,Aruppukottai - Perunali - Sayalkudi - Kadugusandai - Mariyur - Valinokkam Road (Ramanathapuram div),SH-38,SH,,,02 February 2026,32,79.26,47.26,,22.4,6.8,22.4
+R1172,Tirunelveli - Shenkottai - Kollam Road (Tirunelveli div),SH-39,SH,,,15 June 2026,0,2,2,,38.2,11.6,38.2
+R1173,Tirunelveli - Shenkottai - Kollam Road (Tenkasi div),SH-39,SH,,,28 September 2025,31,57,26,,32.4,9.8,32.4
+R1174,Shenkottai - Pavoorchatram Road (via Surandai) (Tenkasi div),SH-39A,SH,,,10 April 2026,0,31.2,31.2,,22.4,6.8,22.4
+R1175,Tiruchendur - Palayamkottai - Ambasamudhiram - Tenkasi - Courtallam - Shenkottai Road (Tuticorin div),SH-40,SH,,,23 November 2025,0,42.6,42.6,,38.2,11.6,38.2
+R1176,Tiruchendur - Palayamkottai - Ambasamudhiram - Tenkasi - Courtallam - Shenkottai Road (Tirunelveli div),SH-40,SH,,,08 March 2026,42.6,115,72.4,,34.6,10.4,34.6
+R1177,Tiruchendur - Palayamkottai - Ambasamudhiram - Tenkasi - Courtallam - Shenkottai Road (Tenkasi div),SH-40,SH,,,19 July 2025,115,134.2,19.2,,31.5,9.4,31.5
+R1178,Rajapalayam - Sankarankovil - Tirunelveli Road (Virudhunagar div),SH-41,SH,,,01 February 2026,0,10.4,10.4,,26.5,7.9,26.5
+R1179,Rajapalayam - Sankarankovil - Tirunelveli Road (Tenkasi div),SH-41,SH,,,14 June 2026,10.4,60.25,49.85,,24.6,7.4,24.6
+R1180,Rajapalayam - Sankarankovil - Tirunelveli Road (Tirunelveli div),SH-41,SH,,,27 September 2025,60.25,85.73,25.48,,28.4,8.5,28.4
+R1181,Tirunelveli - Pottalpudur Road (Tirunelveli div),SH-41A,SH,,,11 March 2026,0,36.6,36.6,,11.8,3.5,11.8
+R1182,Srivilliputhur - Sivakasi - Virudhunagar - Aruppukottai - Tiruchuli - Narikudi - Parthibanur Road (Virudhunagar div),SH-42,SH,,,22 July 2025,0,102.86,102.86,,36.8,11.1,36.8
+R1183,Srivilliputhur - Sivakasi - Virudhunagar - Aruppukottai - Tiruchuli - Narikudi - Parthibanur Road (Ramanathapuram div),SH-42,SH,,,04 February 2026,102.86,109.26,6.4,,22.4,6.8,22.4
+R1184,Tenkasi - Madurai Road (Tenkasi div),SH-43,SH,,,17 June 2026,0,3.6,3.6,,32.4,9.8,32.4
+R1185,Paruvakudi - Kovilpatti - Ettayapuram - Vilathikulam - Vembar Road (Tenkasi div),SH-44,SH,,,30 September 2025,0,39.2,39.2,,14.8,4.4,14.8
+R1186,Paruvakudi - Kovilpatti - Ettayapuram - Vilathikulam - Vembar Road (Tuticorin div),SH-44,SH,,,12 April 2026,39.2,91.85,52.65,,34.6,10.4,34.6
+R1187,Aralvoimozhi - Nedumangadu Road (Nagercoil div),SH-45,SH,,,25 November 2025,0,48.9,48.9,,21.4,6.4,21.4
+R1188,Aralvoimozhi - Nagercoil - Rajakkamangalam - Colachel Road (Nagercoil div),SH-46,SH,,,10 March 2026,18.8,28.2,9.4,,28.5,8.3,28.5
+R1189,Parthibanur - Kamuthi - Aruppukottai Road (Ramanathapuram div),SH-47,SH,,,21 July 2025,0,41.65,41.65,,24.6,7.4,24.6
+R1190,Marmalong Bridge - Irumbuliyur - Vandalur - Mudichur - Oragadam - Walajabad Road (Chennai City Roads div),SH-48,SH,,,03 February 2026,5,21.2,16.2,,121.65,35,121.65
+R1191,Marmalong Bridge - Irumbuliyur - Vandalur - Mudichur - Oragadam - Walajabad Road (Chengalpattu div),SH-48,SH,,,16 June 2026,30.4,63.8,33.4,,45.8,13.8,45.8
+R1192,Thiruvanmiyur - Mahabalipuram - Marakkanam - Pondicherry Road (East Coast Road) (Chennai City Roads div),SH-49,SH,,,29 September 2025,0,19.2,19.2,,54.6,16.4,54.6
+R1193,Thiruvanmiyur - Mahabalipuram - Marakkanam - Pondicherry Road (East Coast Road) (Chengalpattu div),SH-49,SH,,,11 April 2026,19.2,100.2,81,,48.5,14.6,48.5
+R1194,Thiruvanmiyur - Mahabalipuram - Marakkanam - Pondicherry Road (East Coast Road) (Villupuram div),SH-49,SH,,,24 November 2025,100.2,134.2,34,,42.6,12.8,42.6
+R1195,Chennai - Mamallapuram Road (via Thiruporur) (Rajiv Gandhi Salai) (Chennai City Roads div),SH-49A,SH,,,09 March 2026,13.3,27.2,13.9,,38.5,11.4,38.5
+R1196,Chennai - Mamallapuram Road (via Thiruporur) (Rajiv Gandhi Salai) (Chengalpattu div),SH-49A,SH,,,20 July 2025,27.2,55.6,28.4,,34.6,10.4,34.6
+R1197,Thirukalukundram - Mamallapuram Road (Chengalpattu div),SH-49B,SH,,,02 February 2026,0,13.2,13.2,,18.9,5.6,18.9
+R1198,Thirumazhai - Uthukottai Road (Tiruvallur div),SH-50,SH,,,15 June 2026,0,46,46,,30.67,14.6721,30.67
+R1199,Korattur - Thinnanur - Periyapalayam Road (Tiruvallur div),SH-50A,SH,,,28 September 2025,0,28.2,28.2,,24.6,7.4,24.6
+R1200,Korathalayar Bridge - Puthur Road (Tiruvallur div),SH-51,SH,,,12 March 2026,0,32.29,32.29,,12.8,3.8,12.8
+R1201,Kavarapettai - Sathyavedu Road (Tiruvallur div),SH-52,SH,,,23 July 2025,0,20.082,20.082,,21.4,6.4,21.4
+R1202,Nagari - Pallipet Road (Tiruvallur div),SH-53,SH,,,05 February 2026,0,12.4,12.4,,14.2,4.2,14.2
+R1203,Chittoor - Thiruthani Road (Vellore div),SH-54,SH,,,18 June 2026,0,5.8,5.8,,19.6,5.9,19.6
+R1204,Chittoor - Thiruthani Road (Tiruvallur div),SH-54,SH,,,01 October 2025,5.8,48.935,43.135,,16.4,4.9,16.4
+R1205,Mount - Poonamallee - Avadi Road (Tiruvallur div),SH-55,SH,,,13 April 2026,0,10.8,10.8,,38.5,11.4,38.5
+R1206,Thiruvottiyur - Ponneri - Panchetty Road (Tiruvallur div),SH-56,SH,,,26 November 2025,0,27.8,27.8,,32.4,9.8,32.4
+R1207,Singaperumalkoil - Sriperumbudur - Thiruvallur - Redhills Road (Chengalpattu div),SH-57,SH,,,11 March 2026,0,24.6,24.6,,42.8,12.9,42.8
+R1208,Singaperumalkoil - Sriperumbudur - Thiruvallur - Redhills Road (Tiruvallur div),SH-57,SH,,,22 July 2025,40.4,77.4,37,,36.8,11.1,36.8
+R1209,Sadras - Chengalpattu - Kanchipuram - Arakkonam - Thiruthani Road (Chengalpattu div),SH-58,SH,,,04 February 2026,0,27.2,27.2,,45.8,13.8,45.8
+R1210,Sadras - Chengalpattu - Kanchipuram - Arakkonam - Thiruthani Road (Vellore div),SH-58,SH,,,17 June 2026,78.795,102.725,23.93,,34.6,10.4,34.6
+R1211,Sadras - Chengalpattu - Kanchipuram - Arakkonam - Thiruthani Road (Tiruvallur div),SH-58,SH,,,30 September 2025,102.25,107.45,5.2,,28.5,8.3,28.5
+R1212,Kancheepuram - Surappan Road (Chengalpattu div),SH-58A,SH,,,12 April 2026,66.8,72.2,5.4,,18.9,5.6,18.9
+R1213,Thiruvalam - Katpadi - Venkatagirikottah Road (Vellore div),SH-59,SH,,,25 November 2025,0,13.4,13.4,,26.5,7.9,26.5
+R1214,Hogenakkal - Pennagaram - Dharmapuri - Thirupathur Road (Dharmapuri div),SH-60,SH,,,10 March 2026,0,69,69,,25.68,8,25.68
+R1215,Hogenakkal - Pennagaram - Dharmapuri - Thirupathur Road (Krishnagiri div),SH-60,SH,,,21 July 2025,69,90.75,21.75,,25.68,8,25.68
+R1216,Hogenakkal - Pennagaram - Dharmapuri - Thirupathur Road (Vaniyambadi div),SH-60,SH,,,03 February 2026,90.75,108.2,17.45,,25.68,8,25.68
+R1217,Dharmapuri - Arur (Via) Morappur Road (Dharmapuri div),SH-60A,SH,,,16 June 2026,0,37.6,37.6,,28.5,8.5,28.5
+R1218,Walajah - Sholinghur - Arakkonam Road (Vellore div),SH-61,SH,,,29 September 2025,0,51.1,51.1,,24.6,7.4,24.6
+R1219,Trichy - Thuraiyur Road (Trichy div),SH-62,SH,,,13 March 2026,0,32.125,32.125,,26.5,7.9,26.5
+R1220,Thanjavur - Mannargudy - Thiruthuraipoondi - Vedaranyam - Kodiyakkarai Road (Thanjavur div),SH-63,SH,,,24 July 2025,0,15.8,15.8,,12.62,3.0877,12.62
+R1221,Thanjavur - Mannargudy - Thiruthuraipoondi - Vedaranyam - Kodiyakkarai Road (Tiruvarur div),SH-63,SH,,,06 February 2026,15.8,72,56.2,,12.62,3.0877,12.62
+R1222,Thanjavur - Mannargudy - Thiruthuraipoondi - Vedaranyam - Kodiyakkarai Road (Nagapattinam div),SH-63,SH,,,19 June 2026,72,106.8,34.8,,12.62,3.0877,12.62
+R1223,Kumbakonam - Sirkali Road (Thanjavur div),SH-64,SH,,,02 October 2025,0,17.8,17.8,,34.6,10.4,34.6
+R1224,Kumbakonam - Sirkali Road (Nagapattinam div),SH-64,SH,,,14 April 2026,17.8,53.35,35.55,,28.4,8.5,28.4
+R1225,Thiruvarur - Kudavasal - Kumbakonam Road (Tiruvarur div),SH-65,SH,,,27 November 2025,0,23.6,23.6,,24.6,7.4,24.6
+R1226,Thiruvarur - Kudavasal - Kumbakonam Road (Thanjavur div),SH-65,SH,,,12 March 2026,23.6,37.2,13.6,,18.9,5.6,18.9
+R1227,Kumbakonam - Mannargudy - Adirampattinam Road (Thanjavur div),SH-66,SH,,,23 July 2025,0,9.2,9.2,,25.924,0.0047,25.924
+R1228,Kumbakonam - Mannargudy - Adirampattinam Road (Tiruvarur div),SH-66,SH,,,05 February 2026,9.2,49.8,40.6,,32.4,9.8,32.4
+R1229,Nagoor - Nannilam - Nachiyarkoil Road (Nagapattinam div),SH-67,SH,,,18 June 2026,0,24,24,,21.4,6.4,21.4
+R1230,Nagoor - Nannilam - Nachiyarkoil Road (Tiruvarur div),SH-67,SH,,,01 October 2025,24,40,16,,18.9,5.6,18.9
+R1231,Nagoor - Nannilam - Nachiyarkoil Road (Thanjavur div),SH-67,SH,,,13 April 2026,40,46.8,6.8,,14.2,4.3,14.2
+R1232,Cuddalore - Tirukoilur - Sankarapuram Road (Cuddalore div),SH-68,SH,,,26 November 2025,0,23.188,23.188,,34.6,10.4,34.6
+R1233,Cuddalore - Tirukoilur - Sankarapuram Road (Kallakurichi div),SH-68,SH,,,11 March 2026,33.187,64.597,31.41,,28.5,8.5,28.5
+R1234,Virudhachalam - Ulundurpet - Villupuram Road (Cuddalore div),SH-69,SH,,,22 July 2025,0,16.6,16.6,,14.15,0.4691,14.15
+R1235,Virudhachalam - Ulundurpet - Villupuram Road (Kallakurichi div),SH-69,SH,,,04 February 2026,16.6,50.4,33.8,,14.15,0.4691,14.15
+R1236,Virudhachalam - Ulundurpet - Villupuram Road (Villupuram div),SH-69,SH,,,17 June 2026,50.6,59.8,9.2,,14.15,0.4691,14.15
+R1237,Vridhachalam - Portonovo Road (Cuddalore div),SH-70,SH,,,30 September 2025,0,36.8,36.8,,26.5,7.9,26.5
+R1238,Musiri - Kulithalai - Pudukottai - Alangudi - Peravoorani - Sethubhava Chatram Road (Trichy div),SH-71,SH,,,14 March 2026,0,0,0,,5.22,0.1892,5.22
+R1239,Musiri - Kulithalai - Pudukottai - Alangudi - Peravoorani - Sethubhava Chatram Road (Karur div),SH-71,SH,,,25 July 2025,0.35,34,33.65,,5.22,0.1892,5.22
+R1240,Musiri - Kulithalai - Pudukottai - Alangudi - Peravoorani - Sethubhava Chatram Road (Pudukottai div),SH-71,SH,,,07 February 2026,44.6,55.8,11.2,,5.22,0.1892,5.22
+R1241,Musiri - Kulithalai - Pudukottai - Alangudi - Peravoorani - Sethubhava Chatram Road (Thanjavur div),SH-71,SH,,,20 June 2026,137.2,156.4,19.2,,5.22,0.1892,5.22
+R1242,Manapparai - Thuvarankurichi Road (Trichy div),SH-71A,SH,,,03 October 2025,0,28,28,,22.4,6.8,22.4
+R1243,Madurai - Natham Road (Madurai div),SH-72,SH,,,15 April 2026,0,20.2,20.2,,28.5,8.3,28.5
+R1244,Madurai - Natham Road (Dindigul div),SH-72,SH,,,28 November 2025,20,38.485,18.485,,24.6,7.4,24.6
+R1245,Madurai - Alagarkoil - Melur Road (Madurai div),SH-72A,SH,,,13 March 2026,0,33.2,33.2,,18.9,5.6,18.9
+R1246,Avaniapuram Bypass Road (Madurai div),SH-72B,SH,,,24 July 2025,0,2.4,2.4,,14.2,4.3,14.2
+R1247,Thirumangalam - Pallapatti - Silukkuvarpatti Road (Madurai div),SH-73,SH,,,06 February 2026,0,34,34,,1.8988,0.1672,1.8988
+R1248,Thirumangalam - Pallapatti - Silukkuvarpatti Road (Dindigul div),SH-73,SH,,,19 June 2026,34,42.13,8.13,,1.8988,0.1672,1.8988
+R1249,Thirumangalam - Usilampatti Road (Madurai div),SH-73A,SH,,,02 October 2025,0,26,26,,26.4,7.8,26.4
+R1250,Dindigul - Gujiliamparai - Karur Road (Dindigul div),SH-74,SH,,,14 April 2026,0,52.8,52.8,,28.5,8.5,28.5
+R1251,Dindigul - Gujiliamparai - Karur Road (Karur div),SH-74,SH,,,27 November 2025,52.8,70.25,17.45,,22.4,6.8,22.4
+R1252,Palayamkottai - Kurukkusalai - Kulathur - Vilathikulam - Nagalapuram - Pandalkudi - Aruppukkottai Road (Tirunelveli div),SH-75,SH,,,12 March 2026,0,16.91,16.91,,14.8,4.4,14.8
+R1253,Palayamkottai - Kurukkusalai - Kulathur - Vilathikulam - Nagalapuram - Pandalkudi - Aruppukkottai Road (Tuticorin div),SH-75,SH,,,23 July 2025,16.91,63.6,46.69,,34.6,10.4,34.6
+R1254,Palayamkottai - Kurukkusalai - Kulathur - Vilathikulam - Nagalapuram - Pandalkudi - Aruppukkottai Road (Virudhunagar div),SH-75,SH,,,05 February 2026,107.78,109.38,1.6,,24.2,7.3,24.2
+R1255,Tirunelveli Bypass Road (Tirunelveli div),SH-75A,SH,,,15 March 2026,0,7.6,7.6,,32.4,9.8,32.4
+R1256,Puliyankudi - Sankarankoil - Kalugumalai - Nalattinpudhur Road (Tenkasi div),SH-76,SH,,,26 July 2025,0,33.625,33.625,,26.5,7.9,26.5
+R1257,Puliyankudi - Sankarankoil - Kalugumalai - Nalattinpudhur Road (Tuticorin div),SH-76,SH,,,08 February 2026,33.625,49.815,16.19,,19.6,5.9,19.6
+R1258,Pollachi - Valparai Road (Pollachi div),SH-78,SH,,,21 June 2026,0,64,64,,38.2,11.6,38.2
+R1259,Pollachi - Palaghat Road (Pollachi div),SH-78A,SH,,,04 October 2025,0,15.8,15.8,,28.4,8.5,28.4
+R1260,Malliakarai - Rasipuram - Tiruchengodu - Erode Road (Salem div),SH-79,SH,,,16 April 2026,0,4.8,4.8,,18.9,5.6,18.9
+R1261,Malliakarai - Rasipuram - Tiruchengodu - Erode Road (Namakkal div),SH-79,SH,,,29 November 2025,4.8,94.66,89.86,,31.5,9.4,31.5
+R1262,Malliakarai - Rasipuram - Tiruchengodu - Erode Road (Erode div),SH-79,SH,,,14 March 2026,94.66,98.86,4.2,,16.2,4.8,16.2
+R1263,Sankari - Pallipalayam Road (Salem div),SH-79A,SH,,,25 July 2025,0,4.2,4.2,,14.6,4.3,14.6
+R1264,Sankari - Pallipalayam Road (Namakkal div),SH-79A,SH,,,07 February 2026,4.2,15.7,11.5,,12.8,3.8,12.8
+R1265,Avinashi - Mettuppalayam Road (Tiruppur div),SH-80,SH,,,20 June 2026,0,13,13,,21.4,6.4,21.4
+R1266,Avinashi - Mettuppalayam Road (Coimbatore div),SH-80,SH,,,03 October 2025,13,38.2,25.2,,24.6,7.4,24.6
+R1267,Gobi - Uthukuli - Padiyur Road (Gobi div),SH-81,SH,,,15 April 2026,0,16.8,16.8,,16.48,1.5325,16.48
+R1268,Gobi - Uthukuli - Padiyur Road (Tiruppur div),SH-81,SH,,,28 November 2025,16.8,46.4,29.6,,16.48,1.5325,16.48
+R1269,Sathy - Athani - Bhavani Road (Gobi div),SH-82,SH,,,13 March 2026,0,28.8,28.8,,28.5,8.5,28.5
+R1270,Sathy - Athani - Bhavani Road (Erode div),SH-82,SH,,,24 July 2025,28.8,52.8,24,,26.4,7.8,26.4
+R1271,Palani - Dharapuram Road (Dindigul div),SH-83,SH,,,06 February 2026,0,17.4,17.4,,24.6,7.4,24.6
+R1272,Palani - Dharapuram Road (Dharapuram div),SH-83,SH,,,19 June 2026,17.4,30.89,13.49,,22.4,6.8,22.4
+R1273,Erode - Dharapuram Road (Erode div),SH-83A,SH,,,02 October 2025,0,30.6,30.6,,12.93,1.9488,12.93
+R1274,Erode - Dharapuram Road (Tiruppur div),SH-83A,SH,,,16 March 2026,30.6,62.6,32,,12.93,1.9488,12.93
+R1275,Erode - Dharapuram Road (Dharapuram div),SH-83A,SH,,,27 July 2025,62.6,74.65,12.05,,12.93,1.9488,12.93
+R1276,Erode - Karur Road (Erode div),SH-84,SH,,,09 February 2026,0,42.8,42.8,,36.8,11.1,36.8
+R1277,Erode - Karur Road (Karur div),SH-84,SH,,,22 June 2026,42.8,61.192,18.392,,32.4,9.8,32.4
+R1278,"Erode - Mulanur Road (via) Muthur, Vellakovil and Puthuppai Road (Erode div)",SH-84A,SH,,,05 October 2025,0,28,28,,28.5,8.5,28.5
+R1279,"Erode - Mulanur Road (via) Muthur, Vellakovil and Puthuppai Road (Dharapuram div)",SH-84A,SH,,,17 April 2026,28,61.6,33.6,,26.5,7.9,26.5
+R1280,Rayakottai - Athipalli Road (Krishnagiri div),SH-85,SH,,,30 November 2025,0,39.8,39.8,,24.6,7.4,24.6
+R1281,Omalur - Sankari - Thiruchengode - Paramathi Road (Salem div),SH-86,SH,,,15 March 2026,0,45.2,45.2,,28.4,8.5,28.4
+R1282,Omalur - Sankari - Thiruchengode - Paramathi Road (Namakkal div),SH-86,SH,,,26 July 2025,45.2,81,35.8,,34.6,10.4,34.6
+R1283,Thiruchengodu - Ariyanur Road (Namakkal div),SH-86A,SH,,,08 February 2026,0,23,23,,21.4,6.4,21.4
+R1284,Thiruchengodu - Ariyanur Road (Salem div),SH-86A,SH,,,21 June 2026,23,32.8,9.8,,18.9,5.6,18.9
+R1285,Udumalpet - Palladam Road (Dharapuram div),SH-87,SH,,,04 October 2025,0,32,32,,22.4,6.8,22.4
+R1286,Udumalpet - Palladam Road (Tiruppur div),SH-87,SH,,,16 April 2026,32,45.2,13.2,,24.6,7.4,24.6
+R1287,Chittoor - Gudiyatham Road (Vaniyambadi div),SH-88,SH,,,29 November 2025,0,20.2,20.2,,19.6,5.9,19.6
+R1288,Nanguneri - Bharathar Ovari Road (Tirunelveli div),SH-89,SH,,,14 March 2026,0,36.034,36.034,,22.5,6.8,22.5
+R1289,Alwarthirunagari - Nazareth - Sathankulam - Ittamozhi - Vallioor Road (Tuticorin div),SH-93,SH,,,25 July 2025,0,29.895,29.895,,24.2,7.3,24.2
+R1290,Alwarthirunagari - Nazareth - Sathankulam - Ittamozhi - Vallioor Road (Tirunelveli div),SH-93,SH,,,07 February 2026,29.895,60.24,30.345,,26.4,8.1,26.4
+R1291,Thiruchengode - Namakkal Road (Namakkal div),SH-94,SH,,,20 June 2026,0,30.88,30.88,,28.5,8.3,28.5
+R1292,Mohanur - Namakkal - Sendamangalam - Rasipuram Road (Namakkal div),SH-95,SH,,,17 March 2026,0,54,54,,31.5,9.4,31.5
+R1293,Erode - Perundurai - Kangayam Road (Erode div),SH-96,SH,,,28 July 2025,0,18.837,18.837,,21.1,0.7108,21.1
+R1294,Erode - Perundurai - Kangayam Road (Tiruppur div),SH-96,SH,,,10 February 2026,39,51.56,12.56,,21.1,0.7108,21.1
+R1295,Udumalpet - Dharapuram Road (Dharapuram div),SH-97,SH,,,23 June 2026,0,36.348,36.348,,24.6,7.4,24.6
+R1296,Gudalur - Sulthanbathery Road (Ooty div),SH-98,SH,,,06 October 2025,0,27.4,27.4,,28.5,8.3,28.5
+R1297,Thirukkattuppalli - Sengipatti - Pattukkottai Road (Thanjavur div),SH-99,SH,,,18 April 2026,0,15.55,15.55,,32.4,9.8,32.4
+R1298,Thirukkattuppalli - Sengipatti - Pattukkottai Road (Pudukottai div),SH-99,SH,,,01 December 2025,23.2,35.2,12,,26.5,7.9,26.5
+R1299,Thanjavur - Vallam Road (Thanjavur div),SH-99A,SH,,,16 March 2026,0,10.6,10.6,,18.9,5.6,18.9
+R1300,Palayam - Bodi Road (Theni div),SH-100,SH,,,27 July 2025,0,31.8,31.8,,15.8,4.7,15.8
+R1301,Devadanapatti - Varusanadu Road (Theni div),SH-101,SH,,,09 February 2026,0,58,58,,22.4,6.8,22.4
+R1302,Uthamapalayam - Surulipatti Road (Theni div),SH-102,SH,,,22 June 2026,0,20,20,,13.6,4.1,13.6
+R1303,Chennai - Pulicat Road,SH-104,SH,,,05 October 2025,0,25.5,25.5,,21.4,6.4,21.4
+R1304,Thiruthani - Podatturpet - Pallipet Road,SH-106,SH,,,17 April 2026,0,27.082,27.082,,19.6,5.9,19.6
+R1305,R.K. Pet - Pallipet Road (Tiruvallur div),SH-108,SH,,,30 November 2025,0,19.6,19.6,,14.2,4.2,14.2
+R1306,Pallavaram - Thoraipakkam Road (Chennai City Roads div),SH-109,SH,,,15 March 2026,0,10.62,10.62,,38.5,11.4,38.5
+R1307,Tambaram - Mudichur - Sriperumbudur Road (Chennai City Roads div),SH-110,SH,,,26 July 2025,0,7.5,7.5,,34.6,10.4,34.6
+R1308,Tambaram - Mudichur - Sriperumbudur Road (Chengalpattu div),SH-110,SH,,,08 February 2026,7.5,23.5,16,,28.5,8.5,28.5
+R1309,Madhavaram - Redhills Road (Tiruvallur div),SH-111,SH,,,21 June 2026,0,9.6,9.6,,26.4,7.8,26.4
+R1310,Thirumangalam - Mugappair Road (Tiruvallur div),SH-112,SH,,,18 March 2026,0,2.325,2.325,,16.2,4.8,16.2
+R1311,Kodambakkam - Sriperumbudur Road (Tiruvallur div),SH-113,SH,,,29 July 2025,0,5,5,,132,38,132
+R1312,Kodambakkam - Sriperumbudur Road (Chengalpattu div),SH-113,SH,,,11 February 2026,5,28.8,23.8,,132,38,132
+R1313,Chennai - Ennore Road (Tiruvallur div),SH-114,SH,,,24 June 2026,8,18.4,10.4,,34.6,10.4,34.6
+R1314,Cheyyur - Vandavasi - Polur Road (Chengalpattu div),SH-115,SH,,,07 October 2025,0,34,34,,22.4,6.8,22.4
+R1315,Cheyyur - Vandavasi - Polur Road (Thiruvannamalai div),SH-115,SH,,,19 April 2026,34,105,71,,28.5,8.5,28.5
+R1316,Kanchipuram - Vandavasi Road (Chengalpattu div),SH-116,SH,,,02 December 2025,0,5.9,5.9,,18.9,5.6,18.9
+R1317,Kanchipuram - Vandavasi Road (Thiruvannamalai div),SH-116,SH,,,17 March 2026,5.9,39.8,33.9,,24.6,7.4,24.6
+R1318,Maduranthakam - Vennangupet Road (Chengalpattu div),SH-117,SH,,,28 July 2025,0,37.6,37.6,,16.2,4.8,16.2
+R1319,Bukkathurai - Uthiramerur Road (Chengalpattu div),SH-118,SH,,,10 February 2026,0,31.8,31.8,,14.8,4.4,14.8
+R1320,Uthiramerur - Kanchipuram Road (Chengalpattu div),SH-118A,SH,,,23 June 2026,0,26.4,26.4,,16.5,4.9,16.5
+R1321,Walajabad - Sunguvarchathiram - Keelachery Road (Chengalpattu div),SH-120,SH,,,06 October 2025,0,18.4,18.4,,21.4,6.4,21.4
+R1322,Walajabad - Sunguvarchathiram - Keelachery Road (Tiruvallur div),SH-120,SH,,,18 April 2026,21.7,30.9,9.2,,19.6,5.9,19.6
+R1323,Vandalur - Mambakkam - Kelambakkam Road (Chengalpattu div),SH-121,SH,,,01 December 2025,0,18.6,18.6,,22.4,6.8,22.4
+R1324,Abdullapuram - Asanampattu - Alangayam - Thirupathur Road (Vellore div),SH-122,SH,,,16 March 2026,0,10,10,,9.97,1.4,9.97
+R1325,Abdullapuram - Asanampattu - Alangayam - Thirupathur Road (Vaniyambadi div),SH-122,SH,,,27 July 2025,10,79.5,69.5,,19.21,7.23,19.21
+R1326,Kalavai - Valapandal Road (Vellore div),SH-123,SH,,,09 February 2026,0,21.2,21.2,,14.8,4.4,14.8
+R1327,Ponnai - Thiruvalam Road (Vellore div),SH-124,SH,,,22 June 2026,0,16.4,16.4,,16.2,4.8,16.2
+R1328,Ranipet - Ponnai Road (Vellore div),SH-124A,SH,,,19 March 2026,0,21.6,21.6,,18.9,5.6,18.9
+R1329,Panamadangi - Poosarivalasai - Paradarami Road (Vellore div),SH-125,SH,,,30 July 2025,0,12,12,,13.6,4.1,13.6
+R1330,Panamadangi - Poosarivalasai - Paradarami Road (Vaniyambadi div),SH-125,SH,,,12 February 2026,12,19.6,7.6,,11.4,3.4,11.4
+R1331,Arakkonam - Ocheri Road (Vellore div),SH-126,SH,,,25 June 2026,0,32,32,,15.5,4.6,15.5
+R1332,Pallikonda - Palamaneri Road (Vaniyambadi div),SH-127,SH,,,08 October 2025,0,1.2,1.2,,12.8,3.8,12.8
+R1333,Pallikonda - Palamaneri Road (Vellore div),SH-127,SH,,,20 April 2026,1.2,7.4,6.2,,14.2,4.3,14.2
+R1334,Sholinghur - Kaveripakkam Road (Vellore div),SH-128,SH,,,03 December 2025,0,30,30,,15.26,1.26,15.26
+R1335,Arcot - Kannamangalam Road (Vellore div),SH-129,SH,,,18 March 2026,0,25.4,25.4,,16.4,4.9,16.4
+R1336,Gudiyatham - Gadambur - Kailasagiri - Vaniyambadi Road (Vaniyambadi div),SH-130,SH,,,29 July 2025,0,42,42,,10.25,0.0001,10.25
+R1337,Ambur - Sathgur Road (Vaniyambadi div),SH-130A,SH,,,11 February 2026,0,19.8,19.8,,7.6,4.5,7.6
+R1338,Bargur - Thirupathur Road (Krishnagiri div),SH-131,SH,,,24 June 2026,0,7.8,7.8,,22.4,6.8,22.4
+R1339,Bargur - Thirupathur Road (Vaniyambadi div),SH-131,SH,,,07 October 2025,7.8,24.2,16.4,,24.6,7.4,24.6
+R1340,Kannamangalam - Arni Road (Thiruvannamalai div),SH-132,SH,,,19 April 2026,0,17.2,17.2,,14.8,4.4,14.8
+R1341,Polur - Chengam Road (Thiruvannamalai div),SH-133,SH,,,02 December 2025,0,47,47,,28.5,8.5,28.5
+R1342,Tiruvannamalai - Avalurpet Road (Thiruvannamalai div),SH-133A,SH,,,17 March 2026,0,22.8,22.8,,16.2,4.8,16.2
+R1343,Tindivanam - Marakkanam Road (Villupuram div),SH-134,SH,,,28 July 2025,0,34,34,,19.6,5.9,19.6
+R1344,Villupuram - Tiruvannamalai Road (Thiruvannamalai div),SH-135,SH,,,10 February 2026,52.4,54.4,2,,26.4,7.8,26.4
+R1345,Mailam - Pondy Road (Villupuram div),SH-136,SH,,,23 June 2026,0,26.6,26.6,,12.77,1.77,12.77
+R1346,Thirukoilur - Asanur Road (Kallakurichi div),SH-137,SH,,,06 October 2025,0,39.3,39.3,,9.9,3.2374,9.9
+R1347,Jail Hill - Vellakarai - Kumalangulam Road (Cuddalore div),SH-138,SH,,,20 March 2026,0,18.9,18.9,,14.8,4.4,14.8
+R1348,Ariyalur - Muthuvanchery - Sripuranthan Road (Ariyalur div),SH-139,SH,,,31 July 2025,0,35.2,35.2,,21.4,6.4,21.4
+R1349,Vridhachalam - Tholudur Road to Madhanathur (via) Jayankondam (Cuddalore div),SH-140,SH,,,13 February 2026,0,6.8,6.8,,19.6,5.9,19.6
+R1350,Vridhachalam - Tholudur Road to Madhanathur (via) Jayankondam (Ariyalur div),SH-140,SH,,,26 June 2026,6.8,48.6,41.8,,22.4,6.8,22.4
+R1351,Vridhachalam - Tholudur Road (Cuddalore div),SH-141,SH,,,09 October 2025,0,44.4,44.4,,17.72,9.008,17.72
+R1352,Thuraiyur - Perambalur Road (Trichy div),SH-142,SH,,,21 April 2026,0,10.6,10.6,,8.7,2.133,8.7
+R1353,Thuraiyur - Perambalur Road (Ariyalur div),SH-142,SH,,,04 December 2025,10.6,39.4,28.8,,8.7,2.133,8.7
+R1354,Mathur - Thittakudi Road (Ariyalur div),SH-143,SH,,,19 March 2026,0,26,26,,10,4.4891,10
+R1355,Kodukkur - Kaduvetti Road (Ariyalur div),SH-144,SH,,,30 July 2025,0,30.2,30.2,,14.1,0.1577,14.1
+R1356,Aranthangi - Kattumavadi Road (Pudukottai div),SH-145,SH,,,12 February 2026,0,25.8,25.8,,24.6,7.4,24.6
+R1357,Mannargudy - Sethubavachatram Road (Thanjavur div),SH-146,SH,,,25 June 2026,10.6,51.4,40.8,,9.7676,0.0152,9.7676
+R1358,Mannargudy - Sethubavachatram Road (Tiruvarur div),SH-146,SH,,,08 October 2025,0,10.6,10.6,,9.7676,0.0152,9.7676
+R1359,Kumbakonam - Karaikal Road (Thanjavur div),SH-147,SH,,,20 April 2026,0,18.2,18.2,,28.5,8.5,28.5
+R1360,Kumbakonam - Karaikal Road (Nagapattinam div),SH-147,SH,,,03 December 2025,18.2,25.2,7,,26.4,7.8,26.4
+R1361,Kumbakonam - Karaikal Road (Tiruvarur div),SH-147,SH,,,18 March 2026,25.2,42.2,17,,22.4,6.8,22.4
+R1362,Nagore - Vettar Road (Nagapattinam div),SH-148,SH,,,29 July 2025,0,15,15,,21.9,8.6677,21.9
+R1363,Nagore - Vettar Road (Tiruvarur div),SH-148,SH,,,11 February 2026,15,23,8,,21.9,8.6677,21.9
+R1364,Sembanarkoil - Nalladai Road (Nagapattinam div),SH-149,SH,,,24 June 2026,0,11.9,11.9,,14.8,4.4,14.8
+R1365,Vaitheeswaran Koil - Loweranaicut Road (Nagapattinam div),SH-150,SH,,,07 October 2025,0,20.05,20.05,,26.5,7.9,26.5
+R1366,Vaitheeswaran Koil - Loweranaicut Road (Thanjavur div),SH-150,SH,,,21 March 2026,20.05,32.25,12.2,,22.4,6.8,22.4
+R1367,Vadamadurai - Oddanchatram Road (Dindigul div),SH-152,SH,,,01 August 2025,0,42.8,42.8,,28.5,8.5,28.5
+R1368,Palani - Dharapuram Road (via) Alangium (Dindigul div),SH-153,SH,,,14 February 2026,0,21.85,21.85,,24.6,7.4,24.6
+R1369,Palani - Dharapuram Road (via) Alangium (Dharapuram div),SH-153,SH,,,27 June 2026,21.85,32.68,10.83,,22.4,6.8,22.4
+R1370,Vathalagundu - Peraiyur - Kariyapatti Road (Dindigul div),SH-154,SH,,,10 October 2025,0,14.4,14.4,,3.89,0.89,3.89
+R1371,Vathalagundu - Peraiyur - Kariyapatti Road (Madurai div),SH-154,SH,,,22 April 2026,14.4,87.64,73.24,,28.5,8.5,28.5
+R1372,Ammaiyanaickanur - Vathalagundu Road (Dindigul div),SH-155,SH,,,05 December 2025,0,18,18,,14.8,4.4,14.8
+R1373,Kodai Ghat Road (Dindigul div),SH-156,SH,,,20 March 2026,0,56.8,56.8,,38.2,11.6,38.2
+R1374,Attur - Perambalur Road (Salem div),SH-157,SH,,,31 July 2025,0,26.8,26.8,,26.4,7.8,26.4
+R1375,Attur - Perambalur Road (Ariyalur div),SH-157,SH,,,13 February 2026,26.8,53,26.2,,24.6,7.4,24.6
+R1376,Thermal Power Plant Road (Salem div),SH-158,SH,,,26 June 2026,0,5.4,5.4,,18.9,5.6,18.9
+R1377,Pallapatty - Suramangalam Road (Salem div),SH-159,SH,,,09 October 2025,0,2.2,2.2,,11.5,3.4,11.5
+R1378,Namakkal - Kananur Road (Namakkal div),SH-161,SH,,,21 April 2026,0,26,26,,22.4,6.8,22.4
+R1379,Namakkal - Kananur Road (Trichy div),SH-161,SH,,,04 December 2025,26,45.428,19.428,,19.6,5.9,19.6
+R1380,North Coimbatore - Ramanathapuram - Chettipalayam Road (Coimbatore div),SH-162,SH,,,19 March 2026,0,18.91,18.91,,32.4,9.8,32.4
+R1381,Palladam - Cochin Frontier Road (Pollachi div),SH-163,SH,,,30 July 2025,12.8,54.4,41.6,,28.5,8.3,28.5
+R1382,Palladam - Cochin Frontier Road (Tiruppur div),SH-163,SH,,,12 February 2026,0,12.8,12.8,,34.6,10.4,34.6
+R1383,Coimbatore - Anaikatty Road (Coimbatore div),SH-164,SH,,,25 June 2026,0,29,29,,2,0.0001,2
+R1384,Kamanaickenpalayam - Annur Road (Tiruppur div),SH-165,SH,,,22 March 2026,0,20,20,,21.4,6.4,21.4
+R1385,Kamanaickenpalayam - Annur Road (Coimbatore div),SH-165,SH,,,02 August 2025,20,38.62,18.62,,18.9,5.6,18.9
+R1386,Palladam - Avinashi Road (Tiruppur div),SH-166,SH,,,15 February 2026,0,22.8,22.8,,26.5,7.9,26.5
+R1387,North Coimbatore - Maruthamalai Road (Coimbatore div),SH-167,SH,,,28 June 2026,0,11.18,11.18,,16.2,4.8,16.2
+R1388,Karamadai - Kariyaampalayam Road (Coimbatore div),SH-168,SH,,,11 October 2025,0,15.2,15.2,,14.8,4.4,14.8
+R1389,Tiruppur - Somanur Road (Tiruppur div),SH-169,SH,,,23 April 2026,0,19,19,,22.4,6.8,22.4
+R1390,Neelipalayam - Sirumugai Road (Coimbatore div),SH-170,SH,,,06 December 2025,0,17.8,17.8,,13.5,3.9,13.5
+R1391,Kovilvazhi - Karappalayam Road (Tiruppur div),SH-171,SH,,,21 March 2026,0,17.4,17.4,,24.15,10,24.15
+R1392,Tiruppur - Kangayam Road (Tiruppur div),SH-172,SH,,,01 August 2025,0,26.4,26.4,,10.3018,0.0001,10.3018
+R1393,Erode - Thingalur Road (Erode div),SH-173,SH,,,14 February 2026,0,26,26,,16.4,4.9,16.4
+R1394,Palladam - Dharapuram Road (Tiruppur div),SH-174A,SH,,,27 June 2026,0,16.8,16.8,,24.6,7.4,24.6
+R1395,Palladam - Dharapuram Road (Dharapuram div),SH-174A,SH,,,10 October 2025,16.8,29.4,12.6,,22.4,6.8,22.4
+R1396,Bhavani - Anthiyur - Chellampalayam Road (Erode div),SH-175,SH,,,22 April 2026,0,18,18,,19.78,3,19.78
+R1397,Thoothukudi - Tiruchendur - Kanyakumari Road (Tuticorin div),SH-176,SH,,,05 December 2025,0,67.4,67.4,,38.5,11.4,38.5
+R1398,Thoothukudi - Tiruchendur - Kanyakumari Road (Tirunelveli div),SH-176,SH,,,20 March 2026,67.4,119.2,51.8,,32.4,9.8,32.4
+R1399,Cheranmahadevi - Panagudy Road (Tirunelveli div),SH-177,SH,,,31 July 2025,0,43.4,43.4,,24.6,7.4,24.6
+R1400,Ambasamudram - Papanasam - Upper Dam Road (Tirunelveli div),SH-178,SH,,,13 February 2026,0,23,23,,21.4,6.4,21.4
+R1401,Kanyakumari - Pazhayauchakadai Road (Nagercoil div),SH-179,SH,,,26 June 2026,0,71.522,71.522,,28.5,8.3,28.5
+R1402,Colachel - Thiruvattar Road (Nagercoil div),SH-180,SH,,,23 March 2026,0,23.9,23.9,,18.9,5.6,18.9
+R1403,Marthandam - Panachamoodu Road (Nagercoil div),SH-181,SH,,,03 August 2025,0,14.1,14.1,,16.2,4.8,16.2
+R1404,Vathrap - Magarajapuram - Azhagapuri - Virudhunagar Road (Virudhunagar div),SH-182,SH,,,16 February 2026,0,37.4,37.4,,26.5,7.9,26.5
+R1405,Sivakasi - Alankulam Road (Virudhunagar div),SH-183,SH,,,29 June 2026,0,15.05,15.05,,14.8,4.4,14.8
+R1406,Virudhunagar - Krishnapuram Road (Virudhunagar div),SH-184,SH,,,12 October 2025,0,23.23,23.23,,12.8,3.8,12.8
+R1407,Rajapalayam - Vembakkottai Road (Virudhunagar div),SH-186,SH,,,24 April 2026,0,29.6,29.6,,30,0.0001,30
+R1408,Sathur - Sivakasi - Kazhugumalai Road (Virudhunagar div),SH-187,SH,,,07 December 2025,0,38.4,38.4,,26.4,7.8,26.4
+R1409,Salem Junction to Yercaud Road (Salem div),SH-188,SH,,,22 March 2026,0,30.6,30.6,,31.5,9.4,31.5
+R1410,Kangayam - Kodumudi Road (Tiruppur div),SH-189,SH,,,02 August 2025,0,9.2,9.2,,18.9,5.6,18.9
+R1411,Kangayam - Kodumudi Road (Dharapuram div),SH-189,SH,,,15 February 2026,9.2,26,16.8,,16.2,4.8,16.2
+R1412,Kangayam - Kodumudi Road (Erode div),SH-189,SH,,,28 June 2026,26,36.2,10.2,,14.8,4.4,14.8
+R1413,"Karumandampalayam - Salaipudur Road (via) Malayampalayam, Thamaraipalayam (Erode div)",SH-190,SH,,,11 October 2025,0,17.2,17.2,,21.4,6.4,21.4
+R1414,Melur - Thiruppathur Road (Madurai div),SH-191,SH,,,23 April 2026,0,14.2,14.2,,24.6,7.4,24.6
+R1415,Melur - Thiruppathur Road (Sivagangai div),SH-191,SH,,,06 December 2025,14.2,31.6,17.4,,22.4,6.8,22.4
+R1416,Kummankudi - Kovilur Road (via) Pillayarpatti Road (Sivagangai div),SH-191A,SH,,,21 March 2026,0,13.975,13.975,,13.5,3.9,13.5
+R1417,Thalaiyuthu - Kallimandayam - Edayakottai Road (Dindigul div),SH-192,SH,,,01 August 2025,0,55.4,55.4,,13.2,0.2546,13.2
+R1418,Thadicombu - Pallapatty - Aravakurichi Road (Dindigul div),SH-193,SH,,,14 February 2026,0,25.4,25.4,,24.6,7.4,24.6
+R1419,Thadicombu - Pallapatty - Aravakurichi Road (Karur div),SH-193,SH,,,27 June 2026,25.4,46.8,21.4,,22.4,6.8,22.4
+R1420,Nagercoil - Thuvarankadu Road (Nagercoil div),SH-194,SH,,,10 October 2025,0,8.9,8.9,,13.5,3.9,13.5
+R1421,Madurai - Viradhanur - Valayankulam Road (Madurai div),SH-195,SH,,,22 April 2026,0,22.6,22.6,,18.9,5.6,18.9
+R1422,Tirupur - Perumanallur - Kunnathur - Perundurai Road (Tiruppur div),SH-196,SH,,,24 March 2026,0,27,27,,26.5,7.9,26.5
+R1423,Tirupur - Perumanallur - Kunnathur - Perundurai Road (Erode div),SH-196,SH,,,04 August 2025,27,40.8,13.8,,21.4,6.4,21.4
+R1424,Vellakovil - Mulanur Road (via) Akkaraipalayam Road (Dharapuram div),SH-197,SH,,,17 February 2026,0,24.6,24.6,,16.2,4.8,16.2
+R1425,Komarapalayam - Pallipalayam - Jedarpalayam - Pandamangalam - Velur Road (Namakkal div),SH-198,SH,,,30 June 2026,0,66.5,66.5,,34.8,10.4,34.8
+R1426,Vaiyampatty - Karur Road (Via) Mylampatty - Uppidamangalam Road (Trichy div),SH-199,SH,,,13 October 2025,0,9,9,,22.4,6.8,22.4
+R1427,Vaiyampatty - Karur Road (Via) Mylampatty - Uppidamangalam Road (Karur div),SH-199,SH,,,25 April 2026,9,53.64,44.64,,26.5,7.9,26.5
+R1428,Nagore - Nagapattinam - Ramanathapuram - Tuticorin Road (Nagapattinam div),SH-200,SH,,,08 December 2025,0,39.571,39.571,,38.5,11.4,38.5
+R1429,Nagore - Nagapattinam - Ramanathapuram - Tuticorin Road (Tiruvarur div),SH-200,SH,,,23 March 2026,39.6,75.4,35.8,,32.4,9.8,32.4
+R1430,Nagore - Nagapattinam - Ramanathapuram - Tuticorin Road (Thanjavur div),SH-200,SH,,,03 August 2025,75.4,115.8,40.4,,28.4,8.5,28.4
+R1431,Nagore - Nagapattinam - Ramanathapuram - Tuticorin Road (Pudukottai div),SH-200,SH,,,16 February 2026,115.77,153.77,38,,26.5,7.9,26.5
+R1432,Nagore - Nagapattinam - Ramanathapuram - Tuticorin Road (Ramanathapuram div),SH-200,SH,,,29 June 2026,153.8,204.4,50.6,,42.8,12.9,42.8
+R1433,Nagore - Nagapattinam - Ramanathapuram - Tuticorin Road (Tuticorin div),SH-200,SH,,,12 October 2025,289.998,338.86,48.862,,36.8,11.1,36.8
+R1434,Namanasamudram - Ponnamaravathy Road (Pudukottai div),SH-201,SH,,,24 April 2026,9.4,42.7,33.3,,19.6,5.9,19.6
+R1435,Tiruvarur - Mannargudi - Muthupet Road (Tiruvarur div),SH-202,SH,,,07 December 2025,0,60,60,,28.5,8.3,28.5
+R1436,Mundiyampakkam - Pondicherry Road (Villupuram div),SH-203,SH,,,22 March 2026,0,21.25,21.25,,24.6,7.4,24.6
+R1437,Kallakurichi - Koothakudi Road (Kallakurichi div),SH-204,SH,,,02 August 2025,0,24.8,24.8,,16.4,4.9,16.4
+R1438,Vanagaram - Ambathur - Puzhal Road (Tiruvallur div),SH-205,SH,,,15 February 2026,0,14.6,14.6,,22.4,6.8,22.4
+R1439,Poonamallee - Pattabiram Road (Tiruvallur div),SH-206,SH,,,28 June 2026,0,11.6,11.6,,14.8,4.4,14.8
+R1440,Vellore - Usoor Road (Vellore div),SH-207,SH,,,25 March 2026,0,8,8,,11.5,3.4,11.5
+R1441,Hosur Inner Ring Road (Krishnagiri div),SH-208,SH,,,05 August 2025,0,4.85,4.85,,26.5,7.9,26.5
+R1442,Kumbakonam Bypass Road (Thanjavur div),SH-209,SH,,,18 February 2026,0,2.2,2.2,,21.4,6.4,21.4
+R1443,Sirkali Bypass and Link Road (Nagapattinam div),SH-210,SH,,,01 July 2026,0,5.499,5.499,,18.9,5.6,18.9
+R1444,Tirukoilur Bypass Road (Kallakurichi div),SH-211,SH,,,14 October 2025,0,4.395,4.395,,16.2,4.8,16.2
+R1445,Chidambaram South Bypass Road (Cuddalore div),SH-212,SH,,,26 April 2026,0,7.28,7.28,,15.5,4.6,15.5
+R1446,Vridhachalam Bypass Road (Cuddalore div),SH-213,SH,,,09 December 2025,0,5.6,5.6,,14.2,4.3,14.2
+R1447,Chidambaram Bypass Link Road (Cuddalore div),SH-214,SH,,,24 March 2026,0,1.904,1.904,,8.6,2.5,8.6
+R1448,Srinagar–Leh National Highway,NH-1,NH,,,04 August 2025,,,534,,48.5,14.6,48.5
+R1449,Dibrugarh–Siaha National Highway,NH-2,NH,,,17 February 2026,,,1326,,42.6,12.8,42.6
+R1450,Amritsar–Leh National Highway,NH-3,NH,,,30 June 2026,,,990,,45.8,13.8,45.8
+R1451,Port Blair–Lamiya Bay National Highway,NH-4,NH,,,13 October 2025,,,333,,28.4,8.5,28.4
+R1452,Firozpur–Shipki La National Highway,NH-5,NH,,,25 April 2026,,,700,,38.2,11.6,38.2
+R1453,Jorabat–Zokhawthar National Highway,NH-6,NH,,,08 December 2025,,,676,,34.6,10.4,34.6
+R1454,Fazilka–Mana Pass National Highway,NH-7,NH,,,23 March 2026,,,854,,36.8,11.1,36.8
+R1455,Karimganj–Maitri Setu National Highway,NH-8,NH,,,03 August 2025,,,375,,22.4,6.8,22.4
+R1456,Fazilka–Jauljibi National Highway,NH-9,NH,,,16 February 2026,,,954,,31.4,9.2,31.4
+R1457,Siliguri–Nathu La National Highway,NH-10,NH,,,29 June 2026,,,174,,26.5,7.9,26.5
+R1458,Rewari–Myajlar National Highway,NH-11,NH,,,12 October 2025,,,848,,24.6,7.4,24.6
+R1459,Bakkhali–Raiganj National Highway,NH-12,NH,,,24 April 2026,,,625,,28.5,8.5,28.5
+R1460,Tawang–Wakro National Highway,NH-13,NH,,,07 December 2025,,,1559,,32.4,9.8,32.4
+R1461,Kharagpur–Morgram National Highway,NH-14,NH,,,22 March 2026,,,324,,36.8,11.1,36.8
+R1462,Baihata–Wakro National Highway,NH-15,NH,,,26 March 2026,,,666,,31.4,9.2,31.4
+R1463,Chennai–Kolkata National Highway,NH-16,NH,,,06 August 2025,,,1722,,52.4,15.8,52.4
+R1464,Guwahati–Sevoke National Highway,NH-17,NH,,,19 February 2026,,,576,,34.6,10.4,34.6
+R1465,Koderma–Balasore National Highway,NH-18,NH,,,02 July 2026,,,594,,28.5,8.5,28.5
+R1466,Agra–Dankuni National Highway,NH-19,NH,,,15 October 2025,,,1369,,45.8,13.8,45.8
+R1467,Bakhtiyarpur–Panikoili National Highway,NH-20,NH,,,27 April 2026,,,729,,38.2,11.6,38.2
+R1468,Jaipur–Bareilly National Highway,NH-21,NH,,,10 December 2025,,,502,,26.5,7.9,26.5
+R1469,Sonbarsa–Lohardaga National Highway,NH-22,NH,,,25 March 2026,,,450,,22.4,6.8,22.4
+R1470,Kothun–Udi Mor (Etawah) National Highway,NH-23,NH,,,05 August 2025,,,366,,24.6,7.4,24.6
+R1471,Sonauli–Saiyad Raja National Highway,NH-24,NH,,,18 February 2026,,,298,,21.4,6.4,21.4
+R1472,Munabao–Beawar National Highway,NH-25,NH,,,01 July 2026,,,484,,28.4,8.5,28.4
+R1473,Vizianagaram–Bargarh National Highway,NH-26,NH,,,14 October 2025,,,555,,19.6,5.9,19.6
+R1474,Porbandar–Silchar National Highway,NH-27,NH,,,26 April 2026,,,3507,,45.8,13.8,45.8
+R1475,Chunar–Kakrahwa National Highway,NH-28,NH,,,09 December 2025,,,358,,21.4,6.4,21.4
+R1476,Dabaka–Jessami National Highway,NH-29,NH,,,24 March 2026,,,340,,24.6,7.4,24.6
+R1477,Vijayawada–Sitarganj National Highway,NH-30,NH,,,04 August 2025,,,2025,,38.2,11.6,38.2
+R1478,Unnao–Gazole National Highway,NH-31,NH,,,17 February 2026,,,992,,28.5,8.5,28.5
+R1479,Chennai–Thoothukudi National Highway,NH-32,NH,,,30 June 2026,,,657,,42.8,12.9,42.8
+R1480,Arwal–Farakka National Highway,NH-33,NH,,,13 October 2025,,,462.25,,26.5,7.9,26.5
+R1481,Gangotri Dham–Lakhnadon National Highway,NH-34,NH,,,27 March 2026,,,1521,,36.8,11.1,36.8
+R1482,Harpalpur–Varanasi National Highway,NH-35,NH,,,07 August 2025,,,462.25,,22.4,6.8,22.4
+R1483,Vikravandi–Manamadurai National Highway,NH-36,NH,,,20 February 2026,,,343,,34.6,10.4,34.6
+R1484,Karimganj–Imphal National Highway,NH-37,NH,,,03 July 2026,,,361,,28.4,8.5,28.4
+R1485,Vellore–Thoothukudi National Highway,NH-38,NH,,,16 October 2025,,,625,,32.4,9.8,32.4
+R1486,Jhansi–Ranchi National Highway,NH-39,NH,,,28 April 2026,,,900,,31.5,9.4,31.5
+R1487,Kurnool–Ranipettai National Highway,NH-40,NH,,,11 December 2025,,,414,,26.4,7.8,26.4
+R1488,Samakhiyali–Narayan Sarovar National Highway,NH-41,NH,,,26 March 2026,,,300,,45.8,13.8,45.8
+R1489,Joladarasi–Krishnagiri National Highway,NH-42,NH,,,06 August 2025,,,425,,21.4,6.4,21.4
+R1490,Gulluganj–Chaibasa National Highway,NH-43,NH,,,19 February 2026,,,961,,24.6,7.4,24.6
+R1491,Srinagar–Kanyakumari National Highway,NH-44,NH,,,02 July 2026,,,4225,,38.2,11.6,38.2
+R1492,Obedullaganj–Bilaspur National Highway,NH-45,NH,,,15 October 2025,,,676,,28.5,8.5,28.5
+R1493,Gwalior–Betul National Highway,NH-46,NH,,,27 April 2026,,,650,,42.8,12.9,42.8
+R1494,Bamanbore–Nagpur National Highway,NH-47,NH,,,10 December 2025,,,1089,,26.5,7.9,26.5
+R1495,Delhi–Chennai National Highway,NH-48,NH,,,25 March 2026,,,2916,,36.8,11.1,36.8
+R1496,Bilaspur–Kharagpur National Highway,NH-49,NH,,,05 August 2025,,,700,,22.4,6.8,22.4
+R1497,Nanded–Chitradurga National Highway,NH-50,NH,,,18 February 2026,,,766,,34.6,10.4,34.6
+R1498,Dwarka–Dhrangadhra National Highway,NH-51,NH,,,01 July 2026,,,790,,28.4,8.5,28.4
+R1499,Sangrur–Ankola National Highway,NH-52,NH,,,14 October 2025,,,2401,,32.4,9.8,32.4
+R1500,Hajira–Paradip Port National Highway,NH-53,NH,,,26 April 2026,,,1849,,31.5,9.4,31.5
+R1501,Pathankot–Bikaner National Highway,NH-54,NH,,,28 March 2026,,,684,,26.4,7.8,26.4
+R1502,Paradeep–Sambalpur National Highway,NH-55,NH,,,08 August 2025,,,350,,34.6,10.4,34.6
+R1503,Nimbahera–Vapi National Highway,NH-56,NH,,,21 February 2026,,,715,,28.5,8.5,28.5
+R1504,Balangir–Khordha National Highway,NH-57,NH,,,04 July 2026,,,300,,26.4,7.8,26.4
+R1505,Fatehpur–Palanpur National Highway,NH-58,NH,,,17 October 2025,,,697,,31.5,9.4,31.5
+R1506,Khariar–Brahmapur National Highway,NH-59,NH,,,29 April 2026,,,352,,24.6,7.4,24.6
+R1507,Pune–Dhule National Highway,NH-60,NH,,,12 December 2025,,,414,,32.4,9.8,32.4
+R1508,Bhiwandi–Jagtial National Highway,NH-61,NH,,,27 March 2026,,,814,,28.4,8.5,28.4
+R1509,Abohar–Pindwara National Highway,NH-62,NH,,,07 August 2025,,,784,,36.8,11.1,36.8
+R1510,Daund–Koraput National Highway,NH-63,NH,,,20 February 2026,,,1065,,38.2,11.6,38.2
+R1511,Morbi–Hazira National Highway,NH-64,NH,,,03 July 2026,,,528,,26.5,7.9,26.5
+R1512,Pune–Machilipatnam National Highway,NH-65,NH,,,16 October 2025,,,926,,45.8,13.8,45.8
+R1513,Navi Mumbai–Kanyakumari National Highway,NH-66,NH,,,28 April 2026,,,1681,,54.6,16.4,54.6
+R1514,Krishnapatnam Port–Ramanagara National Highway,NH-67,NH,,,11 December 2025,,,814,,22.4,6.8,22.4
+R1515,Tanot–Prantij National Highway,NH-68,NH,,,26 March 2026,,,729,,28.4,8.5,28.4
+R1516,Honnavar–Renigunta National Highway,NH-69,NH,,,06 August 2025,,,750,,36.8,11.1,36.8
+R1517,Munabao–Tanot National Highway,NH-70,NH,,,19 February 2026,,,343,,26.5,7.9,26.5
+R1518,Madanapalle–Naidupeta National Highway,NH-71,NH,,,02 July 2026,,,190.6,,24.6,7.4,24.6
+R1519,Hiriyur–Cherkala National Highway,NH-72,NH,,,15 October 2025,,,404,,22.4,6.8,22.4
+R1520,Mangaluru–Tumakuru National Highway,NH-73,NH,,,27 April 2026,,,324,,31.5,9.4,31.5
+R1521,Birur–Raichur National Highway,NH-74,NH,,,10 December 2025,,,459,,28.5,8.5,28.5
+R1522,Bantval–Katpadi National Highway,NH-75,NH,,,25 March 2026,,,567,,21.4,6.4,21.4
+R1523,Guntakal–Gadag National Highway,NH-76,NH,,,05 August 2025,,,276,,19.6,5.9,19.6
+R1524,Krishnagiri–Tindivanam National Highway,NH-77,NH,,,18 February 2026,,,196,,34.6,10.4,34.6
+R1525,Naraharipeta–Anchetty National Highway,NH-78,NH,,,01 July 2026,,,260,,18.9,5.6,18.9
+R1526,Mettur Dam–Ulundurpettai National Highway,NH-79,NH,,,14 October 2025,,,196,,32.4,9.8,32.4
+R1527,Sayalgudi–Thiruvarur National Highway,NH-80,NH,,,26 April 2026,,,265,,26.4,7.8,26.4
+R1528,Coimbatore–Chidambaram National Highway,NH-81,NH,,,09 December 2025,,,324,,5.4,0.3719,5.4
+R1529,Parthibanur–Tiruchendur National Highway,NH-82,NH,,,24 March 2026,,,298,,28.5,8.5,28.5
+R1530,Coimbatore–Nagapattinam National Highway,NH-83,NH,,,04 August 2025,,,389,,42.8,12.9,42.8
+R1531,Avinashi–Kumily National Highway,NH-84,NH,,,17 February 2026,,,256,,34.6,10.4,34.6
+R1532,Kochi–Thondi National Highway,NH-85,NH,,,29 March 2026,,,484,,36.8,11.1,36.8
+R1533,Mimisal–Rasipuram National Highway,NH-86,NH,,,09 August 2025,,,289,,26.4,7.8,26.4
+R1534,Manamadurai–Dhanushkodi National Highway,NH-87,NH,,,22 February 2026,,,180,,31.5,9.4,31.5
+R1535,Kottayam–Nagercoil National Highway,NH-88,NH,,,05 July 2026,,,260,,24.6,7.4,24.6

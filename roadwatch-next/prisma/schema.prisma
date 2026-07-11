@@ -1,0 +1,139 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  String        @id @default(cuid())
+  name                String
+  email               String        @unique
+  password            String
+  role                String        @default("user")
+  created_at          DateTime      @default(now())
+  district            String?
+  chat_messages       ChatHistory[]
+  engineer_complaints Complaint[]   @relation("EngineerComplaints")
+  complaints          Complaint[]
+  notifications       Notification[]
+
+  @@map("users")
+}
+
+model ChatHistory {
+  id         String   @id @default(cuid())
+  user_id    String
+  role       String
+  content    String
+  metadata   String?
+  created_at DateTime @default(now())
+  user       User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@map("chat_history")
+}
+
+model Road {
+  id                    String              @id @default(cuid())
+  road_id               String              @unique
+  road_name             String
+  road_code             String?
+  road_type             String?
+  district              String
+  state                 String
+  start_km              Float?
+  end_km                Float?
+  total_length_km       Float?
+  tender_id             String?
+  estimated_amount      Float?
+  budget_estimate       Float?
+  total_work_value      Float?
+  created_at            DateTime            @default(now())
+  last_maintenance_date String?
+  complaints            Complaint[]
+  conditions            RoadCondition[]
+  risk_prediction       RoadRiskPrediction?
+
+  @@map("roads")
+}
+
+model RoadCondition {
+  id         String   @id @default(cuid())
+  road_id    String
+  condition  String
+  score      Int
+  updated_at DateTime @default(now())
+  road       Road     @relation(fields: [road_id], references: [id], onDelete: Cascade)
+
+  @@map("road_conditions")
+}
+
+model Accident {
+  id                 String   @id @default(cuid())
+  district           String   @unique
+  total_deaths       Int
+  total_accidents    Int
+  created_at         DateTime @default(now())
+  executive_engineer String?
+
+  @@map("accidents")
+}
+
+model Complaint {
+  id                   String    @id @default(cuid())
+  issue_type           String
+  confidence           Float
+  image_url            String?
+  latitude             Float
+  longitude            Float
+  address              String?
+  description          String?
+  status               String    @default("Pending")
+  created_at           DateTime  @default(now())
+  user_id              String?
+  resolved_image_url   String?
+  returned_message     String?
+  road_id              String?
+  severity             String?
+  assigned_engineer    String?
+  assigned_engineer_id String?
+  repair_notes         String?
+  scheduled_date       DateTime?
+  scheduled_end_date   DateTime?
+  primary_complaint_id String?
+  engineer             User?     @relation("EngineerComplaints", fields: [assigned_engineer_id], references: [id])
+  road                 Road?     @relation(fields: [road_id], references: [id])
+  user                 User?     @relation(fields: [user_id], references: [id])
+
+  @@map("complaints")
+}
+
+model RoadRiskPrediction {
+  id              String   @id @default(cuid())
+  road_id         String   @unique
+  risk_percentage Int
+  urgency         String
+  confidence      Int
+  breakdown       String
+  factors         String
+  calculated_at   DateTime @default(now())
+  updated_at      DateTime @updatedAt
+  road            Road     @relation(fields: [road_id], references: [id], onDelete: Cascade)
+
+  @@map("road_risk_predictions")
+}
+
+model Notification {
+  id           String   @id @default(cuid())
+  user_id      String
+  title        String
+  message      String
+  type         String   @default("info")
+  read         Boolean  @default(false)
+  created_at   DateTime @default(now())
+  user         User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@map("notifications")
+}

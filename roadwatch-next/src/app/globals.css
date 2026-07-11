@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 33% 98%;
+    --foreground: 224 71% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    --primary: 217 91% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 14% 93%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 91% 54%;
+    --radius: 1rem;
+    
+    /* Custom Sci-Fi Colors */
+    --neon-blue: 217 91% 60%;
+    --neon-cyan: 185 100% 48%;
+    --neon-emerald: 150 100% 43%;
+    --neon-amber: 38 92% 50%;
+    --neon-red: 355 100% 50%;
+  }
+
+  .dark {
+    --background: 222 47% 4%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 6%;
+    --card-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 160 84% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 222 30% 10%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 160 84% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 222 30% 12%;
+    --input: 222 30% 12%;
+    --ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground relative overflow-x-hidden;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.03) 0px, transparent 50%);
+  }
+  .dark body {
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 40%),
+      radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.05) 0px, transparent 45%),
+      linear-gradient(rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.98));
+  }
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--radius);
+  z-index: 0;
+  filter: grayscale(0.1) contrast(1.05);
+}
+.dark .leaflet-container {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(1.2);
+}
+
+/* ── RoadWatch Glassmorphism & High-Tech Overrides ── */
+@layer components {
+  .glass {
+    @apply bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl border border-white/20 dark:border-white/5 shadow-xl shadow-blue-500/5;
+  }
+  .glass-card {
+    @apply glass rounded-2xl;
+  }
+  .glass-card-sm {
+    @apply glass rounded-xl;
+  }
+  .glass-card-green {
+    @apply bg-emerald-50/60 dark:bg-emerald-950/10 backdrop-blur-xl border border-emerald-200/40 dark:border-emerald-800/20 shadow-xl shadow-emerald-500/5 rounded-2xl;
+  }
+  .glass-card-blue {
+    @apply bg-blue-50/60 dark:bg-blue-950/10 backdrop-blur-xl border border-blue-200/40 dark:border-blue-800/20 shadow-xl shadow-blue-500/5 rounded-2xl;
+  }
+
+  /* ── Cyber HUD elements ── */
+  .bg-cyber-grid {
+    background-size: 30px 30px;
+    background-image: 
+      linear-gradient(to right, rgba(148, 163, 184, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+  }
+  .dark .bg-cyber-grid {
+    background-image: 
+      linear-gradient(to right, rgba(59, 130, 246, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(59, 130, 246, 0.06) 1px, transparent 1px);
+  }
+
+  .bg-cyber-dots {
+    background-size: 20px 20px;
+    background-image: radial-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+  }
+  .dark .bg-cyber-dots {
+    background-image: radial-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  }
+
+  .hud-corners {
+    @apply relative;
+  }
+  .hud-corners::before,
+  .hud-corners::after {
+    content: '';
+    @apply absolute w-2 h-2 pointer-events-none transition-all duration-300;
+  }
+  .hud-corners::before {
+    @apply top-0 left-0 border-t-2 border-l-2 border-blue-500/50 dark:border-blue-400/60 rounded-tl-[3px];
+  }
+  .hud-corners::after {
+    @apply bottom-0 right-0 border-b-2 border-r-2 border-blue-500/50 dark:border-blue-400/60 rounded-br-[3px];
+  }
+
+  .hud-corners-green::before { @apply border-emerald-500/50 dark:border-emerald-400/60; }
+  .hud-corners-green::after { @apply border-emerald-500/50 dark:border-emerald-400/60; }
+
+  .hud-corners-amber::before { @apply border-amber-500/50 dark:border-amber-400/60; }
+  .hud-corners-amber::after { @apply border-amber-500/50 dark:border-amber-400/60; }
+
+  .hud-corners-red::before { @apply border-destructive/50 dark:border-destructive/60; }
+  .hud-corners-red::after { @apply border-destructive/50 dark:border-destructive/60; }
+
+  .hud-corners:hover::before {
+    @apply w-3.5 h-3.5 border-blue-500 dark:border-blue-400;
+  }
+  .hud-corners:hover::after {
+    @apply w-3.5 h-3.5 border-blue-500 dark:border-blue-400;
+  }
+  .hud-corners-green:hover::before, .hud-corners-green:hover::after { @apply border-emerald-500 dark:border-emerald-400; }
+  .hud-corners-amber:hover::before, .hud-corners-amber:hover::after { @apply border-amber-500 dark:border-amber-400; }
+  .hud-corners-red:hover::before, .hud-corners-red:hover::after { @apply border-destructive; }
+
+  /* Cyber Glows */
+  .cyber-glow-blue {
+    @apply shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:shadow-[0_0_20px_rgba(59,130,246,0.25)];
+  }
+  .cyber-glow-green {
+    @apply shadow-[0_0_15px_rgba(16,185,129,0.15)] dark:shadow-[0_0_20px_rgba(16,185,129,0.25)];
+  }
+  .cyber-glow-amber {
+    @apply shadow-[0_0_15px_rgba(245,158,11,0.15)] dark:shadow-[0_0_20px_rgba(245,158,11,0.25)];
+  }
+  .cyber-glow-red {
+    @apply shadow-[0_0_15px_rgba(239,68,68,0.15)] dark:shadow-[0_0_20px_rgba(239,68,68,0.25)];
+  }
+
+  .neon-text-cyan {
+    @apply text-cyan-600 dark:text-cyan-400 [text-shadow:0_0_8px_rgba(34,211,238,0.3)];
+  }
+  .neon-text-blue {
+    @apply text-blue-600 dark:text-blue-400 [text-shadow:0_0_8px_rgba(59,130,246,0.3)];
+  }
+  .neon-text-green {
+    @apply text-emerald-600 dark:text-emerald-400 [text-shadow:0_0_8px_rgba(16,185,129,0.3)];
+  }
+  .neon-text-red {
+    @apply text-red-600 dark:text-red-400 [text-shadow:0_0_8px_rgba(239,68,68,0.3)];
+  }
+
+  /* Scanline sweep overlay */
+  .scanline-container {
+    @apply relative overflow-hidden;
+  }
+  .scanline-container::before {
+    content: '';
+    @apply absolute inset-0 w-full h-[2px] bg-gradient-to-r from-transparent via-blue-500/20 dark:via-blue-400/30 to-transparent pointer-events-none z-10;
+    animation: scanline-move 8s linear infinite;
+  }
+  .scanline-container-fast::before {
+    animation-duration: 3s;
+  }
+
+  /* Telemetry tags */
+  .telemetry-font {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+}
+
+/* Animations keyframes */
+@keyframes scanline-move {
+  0% { top: -2%; }
+  100% { top: 102%; }
+}
+
+@keyframes grid-flow {
+  0% { background-position: 0 0; }
+  100% { background-position: 30px 30px; }
+}
+
+.animate-grid-flow {
+  animation: grid-flow 20s linear infinite;
+}
+
+/* ── Custom futuristic scrollbar ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { 
+  background: rgba(59, 130, 246, 0.2); 
+  border-radius: 4px;
+  border: 1px solid rgba(59, 130, 246, 0.1); 
+}
+::-webkit-scrollbar-thumb:hover { 
+  background: rgba(59, 130, 246, 0.4); 
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Input base styles ── */
+input, select, textarea {
+  @apply transition-all duration-200;
+}
+
+/* ── Gradient text utility ── */
+.gradient-text-blue {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent;
+}
+.gradient-text-green {
+  @apply bg-gradient-to-r from-emerald-500 to-green-400 bg-clip-text text-transparent;
+}
+
+/* ── Card hover lift ── */
+.card-lift {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+/* ── Pulse ring animation ── */
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes botpulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(99,102,241,0.4), 0 4px 14px rgba(99,102,241,0.2); transform: translateY(0); }
+  50% { box-shadow: 0 0 0 8px rgba(99,102,241,0), 0 6px 20px rgba(99,102,241,0.35); transform: translateY(-2px); }
+}

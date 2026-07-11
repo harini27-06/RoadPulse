@@ -1,0 +1,13 @@
+names:
+- Pothole
+- Crack
+- Waterlogging
+- Debris
+- Damaged Road
+- Missing Manhole
+- Good Road
+nc: 7
+path: C:\Users\USER\Desktop\RoadWatchChat\datasets\road_defects
+test: test/images
+train: train/images
+val: valid/images
