@@ -6,6 +6,3 @@ opencv-python-headless==4.10.0.84
 numpy==1.26.4
 Pillow==11.0.0
 pydantic==2.10.3
-torch
-torchvision
-transformers>=4.40.0
