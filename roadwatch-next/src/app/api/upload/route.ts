@@ -6,7 +6,7 @@ import * as exifr from "exifr";
 import { createWorker } from "tesseract.js";
 import type { LocationData } from "@/types";
 
-const YOLO_URL = process.env.YOLO_SERVICE_URL ?? "https://roadpulse-px08.onrender.com";
+const YOLO_URL = process.env.YOLO_SERVICE_URL ?? "http://localhost:8000";
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 const ALLOWED_TYPES = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
 
@@ -141,8 +141,13 @@ export async function POST(request: NextRequest) {
     });
 
     if (!response.ok) {
-      const error = await response.json().catch(() => ({ detail: "YOLO service error" }));
-      return NextResponse.json({ error: error.detail }, { status: response.status });
+      const text = await response.text();
+console.error("YOLO returned:", text);
+
+return NextResponse.json(
+  { error: text },
+  { status: response.status }
+);
     }
 
     const result = await response.json() as { issue: string; confidence: number };
