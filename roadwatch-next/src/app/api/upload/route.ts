@@ -15,6 +15,8 @@ const ALLOWED_TYPES = new Set([
 
 export async function POST(request: NextRequest) {
   try {
+    console.log("🚀 NEW UPLOAD ROUTE RUNNING - b47a0e1");
+
     const formData = await request.formData();
     const file = formData.get("file") as File | null;
 
