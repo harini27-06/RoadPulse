@@ -1,11 +1,9 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
-import * as exifr from "exifr";
 import { ChatMessage, ChatStep, DetectionResult, LocationData } from "@/types";
 import { generateId } from "@/lib/utils";
 import { createComplaint, deleteComplaint } from "@/services/complaint.service";
-import { reverseGeocode } from "@/services/location.service";
 
 function botMessage(content: string, extras?: Partial<ChatMessage>): ChatMessage {
   return { id: generateId(), role: "bot", content, timestamp: new Date(), ...extras };
@@ -19,17 +17,6 @@ const WELCOME: ChatMessage = botMessage(
   "Hi! I'm **RoadPulse AI** — I can answer questions about Tamil Nadu roads and detect defects in road photos.\n\nAsk me anything, or upload a road photo for analysis."
 );
 
-async function extractLocationFromImage(file: File): Promise<LocationData | null> {
-  try {
-    const gps = await exifr.gps(file as any);
-    if (typeof gps?.latitude !== "number" || typeof gps?.longitude !== "number") return null;
-    const address = await reverseGeocode(gps.latitude, gps.longitude);
-    return { latitude: gps.latitude, longitude: gps.longitude, address, source: "EXIF" };
-  } catch {
-    return null;
-  }
-}
-
 async function persistMessage(msg: ChatMessage) {
   const metadata = (msg.imageUrl || msg.detectionResult)
     ? JSON.stringify({ imageUrl: msg.imageUrl, detectionResult: msg.detectionResult })
@@ -38,7 +25,7 @@ async function persistMessage(msg: ChatMessage) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ role: msg.role, content: msg.content, metadata }),
-  });
+  }).catch(() => {});
 }
 
 function rowToMessage(row: { id: string; role: string; content: string; metadata?: string | null; created_at: string }): ChatMessage {
@@ -149,42 +136,49 @@ export function useChat(userId?: string | null) {
   const handleImageUpload = useCallback(
     async (file: File, previewUrl: string) => {
       if (!userId) {
-        addBotMessage("🔒 You'll need to **log in** first to upload images and raise complaints. [Login here](/login)");
+        addBotMessage("You need to **log in** first to upload images and raise complaints.");
         return;
       }
 
-      const uMsg = userMessage("📷 Image uploaded for analysis", { imageUrl: previewUrl });
+      const uMsg = userMessage("Image uploaded for analysis", { imageUrl: previewUrl });
       setMessages((prev) => [...prev, uMsg]);
       persistMessage(uMsg);
       setPendingImageUrl(previewUrl);
-      addBotMessage("Let me take a look at that image... 🔍");
+      addBotMessage("Analyzing your image... (the detection service may take up to 60 seconds to start if it was idle)");
       setStep("detected");
 
       const formData = new FormData();
       formData.append("file", file);
 
-      const locationFromImage = await extractLocationFromImage(file);
-      if (locationFromImage) setPendingLocationSync(locationFromImage);
-
-      const response = await fetch("/api/upload", { method: "POST", body: formData });
-
-      if (!response.ok) {
-        addBotMessage("Hmm, something went wrong analyzing that image. Could you try again?");
+      let response: Response;
+      try {
+        response = await fetch("/api/upload", { method: "POST", body: formData });
+      } catch {
+        addBotMessage("Network error — could not reach the server. Please check your connection and try again.");
         setStep("idle");
         return;
       }
 
-      const result = (await response.json()) as DetectionResult & { image_url?: string; location?: LocationData };
+      const result = await response.json() as { issue?: string; confidence?: number; image_url?: string; location?: LocationData; error?: string };
+
+      if (!response.ok) {
+        const errMsg = result.error ?? "Something went wrong analyzing that image.";
+        addBotMessage(errMsg.includes("unavailable") || errMsg.includes("timed out")
+          ? `The AI detection service is currently **${errMsg.includes("timed out") ? "slow to respond" : "offline"}**. This usually happens when the service is starting up — please wait 30 seconds and try again.`
+          : errMsg
+        );
+        setStep("idle");
+        return;
+      }
+
       if (result.location) setPendingLocationSync(result.location);
 
-      const detection: DetectionResult = { issue: result.issue, confidence: result.confidence };
+      const detection: DetectionResult = { issue: result.issue as DetectionResult["issue"], confidence: result.confidence ?? 0 };
 
       if ((detection.issue as string) === "Not a Road") {
         setIsTyping(true);
         setTimeout(() => {
-          const bMsg = botMessage(
-            "Hmm, that doesn't look like a road photo to me. 🤔\n\nI work best with clear photos of roads — things like potholes, cracks, waterlogging, or damaged surfaces. Could you try uploading a road image?"
-          );
+          const bMsg = botMessage("That doesn't look like a road photo. Please upload a clear photo of a road surface — potholes, cracks, waterlogging, or damaged surfaces.");
           setMessages((prev) => [...prev, bMsg]);
           setIsTyping(false);
           persistMessage(bMsg);
@@ -192,7 +186,7 @@ export function useChat(userId?: string | null) {
           setPendingImageUrl(null);
           setPendingLocationSync(null);
           setStep("idle");
-        }, 800);
+        }, 600);
         return;
       }
 
@@ -203,7 +197,7 @@ export function useChat(userId?: string | null) {
       setTimeout(() => {
         if ((detection.issue as string) === "Good Road") {
           const bMsg = botMessage(
-            `Good news! ✅ This road looks to be in **good condition** (${detection.confidence.toFixed(1)}% confidence) — no defects spotted.\n\nIf you think something's off, try uploading a closer or clearer photo and I'll look again!`,
+            `This road looks to be in **good condition** (${detection.confidence.toFixed(1)}% confidence) — no defects detected.`,
             { detectionResult: detection }
           );
           setMessages((prev) => [...prev, bMsg]);
@@ -217,25 +211,21 @@ export function useChat(userId?: string | null) {
         }
 
         const issueEmoji: Record<string, string> = {
-          "Pothole": "🕳️",
-          "Crack": "🔍",
-          "Waterlogging": "💧",
-          "Damaged Road": "🛣️",
-          "Debris": "🪨",
-          "Missing Manhole": "⚠️",
+          Pothole: "🕳️", Crack: "🔍", Waterlogging: "💧",
+          "Damaged Road": "🛣️", Debris: "🪨", "Missing Manhole": "⚠️",
         };
         const emoji = issueEmoji[detection.issue] ?? "⚠️";
         const bMsg = botMessage(
-          `${emoji} Looks like there's a **${detection.issue}** here — I'm **${detection.confidence.toFixed(1)}% confident** about that.\n\nWould you like to **raise a complaint** about this so it gets fixed, or were you just looking for information about what you're seeing?`,
+          `${emoji} Detected **${detection.issue}** — **${detection.confidence.toFixed(1)}% confidence**.\n\nWould you like to raise a complaint about this?`,
           { showComplaintButtons: true, detectionResult: detection }
         );
         setMessages((prev) => [...prev, bMsg]);
         setIsTyping(false);
         persistMessage(bMsg);
         setStep("awaiting_complaint_confirm");
-      }, 800);
+      }, 600);
     },
-    [addBotMessage, userId]
+    [addBotMessage, userId, setPendingLocationSync]
   );
 
   const handleComplaintYes = useCallback(() => {

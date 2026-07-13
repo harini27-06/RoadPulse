@@ -18,8 +18,17 @@ const QUICK_PROMPTS = [
   "Road maintenance types",
 ];
 
+// Ping YOLO on mount so Render free-tier wakes up before user uploads
+function useYoloPing() {
+  useEffect(() => {
+    // Hit our upload HEAD route which internally pings YOLO /health
+    fetch("/api/upload", { method: "HEAD" }).catch(() => {});
+  }, []);
+}
+
 export function ChatWindow() {
   const { user } = useAuth();
+  useYoloPing();
   const {
     messages,
     step,

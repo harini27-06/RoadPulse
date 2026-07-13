@@ -1,0 +1,34 @@
+services:
+  # ── Next.js Frontend + API ──────────────────────────────────────────────────
+  - type: web
+    name: roadpulse-next
+    runtime: node
+    rootDir: roadwatch-next
+    buildCommand: npm install && npx prisma generate && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false          # Set manually in Render dashboard
+      - key: JWT_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: YOLO_SERVICE_URL
+        sync: false          # Set to your YOLO service URL after deploying it
+      - key: RESEND_API_KEY
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+
+  # ── YOLO FastAPI Detection Service ──────────────────────────────────────────
+  - type: web
+    name: roadpulse-yolo
+    runtime: python
+    rootDir: roadwatch-yolo
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ALLOWED_ORIGINS
+        sync: false          # Set to your Next.js Render URL e.g. https://roadpulse-next.onrender.com
