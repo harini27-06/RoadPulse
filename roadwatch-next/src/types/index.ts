@@ -31,6 +31,7 @@ export interface DetectionResult {
 
 export interface Complaint {
   id: string;
+  complaint_number?: number;
   user_id?: string | null;
   issue_type: string;
   confidence: number;

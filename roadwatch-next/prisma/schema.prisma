@@ -84,6 +84,7 @@ model Accident {
 
 model Complaint {
   id                   String    @id @default(cuid())
+  complaint_number     Int       @default(autoincrement())
   issue_type           String
   confidence           Float
   image_url            String?

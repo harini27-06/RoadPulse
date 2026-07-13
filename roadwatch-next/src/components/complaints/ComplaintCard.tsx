@@ -131,7 +131,12 @@ export function ComplaintCard({ complaint, index, onDeleted }: ComplaintCardProp
 
           <div className="p-4 space-y-3">
             <div>
-              <h3 className="font-black text-sm">{complaint.issue_type}</h3>
+              <div className="flex items-center justify-between mb-0.5">
+                <h3 className="font-black text-sm">{complaint.issue_type}</h3>
+                <span className="text-[10px] font-black telemetry-font text-blue-500 bg-blue-500/10 border border-blue-500/20 px-1.5 py-0.5 rounded-md">
+                  #{complaint.complaint_number ?? complaint.id.slice(-6).toUpperCase()}
+                </span>
+              </div>
               <div className="flex items-center gap-1 text-[11px] text-muted-foreground mt-0.5 telemetry-font">
                 <Gauge className="h-3 w-3" />
                 <span>{formatConfidence(complaint.confidence)} confidence</span>
