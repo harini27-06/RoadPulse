@@ -65,7 +65,7 @@ export interface LocationData {
   latitude: number;
   longitude: number;
   address?: string;
-  source?: "EXIF" | "OCR";
+  source?: "EXIF" | "OCR" | "manual";
 }
 
 export type ChatRole = "user" | "bot";
