@@ -233,31 +233,30 @@ export function useChat(userId?: string | null) {
     setMessages((prev) => [...prev, uMsg]);
     if (userId) persistMessage(uMsg);
 
-    const currentLocation = pendingLocationRef.current;
-    if (currentLocation) {
-      setStep("awaiting_description");
-      setIsTyping(true);
-      setTimeout(() => {
-        const bMsg = botMessage(
-          `Great! I picked up your location from the image: **${currentLocation.address ?? `${currentLocation.latitude.toFixed(5)}, ${currentLocation.longitude.toFixed(5)}`}**\n\nAnything you'd like to add about the issue? (totally optional — just hit submit if not)`,
-          { showDescriptionInput: true, detectedLocation: currentLocation }
-        );
-        setMessages((prev) => [...prev, bMsg]);
-        setIsTyping(false);
-        if (userId) persistMessage(bMsg);
-      }, 500);
-      return;
-    }
+    const currentLocation = pendingLocationRef.current ?? {
+      latitude: 0,
+      longitude: 0,
+      address: "Location not available",
+      source: "manual" as const,
+    };
+    setPendingLocationSync(currentLocation);
 
-    setStep("awaiting_location");
+    setStep("awaiting_description");
     setIsTyping(true);
     setTimeout(() => {
-      const bMsg = botMessage("Sure! Could you share your location so we know where this is? 📍", { showLocationInput: true });
+      const hasGps = currentLocation.latitude !== 0 || currentLocation.longitude !== 0;
+      const locationLine = hasGps
+        ? `📍 Location detected from image: **${currentLocation.address ?? `${currentLocation.latitude.toFixed(5)}, ${currentLocation.longitude.toFixed(5)}`}**`
+        : `📍 No GPS data found in image — location will be saved as *not available*`;
+      const bMsg = botMessage(
+        `${locationLine}\n\nAnything you'd like to add about the issue? (optional — just hit submit if not)`,
+        { showDescriptionInput: true, detectedLocation: currentLocation }
+      );
       setMessages((prev) => [...prev, bMsg]);
       setIsTyping(false);
       if (userId) persistMessage(bMsg);
     }, 500);
-  }, [userId]);
+  }, [userId, setPendingLocationSync]);
 
   const handleComplaintNo = useCallback(() => {
     const uMsg = userMessage("Just information, thanks");
@@ -287,7 +286,8 @@ export function useChat(userId?: string | null) {
 
   const handleDescriptionSubmit = useCallback(
     async (description: string) => {
-      if (!pendingDetection || !pendingLocation) return;
+      if (!pendingDetection) return;
+      const location = pendingLocationRef.current ?? { latitude: 0, longitude: 0, address: "Location not available", source: "manual" as const };
 
       const uMsg = userMessage(description || "No description provided");
       setMessages((prev) => [...prev, uMsg]);
@@ -300,9 +300,9 @@ export function useChat(userId?: string | null) {
           issue_type: pendingDetection.issue,
           confidence: pendingDetection.confidence,
           image_url: pendingImageUrl ?? undefined,
-          latitude: pendingLocation.latitude,
-          longitude: pendingLocation.longitude,
-          address: pendingLocation.address,
+          latitude: location.latitude,
+          longitude: location.longitude,
+          address: location.address,
           description: description || undefined,
         });
 
@@ -310,7 +310,7 @@ export function useChat(userId?: string | null) {
 
         setTimeout(() => {
           const bMsg = botMessage(
-            `✅ Complaint filed! Here's a summary:\n\n**Issue:** ${pendingDetection.issue}\n**Location:** ${pendingLocation.address ?? "Saved"}\n**Status:** Pending\n\nYou can track it anytime on the **Complaints** page. Thanks for helping make the roads safer! 🙌`,
+            `✅ Complaint filed! Here's a summary:\n\n**Issue:** ${pendingDetection.issue}\n**Location:** ${location.address ?? "Saved"}\n**Status:** Pending\n\nYou can track it anytime on the **Complaints** page. Thanks for helping make the roads safer! 🙌`,
             { showDeleteButton: true }
           );
           setMessages((prev) => [...prev, bMsg]);
@@ -328,7 +328,7 @@ export function useChat(userId?: string | null) {
         setStep("idle");
       }
     },
-    [pendingDetection, pendingLocation, pendingImageUrl, addBotMessage, userId]
+    [pendingDetection, pendingImageUrl, addBotMessage, userId]
   );
 
   const handleDeleteComplaint = useCallback(async () => {
