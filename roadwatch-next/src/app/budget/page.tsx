@@ -71,7 +71,7 @@ export default function BudgetPage() {
       </motion.div>
 
       {/* Summary cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
         {[
           { label: "Total Districts", value: data.length, icon: "📍", color: "text-blue-500", border: "border-blue-500/20", bg: "from-blue-500/10 to-blue-500/5" },
           { label: "Total Roads", value: data.reduce((s, d) => s + d.roadCount, 0).toLocaleString(), icon: "🛣️", color: "text-emerald-500", border: "border-emerald-500/20", bg: "from-emerald-500/10 to-emerald-500/5" },
@@ -103,7 +103,7 @@ export default function BudgetPage() {
                 onChange={(e) => { setDistrictSearch(e.target.value); setSelectedDistrict(null); }}
               />
             </div>
-            <div className="space-y-1 max-h-[520px] overflow-y-auto pr-1">
+            <div className="space-y-1 max-h-64 lg:max-h-[520px] overflow-y-auto pr-1">
               {filteredDistricts.map((d) => (
                 <button
                   key={d.district}

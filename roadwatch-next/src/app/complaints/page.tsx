@@ -88,8 +88,8 @@ export default function ComplaintsPage() {
 
       {/* Status filter tabs */}
       {!loading && !error && complaints.length > 0 && (
-        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="flex flex-wrap gap-2 mb-6">
-          <div className="flex items-center gap-1.5 text-xs text-muted-foreground mr-1">
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="flex gap-2 mb-6 overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap">
+          <div className="flex items-center gap-1.5 text-xs text-muted-foreground mr-1 shrink-0">
             <Filter className="h-3.5 w-3.5" /> Filter:
           </div>
           {statuses.map((s) => (

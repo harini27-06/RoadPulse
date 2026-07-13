@@ -144,7 +144,7 @@ export function useChat(userId?: string | null) {
       setMessages((prev) => [...prev, uMsg]);
       persistMessage(uMsg);
       setPendingImageUrl(previewUrl);
-      addBotMessage("Analyzing your image... (the detection service may take up to 60 seconds to start if it was idle)");
+      addBotMessage("Analyzing your image 🔍...wait a moment while I check for road defects.");
       setStep("detected");
 
       const formData = new FormData();

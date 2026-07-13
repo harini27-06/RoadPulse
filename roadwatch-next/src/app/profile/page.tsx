@@ -52,11 +52,11 @@ export default function ProfilePage() {
         animate={{ opacity: 1, y: 0 }}
         className="glass-card p-6 mb-6"
       >
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
           {/* Avatar */}
-          <div className="relative">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/30">
-              <span className="text-3xl font-black text-white">{user.name.charAt(0).toUpperCase()}</span>
+          <div className="relative shrink-0">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/30">
+              <span className="text-2xl sm:text-3xl font-black text-white">{user.name.charAt(0).toUpperCase()}</span>
             </div>
             <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-950 flex items-center justify-center">
               <span className="w-2 h-2 rounded-full bg-white" />

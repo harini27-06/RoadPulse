@@ -52,7 +52,7 @@ export default function ContactPage() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
 
           {/* Info panel */}
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} className="lg:col-span-2 space-y-4">
@@ -95,7 +95,7 @@ export default function ContactPage() {
 
           {/* Form */}
           <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.15 }} className="lg:col-span-3">
-            <div className="glass-card p-8">
+            <div className="glass-card p-6 sm:p-8">
               {sent ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}

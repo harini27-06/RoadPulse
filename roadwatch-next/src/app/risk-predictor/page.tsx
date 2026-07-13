@@ -113,7 +113,7 @@ export default function RiskPredictorPage() {
               <p className="text-xs text-muted-foreground">Weighted scoring system</p>
             </div>
           </div>
-          <div className="p-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="p-5 grid grid-cols-1 sm:grid-cols-3 gap-4">
             {modelFactors.map(({ icon, label, weight, color, border, bg, desc }) => (
               <div key={label} className={`rounded-xl border ${border} bg-gradient-to-br ${bg} p-4 space-y-3`}>
                 <div className="flex items-center justify-between">

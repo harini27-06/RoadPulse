@@ -111,7 +111,7 @@ export default function AnalyticsPage() {
       </div>
 
       {/* Main chart */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="glass-card p-6 space-y-5">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="glass-card p-4 sm:p-6 space-y-5">
         <div className="flex items-center gap-2 pb-4 border-b border-border">
           <BarChart2 className="h-4 w-4 text-blue-500" />
           <span className="font-semibold text-sm">District Comparison</span>
@@ -144,73 +144,86 @@ export default function AnalyticsPage() {
 
         <h3 className="font-semibold text-sm text-muted-foreground">Top {topN} Districts by {activeConfig.label}</h3>
 
-        <ResponsiveContainer width="100%" height={380}>
-          <BarChart data={chartData} margin={{ top: 5, right: 20, left: 10, bottom: 60 }}>
-            <CartesianGrid strokeDasharray="3 3" className="stroke-border" vertical={false} opacity={0.5} />
-            <XAxis dataKey="name" tick={{ fontSize: 11 }} angle={-40} textAnchor="end" interval={0} className="fill-muted-foreground" />
-            <YAxis tick={{ fontSize: 11 }} className="fill-muted-foreground" tickFormatter={(v) => `${unit}${v}${valueSuffix}`} />
-            <Tooltip content={<CustomTooltip unit={unit} />} cursor={{ fill: "rgba(59,130,246,0.05)" }} />
-            <Bar dataKey="value" radius={[6, 6, 0, 0]} maxBarSize={48}>
-              {chartData.map((_, i) => <Cell key={i} fill={activeConfig.color} opacity={1 - (i / chartData.length) * 0.4} />)}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <div className="min-w-[400px] px-4 sm:px-0">
+            <ResponsiveContainer width="100%" height={320}>
+              <BarChart data={chartData} margin={{ top: 5, right: 20, left: 10, bottom: 60 }}>
+                <CartesianGrid strokeDasharray="3 3" className="stroke-border" vertical={false} opacity={0.5} />
+                <XAxis dataKey="name" tick={{ fontSize: 11 }} angle={-40} textAnchor="end" interval={0} className="fill-muted-foreground" />
+                <YAxis tick={{ fontSize: 11 }} className="fill-muted-foreground" tickFormatter={(v) => `${unit}${v}${valueSuffix}`} />
+                <Tooltip content={<CustomTooltip unit={unit} />} cursor={{ fill: "rgba(59,130,246,0.05)" }} />
+                <Bar dataKey="value" radius={[6, 6, 0, 0]} maxBarSize={48}>
+                  {chartData.map((_, i) => <Cell key={i} fill={activeConfig.color} opacity={1 - (i / chartData.length) * 0.4} />)}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
       </motion.div>
 
       {/* Budget vs Work Value */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="glass-card p-6 space-y-4">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="glass-card p-4 sm:p-6 space-y-4">
         <div className="flex items-center gap-2 pb-4 border-b border-border">
           <IndianRupee className="h-4 w-4 text-indigo-500" />
           <span className="font-semibold text-sm">Budget Allocation vs Work Value</span>
         </div>
         <h3 className="font-bold text-sm">Budget Allocation vs Work Value — Top 10 Districts</h3>
-        <ResponsiveContainer width="100%" height={320}>
-          <BarChart
-            data={[...data].sort((a, b) => b.totalEstimated - a.totalEstimated).slice(0, 10).map((d) => ({
-              name: d.district.length > 10 ? d.district.slice(0, 10) + "…" : d.district,
-              "Estimated (Cr)": parseFloat(d.totalEstimated.toFixed(1)),
-              "Work Value (Cr)": parseFloat(d.totalWorkValue.toFixed(1)),
-              "Budget Alloc. (Cr)": parseFloat(d.totalBudget.toFixed(1)),
-            }))}
-            margin={{ top: 5, right: 20, left: 10, bottom: 60 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" className="stroke-border" vertical={false} opacity={0.5} />
-            <XAxis dataKey="name" tick={{ fontSize: 11 }} angle={-35} textAnchor="end" interval={0} />
-            <YAxis tick={{ fontSize: 11 }} tickFormatter={(v) => `₹${v}`} />
-            <Tooltip cursor={{ fill: "rgba(59,130,246,0.05)" }} />
-            <Legend wrapperStyle={{ paddingTop: "16px", fontSize: "12px" }} />
-            <Bar dataKey="Estimated (Cr)" fill="#6366f1" radius={[4, 4, 0, 0]} maxBarSize={32} />
-            <Bar dataKey="Budget Alloc. (Cr)" fill="#22c55e" radius={[4, 4, 0, 0]} maxBarSize={32} />
-            <Bar dataKey="Work Value (Cr)" fill="#f59e0b" radius={[4, 4, 0, 0]} maxBarSize={32} />
-          </BarChart>
-        </ResponsiveContainer>
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <div className="min-w-[400px] px-4 sm:px-0">
+            <ResponsiveContainer width="100%" height={280}>
+              <BarChart
+                data={[...data].sort((a, b) => b.totalEstimated - a.totalEstimated).slice(0, 10).map((d) => ({
+                  name: d.district.length > 10 ? d.district.slice(0, 10) + "…" : d.district,
+                  "Estimated (Cr)": parseFloat(d.totalEstimated.toFixed(1)),
+                  "Work Value (Cr)": parseFloat(d.totalWorkValue.toFixed(1)),
+                  "Budget Alloc. (Cr)": parseFloat(d.totalBudget.toFixed(1)),
+                }))
+                }
+                margin={{ top: 5, right: 20, left: 10, bottom: 60 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" className="stroke-border" vertical={false} opacity={0.5} />
+                <XAxis dataKey="name" tick={{ fontSize: 11 }} angle={-35} textAnchor="end" interval={0} />
+                <YAxis tick={{ fontSize: 11 }} tickFormatter={(v) => `₹${v}`} />
+                <Tooltip cursor={{ fill: "rgba(59,130,246,0.05)" }} />
+                <Legend wrapperStyle={{ paddingTop: "16px", fontSize: "12px" }} />
+                <Bar dataKey="Estimated (Cr)" fill="#6366f1" radius={[4, 4, 0, 0]} maxBarSize={32} />
+                <Bar dataKey="Budget Alloc. (Cr)" fill="#22c55e" radius={[4, 4, 0, 0]} maxBarSize={32} />
+                <Bar dataKey="Work Value (Cr)" fill="#f59e0b" radius={[4, 4, 0, 0]} maxBarSize={32} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
       </motion.div>
 
       {/* Accidents vs Deaths */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }} className="glass-card p-6 space-y-4">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }} className="glass-card p-4 sm:p-6 space-y-4">
         <div className="flex items-center gap-2 pb-4 border-b border-border">
           <AlertTriangle className="h-4 w-4 text-amber-500" />
           <span className="font-semibold text-sm">Accident & Fatality Data</span>
         </div>
         <h3 className="font-bold text-sm">Accidents vs Deaths by District</h3>
-        <ResponsiveContainer width="100%" height={320}>
-          <BarChart
-            data={[...data].filter((d) => d.totalAccidents > 0).sort((a, b) => b.totalAccidents - a.totalAccidents).map((d) => ({
-              name: d.district.length > 10 ? d.district.slice(0, 10) + "…" : d.district,
-              Accidents: d.totalAccidents,
-              Deaths: d.totalDeaths,
-            }))}
-            margin={{ top: 5, right: 20, left: 10, bottom: 60 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" className="stroke-border" vertical={false} opacity={0.5} />
-            <XAxis dataKey="name" tick={{ fontSize: 11 }} angle={-35} textAnchor="end" interval={0} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip cursor={{ fill: "rgba(59,130,246,0.05)" }} />
-            <Legend wrapperStyle={{ paddingTop: "16px", fontSize: "12px" }} />
-            <Bar dataKey="Accidents" fill="#f59e0b" radius={[4, 4, 0, 0]} maxBarSize={32} />
-            <Bar dataKey="Deaths" fill="#ef4444" radius={[4, 4, 0, 0]} maxBarSize={32} />
-          </BarChart>
-        </ResponsiveContainer>
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <div className="min-w-[400px] px-4 sm:px-0">
+            <ResponsiveContainer width="100%" height={280}>
+              <BarChart
+                data={[...data].filter((d) => d.totalAccidents > 0).sort((a, b) => b.totalAccidents - a.totalAccidents).map((d) => ({
+                  name: d.district.length > 10 ? d.district.slice(0, 10) + "…" : d.district,
+                  Accidents: d.totalAccidents,
+                  Deaths: d.totalDeaths,
+                }))}
+                margin={{ top: 5, right: 20, left: 10, bottom: 60 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" className="stroke-border" vertical={false} opacity={0.5} />
+                <XAxis dataKey="name" tick={{ fontSize: 11 }} angle={-35} textAnchor="end" interval={0} />
+                <YAxis tick={{ fontSize: 11 }} />
+                <Tooltip cursor={{ fill: "rgba(59,130,246,0.05)" }} />
+                <Legend wrapperStyle={{ paddingTop: "16px", fontSize: "12px" }} />
+                <Bar dataKey="Accidents" fill="#f59e0b" radius={[4, 4, 0, 0]} maxBarSize={32} />
+                <Bar dataKey="Deaths" fill="#ef4444" radius={[4, 4, 0, 0]} maxBarSize={32} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
       </motion.div>
 
       {/* District table */}

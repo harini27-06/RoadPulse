@@ -243,16 +243,15 @@ export default function EngineerDashboard() {
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-blue-500/20">
-        <div className="container mx-auto px-4 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2 font-bold text-sm text-foreground">
-            <HardHat className="h-5 w-5 text-blue-500" />
-            <span>Engineer Dashboard</span>
-            {engineerName && <span className="text-xs font-normal text-muted-foreground">— {engineerName}</span>}
+        <div className="container mx-auto px-4 h-14 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 font-bold text-sm text-foreground min-w-0">
+            <HardHat className="h-5 w-5 text-blue-500 shrink-0" />
+            <span className="truncate">Engineer{engineerName ? ` — ${engineerName}` : ""}</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 shrink-0">
             <NotificationBell />
-            <Button variant="ghost" size="sm" onClick={logout} className="gap-2 text-muted-foreground hover:text-red-500 hover:bg-red-500/10">
-              <LogOut className="h-4 w-4" /> Logout
+            <Button variant="ghost" size="sm" onClick={logout} className="gap-1.5 text-xs text-muted-foreground hover:text-red-500 hover:bg-red-500/10">
+              <LogOut className="h-4 w-4" /> <span className="hidden sm:inline">Logout</span>
             </Button>
           </div>
         </div>
@@ -273,7 +272,7 @@ export default function EngineerDashboard() {
 
         {/* Stats */}
         {stats && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             <StatCard label="Total" value={stats.total} icon={<ListTodo className="h-5 w-5 text-primary" />} color="bg-primary/10" />
             <StatCard label="Pending" value={stats.pending} icon={<Clock className="h-5 w-5 text-yellow-600" />} color="bg-yellow-100 dark:bg-yellow-900/30" />
             <StatCard label="In Progress" value={stats.inProgress} icon={<ListTodo className="h-5 w-5 text-blue-600" />} color="bg-blue-100 dark:bg-blue-900/30" />
@@ -287,14 +286,14 @@ export default function EngineerDashboard() {
         <div className="flex flex-wrap gap-2">
           {(["All", ...STATUSES] as const).map((s) => (
             <button key={s} onClick={() => setFilter(s)}
-              className={cn("px-4 py-1.5 rounded-full text-sm font-medium border transition-colors",
+              className={cn("px-3 py-1.5 rounded-full text-xs font-medium border transition-colors",
                 filter === s ? "bg-primary text-primary-foreground border-primary" : "bg-background hover:bg-muted border-border text-muted-foreground")}>
               {s}
             </button>
           ))}
         </div>
 
-        {/* Table */}
+        {/* Content */}
         {loading ? (
           <div className="flex justify-center py-20"><Loader2 className="h-8 w-8 animate-spin text-muted-foreground" /></div>
         ) : filtered.length === 0 ? (
@@ -304,94 +303,127 @@ export default function EngineerDashboard() {
             <p className="text-sm mt-1">The admin will assign complaints to you shortly.</p>
           </div>
         ) : (
-          <div className="rounded-xl border bg-card overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b bg-muted/50">
-                    <th className="text-left px-4 py-3 font-medium text-muted-foreground">Issue</th>
-                    <th className="text-left px-4 py-3 font-medium text-muted-foreground">Location</th>
-                    <th className="text-left px-4 py-3 font-medium text-muted-foreground">Description</th>
-                    <th className="text-left px-4 py-3 font-medium text-muted-foreground">Scheduled</th>
-                    <th className="text-left px-4 py-3 font-medium text-muted-foreground">Date Filed</th>
-                    <th className="text-left px-4 py-3 font-medium text-muted-foreground">Status & Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <AnimatePresence>
-                    {filtered.map((c) => (
-                      <motion.tr key={c.id}
-                        initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-                        className="border-b last:border-0 hover:bg-muted/30 transition-colors align-top">
-                        <td className="px-4 py-3">
-                          <div className="flex items-center gap-2">
-                            <span className="text-lg">{getIssueIcon(c.issue_type)}</span>
-                            <div>
-                              <p className="font-medium">{c.issue_type}</p>
-                              <p className="text-xs text-muted-foreground">{formatConfidence(c.confidence)}</p>
-                              {c.image_url && (
-                                <a href={c.image_url} target="_blank" rel="noreferrer" className="text-xs text-primary hover:underline">View image</a>
-                              )}
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-4 py-3 max-w-[180px]">
-                          <div className="flex items-start gap-1 text-muted-foreground">
-                            <MapPin className="h-3.5 w-3.5 mt-0.5 flex-shrink-0" />
-                            <span className="line-clamp-2 text-xs">{c.address ?? `${c.latitude.toFixed(4)}, ${c.longitude.toFixed(4)}`}</span>
-                          </div>
-                        </td>
-                        <td className="px-4 py-3 max-w-[160px]">
-                          <p className="text-xs text-muted-foreground line-clamp-2">{c.description ?? "—"}</p>
-                        </td>
-                        <td className="px-4 py-3 whitespace-nowrap">
-                          {c.scheduled_date ? (
-                            <span className="inline-flex items-center gap-1 text-xs bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium">
-                              <CalendarDays className="h-3 w-3" />
-                              {new Date(c.scheduled_date).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" })}
-                            </span>
-                          ) : (
-                            <span className="text-xs text-muted-foreground">Not scheduled</span>
-                          )}
-                        </td>
-                        <td className="px-4 py-3 text-muted-foreground whitespace-nowrap">
-                          <div className="flex items-center gap-1 text-xs">
-                            <Calendar className="h-3 w-3" />{formatDate(c.created_at)}
-                          </div>
-                        </td>
-                        <td className="px-4 py-3 min-w-[240px]">
-                          {updating === c.id ? (
-                            <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
-                          ) : (
-                            <div className="flex flex-col gap-1">
-                              <StatusDropdown current={c.status} onChange={(s) => handleStatusChange(c.id, s)} />
-
-                              {(c.status === "Returned" || pendingReturn.has(c.id)) && (
-                                <ReturnReasonCell
-                                  complaint={c}
-                                  saving={updating === c.id}
-                                  onSave={(msg) => handleReturnSave(c.id, msg)}
-                                  onCancel={() => handleReturnCancel(c.id)}
-                                />
-                              )}
-
-                              {c.status === "Resolved" && (
-                                <ResolvedImageUpload
-                                  complaintId={c.id}
-                                  current={c.resolved_image_url}
-                                  onUploaded={(url) => handleResolvedImage(c.id, url)}
-                                />
-                              )}
-                            </div>
-                          )}
-                        </td>
-                      </motion.tr>
-                    ))}
-                  </AnimatePresence>
-                </tbody>
-              </table>
+          <>
+            {/* Mobile cards */}
+            <div className="flex flex-col gap-3 md:hidden">
+              <AnimatePresence>
+                {filtered.map((c) => (
+                  <motion.div key={c.id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                    className="rounded-xl border bg-card p-4 space-y-3">
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl">{getIssueIcon(c.issue_type)}</span>
+                        <div>
+                          <p className="font-semibold text-sm">{c.issue_type}</p>
+                          <p className="text-xs text-muted-foreground">{formatConfidence(c.confidence)}</p>
+                          {c.image_url && <a href={c.image_url} target="_blank" rel="noreferrer" className="text-xs text-primary hover:underline">View image</a>}
+                        </div>
+                      </div>
+                      {updating === c.id
+                        ? <Loader2 className="h-4 w-4 animate-spin text-muted-foreground shrink-0" />
+                        : <StatusDropdown current={c.status} onChange={(s) => handleStatusChange(c.id, s)} />}
+                    </div>
+                    <div className="flex items-start gap-1 text-xs text-muted-foreground">
+                      <MapPin className="h-3.5 w-3.5 mt-0.5 shrink-0" />
+                      <span>{c.address ?? `${c.latitude.toFixed(4)}, ${c.longitude.toFixed(4)}`}</span>
+                    </div>
+                    {c.description && <p className="text-xs text-muted-foreground">{c.description}</p>}
+                    {c.scheduled_date && (
+                      <span className="inline-flex items-center gap-1 text-xs bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium">
+                        <CalendarDays className="h-3 w-3" />
+                        {new Date(c.scheduled_date).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" })}
+                      </span>
+                    )}
+                    {(c.status === "Returned" || pendingReturn.has(c.id)) && (
+                      <ReturnReasonCell complaint={c} saving={updating === c.id}
+                        onSave={(msg) => handleReturnSave(c.id, msg)}
+                        onCancel={() => handleReturnCancel(c.id)} />
+                    )}
+                    {c.status === "Resolved" && (
+                      <ResolvedImageUpload complaintId={c.id} current={c.resolved_image_url}
+                        onUploaded={(url) => handleResolvedImage(c.id, url)} />
+                    )}
+                    <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                      <Calendar className="h-3 w-3" />{formatDate(c.created_at)}
+                    </div>
+                  </motion.div>
+                ))}
+              </AnimatePresence>
             </div>
-          </div>
+
+            {/* Desktop table */}
+            <div className="hidden md:block rounded-xl border bg-card overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b bg-muted/50">
+                      <th className="text-left px-4 py-3 font-medium text-muted-foreground">Issue</th>
+                      <th className="text-left px-4 py-3 font-medium text-muted-foreground">Location</th>
+                      <th className="text-left px-4 py-3 font-medium text-muted-foreground">Description</th>
+                      <th className="text-left px-4 py-3 font-medium text-muted-foreground">Scheduled</th>
+                      <th className="text-left px-4 py-3 font-medium text-muted-foreground">Date Filed</th>
+                      <th className="text-left px-4 py-3 font-medium text-muted-foreground">Status & Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <AnimatePresence>
+                      {filtered.map((c) => (
+                        <motion.tr key={c.id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                          className="border-b last:border-0 hover:bg-muted/30 transition-colors align-top">
+                          <td className="px-4 py-3">
+                            <div className="flex items-center gap-2">
+                              <span className="text-lg">{getIssueIcon(c.issue_type)}</span>
+                              <div>
+                                <p className="font-medium">{c.issue_type}</p>
+                                <p className="text-xs text-muted-foreground">{formatConfidence(c.confidence)}</p>
+                                {c.image_url && <a href={c.image_url} target="_blank" rel="noreferrer" className="text-xs text-primary hover:underline">View image</a>}
+                              </div>
+                            </div>
+                          </td>
+                          <td className="px-4 py-3 max-w-[180px]">
+                            <div className="flex items-start gap-1 text-muted-foreground">
+                              <MapPin className="h-3.5 w-3.5 mt-0.5 flex-shrink-0" />
+                              <span className="line-clamp-2 text-xs">{c.address ?? `${c.latitude.toFixed(4)}, ${c.longitude.toFixed(4)}`}</span>
+                            </div>
+                          </td>
+                          <td className="px-4 py-3 max-w-[160px]">
+                            <p className="text-xs text-muted-foreground line-clamp-2">{c.description ?? "—"}</p>
+                          </td>
+                          <td className="px-4 py-3 whitespace-nowrap">
+                            {c.scheduled_date ? (
+                              <span className="inline-flex items-center gap-1 text-xs bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium">
+                                <CalendarDays className="h-3 w-3" />
+                                {new Date(c.scheduled_date).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" })}
+                              </span>
+                            ) : <span className="text-xs text-muted-foreground">Not scheduled</span>}
+                          </td>
+                          <td className="px-4 py-3 text-muted-foreground whitespace-nowrap">
+                            <div className="flex items-center gap-1 text-xs"><Calendar className="h-3 w-3" />{formatDate(c.created_at)}</div>
+                          </td>
+                          <td className="px-4 py-3 min-w-[240px]">
+                            {updating === c.id ? <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" /> : (
+                              <div className="flex flex-col gap-1">
+                                <StatusDropdown current={c.status} onChange={(s) => handleStatusChange(c.id, s)} />
+                                {(c.status === "Returned" || pendingReturn.has(c.id)) && (
+                                  <ReturnReasonCell complaint={c} saving={updating === c.id}
+                                    onSave={(msg) => handleReturnSave(c.id, msg)}
+                                    onCancel={() => handleReturnCancel(c.id)} />
+                                )}
+                                {c.status === "Resolved" && (
+                                  <ResolvedImageUpload complaintId={c.id} current={c.resolved_image_url}
+                                    onUploaded={(url) => handleResolvedImage(c.id, url)} />
+                                )}
+                              </div>
+                            )}
+                          </td>
+                        </motion.tr>
+                      ))}
+                    </AnimatePresence>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </>
         )}
       </div>
     </div>
