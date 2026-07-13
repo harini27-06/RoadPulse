@@ -309,9 +309,8 @@ export function useChat(userId?: string | null) {
         setLastComplaintId(complaint.id);
 
         setTimeout(() => {
-          const complaintRef = complaint.complaint_number ? ` **#${complaint.complaint_number}**` : "";
           const bMsg = botMessage(
-            `✅ Complaint${complaintRef} filed! Here's a summary:\n\n**Issue:** ${pendingDetection.issue}\n**Location:** ${location.address ?? "Saved"}\n**Status:** Pending\n\nTrack it anytime — type *"Track Complaint #${complaint.complaint_number ?? ""}"* or visit the **Complaints** page. 🙌`,
+            `✅ Complaint filed! Here's a summary:\n\n**Issue:** ${pendingDetection.issue}\n**Location:** ${location.address ?? "Saved"}\n**Status:** Pending\n\nYou can track it anytime on the **Complaints** page. Thanks for helping make the roads safer! 🙌`,
             { showDeleteButton: true }
           );
           setMessages((prev) => [...prev, bMsg]);

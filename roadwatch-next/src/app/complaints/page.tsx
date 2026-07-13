@@ -20,10 +20,7 @@ export default function ComplaintsPage() {
     setLoading(true);
     fetch("/api/complaints")
       .then((r) => r.json())
-      .then((data) => {
-        if (Array.isArray(data)) setComplaints(data as Complaint[]);
-        else setError(true);
-      })
+      .then((data) => setComplaints(data as Complaint[]))
       .catch(() => setError(true))
       .finally(() => setLoading(false));
   }, [authLoading, user]);
@@ -31,15 +28,14 @@ export default function ComplaintsPage() {
   const handleDeleted = (id: string) => setComplaints((prev) => prev.filter((c) => c.id !== id));
 
   const statuses = ["All", "Pending", "In Progress", "Resolved", "Returned"];
-  const safeComplaints = Array.isArray(complaints) ? complaints : [];
-  const filtered = filter === "All" ? safeComplaints : safeComplaints.filter(c => c.status === filter);
+  const filtered = filter === "All" ? complaints : complaints.filter(c => c.status === filter);
 
   const counts = {
-    All: safeComplaints.length,
-    Pending: safeComplaints.filter(c => c.status === "Pending").length,
-    "In Progress": safeComplaints.filter(c => c.status === "In Progress").length,
-    Resolved: safeComplaints.filter(c => c.status === "Resolved").length,
-    Returned: safeComplaints.filter(c => c.status === "Returned").length,
+    All: complaints.length,
+    Pending: complaints.filter(c => c.status === "Pending").length,
+    "In Progress": complaints.filter(c => c.status === "In Progress").length,
+    Resolved: complaints.filter(c => c.status === "Resolved").length,
+    Returned: complaints.filter(c => c.status === "Returned").length,
   };
 
   const statusColors: Record<string, string> = {
@@ -80,7 +76,7 @@ export default function ComplaintsPage() {
           </div>
           <h1 className="text-3xl font-black tracking-tight">My Complaints</h1>
           <p className="text-muted-foreground text-sm mt-1">
-            {loading ? "Loading..." : `${safeComplaints.length} complaint${safeComplaints.length !== 1 ? "s" : ""} filed`}
+            {loading ? "Loading..." : `${complaints.length} complaint${complaints.length !== 1 ? "s" : ""} filed`}
           </p>
         </div>
         <Link href="/chatbot">
@@ -91,7 +87,7 @@ export default function ComplaintsPage() {
       </motion.div>
 
       {/* Status filter tabs */}
-      {!loading && !error && safeComplaints.length > 0 && (
+      {!loading && !error && complaints.length > 0 && (
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="flex gap-2 mb-6 overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap">
           <div className="flex items-center gap-1.5 text-xs text-muted-foreground mr-1 shrink-0">
             <Filter className="h-3.5 w-3.5" /> Filter:
@@ -128,7 +124,7 @@ export default function ComplaintsPage() {
         </motion.div>
       )}
 
-      {!loading && !error && safeComplaints.length === 0 && (
+      {!loading && !error && complaints.length === 0 && (
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center py-24">
           <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500/10 to-cyan-500/5 border border-blue-500/15 flex items-center justify-center mx-auto mb-6">
             <span className="text-4xl">🛣️</span>
