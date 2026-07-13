@@ -34,6 +34,7 @@ async function getLiveDBContext(): Promise<string> {
       recentComplaints,
       issueBreakdown,
       totalUsers,
+      areaBreakdown,
     ] = await Promise.all([
       prisma.complaint.count(),
       prisma.complaint.count({ where: { status: "Pending" } }),
@@ -50,6 +51,12 @@ async function getLiveDBContext(): Promise<string> {
         orderBy: { _count: { issue_type: "desc" } },
       }),
       prisma.user.count(),
+      prisma.complaint.groupBy({
+        by: ["address", "issue_type"],
+        _count: { id: true },
+        orderBy: { _count: { id: "desc" } },
+        take: 30,
+      }),
     ]);
 
     const recentStr = recentComplaints.length
@@ -62,6 +69,13 @@ async function getLiveDBContext(): Promise<string> {
       ? issueBreakdown.map((i) => `• ${i.issue_type}: ${i._count.issue_type}`).join("\n")
       : "No complaints yet.";
 
+    const areaStr = areaBreakdown.length
+      ? areaBreakdown
+          .filter((a) => a.address)
+          .map((a) => `• ${a.issue_type} @ "${a.address}": ${a._count.id}`)
+          .join("\n")
+      : "No area data yet.";
+
     const dbAccidents = await prisma.accident.findMany({ orderBy: { total_accidents: "desc" }, take: 10 });
     const accStr = dbAccidents.length
       ? dbAccidents.map((a) => `• ${a.district}: ${a.total_accidents} accidents, ${a.total_deaths} deaths${a.executive_engineer ? `, EE: ${a.executive_engineer}` : ""}`).join("\n")
@@ -72,6 +86,9 @@ Users: ${totalUsers} | Complaints: ${totalComplaints} (Pending: ${pendingCount},
 
 Complaints by type:
 ${issueStr}
+
+Complaints by area and issue (top 30):
+${areaStr}
 
 Recent complaints:
 ${recentStr}
@@ -177,6 +194,16 @@ EXACT ANSWER FORMATS:
 **Tender / Contractor ID:** [id or Not available]
 **Responsible Authority:** Executive Engineer, [District] Division ([EE name if known])
 
+- "which area has most [issue]" or "top areas for [issue]" → use TOP AREAS data from context, answer in this format:
+
+📍 **Top Areas with [Issue] Complaints**
+
+1. [Area] — [N] complaints
+2. [Area] — [N] complaints
+...
+
+⚠️ These areas need urgent attention. You can report issues using RoadWatch.
+
 ${liveCtx}
 
 ${getStaticContext()}`;
@@ -248,6 +275,29 @@ async function enrichMessage(message: string): Promise<string> {
     try {
       const stats = await prisma.complaint.groupBy({ by: ["status"], _count: { status: true } });
       injections.push(`[COMPLAINT STATS: ${stats.map((s) => `${s.status}:${s._count.status}`).join(", ")}]`);
+    } catch { /* ignore */ }
+  }
+
+  // Area-based issue query — "which area has most potholes"
+  const areaIssueMatch = q.match(/\b(pothole|pot hole|crack|waterlog|debris|manhole|damaged road|road damage)\b/i);
+  if (areaIssueMatch && /\b(area|place|location|where|most|top|highest|common)\b/i.test(q)) {
+    try {
+      const issueType = areaIssueMatch[0].toLowerCase().replace("pot hole", "pothole");
+      const issueMap: Record<string, string> = {
+        pothole: "Pothole", crack: "Crack", waterlog: "Waterlogging",
+        debris: "Debris", manhole: "Missing Manhole", "damaged road": "Damaged Road", "road damage": "Damaged Road",
+      };
+      const dbIssue = issueMap[issueType] ?? issueType;
+      const rows = await prisma.complaint.groupBy({
+        by: ["address"],
+        where: { issue_type: { contains: dbIssue, mode: "insensitive" }, address: { not: null } },
+        _count: { id: true },
+        orderBy: { _count: { id: "desc" } },
+        take: 5,
+      });
+      if (rows.length) {
+        injections.push(`[TOP AREAS FOR ${dbIssue.toUpperCase()}: ${rows.map((r, i) => `${i + 1}. "${r.address}" (${r._count.id} complaints)`).join("; ")}]`);
+      }
     } catch { /* ignore */ }
   }
 
@@ -324,6 +374,33 @@ async function smartLocalResponse(message: string, history: ChatTurn[]): Promise
     }
     // List all — return marker so useChat attaches structured eeList
     return `__EE_LIST__ Here are the Executive Engineers for all 38 districts in Tamil Nadu:`;
+  }
+
+  // Area-based issue query — "which area has most potholes"
+  const areaIssueKeyword = q.match(/\b(pothole|pot hole|crack|waterlog|debris|manhole|damaged road|road damage)\b/i);
+  if (areaIssueKeyword && /\b(area|place|location|where|most|top|highest|common)\b/i.test(q)) {
+    const issueMap: Record<string, string> = {
+      pothole: "Pothole", "pot hole": "Pothole", crack: "Crack", waterlog: "Waterlogging",
+      debris: "Debris", manhole: "Missing Manhole", "damaged road": "Damaged Road", "road damage": "Damaged Road",
+    };
+    const rawIssue = areaIssueKeyword[0].toLowerCase();
+    const dbIssue = issueMap[rawIssue] ?? rawIssue;
+    try {
+      const rows = await prisma.complaint.groupBy({
+        by: ["address"],
+        where: { issue_type: { contains: dbIssue, mode: "insensitive" }, address: { not: null } },
+        _count: { id: true },
+        orderBy: { _count: { id: "desc" } },
+        take: 5,
+      });
+      if (rows.length) {
+        const list = rows.map((r, i) => `${i + 1}. **${r.address}** — ${r._count.id} complaint${r._count.id > 1 ? "s" : ""}`).join("\n");
+        return `📍 **Top Areas with ${dbIssue} Complaints**\n\n${list}\n\n⚠️ These areas need urgent attention. You can report issues using RoadWatch.`;
+      }
+      return `No **${dbIssue}** complaints have been filed yet. Be the first to report one! 📷`;
+    } catch {
+      return `Couldn't fetch area data right now. Please try again shortly.`;
+    }
   }
 
   const districts = getAllDistricts().filter(Boolean);
