@@ -4,9 +4,11 @@ services:
     name: roadpulse-next
     runtime: node
     rootDir: roadwatch-next
-    buildCommand: npm install && npx prisma generate && npm run build
+    buildCommand: npm install --include=dev && npx prisma generate && npm run build
     startCommand: npm run start
     envVars:
+      - key: NPM_CONFIG_PRODUCTION
+        value: "false"
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
