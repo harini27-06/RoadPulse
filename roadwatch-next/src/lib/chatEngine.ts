@@ -11,6 +11,7 @@ import {
   getDistrictStats,
   getExecutiveEngineer,
   getAllExecutiveEngineers,
+  formatRoadDetail,
 } from "./roadData";
 
 export interface ChatTurn {
@@ -161,6 +162,20 @@ EXACT ANSWER FORMATS:
 - "executive engineer of [district]" → The Executive Engineer for **[DISTRICT]** is **[Name]**.
 - "most dangerous districts" → list only districts with accident counts.
 - "total accidents in Tamil Nadu" → use KEY TOTALS statewide figure only.
+- specific road question (damage/condition/budget/contractor/authority) → answer ONLY in this exact point-wise format, NO paragraphs:
+
+🛣️ **[Road Name]**
+
+**Road Code:** [code]
+**Type:** [type]
+**District:** [district]
+**Length:** [X] km
+
+**Last Relaid:** [year]
+**Maintenance Due:** [year]
+**Budget:** ₹[X] Crores
+**Tender / Contractor ID:** [id or Not available]
+**Responsible Authority:** Executive Engineer, [District] Division ([EE name if known])
 
 ${liveCtx}
 
@@ -217,7 +232,15 @@ async function enrichMessage(message: string): Promise<string> {
   if (!district && isRoad && !isCount) {
     const results = searchRoads(message, 5);
     if (results.length) {
-      injections.push(`[ROAD SEARCH: ${results.map((r) => `${r.name}[${r.code}] ${r.district} ${r.lengthKm.toFixed(1)}km`).join("; ")}]`);
+      // If the query looks like a specific road detail question, inject full detail for top match
+      const isDetailQuery = /\b(damage|damaged|why|condition|detail|info|about|status|repair|budget|contractor|maintained|relaid|authority|responsible|when|last)\b/i.test(q);
+      if (isDetailQuery) {
+        const road = results[0];
+        const acc = getAccidentByDistrict(road.district);
+        injections.push(`[ROAD DETAIL:\n${formatRoadDetail(road, acc)}]`);
+      } else {
+        injections.push(`[ROAD SEARCH: ${results.map((r) => `${r.name}[${r.code}] ${r.district} ${r.lengthKm.toFixed(1)}km lastMaintained:${r.lastMaintenanceDate || "N/A"} budget:₹${r.estimatedAmount.toFixed(2)}Cr tender:${r.tenderId || "N/A"}`).join("; ")}]`);
+      }
     }
   }
 
@@ -360,8 +383,14 @@ async function smartLocalResponse(message: string, history: ChatTurn[]): Promise
   if (/\b(road|highway|route|street|path)\b/i.test(q)) {
     const results = searchRoads(message, 8);
     if (results.length) {
-      const list = results.map((r) => `• **${r.name}** [${r.code}] — ${r.district}, ${r.lengthKm.toFixed(1)} km`).join("\n");
-      return `🛣️ **Roads matching "${message}"**\n\n${list}\n\nWant more details on any of these roads?`;
+      const isDetailQuery = /\b(damage|damaged|why|condition|detail|info|about|status|repair|budget|contractor|maintained|relaid|authority|responsible|when|last)\b/i.test(q);
+      if (isDetailQuery) {
+        const road = results[0];
+        const acc = getAccidentByDistrict(road.district);
+        return formatRoadDetail(road, acc);
+      }
+      const list = results.map((r) => `\u2022 **${r.name}** [${r.code}] \u2014 ${r.district}, ${r.lengthKm.toFixed(1)} km`).join("\n");
+      return `\ud83d\udee3\ufe0f **Roads matching "${message}"**\n\n${list}\n\nWant more details on any of these roads?`;
     }
   }
 
@@ -409,7 +438,14 @@ async function smartLocalResponse(message: string, history: ChatTurn[]): Promise
   if (q.length > 3) {
     const roadResults = searchRoads(message, 4);
     if (roadResults.length) {
-      const list = roadResults.map((r) => `• **${r.name}** — ${r.district}, ${r.lengthKm.toFixed(1)} km`).join("\n");
+      // If it looks like a detail question about a specific road, return formatted detail
+      const isDetailQuery = /\b(damage|damaged|why|condition|detail|info|about|status|repair|budget|contractor|maintained|relaid|authority|responsible|when|last)\b/i.test(q);
+      if (isDetailQuery) {
+        const road = roadResults[0];
+        const acc = getAccidentByDistrict(road.district);
+        return formatRoadDetail(road, acc);
+      }
+      const list = roadResults.map((r) => `\u2022 **${r.name}** \u2014 ${r.district}, ${r.lengthKm.toFixed(1)} km`).join("\n");
       return `Here's what I found:\n\n${list}\n\nWant more details on any of these? Just ask!`;
     }
     return `Hmm, I'm not quite sure what you mean by *"${message}"* — but I'm great with Tamil Nadu road stuff! Try asking:\n\n🛣️ *"Roads in [district name]"*\n📊 *"Accident stats for [district]"*\n🔍 *"What is a pothole?"*\n📋 *"How do I report road damage?"*\n🏆 *"Most dangerous districts"*\n\nWhat would you like to know?`;

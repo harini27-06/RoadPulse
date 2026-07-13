@@ -154,6 +154,47 @@ export function getAllExecutiveEngineers(): { district: string; engineer: string
     .map((a) => ({ district: a.district, engineer: a.executiveEngineer! }));
 }
 
+// Format a single road's details as a point-wise answer
+export function formatRoadDetail(road: RoadRecord, accidents?: AccidentRecord | null): string {
+  const ee = accidents?.executiveEngineer;
+  const lastYear = road.lastMaintenanceDate
+    ? road.lastMaintenanceDate.match(/(\d{4})/)?.[1] ?? road.lastMaintenanceDate
+    : "Not available";
+
+  // Estimate next maintenance: 3 years after last maintenance year
+  let maintenanceDue = "Not available";
+  if (road.lastMaintenanceDate) {
+    const yr = parseInt(road.lastMaintenanceDate.match(/(\d{4})/)?.[1] ?? "0");
+    if (yr > 0) maintenanceDue = `${yr + 3}`;
+  }
+
+  const budget = road.estimatedAmount > 0
+    ? `\u20b9${road.estimatedAmount.toFixed(2)} Crores`
+    : road.budget2020 > 0
+    ? `\u20b9${road.budget2020.toFixed(2)} Crores`
+    : "Not available";
+
+  const contractor = road.tenderId && road.tenderId.trim()
+    ? road.tenderId.trim()
+    : "Not available";
+
+  const lines = [
+    `\ud83d\udee3\ufe0f **${road.name}**`,
+    ``,
+    `**Road Code:** ${road.code || "N/A"}`,
+    `**Type:** ${road.type || "N/A"}`,
+    `**District:** ${road.district}`,
+    `**Length:** ${road.lengthKm.toFixed(1)} km`,
+    ``,
+    `**Last Relaid:** ${lastYear}`,
+    `**Maintenance Due:** ${maintenanceDue}`,
+    `**Budget:** ${budget}`,
+    `**Tender / Contractor ID:** ${contractor}`,
+    `**Responsible Authority:** Executive Engineer, ${road.district} Division${ee ? ` (${ee})` : ""}`,
+  ];
+  return lines.join("\n");
+}
+
 // Get top N most dangerous districts
 export function getTopDangerousDistricts(n = 5): AccidentRecord[] {
   loadData();

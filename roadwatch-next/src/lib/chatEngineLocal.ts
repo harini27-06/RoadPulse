@@ -10,11 +10,12 @@ import {
   getAccidents,
   getExecutiveEngineer,
   getAllExecutiveEngineers,
+  formatRoadDetail,
 } from "./roadData";
 import { getKnowledgeResponse } from "./knowledge";
 
 type Intent =
-  | "road_search" | "district_roads" | "district_accidents" | "district_stats"
+  | "road_detail" | "road_search" | "district_roads" | "district_accidents" | "district_stats"
   | "top_dangerous" | "all_districts" | "road_count" | "budget_query"
   | "road_type_query" | "maintenance_query" | "executive_engineer" | "knowledge" | "greeting" | "help" | "unknown";
 
@@ -44,6 +45,14 @@ function extractDistrict(q: string): string | undefined {
 
 function parseIntent(query: string): ParsedQuery {
   const q = query.toLowerCase().trim();
+  // Road detail intent — specific road name asked with detail/damage/info keywords
+  const roadDetailKeywords = /\b(damage|damaged|why|condition|detail|info|about|status|repair|budget|contractor|maintained|relaid|authority|responsible|when|last)\b/i;
+  if (roadDetailKeywords.test(q) || q.split(/\s+/).length >= 3) {
+    const results = searchRoads(query, 1);
+    if (results.length && results[0].name.toLowerCase().split(/\s+/).some((w) => w.length > 3 && q.includes(w.toLowerCase()))) {
+      return { intent: "road_detail", roadName: query };
+    }
+  }
   if (/^(hi|hello|hey|good\s*(morning|evening|afternoon|night)|howdy)\b/.test(q)) return { intent: "greeting" };
   if (/\b(help|what can you do|features|capabilities)\b/.test(q)) return { intent: "help" };
   if (/\b(top|most|highest|worst|dangerous|accident.prone)\b.*\b(district|place|area)\b/.test(q)) {
@@ -141,6 +150,13 @@ export function processQuery(query: string): string {
     case "district_stats": {
       const d = parsed.district!;
       return `What would you like to know about **${d.toUpperCase()}**?\n\n- 💰 *"Total budget of ${d}"*\n- 🚨 *"Accidents in ${d}"*\n- 🛣️ *"Roads in ${d}"*\n- 📏 *"Road length in ${d}"*`;
+    }
+    case "road_detail": {
+      const results = searchRoads(parsed.roadName ?? query, 3);
+      if (!results.length) return `No road found matching **"${parsed.roadName ?? query}"**. Try a different name or check the spelling.`;
+      const road = results[0];
+      const acc = getAccidentByDistrict(road.district);
+      return formatRoadDetail(road, acc);
     }
     case "road_search": {
       const results = searchRoads(parsed.roadName ?? query, 6);
