@@ -45,19 +45,20 @@ function extractDistrict(q: string): string | undefined {
   return undefined;
 }
 
+// Returns true only if the query looks like it's asking about a specific named road
+function looksLikeRoadDetail(q: string, query: string): boolean {
+  const roadDetailKeywords = /\b(damage|damaged|why|condition|detail|info|status|repair|contractor|maintained|relaid|when|last)\b/i;
+  if (!roadDetailKeywords.test(q)) return false;
+  const results = searchRoads(query, 1);
+  return (
+    results.length > 0 &&
+    results[0].name.toLowerCase().split(/\s+/).some((w) => w.length > 4 && q.includes(w.toLowerCase()))
+  );
+}
+
 function parseIntent(query: string): ParsedQuery {
   const q = query.toLowerCase().trim();
-  // Road detail intent — specific road name asked with detail/damage/info keywords
-  const roadDetailKeywords = /\b(damage|damaged|why|condition|detail|info|about|status|repair|budget|contractor|maintained|relaid|authority|responsible|when|last)\b/i;
-  if (roadDetailKeywords.test(q) || q.split(/\s+/).length >= 3) {
-    const results = searchRoads(query, 1);
-    if (results.length && results[0].name.toLowerCase().split(/\s+/).some((w) => w.length > 3 && q.includes(w.toLowerCase()))) {
-      return { intent: "road_detail", roadName: query };
-    }
-  }
-  if (/\b(who|responsible|authority|maintain|in.?charge|manages?)\b.*\broad\b/.test(q) || /\broad\b.*\b(authority|responsible|who|in.?charge)\b/.test(q)) {
-    return { intent: "road_authority", roadName: query };
-  }
+
   if (/^(hi|hello|hey|good\s*(morning|evening|afternoon|night)|howdy)\b/.test(q)) return { intent: "greeting" };
   if (/\b(help|what can you do|features|capabilities)\b/.test(q)) return { intent: "help" };
   // Compare two roads
@@ -109,6 +110,12 @@ function parseIntent(query: string): ParsedQuery {
     return { intent: "district_stats", district };
   }
   if (q.length > 5 && /\b(road|highway|route|street)\b/.test(q)) return { intent: "road_search", roadName: query };
+  // Road authority — must come before road_detail to avoid being swallowed
+  if (/\b(who|responsible|authority|in.?charge|manages?)\b.*\broad\b/.test(q) || /\broad\b.*\b(authority|responsible|who|in.?charge)\b/.test(q)) {
+    return { intent: "road_authority", roadName: query };
+  }
+  // Road detail — only when query has detail keywords AND matches a specific road name
+  if (looksLikeRoadDetail(q, query)) return { intent: "road_detail", roadName: query };
   return { intent: "knowledge" };
 }
 

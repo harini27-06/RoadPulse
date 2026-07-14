@@ -82,7 +82,7 @@ function loadData() {
       estimatedAmount:     parseFloat(cols[11]) || 0,
       budget2020:          parseFloat(cols[12]) || 0,
       workValue:           parseFloat(cols[13]) || 0,
-      authority:           cols[14] ?? "",
+      authority:           "",
     })).filter((r) => r.name.length > 0);
   } catch { /* file not found in dev */ }
 
