@@ -12,6 +12,82 @@ import { LocationData } from "@/types";
 
 const PREVIEW_COUNT = 5;
 
+const STATUS_COLORS: Record<string, string> = {
+  Pending:      "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
+  "In Progress": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  Resolved:     "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
+  Waitlisted:   "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
+  Returned:     "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
+};
+
+function NearbyStatsCard({ data }: { data: { radiusKm: number; total: number; byStatus: { status: string; count: number }[] } }) {
+  return (
+    <div className="mt-2 rounded-xl border border-border overflow-hidden w-full">
+      <div className="bg-primary/10 px-4 py-3 flex items-center gap-2 border-b border-border">
+        <span className="text-base">📍</span>
+        <div>
+          <p className="text-xs font-bold text-foreground">Within {data.radiusKm} km</p>
+          <p className="text-[11px] text-muted-foreground">Based on your current location</p>
+        </div>
+        <span className="ml-auto text-2xl font-black text-primary">{data.total}</span>
+      </div>
+      <div className="divide-y divide-border">
+        {data.byStatus.map(({ status, count }) => (
+          <div key={status} className="flex items-center justify-between px-4 py-2.5">
+            <span className={cn("text-xs font-semibold px-2 py-0.5 rounded-full", STATUS_COLORS[status] ?? "bg-muted text-muted-foreground")}>
+              {status}
+            </span>
+            <span className="text-sm font-bold text-foreground">{count}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function RankingTable({ data }: { data: { title: string; subtitle?: string; columns: string[]; rows: string[][] } }) {
+  const [expanded, setExpanded] = useState(false);
+  const PREVIEW = 5;
+  const visible = expanded ? data.rows : data.rows.slice(0, PREVIEW);
+  const medals = ["🥇", "🥈", "🥉"];
+  return (
+    <div className="mt-2 rounded-lg border border-border overflow-hidden text-sm w-full">
+      {data.subtitle && (
+        <div className="bg-muted/60 px-3 py-2 text-xs text-muted-foreground">{data.subtitle}</div>
+      )}
+      <table className="w-full">
+        <thead>
+          <tr className="bg-primary/10 border-b border-border">
+            {data.columns.map((col) => (
+              <th key={col} className="text-left px-3 py-2 text-xs font-semibold text-muted-foreground">{col}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {visible.map((row, i) => {
+            const rank = parseInt(row[0]);
+            return (
+              <tr key={i} className={cn("border-b border-border/50 last:border-0", i % 2 === 0 ? "bg-background" : "bg-muted/20")}>
+                {row.map((cell, j) => (
+                  <td key={j} className={cn("px-3 py-2 text-xs", j === 0 ? "font-bold text-primary w-10" : j === 1 ? "font-semibold" : "text-muted-foreground")}>
+                    {j === 0 ? (medals[rank - 1] ?? cell) : cell}
+                  </td>
+                ))}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      {data.rows.length > PREVIEW && (
+        <button onClick={() => setExpanded((v) => !v)}
+          className="w-full flex items-center justify-center gap-1.5 py-2 text-xs font-medium text-primary hover:bg-muted/40 transition-colors border-t border-border">
+          {expanded ? <><ChevronUp className="h-3.5 w-3.5" /> Show less</> : <><ChevronDown className="h-3.5 w-3.5" /> Show all ({data.rows.length - PREVIEW} more)</>}
+        </button>
+      )}
+    </div>
+  );
+}
+
 function CompareTable({ rows, labels }: {
   rows: { feature: string; a: string; b: string }[];
   labels: [string, string];
@@ -168,6 +244,14 @@ export function ChatMessageItem({
 
         {message.compareTable && message.compareLabels && (
           <CompareTable rows={message.compareTable} labels={message.compareLabels} />
+        )}
+
+        {message.rankingList && (
+          <RankingTable data={message.rankingList} />
+        )}
+
+        {message.nearbyStats && (
+          <NearbyStatsCard data={message.nearbyStats} />
         )}
 
         {isLastMessage && message.showComplaintButtons && onComplaintYes && onComplaintNo && (

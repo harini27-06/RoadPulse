@@ -201,6 +201,32 @@ export function getTopDangerousDistricts(n = 5): AccidentRecord[] {
   return [..._accidents].sort((a, b) => b.totalAccidents - a.totalAccidents).slice(0, n);
 }
 
+// Get districts with worst roads — ranked by: most accidents + least budget per km
+export function getWorstRoadDistricts(n = 10): { rank: number; district: string; score: string; accidents: number; roads: number; budgetPerKm: string }[] {
+  loadData();
+  const districts = getAllDistricts();
+  const scored = districts.map((d) => {
+    const roads = getRoadsByDistrict(d);
+    const acc = getAccidentByDistrict(d);
+    const totalKm = roads.reduce((s, r) => s + r.lengthKm, 0);
+    const totalBudget = roads.reduce((s, r) => s + (r.estimatedAmount || r.budget2020), 0);
+    const budgetPerKm = totalKm > 0 ? totalBudget / totalKm : 0;
+    const accidents = acc?.totalAccidents ?? 0;
+    // Score: high accidents + low budget per km = worst roads
+    const score = accidents * 2 + (budgetPerKm > 0 ? 10000 / budgetPerKm : 500);
+    return { district: d, score, accidents, roads: roads.length, totalKm, budgetPerKm };
+  }).sort((a, b) => b.score - a.score).slice(0, n);
+
+  return scored.map((d, i) => ({
+    rank: i + 1,
+    district: d.district,
+    score: d.score.toFixed(0),
+    accidents: d.accidents,
+    roads: d.roads,
+    budgetPerKm: d.budgetPerKm > 0 ? `₹${d.budgetPerKm.toFixed(1)} Cr/km` : "N/A",
+  }));
+}
+
 // Get district stats summary
 export function getDistrictStats(district: string): {
   roads: RoadRecord[];

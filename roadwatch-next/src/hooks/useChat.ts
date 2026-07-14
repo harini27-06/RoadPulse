@@ -95,6 +95,47 @@ export function useChat(userId?: string | null) {
     if (userId) persistMessage(uMsg);
     setIsTyping(true);
 
+    // Handle "near me" queries client-side using browser geolocation
+    if (/\b(near me|nearby|around me|close to me|in my area)\b/i.test(text)) {
+      if (!navigator.geolocation) {
+        const bMsg = botMessage("Your browser doesn't support geolocation. Please enable location access and try again.");
+        setMessages((prev) => [...prev, bMsg]);
+        setIsTyping(false);
+        return;
+      }
+      navigator.geolocation.getCurrentPosition(
+        async (pos) => {
+          const { latitude, longitude } = pos.coords;
+          try {
+            const res = await fetch(`/api/complaints/nearby?lat=${latitude}&lng=${longitude}&radius=2`);
+            const data = await res.json() as { radiusKm: number; total: number; byStatus: { status: string; count: number }[] };
+            setIsTyping(false);
+            if (data.total === 0) {
+              const bMsg = botMessage("✅ No complaints found within **2 km** of your location. Roads look clear nearby!");
+              setMessages((prev) => [...prev, bMsg]);
+              if (userId) persistMessage(bMsg);
+            } else {
+              const bMsg = botMessage(`📍 Found **${data.total} complaint${data.total !== 1 ? "s" : ""}** within **${data.radiusKm} km** of your location:`, { nearbyStats: data });
+              setMessages((prev) => [...prev, bMsg]);
+              if (userId) persistMessage(bMsg);
+            }
+          } catch {
+            setIsTyping(false);
+            const bMsg = botMessage("Couldn't fetch nearby complaints. Please try again.");
+            setMessages((prev) => [...prev, bMsg]);
+          }
+        },
+        () => {
+          setIsTyping(false);
+          const bMsg = botMessage("📍 Location access was denied. Please allow location permission in your browser and try again.");
+          setMessages((prev) => [...prev, bMsg]);
+          if (userId) persistMessage(bMsg);
+        },
+        { timeout: 8000 }
+      );
+      return;
+    }
+
     const history = currentMessages
       .filter((m) => !m.imageUrl && !m.showComplaintButtons && !m.showLocationInput && !m.showDescriptionInput)
       .slice(-10)
@@ -131,6 +172,19 @@ export function useChat(userId?: string | null) {
             `Comparing **${payload.labelA}** vs **${payload.labelB}**:`,
             { compareTable: payload.rows, compareLabels: [payload.labelA, payload.labelB] }
           );
+          setMessages((prev) => [...prev, bMsg]);
+          if (userId) persistMessage(bMsg);
+        } catch {
+          const bMsg = botMessage(rawText);
+          setMessages((prev) => [...prev, bMsg]);
+          if (userId) persistMessage(bMsg);
+        }
+      } else if (rawText.startsWith("__RANKING__")) {
+        try {
+          const payload = JSON.parse(rawText.slice("__RANKING__".length)) as {
+            title: string; subtitle?: string; columns: string[]; rows: string[][];
+          };
+          const bMsg = botMessage(`🏚️ **${payload.title}**`, { rankingList: payload });
           setMessages((prev) => [...prev, bMsg]);
           if (userId) persistMessage(bMsg);
         } catch {

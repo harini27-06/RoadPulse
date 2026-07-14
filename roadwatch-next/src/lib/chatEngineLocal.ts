@@ -4,6 +4,7 @@ import {
   getRoadsByDistrict,
   getAccidentByDistrict,
   getTopDangerousDistricts,
+  getWorstRoadDistricts,
   getDistrictStats,
   getAllDistricts,
   getRoads,
@@ -17,7 +18,7 @@ import { getKnowledgeResponse } from "./knowledge";
 type Intent =
   | "road_detail" | "road_search" | "district_roads" | "district_accidents" | "district_stats"
   | "top_dangerous" | "all_districts" | "road_count" | "budget_query"
-  | "road_type_query" | "maintenance_query" | "executive_engineer" | "knowledge" | "greeting" | "help" | "compare" | "unknown";
+  | "road_type_query" | "maintenance_query" | "executive_engineer" | "knowledge" | "greeting" | "help" | "compare" | "worst_roads" | "unknown";
 
 interface ParsedQuery {
   intent: Intent;
@@ -64,6 +65,10 @@ function parseIntent(query: string): ParsedQuery {
   if (/\b(top|most|highest|worst|dangerous|accident.prone)\b.*\b(district|place|area)\b/.test(q)) {
     const m = q.match(/top\s*(\d+)/);
     return { intent: "top_dangerous", topN: m ? parseInt(m[1]) : 5 };
+  }
+  if (/\b(worst|bad|poor|damaged|deteriorat|condition)\b.*\broad/.test(q) || /\broad.*\b(worst|bad|poor|damaged|deteriorat|condition)\b/.test(q)) {
+    const m = q.match(/top\s*(\d+)/);
+    return { intent: "worst_roads", topN: m ? parseInt(m[1]) : 10 };
   }
   if (/\b(all|list|show|which)\b.*\bdistrict/.test(q)) return { intent: "all_districts" };
   if (/\b(how many|count|total|number of)\b.*\broad/.test(q)) return { intent: "road_count", district: extractDistrict(q) };
@@ -176,6 +181,16 @@ export function processQuery(query: string): string {
         return `No Executive Engineer data found for **${parsed.district.toUpperCase()}**.`;
       }
       return `__EE_LIST__ Here are the Executive Engineers for all 38 districts in Tamil Nadu:`;
+    }
+    case "worst_roads": {
+      const n = parsed.topN ?? 10;
+      const worst = getWorstRoadDistricts(n);
+      return `__RANKING__${JSON.stringify({
+        title: "Districts with Worst Roads",
+        subtitle: "Ranked by accident rate & low maintenance budget",
+        columns: ["Rank", "District", "Accidents", "Budget/km"],
+        rows: worst.map((d) => [String(d.rank), d.district, String(d.accidents), d.budgetPerKm]),
+      })}`;
     }
     case "compare": {
       const [nameA, nameB] = parsed.compareRoads!;

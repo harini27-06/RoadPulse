@@ -95,4 +95,6 @@ export interface ChatMessage {
   eeList?: { district: string; engineer: string }[];
   compareTable?: { feature: string; a: string; b: string }[];
   compareLabels?: [string, string];
+  rankingList?: { title: string; subtitle?: string; columns: string[]; rows: string[][] };
+  nearbyStats?: { radiusKm: number; total: number; byStatus: { status: string; count: number }[] };
 }
