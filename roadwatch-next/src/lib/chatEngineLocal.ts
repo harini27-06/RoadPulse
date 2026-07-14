@@ -62,13 +62,13 @@ function parseIntent(query: string): ParsedQuery {
   if (compareMatch) {
     return { intent: "compare", compareRoads: [compareMatch[1].trim(), compareMatch[2].trim()] };
   }
+  if (/\b(worst|bad|poor|damaged|deteriorat|condition)\b.*\broad/.test(q) || /\broad.*\b(worst|bad|poor|damaged|deteriorat|condition)\b/.test(q) || /which\s+district.*\b(worst|bad|poor)\b/.test(q) || /\b(worst|bad|poor)\b.*\bdistrict\b.*\broad/.test(q)) {
+    const m = q.match(/top\s*(\d+)/);
+    return { intent: "worst_roads", topN: m ? parseInt(m[1]) : 10 };
+  }
   if (/\b(top|most|highest|worst|dangerous|accident.prone)\b.*\b(district|place|area)\b/.test(q)) {
     const m = q.match(/top\s*(\d+)/);
     return { intent: "top_dangerous", topN: m ? parseInt(m[1]) : 5 };
-  }
-  if (/\b(worst|bad|poor|damaged|deteriorat|condition)\b.*\broad/.test(q) || /\broad.*\b(worst|bad|poor|damaged|deteriorat|condition)\b/.test(q)) {
-    const m = q.match(/top\s*(\d+)/);
-    return { intent: "worst_roads", topN: m ? parseInt(m[1]) : 10 };
   }
   if (/\b(all|list|show|which)\b.*\bdistrict/.test(q)) return { intent: "all_districts" };
   if (/\b(how many|count|total|number of)\b.*\broad/.test(q)) return { intent: "road_count", district: extractDistrict(q) };

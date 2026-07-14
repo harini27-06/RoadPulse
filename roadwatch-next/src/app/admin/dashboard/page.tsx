@@ -68,11 +68,18 @@ export default function AdminDashboard() {
 
   const fetchData = async (showLoader = false) => {
     if (showLoader) setLoading(true);
-    const res = await fetch("/api/admin/complaints");
-    const data = await res.json() as { complaints: Complaint[]; stats: Stats };
-    setComplaints(data.complaints.map((c) => ({ ...c, created_at: new Date(c.created_at).toISOString() })));
-    setStats(data.stats);
-    setLoading(false);
+    try {
+      const res = await fetch("/api/admin/complaints");
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json() as { complaints: Complaint[]; stats: Stats };
+      if (!Array.isArray(data.complaints)) throw new Error("Bad response");
+      setComplaints(data.complaints.map((c) => ({ ...c, created_at: new Date(c.created_at).toISOString() })));
+      setStats(data.stats);
+    } catch (e) {
+      console.error("[admin] fetchData error:", e);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const fetchEngineers = () => {
