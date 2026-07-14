@@ -66,7 +66,8 @@ export default function AdminDashboard() {
     setDownloading(null);
   };
 
-  const fetchData = async () => {
+  const fetchData = async (showLoader = false) => {
+    if (showLoader) setLoading(true);
     const res = await fetch("/api/admin/complaints");
     const data = await res.json() as { complaints: Complaint[]; stats: Stats };
     setComplaints(data.complaints.map((c) => ({ ...c, created_at: new Date(c.created_at).toISOString() })));
@@ -86,7 +87,9 @@ export default function AdminDashboard() {
   useEffect(() => {
     fetch("/api/auth/me").then(r => r.json()).then((u: { role?: string }) => {
       if (u?.role !== "admin") { window.location.href = "/login"; return; }
-      fetchData(); fetchEngineers();
+      fetchData(true); fetchEngineers();
+      const interval = setInterval(() => fetchData(false), 15_000);
+      return () => clearInterval(interval);
     });
   }, []);
 
