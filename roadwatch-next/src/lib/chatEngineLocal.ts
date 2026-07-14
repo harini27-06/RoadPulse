@@ -201,6 +201,7 @@ export function processQuery(query: string): string {
       ];
       return `__COMPARE__${JSON.stringify({ labelA: rA.name, labelB: rB.name, rows })}`;
     }
+    default: {
       const kr = getKnowledgeResponse(query);
       if (!kr.includes("I'm not sure")) return kr;
       const sr = searchRoads(query, 4);
