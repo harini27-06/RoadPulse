@@ -286,7 +286,8 @@ export function useChat(userId?: string | null) {
 
   const handleDescriptionSubmit = useCallback(
     async (description: string) => {
-      if (!pendingDetection || !pendingLocation) return;
+      const currentLocation = pendingLocationRef.current;
+      if (!pendingDetection || !currentLocation) return;
       const uMsg = userMessage(description || "No description provided");
       setMessages((prev) => [...prev, uMsg]);
       if (userId) persistMessage(uMsg);
@@ -298,9 +299,9 @@ export function useChat(userId?: string | null) {
           issue_type: pendingDetection.issue,
           confidence: pendingDetection.confidence,
           image_url: pendingImageUrl ?? undefined,
-          latitude: pendingLocation.latitude,
-          longitude: pendingLocation.longitude,
-          address: pendingLocation.address,
+          latitude: currentLocation.latitude,
+          longitude: currentLocation.longitude,
+          address: currentLocation.address,
           description: description || undefined,
         });
 
@@ -308,7 +309,7 @@ export function useChat(userId?: string | null) {
 
         setTimeout(() => {
           const bMsg = botMessage(
-            `✅ Complaint filed! Here's a summary:\n\n**Issue:** ${pendingDetection.issue}\n**Location:** ${pendingLocation.address ?? "Saved"}\n**Status:** Pending\n\nYou can track it anytime on the **Complaints** page. Thanks for helping make the roads safer! 🙌`,
+            `✅ Complaint filed! Here's a summary:\n\n**Issue:** ${pendingDetection.issue}\n**Location:** ${currentLocation.address ?? "Saved"}\n**Status:** Pending\n\nYou can track it anytime on the **Complaints** page. Thanks for helping make the roads safer! 🙌`,
             { showDeleteButton: true }
           );
           setMessages((prev) => [...prev, bMsg]);
@@ -326,7 +327,7 @@ export function useChat(userId?: string | null) {
         setStep("idle");
       }
     },
-    [pendingDetection, pendingLocation,pendingImageUrl, addBotMessage, userId]
+    [pendingDetection, pendingImageUrl, addBotMessage, userId]
   );
 
   const handleDeleteComplaint = useCallback(async () => {
