@@ -16,6 +16,7 @@ export interface RoadRecord {
   estimatedAmount: number;
   budget2020: number;
   workValue: number;
+  authority: string;
 }
 
 export interface AccidentRecord {
@@ -81,6 +82,7 @@ function loadData() {
       estimatedAmount:     parseFloat(cols[11]) || 0,
       budget2020:          parseFloat(cols[12]) || 0,
       workValue:           parseFloat(cols[13]) || 0,
+      authority:           cols[14] ?? "",
     })).filter((r) => r.name.length > 0);
   } catch { /* file not found in dev */ }
 
@@ -190,7 +192,7 @@ export function formatRoadDetail(road: RoadRecord, accidents?: AccidentRecord | 
     `**Maintenance Due:** ${maintenanceDue}`,
     `**Budget:** ${budget}`,
     `**Tender / Contractor ID:** ${contractor}`,
-    `**Responsible Authority:** Executive Engineer, ${road.district} Division${ee ? ` (${ee})` : ""}`,
+    `**Responsible Authority:** ${road.authority || `Executive Engineer, ${road.district} Division`}${ee ? ` (${ee})` : ""}`,
   ];
   return lines.join("\n");
 }

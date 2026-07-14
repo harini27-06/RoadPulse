@@ -18,7 +18,7 @@ import { getKnowledgeResponse } from "./knowledge";
 type Intent =
   | "road_detail" | "road_search" | "district_roads" | "district_accidents" | "district_stats"
   | "top_dangerous" | "all_districts" | "road_count" | "budget_query"
-  | "road_type_query" | "maintenance_query" | "executive_engineer" | "knowledge" | "greeting" | "help" | "compare" | "worst_roads" | "unknown";
+  | "road_type_query" | "maintenance_query" | "executive_engineer" | "knowledge" | "greeting" | "help" | "compare" | "worst_roads" | "road_authority" | "unknown";
 
 interface ParsedQuery {
   intent: Intent;
@@ -54,6 +54,9 @@ function parseIntent(query: string): ParsedQuery {
     if (results.length && results[0].name.toLowerCase().split(/\s+/).some((w) => w.length > 3 && q.includes(w.toLowerCase()))) {
       return { intent: "road_detail", roadName: query };
     }
+  }
+  if (/\b(who|responsible|authority|maintain|in.?charge|manages?)\b.*\broad\b/.test(q) || /\broad\b.*\b(authority|responsible|who|in.?charge)\b/.test(q)) {
+    return { intent: "road_authority", roadName: query };
   }
   if (/^(hi|hello|hey|good\s*(morning|evening|afternoon|night)|howdy)\b/.test(q)) return { intent: "greeting" };
   if (/\b(help|what can you do|features|capabilities)\b/.test(q)) return { intent: "help" };
@@ -112,6 +115,15 @@ function parseIntent(query: string): ParsedQuery {
 export function processQuery(query: string): string {
   const parsed = parseIntent(query);
   switch (parsed.intent) {
+    case "road_authority": {
+      const results = searchRoads(parsed.roadName ?? query, 1);
+      if (!results.length) return `No road found matching **"${parsed.roadName ?? query}"**. Please check the name and try again.`;
+      const road = results[0];
+      const acc = getAccidentByDistrict(road.district);
+      const authority = road.authority || `Executive Engineer, ${road.district} Division`;
+      const ee = acc?.executiveEngineer;
+      return `🛣️ **${road.name}** [${road.code}]\n\n**Responsible Authority:** ${authority}${ee ? `\n**Executive Engineer:** ${ee}` : ""}\n\n_If you've noticed any damage, I can help you raise a complaint._`;
+    }
     case "greeting":
       return "Hello! 👋 I'm the **RoadWatch AI Assistant**. Ask me about Tamil Nadu roads, accident stats, or road defects!";
     case "help":
