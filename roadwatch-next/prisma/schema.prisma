@@ -56,6 +56,7 @@ model Road {
   complaints            Complaint[]
   conditions            RoadCondition[]
   risk_prediction       RoadRiskPrediction?
+  authority             String?
 
   @@map("roads")
 }
