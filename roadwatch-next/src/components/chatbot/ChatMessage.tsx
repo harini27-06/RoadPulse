@@ -12,6 +12,34 @@ import { LocationData } from "@/types";
 
 const PREVIEW_COUNT = 5;
 
+function CompareTable({ rows, labels }: {
+  rows: { feature: string; a: string; b: string }[];
+  labels: [string, string];
+}) {
+  return (
+    <div className="mt-2 rounded-lg border border-border overflow-hidden text-sm w-full">
+      <table className="w-full">
+        <thead>
+          <tr className="bg-primary/10 border-b border-border">
+            <th className="text-left px-3 py-2 text-xs font-semibold text-muted-foreground w-[38%]">Feature</th>
+            <th className="text-center px-3 py-2 text-xs font-semibold text-primary truncate max-w-[100px]">{labels[0]}</th>
+            <th className="text-center px-3 py-2 text-xs font-semibold text-blue-500 truncate max-w-[100px]">{labels[1]}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr key={row.feature} className={cn("border-b border-border/50 last:border-0", i % 2 === 0 ? "bg-background" : "bg-muted/20")}>
+              <td className="px-3 py-2 text-xs font-medium text-muted-foreground">{row.feature}</td>
+              <td className="px-3 py-2 text-xs text-center font-semibold text-foreground">{row.a}</td>
+              <td className="px-3 py-2 text-xs text-center font-semibold text-foreground">{row.b}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 function EEListCard({ list }: { list: { district: string; engineer: string }[] }) {
   const [expanded, setExpanded] = useState(false);
   const visible = expanded ? list : list.slice(0, PREVIEW_COUNT);
@@ -136,6 +164,10 @@ export function ChatMessageItem({
 
         {message.eeList && message.eeList.length > 0 && (
           <EEListCard list={message.eeList} />
+        )}
+
+        {message.compareTable && message.compareLabels && (
+          <CompareTable rows={message.compareTable} labels={message.compareLabels} />
         )}
 
         {isLastMessage && message.showComplaintButtons && onComplaintYes && onComplaintNo && (

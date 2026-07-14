@@ -17,7 +17,7 @@ import { getKnowledgeResponse } from "./knowledge";
 type Intent =
   | "road_detail" | "road_search" | "district_roads" | "district_accidents" | "district_stats"
   | "top_dangerous" | "all_districts" | "road_count" | "budget_query"
-  | "road_type_query" | "maintenance_query" | "executive_engineer" | "knowledge" | "greeting" | "help" | "unknown";
+  | "road_type_query" | "maintenance_query" | "executive_engineer" | "knowledge" | "greeting" | "help" | "compare" | "unknown";
 
 interface ParsedQuery {
   intent: Intent;
@@ -25,6 +25,7 @@ interface ParsedQuery {
   roadName?: string;
   roadType?: string;
   topN?: number;
+  compareRoads?: [string, string];
 }
 
 function extractDistrict(q: string): string | undefined {
@@ -55,6 +56,11 @@ function parseIntent(query: string): ParsedQuery {
   }
   if (/^(hi|hello|hey|good\s*(morning|evening|afternoon|night)|howdy)\b/.test(q)) return { intent: "greeting" };
   if (/\b(help|what can you do|features|capabilities)\b/.test(q)) return { intent: "help" };
+  // Compare two roads
+  const compareMatch = q.match(/compare\s+([\w\s-]+?)\s+(?:and|vs\.?|versus)\s+([\w\s-]+)/i);
+  if (compareMatch) {
+    return { intent: "compare", compareRoads: [compareMatch[1].trim(), compareMatch[2].trim()] };
+  }
   if (/\b(top|most|highest|worst|dangerous|accident.prone)\b.*\b(district|place|area)\b/.test(q)) {
     const m = q.match(/top\s*(\d+)/);
     return { intent: "top_dangerous", topN: m ? parseInt(m[1]) : 5 };
@@ -171,7 +177,30 @@ export function processQuery(query: string): string {
       }
       return `__EE_LIST__ Here are the Executive Engineers for all 38 districts in Tamil Nadu:`;
     }
-    default: {
+    case "compare": {
+      const [nameA, nameB] = parsed.compareRoads!;
+      const rA = searchRoads(nameA, 1)[0];
+      const rB = searchRoads(nameB, 1)[0];
+      if (!rA || !rB) {
+        const missing = !rA ? nameA : nameB;
+        return `Could not find road matching **"${missing}"**. Please check the name and try again.`;
+      }
+      const accA = getAccidentByDistrict(rA.district);
+      const accB = getAccidentByDistrict(rB.district);
+      // Build a structured compare payload the UI will render as a table
+      const budgetA = rA.estimatedAmount > 0 ? rA.estimatedAmount : rA.budget2020;
+      const budgetB = rB.estimatedAmount > 0 ? rB.estimatedAmount : rB.budget2020;
+      const rows = [
+        { feature: "Road Type",        a: rA.type || "N/A",                              b: rB.type || "N/A" },
+        { feature: "District",         a: rA.district,                                   b: rB.district },
+        { feature: "Length (km)",      a: `${rA.lengthKm.toFixed(1)} km`,                b: `${rB.lengthKm.toFixed(1)} km` },
+        { feature: "Last Maintained",  a: rA.lastMaintenanceDate || "N/A",               b: rB.lastMaintenanceDate || "N/A" },
+        { feature: "Budget",           a: budgetA > 0 ? `₹${budgetA.toFixed(1)} Cr` : "N/A", b: budgetB > 0 ? `₹${budgetB.toFixed(1)} Cr` : "N/A" },
+        { feature: "Accidents (dist)", a: accA ? `${accA.totalAccidents}` : "N/A",       b: accB ? `${accB.totalAccidents}` : "N/A" },
+        { feature: "Deaths (dist)",    a: accA ? `${accA.totalDeaths}` : "N/A",          b: accB ? `${accB.totalDeaths}` : "N/A" },
+      ];
+      return `__COMPARE__${JSON.stringify({ labelA: rA.name, labelB: rB.name, rows })}`;
+    }
       const kr = getKnowledgeResponse(query);
       if (!kr.includes("I'm not sure")) return kr;
       const sr = searchRoads(query, 4);

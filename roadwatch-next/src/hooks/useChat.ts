@@ -121,6 +121,23 @@ export function useChat(userId?: string | null) {
         const bMsg = botMessage(cleanText, { eeList });
         setMessages((prev) => [...prev, bMsg]);
         if (userId) persistMessage(bMsg);
+      } else if (rawText.startsWith("__COMPARE__")) {
+        try {
+          const payload = JSON.parse(rawText.slice("__COMPARE__".length)) as {
+            labelA: string; labelB: string;
+            rows: { feature: string; a: string; b: string }[];
+          };
+          const bMsg = botMessage(
+            `Comparing **${payload.labelA}** vs **${payload.labelB}**:`,
+            { compareTable: payload.rows, compareLabels: [payload.labelA, payload.labelB] }
+          );
+          setMessages((prev) => [...prev, bMsg]);
+          if (userId) persistMessage(bMsg);
+        } catch {
+          const bMsg = botMessage(rawText);
+          setMessages((prev) => [...prev, bMsg]);
+          if (userId) persistMessage(bMsg);
+        }
       } else {
         const bMsg = botMessage(rawText);
         setMessages((prev) => [...prev, bMsg]);

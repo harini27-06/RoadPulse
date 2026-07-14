@@ -93,4 +93,6 @@ export interface ChatMessage {
   showDeleteButton?: boolean;
   detectedLocation?: LocationData;
   eeList?: { district: string; engineer: string }[];
+  compareTable?: { feature: string; a: string; b: string }[];
+  compareLabels?: [string, string];
 }
