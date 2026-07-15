@@ -262,7 +262,7 @@ export function useChat(userId?: string | null) {
       }
 
       setPendingDetection(detection);
-      if (result.image_url) setPendingImageUrl(result.image_url);
+      // Keep the original previewUrl — never overwrite with YOLO's server-side path
 
       setIsTyping(true);
       setTimeout(() => {

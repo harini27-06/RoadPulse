@@ -34,10 +34,18 @@ export async function POST(request: NextRequest) {
         });
 
         if (dbHistory.length > 0) {
-          history = dbHistory.map((row) => ({
-            role: row.role === "bot" ? "model" : "user" as "user" | "model",
-            content: row.content,
-          }));
+          // Gemini requires strictly alternating user/model turns starting with user
+          const mapped = dbHistory
+            .map((row) => ({
+              role: (row.role === "bot" ? "model" : "user") as "user" | "model",
+              content: row.content,
+            }))
+            .filter((_, i, arr) => {
+              // Remove consecutive same-role entries, keep only alternating
+              if (i === 0) return arr[i].role === "user";
+              return arr[i].role !== arr[i - 1].role;
+            });
+          if (mapped.length > 0) history = mapped;
         }
       } catch { /* use client history as fallback */ }
     }

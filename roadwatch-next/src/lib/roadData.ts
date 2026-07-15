@@ -82,7 +82,7 @@ function loadData() {
       estimatedAmount:     parseFloat(cols[11]) || 0,
       budget2020:          parseFloat(cols[12]) || 0,
       workValue:           parseFloat(cols[13]) || 0,
-      authority:           "",
+      authority:           "", // derived from road type — see getAuthority()
     })).filter((r) => r.name.length > 0);
   } catch { /* file not found in dev */ }
 
@@ -156,6 +156,16 @@ export function getAllExecutiveEngineers(): { district: string; engineer: string
     .map((a) => ({ district: a.district, engineer: a.executiveEngineer! }));
 }
 
+// Derive responsible authority from road type and district
+export function getAuthority(road: RoadRecord): string {
+  if (road.authority) return road.authority;
+  const type = (road.type || "").toUpperCase();
+  if (type === "NH") return "National Highways Authority of India (NHAI)";
+  if (type === "SH") return `Tamil Nadu Highways Department — ${road.district} Division`;
+  if (type === "MDR") return `Executive Engineer, ${road.district} Division (Tamil Nadu PWD)`;
+  return `Executive Engineer, ${road.district} Division`;
+}
+
 // Format a single road's details as a point-wise answer
 export function formatRoadDetail(road: RoadRecord, accidents?: AccidentRecord | null): string {
   const ee = accidents?.executiveEngineer;
@@ -192,7 +202,7 @@ export function formatRoadDetail(road: RoadRecord, accidents?: AccidentRecord | 
     `**Maintenance Due:** ${maintenanceDue}`,
     `**Budget:** ${budget}`,
     `**Tender / Contractor ID:** ${contractor}`,
-    `**Responsible Authority:** ${road.authority || `Executive Engineer, ${road.district} Division`}${ee ? ` (${ee})` : ""}`,
+    `**Responsible Authority:** ${getAuthority(road)}${ee ? ` (${ee})` : ""}`,
   ];
   return lines.join("\n");
 }

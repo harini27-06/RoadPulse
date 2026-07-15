@@ -12,6 +12,7 @@ import {
   getExecutiveEngineer,
   getAllExecutiveEngineers,
   formatRoadDetail,
+  getAuthority,
 } from "./roadData";
 import { getKnowledgeResponse } from "./knowledge";
 
@@ -127,9 +128,8 @@ export function processQuery(query: string): string {
       if (!results.length) return `No road found matching **"${parsed.roadName ?? query}"**. Please check the name and try again.`;
       const road = results[0];
       const acc = getAccidentByDistrict(road.district);
-      const authority = road.authority || `Executive Engineer, ${road.district} Division`;
       const ee = acc?.executiveEngineer;
-      return `🛣️ **${road.name}** [${road.code}]\n\n**Responsible Authority:** ${authority}${ee ? `\n**Executive Engineer:** ${ee}` : ""}\n\n_If you've noticed any damage, I can help you raise a complaint._`;
+      return `🛣️ **${road.name}** [${road.code}]\n\n**Responsible Authority:** ${getAuthority(road)}${ee ? `\n**Executive Engineer:** ${ee}` : ""}\n\n_If you've noticed any damage, I can help you raise a complaint._`;
     }
     case "greeting":
       return "Hello! 👋 I'm the **RoadWatch AI Assistant**. Ask me about Tamil Nadu roads, accident stats, or road defects!";

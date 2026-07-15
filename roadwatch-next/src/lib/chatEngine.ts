@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import Groq from "groq-sdk";
 import { processQuery } from "./chatEngineLocal";
 import {
   getRoads,
@@ -7,6 +7,7 @@ import {
   getAccidentByDistrict,
   searchRoads,
   getAllDistricts,
+  getAuthority,
 } from "./roadData";
 
 export interface ChatTurn {
@@ -14,101 +15,118 @@ export interface ChatTurn {
   content: string;
 }
 
-// Build a compact data summary to inject into the system prompt
-function buildDataContext(userMessage: string): string {
-  const q = userMessage.toLowerCase();
-
+function buildDataContext(message: string): string {
+  const q = message.toLowerCase();
   const districts = getAllDistricts();
+
   const mentionedDistrict = districts.find((d) => q.includes(d.toLowerCase()));
 
-  let dataSnippet = "";
+  let ctx = "";
 
   if (mentionedDistrict) {
-    const roads = getRoadsByDistrict(mentionedDistrict).slice(0, 15);
+    const roads = getRoadsByDistrict(mentionedDistrict).slice(0, 20);
     const acc = getAccidentByDistrict(mentionedDistrict);
-    dataSnippet = `
-## Roads in ${mentionedDistrict} (showing up to 15)
-${roads.map((r) => `- ${r.name} [${r.code}] | ${r.type} | ${r.lengthKm.toFixed(1)} km | Last maintained: ${r.lastMaintenanceDate || "N/A"} | Budget: ₹${r.estimatedAmount || r.budget2020} Cr | Authority: ${r.authority || "Executive Engineer, " + r.district + " Division"}`).join("\n")}
-${acc ? `\n## Accident Data for ${mentionedDistrict}\nTotal Accidents: ${acc.totalAccidents} | Total Deaths: ${acc.totalDeaths} | Executive Engineer: ${acc.executiveEngineer || "N/A"}` : ""}`;
+    ctx += `\n### Roads in ${mentionedDistrict} (${roads.length} shown)\n`;
+    ctx += roads
+      .map(
+        (r) =>
+          `- ${r.name} [${r.code}] | ${r.type} | ${r.lengthKm.toFixed(1)} km | Maintained: ${r.lastMaintenanceDate || "N/A"} | Budget: ₹${r.estimatedAmount || r.budget2020} Cr | Authority: ${getAuthority(r)}`
+      )
+      .join("\n");
+    if (acc) {
+      ctx += `\n\n### Accident Data — ${mentionedDistrict}\nAccidents: ${acc.totalAccidents} | Deaths: ${acc.totalDeaths} | Executive Engineer: ${acc.executiveEngineer || "N/A"}`;
+    }
   }
 
-  const roadResults = searchRoads(userMessage, 5);
-  if (roadResults.length && !mentionedDistrict) {
-    dataSnippet = `
-## Matching Roads
-${roadResults.map((r) => `- ${r.name} [${r.code}] | ${r.type} | District: ${r.district} | ${r.lengthKm.toFixed(1)} km | Last maintained: ${r.lastMaintenanceDate || "N/A"} | Budget: ₹${r.estimatedAmount || r.budget2020} Cr | Authority: ${r.authority || "Executive Engineer, " + r.district + " Division"}`).join("\n")}`;
+  const roadHits = searchRoads(message, 5);
+  if (roadHits.length > 0 && !mentionedDistrict) {
+    ctx += `\n### Matching Roads\n`;
+    ctx += roadHits
+      .map(
+        (r) =>
+          `- ${r.name} [${r.code}] | ${r.type} | ${r.district} | ${r.lengthKm.toFixed(1)} km | Maintained: ${r.lastMaintenanceDate || "N/A"} | Budget: ₹${r.estimatedAmount || r.budget2020} Cr | Authority: ${getAuthority(r)}`
+      )
+      .join("\n");
   }
 
-  if (/accident|death|dangerous|worst|ranking|district/i.test(q)) {
-    const accidents = getAccidents()
+  if (/accident|death|dangerous|worst|ranking/i.test(q)) {
+    const top = getAccidents()
       .sort((a, b) => b.totalAccidents - a.totalAccidents)
       .slice(0, 10);
-    dataSnippet += `\n\n## Top 10 Districts by Accidents\n${accidents.map((a, i) => `${i + 1}. ${a.district} — ${a.totalAccidents} accidents, ${a.totalDeaths} deaths | EE: ${a.executiveEngineer || "N/A"}`).join("\n")}`;
+    ctx += `\n\n### Top Districts by Accidents\n`;
+    ctx += top
+      .map((a, i) => `${i + 1}. ${a.district} — ${a.totalAccidents} accidents, ${a.totalDeaths} deaths`)
+      .join("\n");
   }
 
   const allRoads = getRoads();
-  const totalKm = allRoads.reduce((s, r) => s + r.lengthKm, 0);
-  dataSnippet += `\n\n## General Stats\nTotal roads in dataset: ${allRoads.length} | Total length: ${totalKm.toFixed(0)} km | Districts covered: ${districts.length}`;
+  ctx += `\n\n### Dataset Summary\nTotal roads: ${allRoads.length} | Total length: ${allRoads.reduce((s, r) => s + r.lengthKm, 0).toFixed(0)} km | Districts: ${districts.length}`;
 
-  return dataSnippet;
+  return ctx;
 }
 
-const SYSTEM_PROMPT = `You are RoadWatch AI, an intelligent assistant for the RoadWatch platform — an AI-powered road monitoring and complaint management system for Tamil Nadu, India.
+const SYSTEM_PROMPT = `You are RoadWatch AI — a smart assistant for the RoadWatch platform, an AI-powered road monitoring and complaint system for Tamil Nadu, India.
 
-You have access to a real dataset of Tamil Nadu roads, accident statistics, and district information provided as context in each message.
+You can answer ANY question the user asks — road-related or completely general (science, math, history, coding, etc.).
 
-## Your Capabilities
-- Answer questions about Tamil Nadu roads, districts, road types (NH, SH, MDR), budgets, maintenance dates
-- Provide accident statistics and district rankings
-- Explain road defects: potholes, cracks, waterlogging, debris, damaged roads, missing manholes
-- Guide users on filing complaints using RoadWatch
-- Answer ANY general question — you are a full general-purpose AI assistant
+For road/district questions, use the data context provided at the end of each user message to give accurate answers from the real dataset.
 
 ## RoadWatch Platform
-- Image upload → YOLOv11 detects road defects (Pothole, Crack, Waterlogging, Debris, Damaged Road, Missing Manhole)
-- Complaint filing with GPS location, tracked as Pending / In Progress / Resolved
+- Upload road photos → AI detects defects (Pothole, Crack, Waterlogging, Debris, Damaged Road, Missing Manhole)
+- File complaints with GPS location → tracked as Pending / In Progress / Resolved
 - Budget tracker, Risk predictor, Admin & Engineer dashboards
+- Covers all 38 districts of Tamil Nadu
 
 ## Response Style
-- Conversational, helpful, concise
-- Use markdown bold and bullet points for structured answers
-- Use the data context provided to answer road/district questions accurately
-- For general questions not related to roads, answer from your knowledge normally`;
+- Be conversational, helpful, and concise
+- Use **bold** and bullet points for structured data
+- Never say you cannot answer — always try your best`;
 
 export async function chat(message: string, history: ChatTurn[] = []): Promise<string> {
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.GROQ_API_KEY;
 
   if (!apiKey) {
+    console.warn("GROQ_API_KEY not set — using local engine");
     return processQuery(message);
   }
 
   try {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
-      systemInstruction: SYSTEM_PROMPT,
-    });
+    const groq = new Groq({ apiKey });
 
     const dataContext = buildDataContext(message);
-    const messageWithContext = `${message}\n\n---\n[RoadWatch Data Context - use this to answer accurately]\n${dataContext}`;
+    const fullMessage = `${message}\n\n---\n[RoadWatch Data Context]\n${dataContext}`;
 
-    const geminiHistory = history.map((turn) => ({
-      role: turn.role,
-      parts: [{ text: turn.content }],
-    }));
+    // Convert history to Groq format (user/assistant only, strictly alternating)
+    const messages: { role: "system" | "user" | "assistant"; content: string }[] = [
+      { role: "system", content: SYSTEM_PROMPT },
+    ];
 
-    const chatSession = model.startChat({
-      history: geminiHistory,
-      generationConfig: {
-        maxOutputTokens: 1024,
-        temperature: 0.7,
-      },
+    // Sanitize history: map "model"/"bot" → "assistant", ensure alternating
+    const sanitized: { role: "user" | "assistant"; content: string }[] = [];
+    for (const turn of history) {
+      const role = (turn.role === "user" ? "user" : "assistant") as "user" | "assistant";
+      if (sanitized.length > 0 && sanitized[sanitized.length - 1].role === role) continue;
+      sanitized.push({ role, content: turn.content });
+    }
+    // Must start with user
+    while (sanitized.length > 0 && sanitized[0].role !== "user") sanitized.shift();
+    // Must end with assistant (so current message is next user turn)
+    while (sanitized.length > 0 && sanitized[sanitized.length - 1].role !== "assistant") sanitized.pop();
+
+    messages.push(...sanitized);
+    messages.push({ role: "user", content: fullMessage });
+
+    const completion = await groq.chat.completions.create({
+      model: "llama-3.3-70b-versatile",
+      messages,
+      max_tokens: 1024,
+      temperature: 0.7,
     });
 
-    const result = await chatSession.sendMessage(messageWithContext);
-    return result.response.text();
+    return completion.choices[0]?.message?.content ?? processQuery(message);
   } catch (err) {
-    console.error("Gemini API error:", err);
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error("Groq error:", msg);
     return processQuery(message);
   }
 }

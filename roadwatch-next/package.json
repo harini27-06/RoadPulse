@@ -38,6 +38,7 @@
     "eslint-config-next": "^16.2.9",
     "exifr": "^7.1.3",
     "framer-motion": "^11.13.1",
+    "groq-sdk": "^1.3.0",
     "jsonwebtoken": "^9.0.3",
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.8",
