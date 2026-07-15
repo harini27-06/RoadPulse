@@ -194,9 +194,17 @@ export default function AdminDashboard() {
                         <div>
                           <p className="font-semibold text-sm">{c.issue_type}</p>
                           <p className="text-xs text-muted-foreground">{formatConfidence(c.confidence)}</p>
+                          {c.user_name && <p className="text-xs text-blue-500 font-medium">{c.user_name}</p>}
                         </div>
                       </div>
-                      <span className={cn("shrink-0 px-2 py-0.5 rounded-full text-xs font-semibold", STATUS_STYLES[c.status as Status] ?? "bg-gray-100 text-gray-700")}>{c.status}</span>
+                      <div className="flex items-center gap-1.5">
+                        {(c.duplicate_count ?? 0) > 0 && (
+                          <span className="shrink-0 px-2 py-0.5 rounded-full text-xs font-bold bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400 border border-orange-200 dark:border-orange-800">
+                            +{c.duplicate_count} more
+                          </span>
+                        )}
+                        <span className={cn("shrink-0 px-2 py-0.5 rounded-full text-xs font-semibold", STATUS_STYLES[c.status as Status] ?? "bg-gray-100 text-gray-700")}>{c.status}</span>
+                      </div>
                     </div>
                     <div className="flex items-start gap-1 text-xs text-muted-foreground">
                       <MapPin className="h-3.5 w-3.5 mt-0.5 shrink-0" />
@@ -257,9 +265,15 @@ export default function AdminDashboard() {
                               <div>
                                 <p className="font-medium">{c.issue_type}</p>
                                 <p className="text-xs text-muted-foreground">{formatConfidence(c.confidence)}</p>
+                                {c.user_name && <p className="text-xs text-blue-500 font-medium">{c.user_name}</p>}
                                 {c.image_url && <button onClick={() => setViewImage(c.image_url!)} className="text-xs text-primary hover:underline">View image</button>}
                               </div>
                             </div>
+                            {(c.duplicate_count ?? 0) > 0 && (
+                              <span className="mt-1 inline-flex px-2 py-0.5 rounded-full text-xs font-bold bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400 border border-orange-200 dark:border-orange-800">
+                                +{c.duplicate_count} more complaint{(c.duplicate_count ?? 0) > 1 ? "s" : ""} at this spot
+                              </span>
+                            )}
                           </td>
                           <td className="px-4 py-3 max-w-[180px]">
                             <div className="flex items-start gap-1 text-muted-foreground">

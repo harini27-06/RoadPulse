@@ -124,6 +124,8 @@ model Complaint {
   engineer             User?     @relation("EngineerComplaints", fields: [assigned_engineer_id], references: [id])
   road                 Road?     @relation(fields: [road_id], references: [id])
   user                 User?     @relation(fields: [user_id], references: [id])
+  primary_complaint    Complaint?  @relation("DuplicateComplaints", fields: [primary_complaint_id], references: [id])
+  duplicates           Complaint[] @relation("DuplicateComplaints")
 
   @@map("complaints")
 }

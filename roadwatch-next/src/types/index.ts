@@ -48,6 +48,8 @@ export interface Complaint {
   scheduled_date?: string | null;
   scheduled_end_date?: string | null;
   repair_notes?: string | null;
+  user_name?: string | null;
+  duplicate_count?: number;
   created_at: string;
 }
 
