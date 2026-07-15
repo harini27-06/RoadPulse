@@ -16,7 +16,7 @@ export interface ChatTurn {
   content: string;
 }
 
-// Fetch a specific road's full details from DB (real authority + tender data)
+// Fetch a specific road's full details from DB
 async function getRoadFromDB(query: string): Promise<string | null> {
   try {
     const roads = await prisma.road.findMany({
@@ -27,16 +27,9 @@ async function getRoadFromDB(query: string): Promise<string | null> {
         ],
       },
       select: {
-        road_name: true,
-        road_code: true,
-        road_type: true,
-        district: true,
-        total_length_km: true,
-        tender_id: true,
-        estimated_amount: true,
-        budget_estimate: true,
-        total_work_value: true,
-        last_maintenance_date: true,
+        road_name: true, road_code: true, road_type: true, district: true,
+        total_length_km: true, tender_id: true, estimated_amount: true,
+        budget_estimate: true, total_work_value: true, last_maintenance_date: true,
         authority: true,
       },
       take: 3,
@@ -53,9 +46,7 @@ async function getRoadFromDB(query: string): Promise<string | null> {
       `Total Work Value: ${r.total_work_value ? `₹${r.total_work_value.toFixed(2)} Cr` : "N/A"}`,
       `Last Maintenance: ${r.last_maintenance_date ?? "N/A"}`,
     ].join("\n")).join("\n\n");
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
 // Fetch all roads in a district from DB with authority + tender data
@@ -64,13 +55,8 @@ async function getDistrictRoadsFromDB(district: string): Promise<string | null> 
     const roads = await prisma.road.findMany({
       where: { district: { contains: district, mode: "insensitive" } },
       select: {
-        road_name: true,
-        road_code: true,
-        road_type: true,
-        total_length_km: true,
-        authority: true,
-        tender_id: true,
-        estimated_amount: true,
+        road_name: true, road_code: true, road_type: true,
+        total_length_km: true, authority: true, tender_id: true, estimated_amount: true,
       },
       take: 20,
       orderBy: { road_name: "asc" },
@@ -79,34 +65,43 @@ async function getDistrictRoadsFromDB(district: string): Promise<string | null> 
     return roads.map((r) =>
       `- **${r.road_name}** [${r.road_code ?? "N/A"}] | ${r.road_type ?? "N/A"} | ${r.total_length_km?.toFixed(1) ?? "?"}km | Authority: ${r.authority ?? "N/A"} | Tender: ${r.tender_id ?? "N/A"} | Budget: ${r.estimated_amount ? `₹${r.estimated_amount.toFixed(1)}Cr` : "N/A"}`
     ).join("\n");
-  } catch {
-    return null;
-  }
+  } catch { return null; }
+}
+
+// Fetch roads by department/authority keyword from DB
+async function getRoadsByDepartmentFromDB(searchTerm: string): Promise<{ road_name: string; road_code: string | null; road_type: string | null; district: string; total_length_km: number | null; authority: string | null; tender_id: string | null; estimated_amount: number | null }[]> {
+  try {
+    return await prisma.road.findMany({
+      where: {
+        OR: [
+          { authority: { contains: searchTerm, mode: "insensitive" } },
+          { road_type: { equals: searchTerm, mode: "insensitive" } },
+        ],
+      },
+      select: {
+        road_name: true, road_code: true, road_type: true, district: true,
+        total_length_km: true, authority: true, tender_id: true, estimated_amount: true,
+      },
+      orderBy: { road_name: "asc" },
+    });
+  } catch { return []; }
 }
 
 async function buildDataContext(message: string): Promise<string> {
   const q = message.toLowerCase();
   const districts = getAllDistricts();
   const mentionedDistrict = districts.find((d) => q.includes(d.toLowerCase()));
-
   let ctx = "";
 
   if (mentionedDistrict) {
     const roads = getRoadsByDistrict(mentionedDistrict).slice(0, 20);
     const acc = getAccidentByDistrict(mentionedDistrict);
-    // Prefer DB data (has real authority + tender)
     const dbRoads = await getDistrictRoadsFromDB(mentionedDistrict).catch(() => null);
     ctx += `\n### Roads in ${mentionedDistrict} (${roads.length} shown)\n`;
-    if (dbRoads) {
-      ctx += dbRoads;
-    } else {
-      ctx += roads
-        .map((r) => `- ${r.name} [${r.code}] | ${r.type} | ${r.lengthKm.toFixed(1)} km | Maintained: ${r.lastMaintenanceDate || "N/A"} | Budget: ₹${r.estimatedAmount || r.budget2020} Cr | Authority: ${getAuthority(r)}`)
-        .join("\n");
-    }
-    if (acc) {
-      ctx += `\n\n### Accident Data — ${mentionedDistrict}\nAccidents: ${acc.totalAccidents} | Deaths: ${acc.totalDeaths} | Executive Engineer: ${acc.executiveEngineer || "N/A"}`;
-    }
+    ctx += dbRoads ?? roads.map((r) =>
+      `- ${r.name} [${r.code}] | ${r.type} | ${r.lengthKm.toFixed(1)} km | Maintained: ${r.lastMaintenanceDate || "N/A"} | Budget: ₹${r.estimatedAmount || r.budget2020} Cr | Authority: ${getAuthority(r)}`
+    ).join("\n");
+    if (acc) ctx += `\n\n### Accident Data — ${mentionedDistrict}\nAccidents: ${acc.totalAccidents} | Deaths: ${acc.totalDeaths} | Executive Engineer: ${acc.executiveEngineer || "N/A"}`;
   }
 
   const roadHits = searchRoads(message, 5);
@@ -116,24 +111,33 @@ async function buildDataContext(message: string): Promise<string> {
       ctx += `\n### Road Details (from database)\n${dbData}`;
     } else {
       ctx += `\n### Matching Roads\n`;
-      ctx += roadHits
-        .map((r) => `- ${r.name} [${r.code}] | ${r.type} | ${r.district} | ${r.lengthKm.toFixed(1)} km | Maintained: ${r.lastMaintenanceDate || "N/A"} | Budget: ₹${r.estimatedAmount || r.budget2020} Cr | Authority: ${getAuthority(r)}`)
-        .join("\n");
+      ctx += roadHits.map((r) =>
+        `- ${r.name} [${r.code}] | ${r.type} | ${r.district} | ${r.lengthKm.toFixed(1)} km | Maintained: ${r.lastMaintenanceDate || "N/A"} | Budget: ₹${r.estimatedAmount || r.budget2020} Cr | Authority: ${getAuthority(r)}`
+      ).join("\n");
     }
   }
 
   if (/accident|death|dangerous|worst|ranking/i.test(q)) {
-    const top = getAccidents()
-      .sort((a, b) => b.totalAccidents - a.totalAccidents)
-      .slice(0, 10);
+    const top = getAccidents().sort((a, b) => b.totalAccidents - a.totalAccidents).slice(0, 10);
     ctx += `\n\n### Top Districts by Accidents\n`;
     ctx += top.map((a, i) => `${i + 1}. ${a.district} — ${a.totalAccidents} accidents, ${a.totalDeaths} deaths`).join("\n");
   }
 
   const allRoads = getRoads();
   ctx += `\n\n### Dataset Summary\nTotal roads: ${allRoads.length} | Total length: ${allRoads.reduce((s, r) => s + r.lengthKm, 0).toFixed(0)} km | Districts: ${districts.length}`;
-
   return ctx;
+}
+
+// Detect department query and return { searchTerm, label } or null
+function detectDepartmentQuery(message: string): { searchTerm: string; label: string } | null {
+  const q = message.toLowerCase();
+  if (/nhai|national highway authority/.test(q)) return { searchTerm: "NH", label: "NHAI (National Highways Authority of India)" };
+  if (/\bpwd\b|public works department/.test(q)) return { searchTerm: "MDR", label: "Tamil Nadu PWD (Public Works Department)" };
+  if (/tnhd|tamil nadu highway|state highway department|highways department/.test(q)) return { searchTerm: "SH", label: "Tamil Nadu Highways Department" };
+  // Generic: "roads under X department" / "roads managed by X"
+  const m = q.match(/roads?\s+(?:under|by|managed by|maintained by|belonging to)\s+([\w\s]+?)(?:\s+department|\s+dept)?$/i);
+  if (m) return { searchTerm: m[1].trim(), label: m[1].trim() };
+  return null;
 }
 
 const SYSTEM_PROMPT = `You are RoadPulse AI — the intelligent assistant for RoadWatch, an AI-powered road monitoring and complaint management platform for Tamil Nadu, India.
@@ -155,6 +159,7 @@ For Tamil Nadu road/district questions, use the data context provided at the end
 - Answer general questions on any topic
 - Compare roads, rank districts, find executive engineers
 - Tell users which department/authority is responsible for a road
+- List all roads under NHAI, PWD, or Tamil Nadu Highways Department
 - Provide tender IDs, budget estimates, and work values for roads
 
 ## Response Style
@@ -163,29 +168,50 @@ For Tamil Nadu road/district questions, use the data context provided at the end
 - For data queries, always cite numbers from the provided context
 - Keep responses concise — avoid unnecessary padding
 - Never refuse to answer — always give your best response
-- If asked about complaint tracking, remind users they can type "Track Complaint #[number]"
-- End responses with a helpful follow-up suggestion when appropriate`;
+- If asked about complaint tracking, remind users they can type "Track Complaint #[number]"`;
 
 export async function chat(message: string, history: ChatTurn[] = []): Promise<string> {
   const apiKey = process.env.GROQ_API_KEY;
 
-  // Complaint tracking — handle locally
+  // 1. Complaint tracking — handle locally
   if (/track\s+complaint\s*#?\d+/i.test(message)) {
     return processQuery(message);
   }
 
-  // Authority / tender / department — answer directly from DB (most accurate)
+  // 2. Department/authority listing — "roads under NHAI", "roads under PWD" etc.
+  const deptQuery = detectDepartmentQuery(message);
+  if (deptQuery) {
+    const { searchTerm, label } = deptQuery;
+    const roads = await getRoadsByDepartmentFromDB(searchTerm);
+    if (roads.length) {
+      const preview = roads.slice(0, 20).map((r) =>
+        `- **${r.road_name}** [${r.road_code ?? "N/A"}] | ${r.district || "N/A"} | ${r.total_length_km?.toFixed(1) ?? "?"}km | Authority: ${r.authority ?? "N/A"} | Tender: ${r.tender_id ?? "N/A"} | Budget: ${r.estimated_amount ? `₹${r.estimated_amount.toFixed(1)}Cr` : "N/A"}`
+      ).join("\n");
+      const more = roads.length > 20 ? `\n\n_...and ${roads.length - 20} more roads. Visit the Budget Tracker page to see all._` : "";
+      return `🛣️ **Roads under ${label}** (${roads.length} total)\n\n${preview}${more}`;
+    }
+    // Fallback to CSV if DB has no authority data yet
+    const typeMap: Record<string, string> = { NH: "NH", MDR: "MDR", SH: "SH" };
+    const roadType = typeMap[searchTerm.toUpperCase()];
+    if (roadType) {
+      const csvRoads = getRoads().filter((r) => r.type === roadType);
+      const preview = csvRoads.slice(0, 20).map((r) =>
+        `- **${r.name}** [${r.code}] | ${r.district} | ${r.lengthKm.toFixed(1)}km | Authority: ${getAuthority(r)}`
+      ).join("\n");
+      const more = csvRoads.length > 20 ? `\n\n_...and ${csvRoads.length - 20} more_` : "";
+      return `🛣️ **Roads under ${label}** (${csvRoads.length} total)\n\n${preview}${more}`;
+    }
+  }
+
+  // 3. Authority / tender detail queries for specific road or district
   const isAuthorityOrTenderQuery = /\b(authority|department|dept|responsible|who\s+maintain|who\s+manage|in.?charge|which\s+dept|which\s+department|tender|tender\s+id|contractor|work\s+value|budget\s+estimate)\b/i.test(message);
   if (isAuthorityOrTenderQuery) {
     const q = message.toLowerCase();
     const districts = getAllDistricts();
     const mentionedDistrict = districts.find((d) => q.includes(d.toLowerCase()));
-
     if (mentionedDistrict) {
       const dbData = await getDistrictRoadsFromDB(mentionedDistrict);
-      if (dbData) {
-        return `🛣️ **Roads in ${mentionedDistrict.toUpperCase()} — Authority & Tender Details**\n\n${dbData}`;
-      }
+      if (dbData) return `🛣️ **Roads in ${mentionedDistrict.toUpperCase()} — Authority & Tender Details**\n\n${dbData}`;
     } else {
       const roadHits = searchRoads(message, 1);
       if (roadHits.length) {
@@ -202,7 +228,6 @@ export async function chat(message: string, history: ChatTurn[] = []): Promise<s
 
   try {
     const groq = new Groq({ apiKey });
-
     const dataContext = await buildDataContext(message);
     const fullMessage = `${message}\n\n---\n[RoadWatch Data Context]\n${dataContext}`;
 
