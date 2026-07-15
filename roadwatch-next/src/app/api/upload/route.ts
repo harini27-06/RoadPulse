@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import exifr from "exifr";
+import { writeFile, mkdir } from "fs/promises";
+import { join } from "path";
 import type { LocationData } from "@/types";
 
 const YOLO_URL = process.env.YOLO_SERVICE_URL ?? "http://localhost:8000";
@@ -126,6 +128,17 @@ export async function POST(request: NextRequest) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
+    // Save image to /public/uploads/ for persistent serving
+    let savedImageUrl: string | null = null;
+    try {
+      const uploadsDir = join(process.cwd(), "public", "uploads");
+      await mkdir(uploadsDir, { recursive: true });
+      const ext = file.name.split(".").pop() ?? "jpg";
+      const filename = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+      await writeFile(join(uploadsDir, filename), buffer);
+      savedImageUrl = `/uploads/${filename}`;
+    } catch { /* non-fatal */ }
+
     // 1. Try EXIF GPS (geotagged JPEG from phone camera)
     // 2. Fall back to binary text scan (coords stored as text in PNG/JPEG metadata)
     let location = await parseLocationFromExif(buffer, request.url);
@@ -181,7 +194,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       issue: result.issue,
       confidence: result.confidence,
-      image_url: result.image_url ?? null,
+      image_url: savedImageUrl,
       location,
     });
   } catch (err) {

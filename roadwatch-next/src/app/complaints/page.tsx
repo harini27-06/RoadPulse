@@ -7,6 +7,7 @@ import { FileText, AlertCircle, Loader2, LogIn, Plus, Filter } from "lucide-reac
 import Link from "next/link";
 import { Complaint } from "@/types";
 import { useAuth } from "@/hooks/useAuth";
+import { FileComplaintModal } from "@/components/complaints/FileComplaintModal";
 
 export default function ComplaintsPage() {
   const { user, loading: authLoading } = useAuth();
@@ -14,6 +15,7 @@ export default function ComplaintsPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [filter, setFilter] = useState<string>("All");
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     if (authLoading) return;
@@ -26,6 +28,7 @@ export default function ComplaintsPage() {
   }, [authLoading, user]);
 
   const handleDeleted = (id: string) => setComplaints((prev) => prev.filter((c) => c.id !== id));
+  const handleCreated = (c: Complaint) => setComplaints((prev) => [c, ...prev]);
 
   const statuses = ["All", "Pending", "In Progress", "Resolved", "Returned"];
   const safe = Array.isArray(complaints) ? complaints : [];
@@ -80,11 +83,9 @@ export default function ComplaintsPage() {
             {loading ? "Loading..." : `${safe.length} complaint${safe.length !== 1 ? "s" : ""} filed`}
           </p>
         </div>
-        <Link href="/chatbot">
-          <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-blue-500/20">
-            <Plus className="h-4 w-4" /> File New Complaint
-          </motion.button>
-        </Link>
+        <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setShowModal(true)} className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-blue-500/20">
+          <Plus className="h-4 w-4" /> File New Complaint
+        </motion.button>
       </motion.div>
 
       {/* Status filter tabs */}
@@ -132,13 +133,13 @@ export default function ComplaintsPage() {
           </div>
           <h2 className="text-xl font-black mb-2">No Complaints Yet</h2>
           <p className="text-muted-foreground text-sm mb-6 max-w-xs mx-auto">Use the chatbot to upload a road image and file your first complaint.</p>
-          <Link href="/chatbot">
-            <motion.button whileHover={{ scale: 1.03 }} className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg shadow-blue-500/20">
-              <Plus className="h-4 w-4" /> Open Chatbot
-            </motion.button>
-          </Link>
+          <motion.button whileHover={{ scale: 1.03 }} onClick={() => setShowModal(true)} className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg shadow-blue-500/20">
+            <Plus className="h-4 w-4" /> File New Complaint
+          </motion.button>
         </motion.div>
       )}
+
+      {showModal && <FileComplaintModal onClose={() => setShowModal(false)} onCreated={handleCreated} />}
 
       <AnimatePresence>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
