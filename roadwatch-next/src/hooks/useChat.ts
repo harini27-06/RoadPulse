@@ -17,14 +17,14 @@ const WELCOME: ChatMessage = botMessage(
   "Hi! I'm **RoadPulse AI** 🤖\n\nI can help you with:\n- 🛣️ Road info & accident stats across Tamil Nadu\n- 📸 Upload a road photo to detect defects (Pothole, Crack, Waterlogging & more)\n- 📋 File & track road damage complaints\n- ❓ Any general question you have\n\nTry asking *\"Roads in Chennai\"* or upload a road photo to get started!"
 );
 
-async function persistMessage(msg: ChatMessage) {
+async function persistMessage(msg: ChatMessage, sessionId?: string | null) {
   const metadata = (msg.imageUrl || msg.detectionResult)
     ? JSON.stringify({ imageUrl: msg.imageUrl, detectionResult: msg.detectionResult })
     : undefined;
   await fetch("/api/chat-history", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ role: msg.role, content: msg.content, metadata }),
+    body: JSON.stringify({ role: msg.role, content: msg.content, metadata, session_id: sessionId }),
   }).catch(() => {});
 }
 
@@ -40,7 +40,7 @@ function rowToMessage(row: { id: string; role: string; content: string; metadata
   };
 }
 
-export function useChat(userId?: string | null) {
+export function useChat(userId?: string | null, sessionId?: string | null) {
   const [messages, setMessages] = useState<ChatMessage[]>([WELCOME]);
   const [step, setStep] = useState<ChatStep>("idle");
   const [isTyping, setIsTyping] = useState(false);
@@ -49,7 +49,7 @@ export function useChat(userId?: string | null) {
   const [pendingLocation, setPendingLocation] = useState<LocationData | null>(null);
   const pendingLocationRef = useRef<LocationData | null>(null);
   const [lastComplaintId, setLastComplaintId] = useState<string | null>(null);
-  const historyLoaded = useRef(false);
+  const historyLoaded = useRef<string | null>(null);
 
   const setPendingLocationSync = useCallback((loc: LocationData | null) => {
     pendingLocationRef.current = loc;
@@ -57,19 +57,20 @@ export function useChat(userId?: string | null) {
   }, []);
 
   useEffect(() => {
-    if (!userId || historyLoaded.current) return;
-    historyLoaded.current = true;
-    fetch("/api/chat-history")
+    if (!userId || !sessionId || historyLoaded.current === sessionId) return;
+    historyLoaded.current = sessionId;
+    setMessages([WELCOME]);
+    fetch(`/api/chat-history?session_id=${sessionId}`)
       .then((r) => r.json())
       .then((rows: Parameters<typeof rowToMessage>[0][]) => {
         if (rows.length > 0) setMessages([WELCOME, ...rows.map(rowToMessage)]);
       })
       .catch(() => {});
-  }, [userId]);
+  }, [userId, sessionId]);
 
   useEffect(() => {
     if (userId === null && historyLoaded.current) {
-      historyLoaded.current = false;
+      historyLoaded.current = null;
       setMessages([WELCOME]);
       setStep("idle");
     }
@@ -81,9 +82,9 @@ export function useChat(userId?: string | null) {
       const msg = botMessage(content, extras);
       setMessages((prev) => [...prev, msg]);
       setIsTyping(false);
-      if (userId) persistMessage(msg);
+      if (userId) persistMessage(msg, sessionId);
     }, 600);
-  }, [userId]);
+  }, [userId, sessionId]);
 
   const sendTextMessage = useCallback(async (text: string) => {
     const uMsg = userMessage(text);
@@ -92,8 +93,21 @@ export function useChat(userId?: string | null) {
       currentMessages = prev;
       return [...prev, uMsg];
     });
-    if (userId) persistMessage(uMsg);
+    if (userId) persistMessage(uMsg, sessionId);
     setIsTyping(true);
+
+    // Auto-title session from first user message
+    if (userId && sessionId) {
+      const isFirstUserMsg = !currentMessages.some((m) => m.role === "user");
+      if (isFirstUserMsg) {
+        const title = text.slice(0, 50);
+        fetch(`/api/chat-sessions?id=${sessionId}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ title }),
+        }).catch(() => {});
+      }
+    }
 
     // Handle "near me" queries client-side using browser geolocation
     if (/\b(near me|nearby|around me|close to me|in my area)\b/i.test(text)) {
@@ -113,23 +127,24 @@ export function useChat(userId?: string | null) {
             if (data.total === 0) {
               const bMsg = botMessage("✅ No complaints found within **2 km** of your location. Roads look clear nearby!");
               setMessages((prev) => [...prev, bMsg]);
-              if (userId) persistMessage(bMsg);
+              if (userId) persistMessage(bMsg, sessionId);
             } else {
               const bMsg = botMessage(`📍 Found **${data.total} complaint${data.total !== 1 ? "s" : ""}** within **${data.radiusKm} km** of your location:`, { nearbyStats: data });
               setMessages((prev) => [...prev, bMsg]);
-              if (userId) persistMessage(bMsg);
+              if (userId) persistMessage(bMsg, sessionId);
             }
           } catch {
             setIsTyping(false);
             const bMsg = botMessage("Couldn't fetch nearby complaints. Please try again.");
             setMessages((prev) => [...prev, bMsg]);
+            if (userId) persistMessage(bMsg, sessionId);
           }
         },
         () => {
           setIsTyping(false);
           const bMsg = botMessage("📍 Location access was denied. Please allow location permission in your browser and try again.");
           setMessages((prev) => [...prev, bMsg]);
-          if (userId) persistMessage(bMsg);
+          if (userId) persistMessage(bMsg, sessionId);
         },
         { timeout: 8000 }
       );
@@ -161,7 +176,7 @@ export function useChat(userId?: string | null) {
         } catch { /* fallback to empty */ }
         const bMsg = botMessage(cleanText, { eeList });
         setMessages((prev) => [...prev, bMsg]);
-        if (userId) persistMessage(bMsg);
+        if (userId) persistMessage(bMsg, sessionId);
       } else if (rawText.startsWith("__COMPARE__")) {
         try {
           const payload = JSON.parse(rawText.slice("__COMPARE__".length)) as {
@@ -173,11 +188,11 @@ export function useChat(userId?: string | null) {
             { compareTable: payload.rows, compareLabels: [payload.labelA, payload.labelB] }
           );
           setMessages((prev) => [...prev, bMsg]);
-          if (userId) persistMessage(bMsg);
+          if (userId) persistMessage(bMsg, sessionId);
         } catch {
           const bMsg = botMessage(rawText);
           setMessages((prev) => [...prev, bMsg]);
-          if (userId) persistMessage(bMsg);
+          if (userId) persistMessage(bMsg, sessionId);
         }
       } else if (rawText.startsWith("__RANKING__")) {
         try {
@@ -186,23 +201,23 @@ export function useChat(userId?: string | null) {
           };
           const bMsg = botMessage(`🏚️ **${payload.title}**`, { rankingList: payload });
           setMessages((prev) => [...prev, bMsg]);
-          if (userId) persistMessage(bMsg);
+          if (userId) persistMessage(bMsg, sessionId);
         } catch {
           const bMsg = botMessage(rawText);
           setMessages((prev) => [...prev, bMsg]);
-          if (userId) persistMessage(bMsg);
+          if (userId) persistMessage(bMsg, sessionId);
         }
       } else {
         const bMsg = botMessage(rawText);
         setMessages((prev) => [...prev, bMsg]);
-        if (userId) persistMessage(bMsg);
+        if (userId) persistMessage(bMsg, sessionId);
       }
     } catch {
       setIsTyping(false);
       const bMsg = botMessage("Network error — please check your connection and try again.");
       setMessages((prev) => [...prev, bMsg]);
     }
-  }, [userId]);
+  }, [userId, sessionId]);
 
   const handleImageUpload = useCallback(
     async (file: File, previewUrl: string) => {
@@ -213,7 +228,7 @@ export function useChat(userId?: string | null) {
 
       const uMsg = userMessage("Image uploaded for analysis", { imageUrl: previewUrl });
       setMessages((prev) => [...prev, uMsg]);
-      persistMessage(uMsg);
+      persistMessage(uMsg, sessionId);
       setPendingImageUrl(previewUrl);
       addBotMessage("Analyzing your image 🔍...wait a moment while I check for road defects.");
       setStep("detected");
@@ -255,7 +270,7 @@ export function useChat(userId?: string | null) {
           const bMsg = botMessage("That doesn't look like a road photo. Please upload a clear photo of a road surface — potholes, cracks, waterlogging, or damaged surfaces.");
           setMessages((prev) => [...prev, bMsg]);
           setIsTyping(false);
-          persistMessage(bMsg);
+          persistMessage(bMsg, sessionId);
           setPendingDetection(null);
           setPendingImageUrl(null);
           setPendingLocationSync(null);
@@ -276,7 +291,7 @@ export function useChat(userId?: string | null) {
           );
           setMessages((prev) => [...prev, bMsg]);
           setIsTyping(false);
-          persistMessage(bMsg);
+          persistMessage(bMsg, sessionId);
           setPendingDetection(null);
           setPendingImageUrl(null);
           setPendingLocationSync(null);
@@ -295,17 +310,17 @@ export function useChat(userId?: string | null) {
         );
         setMessages((prev) => [...prev, bMsg]);
         setIsTyping(false);
-        persistMessage(bMsg);
+        persistMessage(bMsg, sessionId);
         setStep("awaiting_complaint_confirm");
       }, 600);
     },
-    [addBotMessage, userId, setPendingLocationSync]
+    [addBotMessage, userId, sessionId, setPendingLocationSync]
   );
 
   const handleComplaintYes = useCallback(() => {
     const uMsg = userMessage("Yes, raise a complaint");
     setMessages((prev) => [...prev, uMsg]);
-    if (userId) persistMessage(uMsg);
+    if (userId) persistMessage(uMsg, sessionId);
 
     const currentLocation = pendingLocationRef.current;
     if (currentLocation) {
@@ -318,7 +333,7 @@ export function useChat(userId?: string | null) {
         );
         setMessages((prev) => [...prev, bMsg]);
         setIsTyping(false);
-        if (userId) persistMessage(bMsg);
+        if (userId) persistMessage(bMsg, sessionId);
       }, 500);
       return;
     }
@@ -328,35 +343,35 @@ export function useChat(userId?: string | null) {
       const bMsg = botMessage("Sure! Could you share your location so we know where this is? 📍", { showLocationInput: true });
       setMessages((prev) => [...prev, bMsg]);
       setIsTyping(false);
-      if (userId) persistMessage(bMsg);
+      if (userId) persistMessage(bMsg, sessionId);
     }, 500);
-  }, [userId]);
+  }, [userId, sessionId]);
 
   const handleComplaintNo = useCallback(() => {
     const uMsg = userMessage("Just information, thanks");
     setMessages((prev) => [...prev, uMsg]);
-    if (userId) persistMessage(uMsg);
+    if (userId) persistMessage(uMsg, sessionId);
     setPendingDetection(null);
     setPendingImageUrl(null);
     setPendingLocationSync(null);
     setStep("idle");
     addBotMessage("No worries! Feel free to ask me anything about it, or upload another photo anytime. 😊");
-  }, [addBotMessage, userId]);
+  }, [addBotMessage, userId, sessionId]);
 
   const handleLocationSubmit = useCallback((location: LocationData) => {
     setPendingLocationSync(location);
     const uMsg = userMessage(`📍 ${location.address ?? `${location.latitude}, ${location.longitude}`}`);
     setMessages((prev) => [...prev, uMsg]);
-    if (userId) persistMessage(uMsg);
+    if (userId) persistMessage(uMsg, sessionId);
     setStep("awaiting_description");
     setIsTyping(true);
     setTimeout(() => {
       const bMsg = botMessage("Got it! Anything you'd like to add about the issue? (optional — skip if you prefer)", { showDescriptionInput: true });
       setMessages((prev) => [...prev, bMsg]);
       setIsTyping(false);
-      if (userId) persistMessage(bMsg);
+      if (userId) persistMessage(bMsg, sessionId);
     }, 500);
-  }, [userId, setPendingLocationSync]);
+  }, [userId, sessionId, setPendingLocationSync]);
 
   const handleDescriptionSubmit = useCallback(
     async (description: string) => {
@@ -364,7 +379,7 @@ export function useChat(userId?: string | null) {
       if (!pendingDetection || !currentLocation) return;
       const uMsg = userMessage(description || "No description provided");
       setMessages((prev) => [...prev, uMsg]);
-      if (userId) persistMessage(uMsg);
+      if (userId) persistMessage(uMsg, sessionId);
       setStep("submitting");
       setIsTyping(true);
 
@@ -388,7 +403,7 @@ export function useChat(userId?: string | null) {
           );
           setMessages((prev) => [...prev, bMsg]);
           setIsTyping(false);
-          if (userId) persistMessage(bMsg);
+          if (userId) persistMessage(bMsg, sessionId);
           setStep("done");
           setPendingDetection(null);
           setPendingImageUrl(null);
@@ -401,7 +416,7 @@ export function useChat(userId?: string | null) {
         setStep("idle");
       }
     },
-    [pendingDetection, pendingImageUrl, addBotMessage, userId]
+    [pendingDetection, pendingImageUrl, addBotMessage, userId, sessionId]
   );
 
   const handleDeleteComplaint = useCallback(async () => {
@@ -417,11 +432,13 @@ export function useChat(userId?: string | null) {
   }, [lastComplaintId, addBotMessage]);
 
   const clearHistory = useCallback(async () => {
-    await fetch("/api/chat-history", { method: "DELETE" });
-    historyLoaded.current = false;
+    if (sessionId) {
+      await fetch(`/api/chat-history?session_id=${sessionId}`, { method: "DELETE" });
+    }
+    historyLoaded.current = null;
     setMessages([WELCOME]);
     setStep("idle");
-  }, []);
+  }, [sessionId]);
 
   return {
     messages,

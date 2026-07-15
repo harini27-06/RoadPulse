@@ -39,7 +39,7 @@ function useYoloPing() {
   return yoloReady;
 }
 
-export function ChatWindow() {
+export function ChatWindow({ sessionId }: { sessionId?: string | null }) {
   const { user } = useAuth();
   const yoloReady = useYoloPing();
   const {
@@ -54,7 +54,7 @@ export function ChatWindow() {
     handleDescriptionSubmit,
     handleDeleteComplaint,
     clearHistory,
-  } = useChat(user?.id ?? null);
+  } = useChat(user?.id ?? null, sessionId);
 
   const [input, setInput] = useState("");
   const bottomRef = useRef<HTMLDivElement>(null);
