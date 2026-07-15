@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
-  serverExternalPackages: ["@prisma/client", "nodemailer"],
+  serverExternalPackages: ["@prisma/client", "nodemailer", "exifr"],
   images: {
     remotePatterns: [
       {
