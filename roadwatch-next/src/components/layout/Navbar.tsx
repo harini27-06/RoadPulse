@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   MessageSquare, FileText, Sun, Moon, LogIn, LogOut,
   LayoutDashboard, AlertTriangle, Phone, IndianRupee,
-  BarChart2, HardHat, Home, Menu, X, Mail,
+  BarChart2, HardHat, Home, Menu, X, Mail, Calculator,
 } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useState } from "react";
@@ -19,13 +19,14 @@ import { NotificationBell } from "@/components/layout/NotificationBell";
 
 const navLinks = [
   { href: "/",               label: "Home",         icon: Home },
-  { href: "/chatbot",        label: "Chatbot",       icon: MessageSquare },
-  { href: "/complaints",     label: "Complaints",    icon: FileText },
-  { href: "/risk-predictor", label: "Risk",          icon: AlertTriangle },
-  { href: "/budget",         label: "Budget",        icon: IndianRupee },
-  { href: "/analytics",      label: "Analytics",     icon: BarChart2 },
-  { href: "/emergency",      label: "Emergency",     icon: Phone },
-  { href: "/contact",        label: "Contact",       icon: Mail },
+  { href: "/chatbot",           label: "Chatbot",    icon: MessageSquare },
+  { href: "/complaints",        label: "Complaints", icon: FileText },
+  { href: "/risk-predictor",    label: "Risk",       icon: AlertTriangle },
+  { href: "/score-calculator",  label: "Score",      icon: Calculator },
+  { href: "/budget",            label: "Budget",     icon: IndianRupee },
+  { href: "/analytics",         label: "Analytics",  icon: BarChart2 },
+  { href: "/emergency",         label: "Emergency",  icon: Phone },
+  { href: "/contact",           label: "Contact",    icon: Mail },
 ];
 
 export function Navbar() {
