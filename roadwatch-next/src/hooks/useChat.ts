@@ -14,7 +14,7 @@ function userMessage(content: string, extras?: Partial<ChatMessage>): ChatMessag
 }
 
 const WELCOME: ChatMessage = botMessage(
-  "Hi! I'm **RoadPulse AI** — I can answer questions about Tamil Nadu roads and detect defects in road photos.\n\nAsk me anything, or upload a road photo for analysis."
+  "Hi! I'm **RoadPulse AI** 🤖\n\nI can help you with:\n- 🛣️ Road info & accident stats across Tamil Nadu\n- 📸 Upload a road photo to detect defects (Pothole, Crack, Waterlogging & more)\n- 📋 File & track road damage complaints\n- ❓ Any general question you have\n\nTry asking *\"Roads in Chennai\"* or upload a road photo to get started!"
 );
 
 async function persistMessage(msg: ChatMessage) {
@@ -234,10 +234,13 @@ export function useChat(userId?: string | null) {
 
       if (!response.ok) {
         const errMsg = result.error ?? "Something went wrong analyzing that image.";
-        addBotMessage(errMsg.includes("unavailable") || errMsg.includes("timed out")
-          ? `The AI detection service is currently **${errMsg.includes("timed out") ? "slow to respond" : "offline"}**. This usually happens when the service is starting up — please wait 30 seconds and try again.`
-          : errMsg
-        );
+        if (errMsg.includes("starting up") || errMsg.includes("timed out") || errMsg.includes("unavailable")) {
+          addBotMessage(
+            `⏳ The AI detection service is **warming up** on the server (this happens after inactivity).\n\nPlease wait **30–60 seconds** and try uploading again — it'll be fast after that! 🚀`
+          );
+        } else {
+          addBotMessage(errMsg);
+        }
         setStep("idle");
         return;
       }

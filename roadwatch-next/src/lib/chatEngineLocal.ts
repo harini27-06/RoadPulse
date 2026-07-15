@@ -121,6 +121,11 @@ function parseIntent(query: string): ParsedQuery {
 }
 
 export function processQuery(query: string): string {
+  // Complaint tracking — handled here as a hint (actual DB lookup is in chatEngine.ts)
+  const trackMatch = query.match(/track\s+complaint\s*#?(\d+)/i);
+  if (trackMatch) {
+    return `To track complaint **#${trackMatch[1]}**, please visit the **Complaints** page where you can see the full status, assigned engineer, and resolution details.`;
+  }
   const parsed = parseIntent(query);
   switch (parsed.intent) {
     case "road_authority": {

@@ -171,14 +171,18 @@ interface ChatMessageProps {
 
 function renderMarkdown(text: string) {
   return text.split("\n").map((line, i) => {
-    const formatted = line
+    // Bullet points
+    const isBullet = line.startsWith("- ") || line.startsWith("• ");
+    const content = isBullet ? line.slice(2) : line;
+    const formatted = content
       .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-      .replace(/\*(.*?)\*/g, "<em>$1</em>");
+      .replace(/\*(.*?)\*/g, "<em>$1</em>")
+      .replace(/`(.*?)`/g, '<code class="bg-muted px-1 py-0.5 rounded text-xs font-mono">$1</code>');
     return (
       <p
         key={i}
         dangerouslySetInnerHTML={{ __html: formatted }}
-        className={line.startsWith("- ") ? "ml-3" : ""}
+        className={isBullet ? "ml-3 flex gap-1.5 before:content-['•'] before:text-primary before:shrink-0" : ""}
       />
     );
   });

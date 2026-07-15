@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import { Send, Trash2, LogIn } from "lucide-react";
+import { Send, Trash2, LogIn, Zap } from "lucide-react";
 import Link from "next/link";
 import { useChat } from "@/hooks/useChat";
 import { useAuth } from "@/hooks/useAuth";
@@ -13,22 +13,35 @@ import { Input } from "@/components/ui/input";
 
 const QUICK_PROMPTS = [
   "What is a pothole?",
+  "Roads in Chennai",
+  "Top 5 accident-prone districts",
   "How do I report road damage?",
-  "Which district has the most accidents?",
-  "Road maintenance types",
+  "Accident stats for Salem",
+  "What is road maintenance?",
 ];
 
 // Ping YOLO on mount so Render free-tier wakes up before user uploads
 function useYoloPing() {
+  const [yoloReady, setYoloReady] = useState<"warming" | "ready" | "offline">("warming");
   useEffect(() => {
-    // Hit our upload HEAD route which internally pings YOLO /health
-    fetch("/api/upload", { method: "HEAD" }).catch(() => {});
+    let cancelled = false;
+    const ping = async () => {
+      try {
+        const res = await fetch("/api/upload", { method: "HEAD" });
+        if (!cancelled) setYoloReady(res.ok ? "ready" : "offline");
+      } catch {
+        if (!cancelled) setYoloReady("offline");
+      }
+    };
+    ping();
+    return () => { cancelled = true; };
   }, []);
+  return yoloReady;
 }
 
 export function ChatWindow() {
   const { user } = useAuth();
-  useYoloPing();
+  const yoloReady = useYoloPing();
   const {
     messages,
     step,
@@ -73,6 +86,16 @@ export function ChatWindow() {
             <Trash2 className="h-3 w-3" />
             Clear history
           </button>
+        </div>
+      )}
+
+      {/* YOLO warm-up banner — only shown while warming up */}
+      {yoloReady === "warming" && user && (
+        <div className="mx-4 mt-2 mb-1 flex items-center gap-2 rounded-lg border border-blue-500/20 bg-blue-500/5 px-3 py-2">
+          <Zap className="h-3.5 w-3.5 text-blue-500 animate-pulse shrink-0" />
+          <span className="text-xs text-blue-600 dark:text-blue-400">
+            AI detection service is warming up — image upload will be ready shortly.
+          </span>
         </div>
       )}
 

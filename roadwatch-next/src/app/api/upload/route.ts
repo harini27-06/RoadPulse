@@ -5,7 +5,7 @@ import type { LocationData } from "@/types";
 const YOLO_URL = process.env.YOLO_SERVICE_URL ?? "http://localhost:8000";
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
 const ALLOWED_TYPES = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
-const YOLO_TIMEOUT_MS = 60000;
+const YOLO_TIMEOUT_MS = 90000; // 90s — Render free tier cold start can take up to 90s
 
 async function parseLocationFromExif(buffer: Buffer, requestUrl: string): Promise<LocationData | null> {
   try {
