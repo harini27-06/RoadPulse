@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import * as exifr from "exifr";
+import exifr from "exifr";
 import type { LocationData } from "@/types";
 
 const YOLO_URL = process.env.YOLO_SERVICE_URL ?? "http://localhost:8000";
