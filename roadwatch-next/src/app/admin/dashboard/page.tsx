@@ -48,6 +48,17 @@ function StatCard({ label, value, icon, color }: { label: string; value: number;
   );
 }
 
+function ImageModal({ url, onClose }: { url: string; onClose: () => void }) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4" onClick={onClose}>
+      <div className="relative max-w-3xl w-full" onClick={(e) => e.stopPropagation()}>
+        <button onClick={onClose} className="absolute -top-9 right-0 text-white/70 hover:text-white text-sm">✕ Close</button>
+        <img src={url} alt="Complaint" className="w-full max-h-[80vh] object-contain rounded-xl" />
+      </div>
+    </div>
+  );
+}
+
 export default function AdminDashboard() {
   const router = useRouter();
   const [complaints, setComplaints] = useState<Complaint[]>([]);
@@ -58,6 +69,7 @@ export default function AdminDashboard() {
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 10;
   const [downloading, setDownloading] = useState<string | null>(null);
+  const [viewImage, setViewImage] = useState<string | null>(null);
 
   const handleDownload = async (c: Complaint) => {
     setDownloading(c.id);
@@ -123,8 +135,8 @@ export default function AdminDashboard() {
         <div className="container mx-auto px-4 h-14 flex items-center justify-between gap-2">
           <div className="flex items-center gap-2 font-bold text-sm text-foreground">
             <LayoutDashboard className="h-5 w-5 text-blue-500 shrink-0" />
-            <span className="hidden sm:inline">Admin Dashboard</span>
-            <span className="sm:hidden">Admin</span>
+            <span className="hidden sm:inline">Road Administration Dashboard</span>
+            <span className="sm:hidden">Road Admin</span>
           </div>
           <div className="flex items-center gap-2">
             <NotificationBell />
@@ -201,7 +213,7 @@ export default function AdminDashboard() {
                         <Calendar className="h-3 w-3" />{formatDate(c.created_at)}
                       </div>
                       <div className="flex items-center gap-1 flex-wrap">
-                        {c.image_url && <a href={c.image_url} target="_blank" rel="noreferrer" className="text-xs text-primary hover:underline">Image</a>}
+                        {c.image_url && <button onClick={() => setViewImage(c.image_url!)} className="text-xs text-primary hover:underline">Image</button>}
                         <button onClick={() => router.push(`/admin/assign/${c.id}`)}
                           className={cn("inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-semibold border",
                             c.assigned_engineer ? "bg-indigo-100 text-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-400 border-indigo-200" : "bg-muted text-muted-foreground border-border")}>
@@ -245,7 +257,7 @@ export default function AdminDashboard() {
                               <div>
                                 <p className="font-medium">{c.issue_type}</p>
                                 <p className="text-xs text-muted-foreground">{formatConfidence(c.confidence)}</p>
-                                {c.image_url && <a href={c.image_url} target="_blank" rel="noreferrer" className="text-xs text-primary hover:underline">View image</a>}
+                                {c.image_url && <button onClick={() => setViewImage(c.image_url!)} className="text-xs text-primary hover:underline">View image</button>}
                               </div>
                             </div>
                           </td>
@@ -309,6 +321,7 @@ export default function AdminDashboard() {
           </>
         )}
       </div>
+      {viewImage && <ImageModal url={viewImage} onClose={() => setViewImage(null)} />}
     </div>
   );
 }
