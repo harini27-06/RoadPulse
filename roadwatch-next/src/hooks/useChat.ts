@@ -45,7 +45,8 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
   const [step, setStep] = useState<ChatStep>("idle");
   const [isTyping, setIsTyping] = useState(false);
   const [pendingDetection, setPendingDetection] = useState<DetectionResult | null>(null);
-  const [pendingImageUrl, setPendingImageUrl] = useState<string | null>(null);
+  const [pendingImageUrl, setPendingImageUrl] = useState<string | null>(null); // blob URL for preview only
+  const [pendingImageDataUrl, setPendingImageDataUrl] = useState<string | null>(null); // base64 data URL for DB storage
   const [pendingLocation, setPendingLocation] = useState<LocationData | null>(null);
   const pendingLocationRef = useRef<LocationData | null>(null);
   const [lastComplaintId, setLastComplaintId] = useState<string | null>(null);
@@ -230,6 +231,7 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
       setMessages((prev) => [...prev, uMsg]);
       persistMessage(uMsg, sessionId);
       setPendingImageUrl(previewUrl);
+      setPendingImageDataUrl(null);
       addBotMessage("Analyzing your image 🔍...wait a moment while I check for road defects.");
       setStep("detected");
 
@@ -263,8 +265,10 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
       if (result.location) {
         setPendingLocationSync(result.location);
       } else {
-        setPendingLocationSync(null); // no geotag — clear any stale location
+        setPendingLocationSync(null);
       }
+      // Store the base64 data URL for DB persistence
+      setPendingImageDataUrl(result.image_url ?? null);
 
       const detection: DetectionResult = { issue: result.issue as DetectionResult["issue"], confidence: result.confidence ?? 0 };
 
@@ -277,6 +281,7 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
           persistMessage(bMsg, sessionId);
           setPendingDetection(null);
           setPendingImageUrl(null);
+          setPendingImageDataUrl(null);
           setPendingLocationSync(null);
           setStep("idle");
         }, 600);
@@ -284,7 +289,6 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
       }
 
       setPendingDetection(detection);
-      // Keep the original previewUrl — never overwrite with YOLO's server-side path
 
       setIsTyping(true);
       setTimeout(() => {
@@ -298,6 +302,7 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
           persistMessage(bMsg, sessionId);
           setPendingDetection(null);
           setPendingImageUrl(null);
+          setPendingImageDataUrl(null);
           setPendingLocationSync(null);
           setStep("idle");
           return;
@@ -357,6 +362,7 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
     if (userId) persistMessage(uMsg, sessionId);
     setPendingDetection(null);
     setPendingImageUrl(null);
+    setPendingImageDataUrl(null);
     setPendingLocationSync(null);
     setStep("idle");
     addBotMessage("No worries! Feel free to ask me anything about it, or upload another photo anytime. 😊");
@@ -391,7 +397,7 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
         const complaint = await createComplaint({
           issue_type: pendingDetection.issue,
           confidence: pendingDetection.confidence,
-          image_url: pendingImageUrl ?? undefined,
+          image_url: pendingImageDataUrl ?? undefined,
           latitude: currentLocation.latitude,
           longitude: currentLocation.longitude,
           address: currentLocation.address,
@@ -411,6 +417,7 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
           setStep("done");
           setPendingDetection(null);
           setPendingImageUrl(null);
+          setPendingImageDataUrl(null);
           setPendingLocationSync(null);
           setTimeout(() => setStep("idle"), 1000);
         }, 800);
@@ -420,7 +427,7 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
         setStep("idle");
       }
     },
-    [pendingDetection, pendingImageUrl, addBotMessage, userId, sessionId]
+    [pendingDetection, pendingImageDataUrl, addBotMessage, userId, sessionId]
   );
 
   const handleDeleteComplaint = useCallback(async () => {
