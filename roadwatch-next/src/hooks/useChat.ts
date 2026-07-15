@@ -260,7 +260,11 @@ export function useChat(userId?: string | null, sessionId?: string | null) {
         return;
       }
 
-      if (result.location) setPendingLocationSync(result.location);
+      if (result.location) {
+        setPendingLocationSync(result.location);
+      } else {
+        setPendingLocationSync(null); // no geotag — clear any stale location
+      }
 
       const detection: DetectionResult = { issue: result.issue as DetectionResult["issue"], confidence: result.confidence ?? 0 };
 
